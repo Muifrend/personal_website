@@ -5,7 +5,7 @@ const MyMenu: React.FC = () => (
   <NavigationMenu.Root className="MyNavRoot">
     <NavigationMenu.List className="MyNavList">
       <NavigationMenu.Item>
-        <NavigationMenu.Link href="/home" className="MyNavLink">
+        <NavigationMenu.Link href="/" className="MyNavLink">
           [H] HOME
         </NavigationMenu.Link>
       </NavigationMenu.Item>
@@ -23,8 +23,8 @@ const MyMenu: React.FC = () => (
       </NavigationMenu.Item>
 
       <NavigationMenu.Item>
-        <NavigationMenu.Link href="/contact" className="MyNavLink">
-          [C] CONTACT
+        <NavigationMenu.Link href="/feeling-lucky" className="MyNavLink">
+          [F] FEELING LUCKY?
         </NavigationMenu.Link>
       </NavigationMenu.Item>
     </NavigationMenu.List>
