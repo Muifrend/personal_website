@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+// 1. Generate a path for every project
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <main style="max-width: 700px; margin: 0 auto; padding-top: 50px;">
+    <h1>{entry.data.title}</h1>
+    <p style="color: #666;">{entry.data.date.toDateString()}</p>
+    <hr />
+    <article class="prose">
+      <Content />
+    </article>
+  </main>
+</Layout>

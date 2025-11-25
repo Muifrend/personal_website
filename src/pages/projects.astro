@@ -2,9 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import NavigationMenu from "../components/NavigationMenu";
 import Footer from "../components/Footer.astro";
+import ProjectList from "../components/ProjectList.astro";
 ---
 
 <Layout>
   <NavigationMenu client:load />
+  <ProjectList />
   <Footer />
 </Layout>
