@@ -16,12 +16,21 @@ const { Content } = await entry.render();
 ---
 
 <Layout title={entry.data.title}>
-  <main style="max-width: 700px; margin: 0 auto; padding-top: 50px;">
-    <h1>{entry.data.title}</h1>
-    <p style="color: #666;">{entry.data.date.toDateString()}</p>
-    <hr />
-    <article class="prose">
-      <Content />
-    </article>
-  </main>
+  <main class="max-w-3xl py-12 mx-auto pt-20 px-6 w-full">
+  
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 leading-tight">
+    {entry.data.title}
+  </h1>
+
+  <p class="text-gray-500 text-sm mb-8 font-mono">
+    {entry.data.date.toDateString()}
+  </p>
+
+  <hr class="border-gray-200 mb-8" />
+
+  <article class="prose prose-gray prose-lg max-w-none">
+    <Content />
+  </article>
+
+</main>
 </Layout>
