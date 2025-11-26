@@ -1,10 +1,10 @@
 ---
 import "../styles/global.css";
-import NavigationMenu from '../components/NavigationMenu';
-import Footer from '../components/Footer.astro';
+import NavigationMenu from "../components/NavigationMenu";
+import Footer from "../components/Footer.astro";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -19,16 +19,14 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  
+
   <body class="min-h-screen flex flex-col bg-white font-sans antialiased">
-    
     <NavigationMenu client:load />
-    
+
     <div class="flex-1 w-full">
-        <slot />
+      <slot />
     </div>
 
     <Footer />
-    
   </body>
 </html>

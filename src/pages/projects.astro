@@ -1,26 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import NavigationMenu from "../components/NavigationMenu";
-import Footer from "../components/Footer.astro";
 import ProjectBrowser from "../components/ProjectBrowser";
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
-const allProjects = (await getCollection('projects')).sort(
-	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+const allProjects = (await getCollection("projects")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
-const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || []))].sort();
+const allTags = [
+  ...new Set(allProjects.flatMap((project) => project.data.tags || [])),
+].sort();
 
-const formattedProjects = allProjects.map(p => ({
+const formattedProjects = allProjects.map((p) => ({
   slug: p.slug,
   title: p.data.title,
   date: p.data.date.toISOString(),
-  tags: p.data.tags || [] // Ensure tags is an array
+  tags: p.data.tags || [], // Ensure tags is an array
 }));
 ---
 
 <Layout title="Projects">
   <main class="max-w-6xl mx-auto px-6 py-12 w-full">
-  <h1 class="max-w-7xl mx-auto w-full pt-16 font-mono text-4xl font-bold">/ Projects</h1>
-  <ProjectBrowser client:load projects={formattedProjects} allTags={allTags} />
+    <h1 class="max-w-7xl mx-auto w-full pt-16 font-mono text-4xl font-bold">
+      / Projects
+    </h1>
+    <ProjectBrowser
+      client:load
+      projects={formattedProjects}
+      allTags={allTags}
+    />
   </main>
 </Layout>

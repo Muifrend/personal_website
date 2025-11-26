@@ -3,10 +3,16 @@ import React from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 
 const MyMenu: React.FC = () => {
-  useHotkeys('h', () => (window.location.href = '/'), { preventDefault: true });
-  useHotkeys('g', () => (window.location.href = '/github'), { preventDefault: true });
-  useHotkeys('p', () => (window.location.href = '/projects'), { preventDefault: true });
-  useHotkeys('f', () => (window.location.href = '/feeling-lucky'), { preventDefault: true });
+  useHotkeys("h", () => (window.location.href = "/"), { preventDefault: true });
+  useHotkeys("g", () => (window.location.href = "/github"), {
+    preventDefault: true,
+  });
+  useHotkeys("p", () => (window.location.href = "/projects"), {
+    preventDefault: true,
+  });
+  useHotkeys("f", () => (window.location.href = "/feeling-lucky"), {
+    preventDefault: true,
+  });
 
   return (
     <NavigationMenu.Root className="bg-gray-900 text-white w-full fixed top-0 left-0 z-50 shadow">
