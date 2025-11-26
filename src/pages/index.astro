@@ -8,8 +8,8 @@ import Footer from "../components/Footer.astro";
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-  <NavigationMenu client:load />
+<Layout title="Home">
+  <main class="max-w-6xl mx-auto px-6 py-12 w-full">
   <Welcome />
-  <Footer />
+  </main>
 </Layout>

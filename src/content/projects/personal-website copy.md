@@ -1,11 +1,10 @@
 ---
-title: "Marketplace monetization with Stripe"
+title: "Stripe"
 date: 2025-09-04
 description: "How I built a payment platform..."
 tags:
 - Typescript
-- Cloudflare
-- Bun
+
 ---
 
 # Project Details

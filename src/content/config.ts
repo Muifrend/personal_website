@@ -7,9 +7,10 @@ const projectsCollection = defineCollection({
     title: z.string(),
     date: z.date(), // Forces you to have a valid date
     description: z.string().optional(),
+    tags: z.array(z.string()).optional(),
   }),
 });
 
 export const collections = {
-  projects: projectsCollection,
+  'projects': projectsCollection,
 };
