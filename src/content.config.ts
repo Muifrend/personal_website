@@ -1,8 +1,9 @@
 // src/content/config.ts
 import { z, defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const projectsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.md", base: "./content" }),
   schema: z.object({
     title: z.string(),
     date: z.date(), // Forces you to have a valid date
@@ -11,6 +12,4 @@ const projectsCollection = defineCollection({
   }),
 });
 
-export const collections = {
-  'projects': projectsCollection,
-};
+export const collections = { projectsCollection };
