@@ -32,11 +32,11 @@ const ProjectBrowser: React.FC<Props> = ({ projects, allTags }) => {
   }, [selectedTags, projects]);
 
   return (
-    <div className="flex flex-col md:flex-row gap-8 font-mono py-16">
+    <div className="flex flex-col md:flex-row gap-8 font-mono">
       {/* LEFT SIDEBAR: FILTERS */}
       <div className="w-full md:w-64 flex-shrink-0 max-w-4xl mx-auto w-full px-2 font-mono">
         <div className="border-b border-black pb-2 mb-4 text-xs text-gray-500 uppercase tracking-wider">
-          / Filters
+          / Technologies
         </div>
 
         <div className="flex flex-col gap-2">

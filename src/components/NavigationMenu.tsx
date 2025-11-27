@@ -76,7 +76,7 @@ export default function NavigationMenu() {
           <li>
             <a href="/feeling-lucky" className={getLinkClass("/feeling-lucky")}>
               <span className={getKeyClass("/feeling-lucky")}>F</span>
-              <span>Lucky</span>
+              <span>I'm Feeling Lucky</span>
             </a>
           </li>
         </ul>

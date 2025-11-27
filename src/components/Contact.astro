@@ -1,0 +1,181 @@
+---
+/**
+ * Contact.astro
+ * Reusable contact section for a homepage.
+ *
+ * Props:
+ *  - email: string (mailto link shown)
+ *  - phone: string
+ *  - formAction: string (server endpoint to POST JSON to; default '/api/contact')
+ *
+ * This component includes a small client-side script to POST the form as JSON.
+ * Replace formAction with your form endpoint (Netlify/Forms, Formspree, custom API).
+ */
+export let email: string = " andrzej.firek@uni.minerva.edu";
+export let phone: string | null = null;
+export let formAction: string = "/api/contact";
+---
+
+<section id="contact" class="py-12 px-4 text-lg">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid gap-6 md:grid-cols-2 items-start">
+      <aside aria-labelledby="contact-info-heading">
+        <h2 class="text-5xl font-bold py-2">Contact</h2>
+        <p class="text-gray-600 mt-1 py-4">
+          Have a project, question, or just want to say hi? Send a message and
+          I’ll get back shortly.
+        </p>
+        <h3 id="contact-info-heading" class="sr-only">Contact information</h3>
+        <ul class="list-none p-0 m-0 mb-4">
+          <li class="mb-3">
+            <strong class="block pb-2">Email</strong>
+            <a
+              href={`mailto:${email}`}
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline">{email}</a
+            >
+          </li>
+          {
+            phone ? (
+              <li class="mb-3">
+                <strong class="block">Phone</strong>
+                <a href={`tel:${phone}`} class="text-blue-600 hover:underline">
+                  {phone}
+                </a>
+              </li>
+            ) : null
+          }
+        </ul>
+        <strong class="block pb-2">Social</strong>
+        <nav class="flex gap-3" aria-label="Social links">
+          <a
+            href="https://www.instagram.com/andrzejarturr/"
+            aria-label="Instagram"
+            title="Instagram"
+            class="text-blue-600 hover:underline">Instagram</a
+          >
+          <a
+            href="https://github.com/Muifrend"
+            aria-label="GitHub"
+            title="GitHub"
+            class="text-blue-600 hover:underline">GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/andrzej-firek-237bb7256/"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+            class="text-blue-600 hover:underline">LinkedIn</a
+          >
+        </nav>
+      </aside>
+
+      <form
+        id="contact-form"
+        class="md:col-span-1 grid gap-2"
+        method="post"
+        novalidate
+      >
+        <!-- Honeypot to deter bots -->
+        <div class="sr-only">
+          <label
+            >Leave this field empty: <input
+              name="website"
+              type="text"
+              autocomplete="off"
+            /></label
+          >
+        </div>
+
+        <label for="name" class="text-sm font-medium">Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          autocomplete="name"
+          class="p-2 border border-gray-200 rounded-md w-full text-base"
+        />
+
+        <label for="email" class="text-sm font-medium">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          autocomplete="email"
+          class="p-2 border border-gray-200 rounded-md w-full text-base"
+        />
+
+        <label for="message" class="text-sm font-medium">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="3"
+          required
+          class="p-2 border border-gray-200 rounded-md w-full text-base"></textarea>
+
+        <div class="flex gap-4 items-center mt-2">
+          <button
+            type="submit"
+            class="bg-blue-600 text-white px-4 py-2 rounded-md"
+            >Send message</button
+          >
+          <span
+            id="contact-status"
+            role="status"
+            aria-live="polite"
+            class="text-sm text-green-700"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module">
+    const form = document.getElementById("contact-form");
+    const statusEl = document.getElementById("contact-status");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      // Simple client-side validation
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+      const honeypot = form.website?.value;
+
+      if (honeypot) {
+        // bot detected — silently fail
+        return;
+      }
+      if (!name || !email || !message) {
+        statusEl.textContent = "Please complete all fields.";
+        return;
+      }
+
+      const submitButton = form.querySelector('button[type="submit"]');
+      submitButton.disabled = true;
+      statusEl.textContent = "Sending…";
+
+      try {
+        const res = await fetch(astro.props?.formAction ?? "/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message }),
+        });
+
+        if (res.ok) {
+          statusEl.textContent = "Message sent. Thank you!";
+          form.reset();
+        } else {
+          const text = await res.text().catch(() => null);
+          statusEl.textContent =
+            "Failed to send message." + (text ? ` (${text})` : "");
+        }
+      } catch (err) {
+        statusEl.textContent = "Network error. Try again later.";
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  </script>
+</section>

@@ -1,19 +1,30 @@
 ---
 import personalPhoto from "../assets/personal_photo.jpg";
+import CV from "../assets/Andrzej_Firek_CV.pdf";
 ---
 
 <div id="container" class="h-full font-sans">
   <main class="relative z-10 max-w-6xl mx-auto px-6 py-24">
     <header class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
       <div>
-        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
-          Hi, I’m Andrew — product-focused software engineer
+        <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+          Hi, I’m Andrew — an aspiring Software Engineer
         </h1>
-        <p class="mt-3 max-w-xl">
-          I build fast, accessible websites and delightful developer experiences
-          using Astro, TypeScript, and modern web tooling. I enjoy shipping
-          small, maintainable systems that solve real problems.
+        <p class="mt-4 text-gray-800 max-w-lg">
+          As a Minerva University student with experience in robotics,
+          sustainability, and global exploration, I draw on my travels to shape
+          how I learn and build—motivating me to design technology that has real, positive impact.
         </p>
+        <a
+          class="mt-4 inline-block text-gray-500 hover:text-gray-700 underline font-mono"
+          href={CV}>Read my CV →</a
+        >
+        <br />
+        <a
+          class="inline-block text-gray-500 hover:text-gray-700 underline font-mono"
+          href="#contact"
+          >Get in touch →</a
+        >
       </div>
       <img
         id="personalPhoto"
