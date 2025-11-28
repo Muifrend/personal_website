@@ -16,10 +16,25 @@ const altMap: Record<string, string> = {
   "Youtube_HQ_US.jpg": "YouTube Headquarters Visit, USA"
 };
 const matches = import.meta.glob<{ default: ImageMetadata }>('../assets/gallery/*.{jpeg,jpg,png,gif}', { eager: true });
-const galleryImages = Object.values(matches).map((image) => ({
-  src: image.default.src,
-  alt: altMap[image.default.src.split('/').pop()?.split('?')[0] ?? '' ] || "Gallery Image"
-}));
+
+const galleryImages = Object.values(matches).map((image) => {
+  const url = image.default.src;
+
+  // 1. Loop through your map keys (e.g., "Mumbai_India.jpg")
+  const foundKey = Object.keys(altMap).find((key) => {
+    // 2. Remove the extension to get just the name: "Mumbai_India"
+    const namePart = key.split('.')[0]; 
+    
+    // 3. Check if the URL contains "Mumbai_India"
+    return url.includes(namePart);
+  });
+
+  return {
+    src: url,
+    // 4. Use the key if found, otherwise fallback
+    alt: foundKey ? altMap[foundKey] : "Gallery Image"
+  };
+});
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
