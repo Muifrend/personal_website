@@ -53,9 +53,15 @@ export default function NavigationMenu() {
     <nav className="fixed top-0 left-0 w-full z-50 border-b border-gray-200 bg-white/80 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between sm:justify-start">
         {/* Mobile: Simple Name Logo */}
-        <div className="sm:hidden font-mono text-black text-sm font-bold tracking-tighter">
+        <a className="sm:hidden font-mono text-black text-sm font-bold tracking-tighter" href="/">
           ANDREW_FIREK
-        </div>
+        </a>
+        <a
+          href="/projects"
+          className="sm:hidden font-mono text-sm  text-gray-500 hover:text-black transition-colors"
+        >
+          Projects
+        </a>
 
         {/* Desktop: Navigation Links */}
         <ul className="hidden sm:flex items-center gap-1 mx-auto list-none m-0 p-0">

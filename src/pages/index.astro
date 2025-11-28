@@ -4,11 +4,20 @@ import Layout from "../layouts/Layout.astro";
 import Contact from "../components/Contact.astro";
 import HorizontalGallery from '../components/HorizontalGallery';
 
+const altMap: Record<string, string> = {
+  // exact filename  :  description
+  "Mumbai_India.jpg": "Me and my friends in the streets of Mumbai, India",
+  "New_York_City_US.jpg": "NYSE, USA",
+  "San_Francisco_US.jpg": "Oracle Park San Francisco, USA",
+  "Taipei_Taiwan.jpg": "Cityscape of Taipei, Taiwan",
+  "Great_Wall_Of_China.jpg": "The Great Wall of China", 
+};
 const matches = import.meta.glob<{ default: ImageMetadata }>('../assets/gallery/*.{jpeg,jpg,png,gif}', { eager: true });
 const galleryImages = Object.values(matches).map((image) => ({
   src: image.default.src,
-  alt: "Gallery Image"
+  alt: altMap[image.default.src.split('/').pop()?.split('?')[0] ?? '' ] || "Gallery Image"
 }));
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -17,7 +26,7 @@ const galleryImages = Object.values(matches).map((image) => ({
   <main class="max-w-6xl mx-auto px-6 py-12 w-full">
     <Welcome />
     <section>
-      <h2 class="text-4xl font-bold px-4 pt-8 mb-4">Travels</h2>
+      <h2 class="text-3xl md:text-4xl font-bold px-4 pt-8 mb-4">Travels</h2>
       <HorizontalGallery client:load photos={galleryImages} />
     </section>
     <Contact />
