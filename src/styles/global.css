@@ -13,7 +13,7 @@
 
 /* Project-wide utility classes */
 .site-container {
-  @apply max-w-6xl mx-auto px-6;
+  @apply max-w-6xl mx-auto px-6 w-full;
 }
 
 .site-footer {

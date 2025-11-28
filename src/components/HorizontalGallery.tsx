@@ -52,7 +52,7 @@ const HorizontalGallery: React.FC<Props> = ({ photos }) => {
           // We moved the sizing (h-80), rounding, and shadow here.
           // Added 'group' so children can react to hover.
           // Added 'overflow-hidden' so the zoomed image doesn't spill out.
-          <div
+          <figure
             key={index}
             className="shrink-0 relative select-none group h-80 w-auto rounded-xl shadow-md overflow-hidden"
           >
@@ -71,14 +71,14 @@ const HorizontalGallery: React.FC<Props> = ({ photos }) => {
                 - opacity-0: Hidden by default
                 - group-hover:opacity-100: Shows on hover
             */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <figcaption className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
               {/* The actual text */}
               {/* Added a small translate effect so it slides up slightly */}
               <p className="text-white text-sm font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
                 {photo.alt}
               </p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
         ))}
       </div>
     </div>
