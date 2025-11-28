@@ -23,10 +23,10 @@ const galleryImages = Object.values(matches).map((image) => ({
 ---
 
 <Layout title="Home">
-  <main class="max-w-6xl mx-auto px-6 py-12 w-full">
+  <main class="site-container py-12 w-full">
     <Welcome />
-    <section>
-      <h2 class="text-3xl md:text-4xl font-bold px-4 pt-8 mb-4">Travels</h2>
+    <section class="site-container">
+      <h2 class="text-3xl md:text-4xl font-bold pt-8 mb-4">Travels</h2>
       <HorizontalGallery client:load photos={galleryImages} />
     </section>
     <Contact />

@@ -17,10 +17,10 @@ export let formAction: string = "/api/contact";
 ---
 
 <section id="contact" class="py-12 px-4 text-lg">
-  <div class="max-w-6xl mx-auto">
+  <div class="site-container">
     <div class="grid gap-6 md:grid-cols-2 items-start">
-      <aside aria-labelledby="contact-info-heading">
-        <h2 class="text-3xl md:text-4xl font-bold py-2">Contact</h2>
+      <aside class="pr-6 md:pr-12" aria-labelledby="contact-info-heading">
+        <h2 class="lead-heading">Contact</h2>
         <p class="text-gray-600 mt-1 py-4">
           Have a project, question, or just want to say hi? Send a message and
           I’ll get back shortly.
@@ -87,32 +87,32 @@ export let formAction: string = "/api/contact";
         </div>
 
         <label for="name" class="text-sm font-medium">Name</label>
-        <input
+          <input
           id="name"
           name="name"
           type="text"
           required
           autocomplete="name"
-          class="p-2 border border-gray-200 rounded-md w-full text-base"
+            class="form-control"
         />
 
         <label for="email" class="text-sm font-medium">Email</label>
-        <input
+          <input
           id="email"
           name="email"
           type="email"
           required
           autocomplete="email"
-          class="p-2 border border-gray-200 rounded-md w-full text-base"
+            class="form-control"
         />
 
         <label for="message" class="text-sm font-medium">Message</label>
-        <textarea
+          <textarea
           id="message"
           name="message"
           rows="3"
           required
-          class="p-2 border border-gray-200 rounded-md w-full text-base"></textarea>
+            class="form-control"></textarea>
 
         <div class="flex gap-4 items-center mt-2">
           <button

@@ -10,3 +10,24 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* Project-wide utility classes */
+.site-container {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+.site-footer {
+  @apply mt-12 border-t border-white/5 pt-6 text-sm text-gray-400 px-8 py-4 flex-shrink-0;
+}
+
+.site-nav {
+  @apply fixed top-0 left-0 w-full z-50 border-b border-gray-200 bg-white/80 backdrop-blur-md;
+}
+
+.form-control {
+  @apply p-2 border border-gray-200 rounded-md w-full text-base;
+}
+
+.lead-heading {
+  @apply text-3xl md:text-4xl font-bold py-2;
+}

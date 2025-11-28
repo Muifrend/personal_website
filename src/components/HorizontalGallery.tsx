@@ -46,7 +46,7 @@ const HorizontalGallery: React.FC<Props> = ({ photos }) => {
       className="overflow-hidden cursor-grab active:cursor-grabbing py-8"
       ref={emblaRef}
     >
-      <div className="flex gap-4 px-4 touch-pan-y items-start">
+      <div className="flex gap-4 touch-pan-y items-start">
         {galleryItems.map((photo, index) => (
           // --- 1. THE SLIDE CONTAINER ---
           // We moved the sizing (h-80), rounding, and shadow here.

@@ -50,8 +50,8 @@ export default function NavigationMenu() {
 
   return (
     // Container: White background with subtle blur and border
-    <nav className="fixed top-0 left-0 w-full z-50 border-b border-gray-200 bg-white/80 backdrop-blur-md">
-      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between sm:justify-start">
+    <nav className="site-nav bg-white/80">
+      <div className="site-container h-14 flex items-center justify-between sm:justify-start">
         {/* Mobile: Simple Name Logo */}
         <a className="sm:hidden font-mono text-black text-sm font-bold tracking-tighter" href="/">
           ANDREW_FIREK
@@ -64,7 +64,7 @@ export default function NavigationMenu() {
         </a>
 
         {/* Desktop: Navigation Links */}
-        <ul className="hidden sm:flex items-center gap-1 mx-auto list-none m-0 p-0">
+         <ul className="hidden sm:flex items-center gap-1 mx-auto list-none m-0 p-0">
           <li>
             <a href="/" className={getLinkClass("/")}>
               <span className={getKeyClass("/")}>H</span>

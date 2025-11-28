@@ -105,7 +105,7 @@ const ProjectBrowser: React.FC<Props> = ({ projects, allTags }) => {
                 href={`/projects/${project.slug}`}
                 className="group flex items-center justify-between py-4 border-b border-gray-300 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
               >
-                <div className="w-32 md:w-48 flex-shrink-0 flex items-center gap-3 text-sm text-gray-800">
+                <div className="w-32 md:w-48 flex-shrink-0 flex items-center gap-3 text-sm text-gray-800 px-3">
                   <span className="text-[10px] opacity-70">▪</span>
                   {project.date.slice(0, 10).replace(/-/g, ".")}
                 </div>
@@ -114,9 +114,7 @@ const ProjectBrowser: React.FC<Props> = ({ projects, allTags }) => {
                   {project.title}
                 </div>
 
-                <div className="text-xl font-light text-gray-400 group-hover:text-black pl-4">
-                  +
-                </div>
+                
               </a>
             ))
           ) : (
