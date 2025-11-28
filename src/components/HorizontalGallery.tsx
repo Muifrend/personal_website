@@ -41,45 +41,70 @@ const HorizontalGallery: React.FC<Props> = ({ photos }) => {
     setGalleryItems((prev) => shuffleArray(prev));
   }, []);
 
+  const [focusedIndex, setFocusedIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    // If clicking the one already open, close it (set to null)
+    // Otherwise, set it to the new index
+    const canHover = window.matchMedia("(hover: hover)").matches;
+
+    // 2. If the device can hover (Desktop), ignore the click.
+    //    We want the CSS group-hover to do the work, not the click.
+    if (canHover) return;
+    setFocusedIndex((prev) => (prev === index ? null : index));
+  };
+
   return (
     <div
       className="overflow-hidden cursor-grab active:cursor-grabbing py-8"
       ref={emblaRef}
     >
       <div className="flex gap-4 touch-pan-y items-start">
-        {galleryItems.map((photo, index) => (
-          // --- 1. THE SLIDE CONTAINER ---
-          // We moved the sizing (h-80), rounding, and shadow here.
-          // Added 'group' so children can react to hover.
-          // Added 'overflow-hidden' so the zoomed image doesn't spill out.
-          <figure
-            key={index}
-            className="shrink-0 relative select-none group object-scale-down sm:h-80 h-120 w-auto rounded-xl shadow-md overflow-hidden"
-          >
-            {/* --- 2. THE IMAGE --- */}
-            <img
-              src={photo.src}
-              alt={photo.alt}
-              // changed h-80/w-auto to h-full/w-full to fill the parent container
-              // added transition and group-hover:scale
-              className="h-full max-w-full object-cover pointer-events-none block transition-transform duration-500 group-hover:scale-105"
-            />
+        {galleryItems.map((photo, index) => {
+          // 2. Helper boolean to check if THIS specific slide is active
+          const isActive = focusedIndex === index;
 
-            {/* --- 3. THE TEXT OVERLAY Container --- */}
-            {/* - absolute inset-0: Covers the whole image area
-                - bg-gradient...: Adds a dark fade at the bottom so white text is readable
-                - opacity-0: Hidden by default
-                - group-hover:opacity-100: Shows on hover
-            */}
-            <figcaption className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-              {/* The actual text */}
-              {/* Added a small translate effect so it slides up slightly */}
-              <p className="text-white text-sm font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                {photo.alt}
-              </p>
-            </figcaption>
-          </figure>
-        ))}
+          return (
+            <figure
+              key={index}
+              // 3. Add onClick handler to toggle state
+              onClick={() => handleToggle(index)}
+              className="shrink-0 relative select-none group object-scale-down sm:h-80 h-120 w-auto rounded-xl shadow-md overflow-hidden"
+            >
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                // 4. Update Classes:
+                // We use template literals `...` to conditionally add the 'scale-105' class
+                // if 'isActive' is true. 'group-hover' handles the desktop mouse interaction.
+                className={`h-full max-w-full object-cover pointer-events-none block transition-transform duration-500 
+                group-hover:scale-105 ${isActive ? "scale-105" : ""}`}
+              />
+
+              <figcaption
+                // 5. Update Overlay:
+                // Show opacity-100 if hovered OR if isActive. Otherwise opacity-0.
+                className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-300 flex items-end p-4 
+                ${
+                  isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                }`}
+              >
+                <p
+                  // 6. Update Text Slide:
+                  // Slide to Y-0 if hovered OR isActive. Otherwise Y-4.
+                  className={`text-white text-sm font-medium transition-transform duration-300 delay-75 
+                  ${
+                    isActive
+                      ? "translate-y-0"
+                      : "translate-y-4 group-hover:translate-y-0"
+                  }`}
+                >
+                  {photo.alt}
+                </p>
+              </figcaption>
+            </figure>
+          );
+        })}
       </div>
     </div>
   );
