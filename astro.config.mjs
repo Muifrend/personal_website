@@ -11,6 +11,7 @@ import icon from 'astro-icon';
 export default defineConfig({
   integrations: [react(), icon()],
   site: 'https://andrzejfirek.me',
+  base: '/personal_website',
   vite: {
     plugins: [tailwindcss()]
   }
