@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 
-export default function NavigationMenu() {
+const NavigationMenu: React.FC = () => {
   // 1. Hotkey Logic
   useHotkeys("h", () => (window.location.href = "/"), { preventDefault: true });
   useHotkeys("p", () => (window.location.href = "/projects"), {
@@ -18,35 +18,6 @@ export default function NavigationMenu() {
     // Sets the path when the component mounts (client-side only)
     setCurrentPath(window.location.pathname);
   }, []);
-
-  // Helper: Styles for the Link Container
-  const getLinkClass = (path: string) => {
-    const base =
-      "flex items-center gap-2 px-3 py-1.5 rounded-md transition-all duration-200 text-m font-medium group";
-
-    // Active: Light grey background, dark text
-    const active = "bg-gray-100 text-black";
-
-    // Inactive: Grey text, subtle hover effect
-    const inactive = "text-gray-500 hover:text-black hover:bg-gray-50";
-
-    return currentPath === path ? `${base} ${active}` : `${base} ${inactive}`;
-  };
-
-  // Helper: Styles for the "Keycap" (The [H] box)
-  const getKeyClass = (path: string) => {
-    const base =
-      "font-mono text-[12px] min-w-[20px] h-5 flex items-center justify-center rounded border shadow-[0_1px_0_rgba(0,0,0,0.05)] transition-colors";
-
-    // Active Key: White key on grey background, darker border
-    const active = "bg-white border-gray-300 text-black";
-
-    // Inactive Key: Light grey key, subtle border
-    const inactive =
-      "bg-gray-50 border-gray-200 text-gray-400 group-hover:border-gray-300 group-hover:text-gray-600";
-
-    return currentPath === path ? `${base} ${active}` : `${base} ${inactive}`;
-  };
 
   return (
     // Container: White background with subtle blur and border
@@ -65,28 +36,40 @@ export default function NavigationMenu() {
 
         {/* Desktop: Navigation Links */}
          <ul className="hidden sm:flex items-center gap-1 mx-auto list-none m-0 p-0">
-          <li>
-            <a href="/" className={getLinkClass("/")}>
-              <span className={getKeyClass("/")}>H</span>
-              <span>Home</span>
-            </a>
-          </li>
+  <li>
+    <a 
+      href="/" 
+      // If path matches, add "active". The CSS handles the rest.
+      className={`group nav-link ${currentPath === "/" ? "active" : ""}`}
+    >
+      <span className="nav-key">H</span>
+      <span>Home</span>
+    </a>
+  </li>
 
-          <li>
-            <a href="/projects" className={getLinkClass("/projects")}>
-              <span className={getKeyClass("/projects")}>P</span>
-              <span>Projects</span>
-            </a>
-          </li>
+  <li>
+    <a 
+      href="/projects" 
+      className={`group nav-link ${currentPath === "/projects" ? "active" : ""}`}
+    >
+      <span className="nav-key">P</span>
+      <span>Projects</span>
+    </a>
+  </li>
 
-          <li>
-            <a href="/feeling-lucky" className={getLinkClass("/feeling-lucky")}>
-              <span className={getKeyClass("/feeling-lucky")}>F</span>
-              <span>I'm Feeling Lucky</span>
-            </a>
-          </li>
-        </ul>
+  <li>
+    <a 
+      href="/feeling-lucky" 
+      className={`group nav-link ${currentPath === "/feeling-lucky" ? "active" : ""}`}
+    >
+      <span className="nav-key">F</span>
+      <span>I'm Feeling Lucky</span>
+    </a>
+  </li>
+</ul>
       </div>
     </nav>
   );
 }
+
+export default NavigationMenu;

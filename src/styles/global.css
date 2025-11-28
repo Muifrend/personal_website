@@ -7,8 +7,8 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .overflow-x-auto {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* Project-wide utility classes */
@@ -30,4 +30,34 @@
 
 .lead-heading {
   @apply text-3xl md:text-4xl font-bold py-2;
+}
+
+/* src/styles/global.css */
+
+.nav-link {
+  @apply flex items-center gap-2 px-3 py-1.5 rounded-md transition-all duration-200 font-medium text-[16px];
+  @apply text-gray-500 hover:text-black hover:bg-gray-50;
+}
+
+.nav-link.active {
+  @apply bg-gray-100 text-black;
+}
+
+.nav-key {
+  /* Layout & Box Model */
+  @apply font-mono text-[14px] min-w-[20px] h-5 flex items-center justify-center rounded border transition-colors;
+
+  /* Colors (Inactive) */
+  @apply bg-gray-50 border-gray-200 text-gray-400;
+
+  /* Hover interactions via parent */
+  @apply group-hover:border-gray-300 group-hover:text-gray-600;
+
+  /* ⚠️ Standard CSS for the shadow (safer than @apply) */
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Nested active state */
+.nav-link.active .nav-key {
+  @apply bg-white border-gray-300 text-black;
 }
