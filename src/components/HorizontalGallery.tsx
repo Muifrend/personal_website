@@ -54,7 +54,7 @@ const HorizontalGallery: React.FC<Props> = ({ photos }) => {
           // Added 'overflow-hidden' so the zoomed image doesn't spill out.
           <figure
             key={index}
-            className="shrink-0 relative select-none group object-contain h-80  w-auto rounded-xl shadow-md overflow-hidden"
+            className="shrink-0 relative select-none group object-contain sm:h-80 h-120 w-auto rounded-xl shadow-md overflow-hidden"
           >
             {/* --- 2. THE IMAGE --- */}
             <img
