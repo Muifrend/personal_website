@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 // 1. Generate a path for every project
 export async function getStaticPaths() {
   const projects = await getCollection("projectsCollection");
@@ -17,27 +17,27 @@ const { Content } = await render(entry);
 
 <Layout title={entry.data.title}>
   <main class="max-w-3xl py-12 mx-auto pt-20 px-6 w-full">
-  
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 leading-tight">
-    {entry.data.title}
-  </h1>
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 leading-tight">
+      {entry.data.title}
+    </h1>
 
-  <p class="text-gray-500 text-sm mb-8 font-mono">
-    {entry.data.date.toDateString()}
-  </p>
+    <p class="text-gray-500 text-sm mb-8 font-mono">
+      {entry.data.date.toDateString()}
+    </p>
 
-  <hr class="border-gray-200 mb-8" />
-  {entry.data.cover && (
-      <Image 
-        src={entry.data.cover} 
-        alt={entry.data.title}
-        class="w-full h-auto rounded-xl shadow-lg mb-8 border border-gray-500"
-        loading="eager" 
-      />
-    )}
-  <article class="prose prose-gray prose-lg max-w-none">
-    <Content />
-  </article>
-
-</main>
+    <hr class="border-gray-200 mb-8" />
+    {
+      entry.data.cover && (
+        <Image
+          src={entry.data.cover}
+          alt={entry.data.title}
+          class="w-full h-auto rounded-xl shadow-lg mb-8 border border-gray-500"
+          loading="eager"
+        />
+      )
+    }
+    <article class="prose prose-gray prose-lg max-w-none">
+      <Content />
+    </article>
+  </main>
 </Layout>

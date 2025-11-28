@@ -6,11 +6,14 @@ import HorizontalGallery from '../components/HorizontalGallery';
 
 const altMap: Record<string, string> = {
   // exact filename  :  description
-  "Mumbai_India.jpg": "Me and my friends in the streets of Mumbai, India",
+  "Mumbai_India.jpg": "On the streets of Mumbai, India",
   "New_York_City_US.jpg": "NYSE, USA",
   "San_Francisco_US.jpg": "Oracle Park San Francisco, USA",
   "Taipei_Taiwan.jpg": "Cityscape of Taipei, Taiwan",
   "Great_Wall_Of_China.jpg": "The Great Wall of China", 
+  "Tel_Aviv_Israel.jpg": "On the streets of Tel Aviv, Israel",
+  "Cruise_Mazury_Poland.jpg": "Cruising the Mazury Lakes in Poland",
+  "Youtube_HQ_US.jpg": "YouTube Headquarters Visit, USA"
 };
 const matches = import.meta.glob<{ default: ImageMetadata }>('../assets/gallery/*.{jpeg,jpg,png,gif}', { eager: true });
 const galleryImages = Object.values(matches).map((image) => ({
