@@ -62,7 +62,7 @@ const HorizontalGallery: React.FC<Props> = ({ photos }) => {
               alt={photo.alt}
               // changed h-80/w-auto to h-full/w-full to fill the parent container
               // added transition and group-hover:scale
-              className="h-full w-full object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
+              className="h-full w-full object-cover pointer-events-none block transition-transform duration-500 group-hover:scale-105"
             />
 
             {/* --- 3. THE TEXT OVERLAY Container --- */}
