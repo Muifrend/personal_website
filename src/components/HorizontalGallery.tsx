@@ -43,6 +43,16 @@ const HorizontalGallery: React.FC<Props> = ({ photos }) => {
 
   const [focusedIndex, setFocusedIndex] = useState<number | null>(null);
 
+  useEffect(() => {
+  // Check if the device is "touch-primary" (cannot hover)
+  const isTouchDevice = window.matchMedia('(hover: none)').matches;
+  
+  // If it's a phone/tablet, make the first element (index 0) active by default
+  if (isTouchDevice) {
+    setFocusedIndex(0);
+  }
+}, []);
+
   const handleToggle = (index: number) => {
     // If clicking the one already open, close it (set to null)
     // Otherwise, set it to the new index
