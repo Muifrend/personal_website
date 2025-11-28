@@ -2,7 +2,13 @@
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import Contact from "../components/Contact.astro";
+import HorizontalGallery from '../components/HorizontalGallery';
 
+const matches = import.meta.glob<{ default: ImageMetadata }>('../assets/gallery/*.{jpeg,jpg,png,gif}', { eager: true });
+const galleryImages = Object.values(matches).map((image) => ({
+  src: image.default.src,
+  alt: "Gallery Image"
+}));
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -10,6 +16,10 @@ import Contact from "../components/Contact.astro";
 <Layout title="Home">
   <main class="max-w-6xl mx-auto px-6 py-12 w-full">
     <Welcome />
-    <Contact >
+    <section>
+      <h2 class="text-4xl font-bold px-4 pt-8 mb-4">Travels</h2>
+      <HorizontalGallery client:load photos={galleryImages} />
+    </section>
+    <Contact />
   </main>
 </Layout>
