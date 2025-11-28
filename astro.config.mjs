@@ -10,8 +10,7 @@ import icon from 'astro-icon';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), icon()],
-  site: 'https://andrzejfirek.me',
-  base: '/',
+  site: 'http://andrzejfirek.me',
   vite: {
     plugins: [tailwindcss()]
   }
