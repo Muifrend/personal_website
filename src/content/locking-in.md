@@ -7,9 +7,11 @@ tags:
   - Bun
   - Cloudflare
 cover: "../assets/projects/locking-in-screenshot.jpg"
+repo: "https://github.com/scidroid/lockingin"
+link_url: "https://devpost.com/software/locking-in"
+link_text: "Devpost"
 ---
 
 ### Project Details
 
-Here is the <a href="https://devpost.com/software/locking-in" target="\_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Devpost</a> entry.
 I worked on creating a serverless backend using TypeScript, Bun, SQLite, and Cloudflare Workers over the 2 days that me and my partner stayed at CalHacks.

@@ -6,12 +6,11 @@ tags:
   - Python
   - scikit-learn
   - Machine Learning
-pdf: "/documents/Firek_Andrzej_EE.pdf"
+link_file: "/documents/Firek_Andrzej_EE.pdf"
+link_text: "PDF"
 ---
 
-### Project Details
-
-Here is the <a href="/documents/Firek_Andrzej_EE.pdf" target="_blank" class="text-blue-600 underline">PDF</a>.
+### Paper Details
 
 This research paper explores the application of **Logistic Regression** to financial markets, specifically aiming to classify daily stock volatility based on historical price data. 
 

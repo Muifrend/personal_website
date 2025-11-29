@@ -13,24 +13,61 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+
+const { title, repo, link_url, link_file, link_text, date, cover } = entry.data;
 ---
 
-<Layout title={entry.data.title}>
+<Layout title={title}>
   <main class="max-w-3xl py-12 mx-auto pt-20 px-6 w-full">
     <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 leading-tight">
-      {entry.data.title}
+      {title}
     </h1>
+    {
+      (repo || link_url || link_file) && (
+        <div class=" border-gray-200 pb-6">
+          <div class="flex items-center gap-4 text-m font-medium">
+            {/* Render Repo Link if it exists */}
+            {repo && (
+              <a
+                href={repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1"
+              >
+                Github Repo
+              </a>
+            )}
 
+            {/* Add a separator if BOTH exist */}
+            {repo && (link_url || link_file) && (
+              <span class="text-gray-300">|</span>
+            )}
+
+            {/* Render Website Link if it exists */}
+            {(link_url || link_file) && (
+              <a
+                href={link_url || link_file}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1"
+              >
+                {link_text || "Link"}
+              </a>
+            )}
+          </div>
+        </div>
+      )
+    }
     <p class="text-gray-500 text-sm mb-8 font-mono">
-      {entry.data.date.toDateString()}
+      {date.toDateString()}
     </p>
 
     <hr class="border-gray-200 mb-8" />
     {
-      entry.data.cover && (
+      cover && (
         <Image
-          src={entry.data.cover}
-          alt={entry.data.title}
+          src={cover}
+          alt={title}
           class="w-full h-auto rounded-xl shadow-lg mb-8 border border-gray-500"
           loading="eager"
         />

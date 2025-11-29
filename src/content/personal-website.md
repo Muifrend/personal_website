@@ -6,6 +6,7 @@ tags:
 - Typescript
 - Astro
 - React
+repo: "https://github.com/Muifrend/Portfolio-website"
 ---
 
 ### Project Details

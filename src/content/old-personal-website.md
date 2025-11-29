@@ -6,8 +6,11 @@ tags:
 - JavaScript
 - Stackoverflow
 cover: "../assets/projects/old-portfolio-website.png"
+repo: "https://github.com/Muifrend/Portfolio-website"
+link_url: "https://muifrend.github.io/Portfolio-website/"
+link_text: "Live Website"
 ---
 
 ### Project Details
 
-This <a href="https://muifrend.github.io/Portfolio-website/" target="\_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Website</a>  was created in the days without ChatGPT, when all you were doing was being a Google Search master and Stackoverflow warrior. I miss those days :(
+This site was created in the days without ChatGPT, back when development meant being a Google Search master and a StackOverflow warrior. I miss those days :(

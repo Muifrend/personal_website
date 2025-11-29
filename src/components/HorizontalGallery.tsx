@@ -37,87 +37,64 @@ const HorizontalGallery: React.FC<Props> = ({ photos }) => {
     containScroll: "trimSnaps",
   });
 
+  
   useEffect(() => {
     setGalleryItems((prev) => shuffleArray(prev));
   }, []);
 
-  const [focusedIndex, setFocusedIndex] = useState<number | null>(null);
+  const [isTouch, setIsTouch] = useState(false);
 
-  useEffect(() => {
-  // Check if the device is "touch-primary" (cannot hover)
-  const isTouchDevice = window.matchMedia('(hover: none)').matches;
-  
-  // If it's a phone/tablet, make the first element (index 0) active by default
-  if (isTouchDevice) {
-    setFocusedIndex(0);
-  }
+useEffect(() => {
+  // Check if the device lacks hover capability (phones/tablets)
+  setIsTouch(window.matchMedia('(hover: none)').matches);
 }, []);
 
-  const handleToggle = (index: number) => {
-    // If clicking the one already open, close it (set to null)
-    // Otherwise, set it to the new index
-    const canHover = window.matchMedia("(hover: hover)").matches;
-
-    // 2. If the device can hover (Desktop), ignore the click.
-    //    We want the CSS group-hover to do the work, not the click.
-    if (canHover) return;
-    setFocusedIndex((prev) => (prev === index ? null : index));
-  };
-
   return (
-    <div
-      className="overflow-hidden cursor-grab active:cursor-grabbing py-8"
-      ref={emblaRef}
-    >
-      <div className="flex gap-4 touch-pan-y items-start">
-        {galleryItems.map((photo, index) => {
-          // 2. Helper boolean to check if THIS specific slide is active
-          const isActive = focusedIndex === index;
+  <div
+    className="overflow-hidden cursor-grab active:cursor-grabbing py-8"
+    ref={emblaRef}
+  >
+    <div className="flex gap-4 touch-pan-y items-start">
+      {galleryItems.map((photo, index) => (
+        <figure
+          key={index}
+          className="shrink-0 relative select-none group object-scale-down sm:h-80 h-120 w-auto rounded-xl shadow-md overflow-hidden"
+        >
+          <img
+            src={photo.src}
+            alt={photo.alt}
+            className="h-full max-w-full object-cover pointer-events-none block transition-transform duration-500 group-hover:scale-105"
+          />
 
-          return (
-            <figure
-              key={index}
-              // 3. Add onClick handler to toggle state
-              onClick={() => handleToggle(index)}
-              className="shrink-0 relative select-none group object-scale-down sm:h-80 h-120 w-auto rounded-xl shadow-md overflow-hidden"
-            >
-              <img
-                src={photo.src}
-                alt={photo.alt}
-                // 4. Update Classes:
-                // We use template literals `...` to conditionally add the 'scale-105' class
-                // if 'isActive' is true. 'group-hover' handles the desktop mouse interaction.
-                className={`h-full max-w-full object-cover pointer-events-none block transition-transform duration-500 
-                group-hover:scale-105 ${isActive ? "scale-105" : ""}`}
-              />
-
-              <figcaption
-                // 5. Update Overlay:
-                // Show opacity-100 if hovered OR if isActive. Otherwise opacity-0.
-                className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-300 flex items-end p-4 
-                ${
-                  isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+          <figcaption
+            // --- LOGIC CHANGE 1: CONTAINER ALIGNMENT & VISIBILITY ---
+            // We use a template literal to switch classes based on 'isTouch'.
+            // Mobile: opacity-100 (always visible), justify-center (center content horizontally)
+            // Desktop: opacity-0 (hidden until hover), justify-start (left align)
+            className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4 transition-opacity duration-300
+              ${isTouch 
+                ? "opacity-100 justify-center" 
+                : "opacity-0 justify-start group-hover:opacity-100"
+              }`}
+          >
+            <p
+              // --- LOGIC CHANGE 2: TEXT ALIGNMENT & ANIMATION ---
+              // Mobile: text-center, translate-y-0 (no slide animation needed, it's static)
+              // Desktop: text-left, translate-y-4 (slide up on hover)
+              className={`text-white text-sm font-medium transition-transform duration-300 delay-75
+                ${isTouch 
+                  ? "text-center translate-y-0" 
+                  : "text-left translate-y-4 group-hover:translate-y-0"
                 }`}
-              >
-                <p
-                  // 6. Update Text Slide:
-                  // Slide to Y-0 if hovered OR isActive. Otherwise Y-4.
-                  className={`text-white text-sm font-medium transition-transform duration-300 delay-75 
-                  ${
-                    isActive
-                      ? "translate-y-0"
-                      : "translate-y-4 group-hover:translate-y-0"
-                  }`}
-                >
-                  {photo.alt}
-                </p>
-              </figcaption>
-            </figure>
-          );
-        })}
-      </div>
+            >
+              {photo.alt}
+            </p>
+          </figcaption>
+        </figure>
+      ))}
     </div>
-  );
+  </div>
+);
 };
 
 export default HorizontalGallery;

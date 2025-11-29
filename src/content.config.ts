@@ -11,7 +11,10 @@ const projectsCollection = defineCollection({
       description: z.string().optional(),
       tags: z.array(z.string()).optional(),
       cover: image().optional(),
-      pdf: z.string().optional(),
+      repo: z.string().url().optional(),   // .optional() means it won't crash if missing
+      link_url: z.string().url().optional(),
+      link_file: z.string().optional(),
+      link_text: z.string().optional(),
     }),
 });
 
