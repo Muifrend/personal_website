@@ -3,7 +3,7 @@ title: "This Website"
 date: 2025-11-27
 description: ""
 tags:
-- Typescript
+- TypeScript
 - Astro
 - React
 repo: "https://github.com/Muifrend/personal_website"

@@ -1,32 +1,48 @@
 ---
-// 1. Get the current path directly from Astro (Server-side)
 const pathname = Astro.url.pathname;
-
-// 2. Helper to remove trailing slashes for comparison
 const normalizePath = (path: string) => path.replace(/\/$/, "") || "/";
 const currentPath = normalizePath(pathname);
 
 const links = [
-  { href: "/", label: "Home", key: "H" },
-  { href: "/projects", label: "Projects", key: "P" },
-  { href: "/feeling-lucky", label: "I'm Feeling Lucky", key: "F" },
+  // MOBILE LINKS
+  { 
+    href: "/", 
+    label: "ANDREW_FIREK", 
+    mobileOnly: true,
+    class: "sm:hidden font-mono text-black text-sm font-bold tracking-tighter" 
+  },
+  { 
+    href: "/projects", 
+    label: "Projects", 
+    mobileOnly: true,
+    class: "sm:hidden font-mono text-sm" 
+  },
+  
+  // DESKTOP LINKS
+  { href: "/", label: "Home", key: "H", desktopOnly: true },
+  { href: "/projects", label: "Projects", key: "P", desktopOnly: true },
+  { href: "/feeling-lucky", label: "I'm Feeling Lucky", key: "F", desktopOnly: true },
 ];
 ---
 
 <nav class="site-nav bg-white/80">
   <div class="site-container h-14 flex items-center">
-    <ul class="flex items-center gap-1 mx-auto list-none">
+    <ul class="flex items-center justify-between sm:justify-center w-full sm:w-auto sm:mx-auto gap-1 list-none px-4 sm:px-0">
       {
         links.map((link) => (
-          <li>
+          <li class:list={[
+            { "hidden sm:block": link.desktopOnly },
+            { "block sm:hidden": link.mobileOnly }
+          ]}>
             <a
               href={link.href}
               class:list={[
-                "group nav-link",
+                link.mobileOnly ? link.class : "group nav-link",
                 { active: currentPath === normalizePath(link.href) },
               ]}
             >
-              <span class="nav-key">{link.key}</span>
+              {/* Symbols hidden on mobile via 'hidden sm:inline-block' */}
+              {link.key && <span class="nav-key hidden sm:inline-block">{link.key}</span>}
               <span>{link.label}</span>
             </a>
           </li>
@@ -37,7 +53,6 @@ const links = [
 </nav>
 
 <script>
-  // This script is tiny and runs instantly without React
   const routes: Record<string, string> = {
     h: "/",
     p: "/projects",
@@ -45,12 +60,7 @@ const links = [
   };
 
   window.addEventListener("keydown", (e) => {
-    // Don't trigger if user is typing in an input
-    if (
-      e.target instanceof HTMLInputElement ||
-      e.target instanceof HTMLTextAreaElement
-    )
-      return;
+    if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
 
     const target = routes[e.key.toLowerCase()];
     if (target) {

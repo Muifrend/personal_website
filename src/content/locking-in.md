@@ -3,7 +3,7 @@ title: "Locking-In: Focus App"
 date: 2025-09-26
 description: "Mac OS app that makes you focus"
 tags:
-  - Typescript
+  - TypeScript
   - Bun
   - Cloudflare
 cover: "../assets/projects/locking-in-screenshot.jpg"
