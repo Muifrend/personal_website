@@ -5,7 +5,6 @@ description: "A productivity tool automating the workflow between Minerva's Foru
 tags:
   - React
   - TypeScript
-  - Tailwind CSS
   - Chrome Extension
 repo: "https://github.com/Muifrend/MUML"
 link_url: "https://chromewebstore.google.com/detail/kchcndllnnpddfldhdbphkhkdbcdeakl?utm_source=item-share-cb"
