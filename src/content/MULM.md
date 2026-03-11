@@ -6,6 +6,7 @@ tags:
   - React
   - TypeScript
   - Chrome Extension
+cover: "../assets/projects/MULM.png"
 repo: "https://github.com/Muifrend/MUML"
 link_url: "https://chromewebstore.google.com/detail/kchcndllnnpddfldhdbphkhkdbcdeakl?utm_source=item-share-cb"
 link_text: "Chrome Web Store"

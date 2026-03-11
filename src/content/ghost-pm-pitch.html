@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghost PM — Scale Pitch</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ghost: #0a0a0f;
+    --pale: #f0ede8;
+    --mist: #b8b4c8;
+    --accent: #7c5cfc;
+    --accent2: #c084fc;
+    --red: #ff3b6b;
+    --glow: rgba(124,92,252,0.35);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--ghost);
+    color: var(--pale);
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Grain overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Ambient glow blobs */
+  .blob {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(120px);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .blob-1 {
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(124,92,252,0.2) 0%, transparent 70%);
+    top: -200px; right: -100px;
+    animation: drift1 12s ease-in-out infinite alternate;
+  }
+  .blob-2 {
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(192,132,252,0.15) 0%, transparent 70%);
+    bottom: -100px; left: -100px;
+    animation: drift2 15s ease-in-out infinite alternate;
+  }
+
+  @keyframes drift1 { from { transform: translate(0,0); } to { transform: translate(-60px, 80px); } }
+  @keyframes drift2 { from { transform: translate(0,0); } to { transform: translate(80px, -60px); } }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 32px 80px;
+  }
+
+  /* Top eyebrow */
+  .eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: fadeUp 0.6s ease both;
+  }
+  .eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 32px; height: 1px;
+    background: var(--accent);
+  }
+
+  /* Ghost icon */
+  .ghost-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    display: block;
+    animation: ghostFloat 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px var(--accent));
+  }
+  @keyframes ghostFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Headline */
+  h1 {
+    font-size: clamp(2.8rem, 7vw, 5.2rem);
+    font-weight: 800;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+  h1 .ghost { color: var(--pale); }
+  h1 .pm {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--accent2);
+    font-style: italic;
+  }
+
+  .tagline {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--mist);
+    margin-bottom: 48px;
+    letter-spacing: 0.05em;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+
+  /* Divider */
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    margin: 32px 0;
+    opacity: 0.4;
+  }
+
+  /* Main pitch text */
+  .pitch-block {
+    animation: fadeUp 0.7s 0.3s ease both;
+  }
+
+  .pitch-lead {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--pale);
+    margin-bottom: 20px;
+  }
+  .pitch-lead span {
+    color: var(--accent2);
+  }
+
+  .pitch-body {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.82rem;
+    line-height: 1.9;
+    color: var(--mist);
+  }
+  .pitch-body strong {
+    color: var(--pale);
+    font-weight: 700;
+  }
+
+  /* Stat grid */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 40px 0;
+    animation: fadeUp 0.7s 0.4s ease both;
+  }
+  .stat {
+    padding: 24px 20px;
+    background: rgba(10,10,15,0.8);
+    position: relative;
+    overflow: hidden;
+  }
+  .stat::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .stat:hover::before { opacity: 1; }
+  .stat-num {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--pale);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-num sup {
+    font-size: 1rem;
+    color: var(--accent2);
+  }
+  .stat-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--mist);
+    text-transform: uppercase;
+  }
+
+  /* Pillars */
+  .pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 32px 0;
+    animation: fadeUp 0.7s 0.5s ease both;
+  }
+  .pillar {
+    border: 1px solid rgba(124,92,252,0.2);
+    border-radius: 12px;
+    padding: 20px;
+    background: rgba(124,92,252,0.04);
+    transition: border-color 0.3s, background 0.3s;
+    cursor: default;
+  }
+  .pillar:hover {
+    border-color: rgba(124,92,252,0.5);
+    background: rgba(124,92,252,0.08);
+  }
+  .pillar-icon {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .pillar-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--pale);
+    margin-bottom: 6px;
+  }
+  .pillar-desc {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--mist);
+    line-height: 1.7;
+  }
+
+  /* The ask */
+  .ask {
+    background: linear-gradient(135deg, rgba(124,92,252,0.1), rgba(192,132,252,0.08));
+    border: 1px solid rgba(124,92,252,0.3);
+    border-radius: 16px;
+    padding: 32px;
+    margin-top: 40px;
+    animation: fadeUp 0.7s 0.6s ease both;
+  }
+  .ask-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .ask-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--pale);
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .ask-sub {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--mist);
+    line-height: 1.8;
+  }
+  .ask-sub strong { color: var(--accent2); }
+
+  /* Bottom bar */
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    animation: fadeUp 0.7s 0.7s ease both;
+  }
+  .bottom-brand {
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: var(--pale);
+  }
+  .bottom-brand span {
+    color: var(--accent2);
+    font-style: italic;
+  }
+  .badge {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 100px;
+    padding: 4px 12px;
+    text-transform: uppercase;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 560px) {
+    .stats { grid-template-columns: 1fr; }
+    .pillars { grid-template-columns: 1fr; }
+    .bottom { flex-direction: column; gap: 16px; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="wrapper">
+    <div class="eyebrow">Scale Submission · Ghost PM</div>
+
+    <span class="ghost-icon">👻</span>
+
+    <h1>
+      <span class="ghost">Ghost</span><br>
+      <span class="pm">PM</span>
+    </h1>
+    <p class="tagline">// OpenClaw-based · Autonomous · 24 / 7 · Platform-agnostic</p>
+
+    <div class="divider"></div>
+
+    <div class="pitch-block">
+      <p class="pitch-lead">
+        Project management is <span>broken</span> — not because PMs lack skill, but because they spend 60% of their time on admin that a machine could own.
+      </p>
+      <p class="pitch-body">
+        <strong>Ghost PM</strong> is the world's first AI project manager built on OpenClaw that operates silently and continuously across every communication channel your team already uses — Slack, Discord, WhatsApp, email, and beyond. It listens, understands, and <strong>autonomously logs tasks, deadlines, blockers, and decisions directly into Notion</strong> — with zero human intervention. No copy-pasting. No follow-up pings. No dropped balls.<br><br>
+        The result: your human PMs get back their cognitive bandwidth to do what they were hired to do — lead, unblock, and drive strategy. Ghost PM handles the noise so your people can own the signal.
+      </p>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">24<sup>/7</sup></div>
+        <div class="stat-label">Zero downtime ops</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Platform coverage</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">0<sup>px</sup></div>
+        <div class="stat-label">Admin overhead</div>
+      </div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <span class="pillar-icon">🔌</span>
+        <div class="pillar-title">Works Where You Work</div>
+        <div class="pillar-desc">Slack, Discord, email, WhatsApp — Ghost PM plugs into any platform, no migration required.</div>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">🧠</span>
+        <div class="pillar-title">OpenClaw Intelligence</div>
+        <div class="pillar-desc">Context-aware reasoning that understands ambiguous language and async conversations.</div>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">📋</span>
+        <div class="pillar-title">Notion-Native</div>
+        <div class="pillar-desc">Tasks, owners, deadlines, and status updates written to Notion in real time — structured your way.</div>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">👤</span>
+        <div class="pillar-title">Invisible by Design</div>
+        <div class="pillar-desc">Your team talks normally. Ghost PM listens, interprets, and acts — completely in the background.</div>
+      </div>
+    </div>
+
+    <div class="ask">
+      <div class="ask-label">Why Scale Now</div>
+      <div class="ask-text">The market is ready. Remote-first teams are drowning in missed tasks and fragmented tools. Ghost PM is the missing layer.</div>
+      <div class="ask-sub">
+        Scaling Ghost PM means expanding <strong>platform integrations</strong>, deepening <strong>Notion intelligence</strong> (smart prioritization, sprint planning, retrospective summaries), and onboarding the first cohort of enterprise teams who need autonomous PM coverage across time zones. With the right runway, Ghost PM doesn't just assist project managers — <strong>it makes world-class project management accessible to every team, regardless of size or budget.</strong>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="bottom-brand">Ghost <span>PM</span></div>
+      <div class="badge">Built on OpenClaw</div>
+    </div>
+  </div>
+</body>
+</html>
