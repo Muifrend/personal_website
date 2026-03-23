@@ -2,7 +2,7 @@
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import Contact from "../components/Contact.astro";
-import HorizontalGallery from '../components/HorizontalGallery';
+import HorizontalGallery from "../components/HorizontalGallery";
 
 const altMap: Record<string, string> = {
   // exact filename  :  description
@@ -10,12 +10,15 @@ const altMap: Record<string, string> = {
   "New_York_City_US.jpg": "NYSE, USA",
   "San_Francisco_US.jpg": "Oracle Park San Francisco, USA",
   "Taipei_Taiwan.jpg": "Cityscape of Taipei, Taiwan",
-  "Great_Wall_Of_China.jpg": "The Great Wall of China", 
+  "Great_Wall_Of_China.jpg": "The Great Wall of China",
   "Tel_Aviv_Israel.jpg": "On the streets of Tel Aviv, Israel",
   "Cruise_Mazury_Poland.jpg": "Cruising the Mazury Lakes in Poland",
-  "Youtube_HQ_US.jpg": "YouTube Headquarters Visit, USA"
+  "Youtube_HQ_US.jpg": "YouTube Headquarters Visit, USA",
 };
-const matches = import.meta.glob<{ default: ImageMetadata }>('../assets/gallery/*.{jpeg,jpg,png,gif}', { eager: true });
+const matches = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/gallery/*.{jpeg,jpg,png,gif}",
+  { eager: true },
+);
 
 const galleryImages = Object.values(matches).map((image) => {
   const url = image.default.src;
@@ -23,8 +26,8 @@ const galleryImages = Object.values(matches).map((image) => {
   // 1. Loop through your map keys (e.g., "Mumbai_India.jpg")
   const foundKey = Object.keys(altMap).find((key) => {
     // 2. Remove the extension to get just the name: "Mumbai_India"
-    const namePart = key.split('.')[0]; 
-    
+    const namePart = key.split(".")[0];
+
     // 3. Check if the URL contains "Mumbai_India"
     return url.includes(namePart);
   });
@@ -32,7 +35,7 @@ const galleryImages = Object.values(matches).map((image) => {
   return {
     src: url,
     // 4. Use the key if found, otherwise fallback
-    alt: foundKey ? altMap[foundKey] : "Gallery Image"
+    alt: foundKey ? altMap[foundKey] : "Gallery Image",
   };
 });
 
@@ -44,7 +47,14 @@ const galleryImages = Object.values(matches).map((image) => {
   <div class="py-12">
     <Welcome />
     <section class="site-container">
-      <h2 class="text-3xl md:text-4xl font-bold pt-8 mb-4">Travels</h2>
+      <h2 class="text-2xl md:text-3xl leading-snug pt-8 mb-4">
+        <span class="font-light">Inspired by </span><span class="font-bold"
+          >people</span
+        ><span class="font-light">, </span><span class="font-bold">places</span
+        ><span class="font-light"> &amp; </span><span class="font-bold"
+          >problems</span
+        ><span class="font-light"> worth solving</span>
+      </h2>
       <HorizontalGallery client:load photos={galleryImages} />
     </section>
     <Contact />
