@@ -13,8 +13,81 @@ interface Props {
   allTags: string[];
 }
 
+const matchesSelectedTags = (
+  project: ProjectData,
+  selectedTagSet: Set<string>
+) => {
+  if (selectedTagSet.size === 0) return true;
+  return [...selectedTagSet].every((tag) => project.tags.includes(tag));
+};
+
+interface TagFilterItemProps {
+  tag: string;
+  isSelected: boolean;
+  count: number;
+  onToggle: (tag: string) => void;
+}
+
+const TagFilterItem: React.FC<TagFilterItemProps> = ({
+  tag,
+  isSelected,
+  count,
+  onToggle,
+}) => (
+  <label className="flex items-center gap-3 cursor-pointer group hover:opacity-70">
+    <div
+      className={`w-4 h-4 border transition-colors duration-200 flex items-center justify-center
+      ${isSelected ? "bg-black border-black text-white" : "border-gray-300 bg-white"}`}
+    >
+      {/* Checkmark Icon */}
+      {isSelected && (
+        <svg
+          className="w-3 h-3"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={3}
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
+      )}
+    </div>
+    <input
+      type="checkbox"
+      className="hidden" // Hide default checkbox
+      checked={isSelected}
+      onChange={() => onToggle(tag)}
+    />
+    <span className="text-sm text-gray-600 group-hover:text-black transition-colors">
+      {tag}
+      <span className="text-gray-400 ml-1">({count})</span>
+    </span>
+  </label>
+);
+
+const ProjectRow: React.FC<{ project: ProjectData }> = ({ project }) => (
+  <a
+    href={`/projects/${project.slug}`}
+    className="group flex items-center justify-between py-4 border-b border-gray-300 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+  >
+    <div className="w-32 md:w-48 flex-shrink-0 flex items-center gap-3 text-sm text-gray-800 px-3">
+      <span className="text-[10px] opacity-70">▪</span>
+      {project.date.slice(0, 10).replace(/-/g, ".")}
+    </div>
+
+    <div className="flex-grow font-medium text-gray-900 group-hover:text-black">
+      {project.title}
+    </div>
+  </a>
+);
+
 const ProjectBrowser: React.FC<Props> = ({ projects, allTags }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const selectedTagSet = useMemo(() => new Set(selectedTags), [selectedTags]);
 
   // Toggle checkbox logic
   const toggleTag = (tag: string) => {
@@ -23,13 +96,22 @@ const ProjectBrowser: React.FC<Props> = ({ projects, allTags }) => {
     );
   };
 
+  const tagCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    projects.forEach((project) => {
+      project.tags.forEach((tag) => {
+        counts.set(tag, (counts.get(tag) ?? 0) + 1);
+      });
+    });
+    return counts;
+  }, [projects]);
+
   // Filter logic (memoized for performance)
   const filteredProjects = useMemo(() => {
-    if (selectedTags.length === 0) return projects;
     return projects.filter((project) =>
-      selectedTags.every((tag) => project.tags.includes(tag))
+      matchesSelectedTags(project, selectedTagSet)
     );
-  }, [selectedTags, projects]);
+  }, [projects, selectedTagSet]);
 
   return (
     <div className="flex flex-col md:flex-row gap-8 font-mono">
@@ -41,49 +123,13 @@ const ProjectBrowser: React.FC<Props> = ({ projects, allTags }) => {
 
         <div className="flex flex-col gap-2">
           {allTags.map((tag) => (
-            <label
+            <TagFilterItem
               key={tag}
-              className="flex items-center gap-3 cursor-pointer group hover:opacity-70"
-            >
-              <div
-                className={`w-4 h-4 border transition-colors duration-200 flex items-center justify-center
-                ${
-                  selectedTags.includes(tag)
-                    ? "bg-black border-black text-white"
-                    : "border-gray-300 bg-white"
-                }`}
-              >
-                {/* Checkmark Icon */}
-                {selectedTags.includes(tag) && (
-                  <svg
-                    className="w-3 h-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={3}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                )}
-              </div>
-              <input
-                type="checkbox"
-                className="hidden" // Hide default checkbox
-                checked={selectedTags.includes(tag)}
-                onChange={() => toggleTag(tag)}
-              />
-              <span className="text-sm text-gray-600 group-hover:text-black transition-colors">
-                {tag}
-                {/* Optional: Show count per tag */}
-                <span className="text-gray-400 ml-1">
-                  ({projects.filter((p) => p.tags.includes(tag)).length})
-                </span>
-              </span>
-            </label>
+              tag={tag}
+              isSelected={selectedTagSet.has(tag)}
+              count={tagCounts.get(tag) ?? 0}
+              onToggle={toggleTag}
+            />
           ))}
         </div>
       </div>
@@ -100,22 +146,7 @@ const ProjectBrowser: React.FC<Props> = ({ projects, allTags }) => {
         <div className="flex flex-col">
           {filteredProjects.length > 0 ? (
             filteredProjects.map((project) => (
-              <a
-                key={project.slug}
-                href={`/projects/${project.slug}`}
-                className="group flex items-center justify-between py-4 border-b border-gray-300 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
-              >
-                <div className="w-32 md:w-48 flex-shrink-0 flex items-center gap-3 text-sm text-gray-800 px-3">
-                  <span className="text-[10px] opacity-70">▪</span>
-                  {project.date.slice(0, 10).replace(/-/g, ".")}
-                </div>
-
-                <div className="flex-grow font-medium text-gray-900 group-hover:text-black">
-                  {project.title}
-                </div>
-
-                
-              </a>
+              <ProjectRow key={project.slug} project={project} />
             ))
           ) : (
             <div className="py-12 text-gray-400 italic">
