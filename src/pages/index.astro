@@ -15,29 +15,38 @@ const altMap: Record<string, string> = {
   "Cruise_Mazury_Poland.jpg": "Cruising the Mazury Lakes in Poland",
   "Youtube_HQ_US.jpg": "YouTube Headquarters Visit, USA",
 };
+
+const getBasenameWithoutExtension = (pathOrUrl: string) => {
+  const filename = pathOrUrl.split("/").pop() ?? pathOrUrl;
+  const lastDotIndex = filename.lastIndexOf(".");
+  return lastDotIndex >= 0 ? filename.slice(0, lastDotIndex) : filename;
+};
+
+const normalizedAltMap = Object.fromEntries(
+  Object.entries(altMap).map(([key, value]) => [getBasenameWithoutExtension(key), value]),
+);
+
+const toGalleryImage = (image: { default: ImageMetadata }) => {
+  const src = image.default.src;
+  const basename = getBasenameWithoutExtension(src);
+  const alt = normalizedAltMap[basename];
+
+  if (!alt && import.meta.env.DEV) {
+    console.warn(`[gallery] Missing alt mapping for "${basename}" (${src})`);
+  }
+
+  return {
+    src,
+    alt: alt ?? "Gallery Image",
+  };
+};
+
 const matches = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/gallery/*.{jpeg,jpg,png,gif}",
   { eager: true },
 );
 
-const galleryImages = Object.values(matches).map((image) => {
-  const url = image.default.src;
-
-  // 1. Loop through your map keys (e.g., "Mumbai_India.jpg")
-  const foundKey = Object.keys(altMap).find((key) => {
-    // 2. Remove the extension to get just the name: "Mumbai_India"
-    const namePart = key.split(".")[0];
-
-    // 3. Check if the URL contains "Mumbai_India"
-    return url.includes(namePart);
-  });
-
-  return {
-    src: url,
-    // 4. Use the key if found, otherwise fallback
-    alt: foundKey ? altMap[foundKey] : "Gallery Image",
-  };
-});
+const galleryImages = Object.values(matches).map(toGalleryImage);
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
