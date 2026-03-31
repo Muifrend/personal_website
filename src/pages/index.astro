@@ -26,9 +26,12 @@ const normalizedAltMap = Object.fromEntries(
   Object.entries(altMap).map(([key, value]) => [getBasenameWithoutExtension(key), value]),
 );
 
-const toGalleryImage = (image: { default: ImageMetadata }) => {
+const toGalleryImage = (
+  originalPath: string,
+  image: { default: ImageMetadata },
+) => {
   const src = image.default.src;
-  const basename = getBasenameWithoutExtension(src);
+  const basename = getBasenameWithoutExtension(originalPath);
   const alt = normalizedAltMap[basename];
 
   if (!alt && import.meta.env.DEV) {
@@ -46,7 +49,9 @@ const matches = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true },
 );
 
-const galleryImages = Object.values(matches).map(toGalleryImage);
+const galleryImages = Object.entries(matches).map(([path, image]) =>
+  toGalleryImage(path, image),
+);
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
