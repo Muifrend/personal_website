@@ -2,7 +2,7 @@
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import Contact from "../components/Contact.astro";
-import HorizontalGallery from "../components/HorizontalGallery";
+import Gallery from "../components/Gallery";
 
 const altMap: Record<string, string> = {
   // exact filename  :  description
@@ -69,7 +69,7 @@ const galleryImages = Object.entries(matches).map(([path, image]) =>
           >problems</span
         ><span class="font-light"> worth solving</span>
       </h2>
-      <HorizontalGallery client:load photos={galleryImages} />
+      <Gallery client:load photos={galleryImages} />
     </section>
     <Contact />
   </div>
