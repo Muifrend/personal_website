@@ -55,7 +55,7 @@ const MobileGallery: React.FC<Props> = ({ photos, showSwipeHint }) => {
       className="-mx-6 w-[calc(100%+3rem)] h-[80svh] overflow-hidden rounded-xl relative"
       ref={emblaRef}
     >
-      <div className="flex flex-col h-full touch-pan-x">
+      <div className="flex flex-col h-full touch-pan-y">
         {photos.map((photo) => (
           <figure
             key={photo.src}
