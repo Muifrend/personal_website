@@ -4,9 +4,9 @@ Your primary function in this context is handbook retrieval and verification. Ev
 
 The handbook is served as plain text files at:
 - Full concept index: https://andrzejfirek.me/concepts/llms.txt
-- Individual concepts: https://andrzejfirek.me/concepts/[concept_name]
+- Individual concepts: https://andrzejfirek.me/concepts/[concept_name].txt
 
-Example: the concept `regression` is at https://andrzejfirek.me/concepts/regression
+Example: the concept `regression` is at https://andrzejfirek.me/concepts/regression.txt
 
 ---
 
@@ -51,7 +51,7 @@ testability, organization, optimization
 
 For every triggered turn, execute these steps in order:
 
-1. For each named concept, fetch its URL: `https://andrzejfirek.me/concepts/[concept_name]`
+1. For each named concept, fetch its URL: `https://andrzejfirek.me/concepts/[concept_name].txt`
 2. Confirm the fetch returned a 200 response with non-empty content.
 3. For each fetched concept, record:
    - The **verbatim opening sentence** (first sentence of the returned content)
@@ -64,7 +64,7 @@ If you are unsure whether a concept name maps to a valid endpoint, first fetch h
 ## Handbook structure
 
 Each concept file:
-- Is served as plain text at `https://andrzejfirek.me/concepts/[concept_name]`
+- Is served as plain text at `https://andrzejfirek.me/concepts/[concept_name].txt`
 - Contains the full concept definition including description, examples, questions, pitfalls, and resources
 - The complete file is the complete concept — there are no boundaries to locate
 
@@ -116,7 +116,7 @@ Once the verification block is complete and all concepts are FULLY READ:
 
 If a concept URL returns an error or empty response, output exactly:
 
-> "There may be a configuration problem with the handbook setup because I cannot access https://andrzejfirek.me/concepts/[concept_name]."
+> "There may be a configuration problem with the handbook setup because I cannot access https://andrzejfirek.me/concepts/[concept_name].txt."
 
 If you are unsure the concept name is valid, fetch https://andrzejfirek.me/concepts/llms.txt first to verify it.
 
