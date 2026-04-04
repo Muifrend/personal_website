@@ -1,0 +1,140 @@
+#ESTIMATION
+
+BLURB
+Use estimation and approximation techniques appropriately.
+
+PITCH
+It all starts on the back of a napkin.
+
+PARAGRAPH DESCRIPTION
+Estimation and approximation techniques are widely applicable across many disciplines. Common techniques to arrive at a quick estimate include using powers of 10, round numbers, and establishing limits, which are minimum and maximum values that the number could reasonably be expected to take. Estimations are especially useful when working with incomplete or inexact information. For example, estimations can be used to conduct a plausibility check when considering quantitative claims as well as to determine the feasibility of an experiment or simulation before embarking on a scientific endeavor.
+
+CATEGORIZATION
+Foundational Concept | Formal Analyses | Thinking Critically | Evaluating Claims
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester One
+- Unit: Logical Thinking
+- Big Question: How is free choice manipulated?
+
+GENERAL EXAMPLE
+As a recently-hired advisor to LA’s city hall, you are tasked with planning a revamp to Los Angeles’ tourism sector. To gauge the state of the industry, you want to figure out how many hotels are operating in LA. You never worked in hotels, but an average establishment must have between 20 and 1000 rooms, since a small hotel could have two floors and about 10 rooms on each floor, while large chain hotels could have about 30 rooms distributed across as many floors. You reckon a regular hotel room must house between 1 and 4 visitors, as many people fly in for business trips or take vacations with their families. This means a typical hotel must house between 20 and 4,000 guests at any one time. Since you know the city has around 4 million residents, and you expect hotel guests to be proportional to that number, you assume guests number something between 5% and 10% of the population, fluctuating between seasons. In that case, there are between 200,000 and 400,000 hotel guests to fit into hotels with capacity of between 20 and 4,000. The number of hotels, then, is at least 50 and at most 20,000. These limits are separated by two orders of magnitude, so you take the approximate geometric mean of these bounds. The mean of the coefficients of each limit’s scientific notation is 3.5 and their average power is 2.5. So, you round the power of 10 down to 2 and multiply the coefficient by 3. Finally, you get a grand total of 1,050 hotels in LA. After a quick Google search, you find out the reported number is 1,008. Not bad!
+
+Footnote: To arrive at a quantity of interest, related figures which are easier to estimate are used progressively, from the number of rooms and the guests they house to the total number of guests in the city. This last figure comes from a potentially problematic assumption, that the number of hotel guests is proportional to LA’s population, but the final estimate is plausible nonetheless.
+
+IS THIS THE RIGHT HC?
+Is #estimation the right HC? If the answer to the following questions is yes, #estimation could be useful: 
+- Does making a substantive estimate or approximation provide valuable insights about the context under study? 
+- Does the estimation or approximation use particular strategies or techniques, such as using analogies or bounding? 
+- Is a substantive estimation used to reason why a claim is plausible or not? 
+ - Does the work involve a calculation executed with inexact or incomplete information? 
+
+ However, depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#plausibility  |  evaluates the plausibility of a hypothesis.
+#confidenceintervals  |  constructs or interprets a confidence interval to estimate an unknown population parameter.
+#descriptivestats  |  provides calculations or interpretations of descriptive statistics for a dataset, like mean, median, mode, or standard deviation.
+#breakitdown  |  breaks down large problems (which can include calculations, estimations, and approximations) into more tractable subproblems, then combines the solutions to the subproblems to address the overall problem.
+#regression  |  builds regression models to make predictions.
+#biasidentification  |  considers common cognitive tendencies that lead to bad estimates, such as the planning fallacy or optimism bias.
+SELF STUDY QUESTIONS
+1. List three or more estimation strategies. For each one, explain how it works and when you would use it.
+
+   Answer: Answers may include: 
+   
+   Estimation by bounding is a technique where you estimate minimum and maximum bounds. What’s the biggest that the number can be? What’s the smallest? These max and min values can be used to compute an estimate of the desired quantity by finding the arithmetic or geometric mean of the bounds. This technique is helpful when it’s challenging to estimate the quantity directly but it’s feasible to imagine how big or small it could possibly be. 
+   
+   Estimation by analogy approximates a quantity by considering another quantity that’s similar but easier to estimate. For example, when trying to estimate the thickness of a stack of cash, say 200 bills, you might be stuck if you’ve never encountered a stack of money like this before. However, you’ve encountered other stacks of “paper,” like 200-page notebooks, and you can reason that these items should be similar in thickness. 
+   
+   Bottom up estimation  decomposes a calculation into parts where you can make educated guesses about, and adds up the individual estimates together. This is useful when you want to estimate how long a multi-step project will take because you need to add up the time required for each step. As another example, let’s say you want to find out the cost of cotton for an airplane company. You might ask how long a cotton company would take to fulfill a shipment order of cotton for the airline. You can break down the timeline into specific chunks of time you add together. 
+   -  the time to grow the cost, 
+   - the time to manufacture the cotton to material for airplane seats, and 
+   - transportation costs. 
+   
+    Getting outside opinions is a good strategy to deal with individual biases or logical fallacies that might affect your estimates. 
+   
+   With expert estimation,  you consult an individual or panel of experts. You can average their responses or use other methods, like the Delphi method, in which a panel of experts, anonymized to each other, converge on an opinion after multiple rounds of questioning. Experts get to revise their opinion upon hearing the opinions of others. Their opinions might not converge, so the researcher can set a cut-off point to stop the rounds of questioning.
+
+2. How are arithmetic means, geometric means, and approximate geometric means different? When and how are they relevant for different types of #estimation?
+
+   Answer: - For an arithmetic mean, you add the numbers and divide them by n, where n is how many numbers you added together.
+   - For a geometric mean, you multiply the numbers and then take the nth root, where n is how many numbers you multiplied. 
+   - The approximate geometric mean is helpful as a quick way to estimate the geometric mean, especially in cases where there’s no calculator available to perform multiplications and roots. To find the approximate geometric mean:
+   - Convert each number to its representation in scientific notation
+   - Average the coefficients
+   - Average the exponents of the base.
+   - Multiply the base with the averaged exponent, and the average coefficient. 
+   - If the exponents yield an odd number, round the exponent down and multiply the final answer by three.
+   
+   - An example: if we had 20 and 400, we would first get 2x10^1 and 4x10^2. The average of coefficients is 3, while the exponents are 1.5. We round 1.5 down to 1, so the final result would be 3(3x10^1) = 90.
+   
+    - Arithmetic vs geometric: When the upper bound is much larger than the lower bound, the arithmetic mean will end up being closer to the upper bound in terms of the order of magnitude. In this case, the geometric mean might be preferable because it will provide a middle number in terms of order. Generally speaking, the geometric mean would be more suitable for steps with multiplications, while the arithmetic mean would be more suitable for steps with addition.
+
+3. What are the steps to perform Fermi estimation?
+
+   Answer: - Break down the value you want to estimate into a series of quantities you can make more educated guesses about. Apply #breakitdown to the value. 
+   -  Estimate each quantity using appropriate techniques and provide plausibility checks along the way. If the quantity is challenging to approximate directly, estimate upper and lower bounds and use them to find the arithmetic or geometric mean. 
+   - Combine your quantities (by multiplication or summation). 
+   - Provide a plausibility check and interpretation of the final result.
+
+4. What is an "order-of-magnitude" estimation?
+
+   Answer: This means to round an estimate to the nearest order of magnitude. In some cases, focusing only on the correct order of magnitude for each quantity involved in the estimate is all that is necessary to get a surprisingly accurate answer.
+
+5. How does one use "unit conversions" in estimations?
+
+   Answer: We typically multiply or divide by unit conversion factors so that the unwanted units cancel and the desired unit remains. It’s important to track units carefully throughout all steps of an estimation to be sure we’re obtaining the correct quantity at each step.
+
+6. What is a "plausibility check" in the context of an estimation?
+
+   Answer: Plausibility checks are checks that are done on the estimate to see if it is reasonable and makes sense in the context of the problem being solved. In a multi-step estimate, multiple plausibility checks should be done along the way for each quantity. Making plausibility checks helps you identify errors and make accurate estimates.
+
+7. The LessWrong reading lists four questions and describes the steps used to calculate their answer. The following questions are inspired from the reading. Come up with your own estimates and compare how you showed your steps with the way the author outlined theirs.
+
+   Answer: - How many motorcycles are sold each year in your home country?
+   - How many human fatalities from wildfires have there been in the past 10 years?
+   - How much does your home country spend on K-12 education each year?
+   - How many people have listened to your favorite artist’s album on Spotify while looking at a full moon?
+
+GUIDED REFLECTION QUESTIONS
+1. Have you chosen an appropriate estimation technique?
+2. Have you explained why the estimation technique is appropriate for your context?
+3. Have you considered and explained how accurate your estimate needs to be for the given context?
+4. Have you justified why the numbers you came up with throughout your calculation are reasonable (or backed up with evidence, if possible)?
+5. Have you provided a clear and well-supported explanation for why the final answer is plausible?
+6. Have you included units for each quantity and tracked them accurately throughout the steps of your calculation?
+7. Have you ensured the calculations are sufficiently accurate, detailed, and easy to follow, with all relevant assumptions clearly stated?
+8. Have you explained why your estimation approach or decomposition is the most effective way to tackle the problem?
+
+COMMON PITFALLS
+- The application fails to state assumptions, uses faulty assumptions, or neglects to provide sufficient justification for the assumptions.
+- The application lacks justification for the estimation process or strategies involved.
+- The estimation has not been broken down into a sufficient number of steps.
+- Calculation errors or mistakes with units. The application badly overestimates or underestimates the bounds of a quantity.
+- The application omits or lacks plausibility discussions.
+- An estimate by bounding uses the incorrect type of mean for the application at hand.
+
+APPLYING THIS HC AT MINERVA
+- This HC is introduced in the context of Fermi estimates. One conducts Fermi estimates by breaking down the desired quantity into multiple simpler (easier to estimate) quantities, making reasonable estimates about each of the component quantities, and combining them, usually via multiplication, to obtain a final result. This often requries using order-of-magnitude calculations, rather than seeking precise or exact values. Fermi estimates can involve several other estimation strategies to approximate specific quantities in each step.
+- This HC can be used broadly for MANY types of estimations and approximations and not just Fermi estimates. It is applicable any time that a student is using quantitative techniques to arrive at a numerical value for a given purpose. The estimation can involve use of measurements, empirical data, observations, analogies, and mathematical approximation techniques.
+- This HC is relevant in many different Location Based Assignments and Final Projects across Minerva.   -  For example, some CS LBAs or Final Projects require students to model a system or decision. The estimation may involve measurements, empirical data, observations, analogies, and mathematical approximation techniques. Capturing the relationship between different variables opens plenty of room for estimating either their relative weights (i.e., relative importance), their linear or non-linear behavior (e.g., risk preferences and changes over time), and their relationship to each other (e.g., adding variables to demonstrate independence or multiplying them to show co-dependence). -  As an NS example, consider this location-based physics assignment described in this Minerva blog post. For this assignment, students are tasked with taking a hike and obtaining various quantities along the way, such as distance, time, heart rate, breathing rate, temperature, and humidity. With these values in hand, students can compute several interesting physical quantities, such as the amount of energy spent to overcome gravity and the amount of sweat evaporated. Estimation and approximation techniques are required to obtain the measurements to begin with, as well as perform the multi-step calculations to get the final results. The precision of the measurements and the impact of inaccuracies on the results must be considered. Additionally, the calculations require various assumptions that can influence the plausibility of the results.
+- This HC is applicable when trying to figure out how long a certain task, assignment, or project will take. Various estimation techniques, such as estimation by analogy, can be used to determine how long each subtask will take. For example, suppose a student was trying to estimate how long their Civic Project would take. A project like this requires multiple pieces, including doing research, organizing sources, writing an outline for their research synthesis, completing a project plan, attending meetings, revising their work, writing HC explanations, drafting a presentation, practicing their presentation, writing their final annotated bibliography, etc. For some of these steps, like writing an outline, students might be able to estimate the time required by making an analogy with how long it took them to complete similar tasks for other past assignments. Estimations like this are usually susceptible to the planning fallacy: our tendency to underestimate how long a task will take. Awareness of this bias can help produce more reliable estimates.
+- This HC can also be considered when performing dimensional analysis as a quantitative tool for plausibility checking formulas, equations, or calculations, or for deriving the dimension of unknown quantities. This is useful in physics and other sciences.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- This HC can help address questions like “How close is close enough?” for a particular calculation. In some contexts, accuracy is important, but in others, a rough estimation will do. Recognizing this requires applying the principles of this HC.
+- It may seem like most quantities are easily searchable nowadays. However, #estimation is still a valued skill in the real world because accurate information and calculation tools are not always readily available, and there are many cases in which the quantity we want to estimate is unknown. For example:  - In marketing, we need to predict how many customers will use a certain product.  - In scientific research, we may need to estimate the parameters of a planned experiment or study before embarking on the project, such as the cost of an experiment, the feasibility of detecting a desired signal (its expected strength), and the runtime of a simulation.  - Job interview questions may even include challenging estimations as a way to assess a candidate’s reasoning and ability to work with limited information. For example, how many spherical balls can you fit into an airplane?
+
+KEY RESOURCES
+1. Mitchell, M. (2012, September). A clever way to estimate enormous numbers. TED. https://ed.ted.com/lessons/michael-mitchell-a-clever-way-to-estimate-enormous-numbers
+- This resource provides an overview of Fermi estimations.
+2. Wilkins, J. F. (2021, Sept). Estimation Strategies. Minerva University. https://docs.google.com/document/d/1AbEGM6RYrtlZW8hDz3le3Oc75M2E-T8PzA4i-fi3s/edit
+- Outlines various estimation strategies in detail.
+3. Khan Academy. (n.d.). Intro to Dimensional Analysis [Video]. https://www.khanacademy.org/math/algebra/introduction-to-algebra/units-algebra/v/dimensional-analysis-units-algebraically
+- This resource covers fundamental aspects of estimation regarding dimensional analysis and unit conversion. It’s a great source of practice questions to test yourself on these basics.
+4. Khan Academy. (n.d.). Multiplying multiples of powers of 10 [Video]. https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals/pre-algebra-orders-of-magnitude/v/multiplying-multiples-of-powers-of-10
+- This resource covers multiplying numbers written in scientific notation. As above, it serves a source of practice questions with estimation basics.
+5. Khan Academy. (n.d.). Scientific notation [Video]. https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals/pre-algebra-scientific-notation/v/scientific-notation-old
+- This resource discusses scientific notation in depth, including multiple examples you can work through for practice.

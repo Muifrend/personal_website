@@ -1,0 +1,153 @@
+#GAMETHEORY
+
+BLURB
+Apply and evaluate game-­theoretic models.
+
+PITCH
+Analyzing the behavior of interacting agents: It’s all fun and games until you realize the implications of the Nash equilibrium!
+
+PARAGRAPH DESCRIPTION
+Game theory provides a framework to study decision-making behavior among multiple interacting intelligent agents, relying on mathematical models of cooperation, competition, and coordination. Formally, a “game” involves agents (“players”), the actions each agent can take (“strategies”), and the “payoffs” for each agent for the various outcomes of the game. The payoffs for a given player depend not only on their own choice of strategy, but also on the actions of other players. An important part of evaluating a game is determining the strategy profiles that lead to an equilibrium, in which no player benefits by unilaterally changing their strategy. Under certain assumptions about the rationality of the players and the information they have access to, these equilibrium strategy sets can be used to predict the outcome of the game, thus providing applications in wide-ranging contexts, such as war, traffic flow, ecology, and marketing.
+
+CATEGORIZATION
+Foundational Concept | Formal Analyses | Thinking Critically | Analyzing Problems
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester Two
+- Unit: Decision Theory
+- Big Question: What is a good decision? & How can conflicts be resolved?
+
+GENERAL EXAMPLE
+You own one of two pizza restaurants in a shopping mall. You have found a new gluten-free dough that attracts many customers, but your competitor has an amazing pizza sauce that also generates lots of business. You want to use the sauce, so you ask for the recipe in exchange for your dough recipe. After some hesitation, she says that she will send it to you. However, her hesitation leads you to think that she may not be honest about all the ingredients. In fact, you both have the same decision to make: share the correct recipe or share the incorrect recipe. You create a payoff matrix that shows the outcomes for each combination of strategies that you and your rival may employ, and predict that if both restaurants offer better pizzas, more people overall will choose to go eat pizza at the mall, thereby boosting the profits for both restaurants. However, if both parties are honest, one is always tempted to betray the other for an even higher payoff that comes from having a superior pizza that would monopolize the pizza market. So, if each of you acts in your own self-interest, you should both share incorrect recipes corresponding to the Nash equilibrium of the game. This means that when both of you adopt this strategy (being dishonest), neither shop can unilaterally change their strategy and get a higher payoff. On the other hand, your relationship with this other pizza place is likely to be on-going, and similar decisions may arise repeatedly. You realize that if either of you becomes dishonest at any point in time, the other will likely break relations too and adopt a more defensive strategy. In fear of having that happen, you choose to cooperate and find that the other shop also has this fear, and they cooperate too. You both decide to share the true recipes, believing that cooperating for the highest payoff will be more beneficial in the long run. 
+
+Footnote: A game involving the two pizza stores and the exchange of correct or incorrect recipes is defined based on the scenario, and a payoff matrix examining the expected benefits for each player in each scenario is used to convince the competitor to cooperate for the greater benefit of both sides. The single-game versus repeated-game Nash equilibria of the game are discussed, and so is the scope of competition and how that might affect the best course of action.
+
+IS THIS THE RIGHT HC?
+Is #gametheory the right HC? If the answer to the following questions is yes, #gametheory could be useful:
+
+- Are you analyzing a decision-making scenario with multiple intelligent interacting agents, possibly involving cooperation or competition?
+- Does modeling your decision-making scenario as a game (by identifying players, their strategies, and their payoffs) yield insights or implications that are relevant and meaningful for your purpose?
+- Are you applying game theoretic concepts (e.g., payoff matrices, equilibrium strategies) to understand or predict how individuals would behave in your context?
+
+Depending on the work product, there might be other HCs to consider.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#utility  |  Applies utility concepts to represent preferences and evaluate decision-making. When devising game theoretic models to explain or predict decision-making scenarios, the utilities of individual players can be represented within the payoff matrix.
+#decisiontrees  |  Constructs and interprets decision trees to analyze a decision-making scenario. A game analysis fully integrates the perspectives of all agents, whereas a decision tree is always drawn from the perspective of one agent, and the other agents’ decisions are captured as chance nodes. Both analyses can complement each other but usually come with different assumptions about the agents and the context.
+#negotiate  |  Uses a structured approach to negotiation, such as identifying interests, common ground, or developing BATNAs. Game theory may be used to model such decision-making scenarios and derive equilibrium strategies to predict potential deadlocks or agreements in negotiations.
+#modeling  |  Develops or applies a simplified representation of a system to explain phenomena and make predictions. A game is an example of a model used to represent a decision-making scenario with multiple agents. Like any model, it is a simplified representation of the real relationship, is built on certain assumptions, has valuable uses (e.g., predicting behavior), and also has limitations.
+#strategize  |  Focuses on developing a strategic plan of action that’s derived from a guiding policy and supported by strengths and weaknesses of their position. A game theory analysis is one way to come up with a strategic plan, especially when interacting with other rational agent(s), but other methods to develop strategies (e.g., SWOT analysis) may go beyond formal game theory by taking into account factors like history and culture and making different assumptions.
+SELF STUDY QUESTIONS
+1. When defining a decision-making scenario as a game, what do you need to identify?
+
+   Answer: The games defined and studied by game theory are well-defined mathematical objects that must comprise a set of players, a set of strategies available to those players, and a specification of payoffs for each combination of strategies. The payoffs of the game are generally taken to represent the utility of individual players.
+
+2. What are some common assumptions involved in modeling a decision-making scenario as a game?
+
+   Answer: Both players are rational actors motivated to maximize their utilities. All players have full information about the available strategies and payoffs. The players are unaware of what their opponent will decide to do; the choices are made simultaneously rather than sequentially. There will also be other assumptions unique to each scenario.
+
+3. What is a pay-off matrix? How do you read them?
+
+   Answer: A pay-off matrix is a model for the set of decisions that players are involved in. This matrix shows the key elements: players, strategies, and payoff of each of those strategies. One player will be shown in a row and the other in a column. Then, the outcomes for each combination of individual strategies is shown. Each player can choose one of two strategies, which are specified by the number of rows and the number of columns. The payoffs are provided in the interior. The first number is the payoff received by the row player (Player 1); the second is the payoff for the column player (Player 2). 
+   
+    
+   
+    For example, we can read this payoff matrix, to understand what Player 1 would do if Player 2 chose strategy A. We would compare 2 and 1, as these are the two different payoffs possible (2 if Player 1 chooses strategy A and 1 if Player 1 chooses strategy B). Similarly, if Player 1 chose strategy B, we would determine what Player 2 would do by comparing 0 and 1 (0 is the payoff for Player 2 if they chose strategy A, and 1 is the payoff if they chose strategy B).
+
+4. Distinguish between pure and mixed strategies.
+
+   Answer: Strategy: a player's strategy determines the action the player will take at any stage of the game. Pure strategy: determines the move a player will make for any situation the player may face. Mixed strategy: assigning probabilities to each strategy (ex: play strategy 'high' 30% of the time and strategy 'low' 70% of the time).
+
+5. What is a dominant strategy? What’s the difference between weak and strict dominance?
+
+   Answer: A dominant strategy is one that a player will choose, as it will provide a better payoff than any of the alternatives. Weak vs strictly dominant: strict dominance requires all payoffs to be strictly greater (>) whereas weak dominance can include equality (≥).
+
+6. Distinguish between symmetric and asymmetric games. How can you use a payoff matrix to determine symmetry?
+
+   Answer: Symmetric game: a game is symmetric if you can change the players without changing their strategies or the payoffs to the strategies (the 'Freaky Friday' test!); the payoff matrix for 2x2 games follows this structure: {{{a,a},{b,c}},{{c,b},{d,d}}}. Asymmetric game: an asymmetric game is one in which the players have different roles and thus different payoffs for playing different strategies. We can use a payoff metric to check if the described structure ({{{a,a},{b,c}},{{c,b},{d,d}}}) is present in the model, in which case the game would be symmetric. Otherwise, the game would be asymmetric.
+
+7. What is a Nash equilibrium? Why is finding the Nash equilibrium useful/important?
+
+   Answer: Nash equilibrium: a set of strategies, one for each player, such that no player has an incentive to change his or her strategy given what the other players are doing. A Nash equilibrium does not necessarily mean that the best outcome for anyone is obtained. It simply means that no individual can improve his or her position, given they’re unable to change the choices of others. Under the assumption that the players are rational, they would be expected to behave according to the Nash equilibrium. Thus, this concept allows us to understand and predict agents' decision-making!
+
+8. How can strategies in repeated/iterated games differ from games played only once?
+
+   Answer: In repeated games, we can have more elaborate strategy sets compared to single-play games as the dimension of the strategy space is much larger. The strategy needs to specify how to play at each iteration of the game. For example, the 'grim trigger' strategy involves the player initially choosing to cooperate with the other player. While the other player also cooperates, he continues to cooperate, but as soon as he defects, the player will choose to defect for the remainder of the game.
+
+9. What is a Prisoner’s Dilemma game? Give an example of how it can be encountered in real-life.
+
+   Answer: A Prisoner’s Dilemma game is one in which both players involved may choose to act in their own self-interest, which does not produce the optimal outcome or hope to cooperate with each other to reach that optimal outcome. A classical example of this in real life is that in which two prisoners are faced with the question of whether to accuse each other, which would result in no time to serve in prison for the accuser and 10 years for the accused, or not accuse each other. In the event that both of them accuse each other, each will face 5 years of prison, while if neither of them accuses, both will only serve a two-month sentence.
+
+10. Give an example of a game with more than two players.
+
+   Answer: 'The volunteer’s dilemma' is an example of a game with two or more players. In this game, all the players are faced with the same decision of taking action (which, if done in cooperation produces the optimal outcome for all, but if done alone produces a large cost) or remaining uninvolved (in which case they highly benefit if other players intervene but involve a large cost if everyone remains uninvolved).
+
+11. Determine the Nash equilibria for this game.
+
+   Answer: The Nash equilibrium for this game is found in the bottom right corner, where both Toppy and Lefty choose Strategy Y. We can determine this by evaluating whether any of the players would be encouraged to change their strategy. If Lefty chooses Strategy Y, we can see that Toppy would also choose Strategy Y as 2 > 0 – which would be the outcome if Toppy chose Strategy X. Similarly, if Toppy plays Strategy Y, Lefty will want to also play Strategy Y as 2 > 0 – which is the outcome that Lefty would get if they played Strategy X instead.
+
+12. Determine the Nash equilibria for this game .
+
+   Answer: This game has two pure Nash equilibria: one in the top left corner and one in the bottom right corner, and one mixed strategy Nash equilibria! We can identify this by determining whether there are any cases in which neither would choose to change their strategy. 
+   
+    For the top left corner, both players will choose Strategy X. If Lefty chooses Strategy X, then Toppy will also choose this strategy as 3 > 2 – the outcome Toppy would get if they chose to play Strategy Y instead. In the same way, if Toppy chooses Strategy X, then Lefty will also choose Strategy X as 3 > 2 – the alternative Strategy Y. For the bottom right corner, both players will choose Strategy Y. If Lefty chooses Strategy Y, Toppy will also choose that same strategy as 6 > 1 – the outcome of Strategy X. And if Toppy chooses Strategy Y, then Lefty will also choose it as 6 > 1 – the outcome of Strategy X for Lefty when Toppy plays Y. 
+   
+    Both (X, X) and (Y, Y) are pure Nash equilibria because EXX > EYX (3>2) and EYY > EXY (6>1). No player can unilaterally change strategies and improve their payoff. However, games usually have an odd number of equilibria, so we should suspect a third (mixed strategy) Nash equilibrium to exist. To determine it, we apply the notion of indifference: a player will only randomize if their pure strategies have an equal expected payoff. This notion leads to an equilibrium because the randomized (and unpredictable) mixed strategy becomes unexploitable by the other player: they cannot profitably deviate. Thus, the choices of probabilities are the best responses to each other. We proceed by equating the expected payoffs (expected utilities) and solving for the probability, p: 
+   
+    EU(X) = EU(Y) 
+   
+    pEXX + (1−p)EXY = pEYX + (1−p)EYY 
+   
+    p(3) + (1-p)(1) = p(2) + (1-p)(6) 
+   
+    3p + 1 - p =  2p + 6-6p 
+   
+    2p + 1 = 6 - 4p 
+   
+    6p = 5 
+   
+    p = 5/6  = 83.333% 
+   
+    This is a symmetric game, so it applies to both players. There exists a Nash equilibrium in which each player plays Y with p = 5/6. We could interpret this mixed strategy in a few different ways, the most straightforward being that each player is randomizing their actions, going with Y 83.33% of the time. This set of strategies is a Nash equilibrium in the sense that neither player can profitably deviate assuming the other is playing this mixed strategy. 
+   
+    While this mixed strategy is an equilibrium for both players, it is not the preferred equilibrium. We could demonstrate this by computing the expected payoffs for the mixed strategy: (1/6)(1/6)EXX + (1/6)(5/6)EXY + (1/6)(5/6)EYX + (5/6)(5/6)EYY = (1/36)3 + (5/36)2 + (5/36)1 + (25/36)6 = 168/36 = 4.666. This expected payoff is less than what can be obtained by choosing the Y pure strategy: 4.66<6.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you identified how the scenario under analysis can be defined as a game, by identifying the players, their strategies, and their payoffs?
+2. Have you identified the underlying assumptions for the game being studied and explained the impacts of these assumptions on the analysis, including potential limitations?
+3. Have you provided sufficient justification for the quantities or variables used in the payoff matrix?
+4. Have you identified whether the game is symmetric or asymmetric, and/or classified it as a certain common structure/type of game (e.g., Prisoner's Dilemma), providing sufficient justification and interpretation?
+5. Have you determined the equilibrium strategies of a game (e.g., Nash equilibria), provided sufficient detail on how they were determined, and elaborated on their importance to the purpose of your analysis?
+6. Have you considered the implications of a repeated/iterated game in your context and explained the relevance of such analysis to your context?
+7. Have you effectively applied game theory concepts to derive insights that are relevant and important to the purpose of your work?
+8. Have you captured the main uses of your game theory analysis for normative or descriptive modeling purposes?
+
+COMMON PITFALLS
+- The game is not sufficiently defined to begin with.
+- The relevant assumptions of the game are not sufficiently identified or evaluated.
+- The payoffs are inadequately justified.
+- The payoff matrix is interpreted or applied incorrectly, possibly resulting from a misunderstanding of how to read the information captured in the matrix.
+- The application confuses game theory terminology, such as weak vs strict dominance, or pure vs mixed strategies.
+- Equilibrium strategies are determined but not interpreted sufficiently in a way that’s relevant to the scenario.
+- There is insufficient discussion of the usefulness of the game theory analysis to the real-world context under study.
+- The analysis neglects to sufficiently identify the limitations of the analysis.
+
+APPLYING THIS HC AT MINERVA
+- Game theory has interesting uses in politics, international relations, and general conflict analysis. For instance, an arms race scenario can be modeled as a Prisoner's Dilemma. In a single-play scenario, the rational choice might be for each country to invest heavily in military capabilities, fearing that other countries might do the same and potentially threaten their security. However, under the realization that countries must engage in repeated interactions, the dynamics can shift. The recognition that an arms race could lead to suboptimal outcomes for both players (as there may be increased tensions and potentially catastrophic conflicts) encourages countries to cooperate and limit their military expenditures and deployments. Check out this International Relations 101 video playlist for more applications and insights.
+- In business or economics contexts, you might encounter a “price war” between companies. For example, if two companies selling similar goods were to agree to keep prices high, they would both benefit from high prices. However, if one company were to lower its prices and steal market share from the other, the company that maintained the high prices could lose out. Working out the payoffs for this “game” would require factoring in the prices, the market share, and possibly other factors such as reputation and relationships. Finding the equilibrium strategies of such a game can offer insights into the expected behavior of companies in this situation. Further, considering that setting prices is an ongoing decision that companies make on a regular basis, analyzing a repeated version of this game may lead to different predictions.
+- When studying policymaking and governance, you might come across “public goods” games. These games are used to model situations in which individuals have incentives to free-ride off individuals who are contributing to the common pool. In the standard version of public goods games, the group's total payoff is maximized when everyone contributes to the public’s interests, but the Nash equilibrium of such games indicates that self-interested rational agents would be expected to contribute nothing. Such models can be used to analyze overfishing: If all fisheries worked together, they could preserve the environment and achieve overall higher payoffs. However, in most basic models, the dominant strategy is to overfish and the Nash equilibrium would be where every fishery chooses to overfish to gain the most profit. More advanced analyses could be used to model how such a game could evolve over time if the agents considered the long-term consequences of their actions.
+- When studying financial markets and corporate behaviors, the option for firms to engage in “collusion” might come up. While collusion is illegal in most countries, firms may collude to keep prices high or eliminate competition for themselves. From the firms’ perspectives, colluding could result in overall higher payoffs for the firms. On the other side, not colluding and whistleblowing could lead to rewards from the government while other competitor firms would be subject to fines and punishments. Policymakers can use these incentives and disincentives to determine payoffs, define a “game,” and analyze equilibrium strategies to set appropriate rewards for whistleblowing to incentivize breaking collusion.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- The fabric of civilization can be understood from a game theory framework! For example, government policies (e.g., taxes, laws, even social norms) are intended to effectively encourage certain behavior by driving citizens into a desired Nash equilibrium. Consider the classic Prisoner's Dilemma and the multi-player version: public-goods games. Much of the infrastructure of civilization, including government, is designed to solve the problem of how to achieve a Nash equilibrium in which everyone cooperates, even though the standard Nash Equilibrium of a Prisoner's Dilemma is that all players defect.  One can think of these as systems that force cooperation, even though the incentive is to defect. Alternatively, one can think of it as imposing incentives and/or penalties that alter the payoff structure so that the Nash Equilibrium shifts to cooperation. If taxes were not mandatory, everyone would “defect” (not pay taxes).
+- Game theory can be used to model and explain everyday decisions. For example: - Doing the dishes: Do you notice that the sink in your res hall often overflows with dishes? If everyone does their own dishes, everyone would benefit and the total payoffs for the group would be maximized. However, if a single person did all the dishes for the others, their own payoff may be lower, but others’ payoffs would be higher. If no one does their dishes, everyone would end up with low payoffs. Interestingly, a game theory analysis can demonstrate that students may settle into a Nash equilibrium in which no one is doing the dishes. - Following the rules: Do you remember the intense restrictions during COVID-19? We can use game theory to model the choice of whether or not to follow guidelines to stay home during a pandemic. This would be a multi-player Prisoner’s Dilemma in which all players can decide to either stay home or go out. All players choosing to stay home cannot be a Nash equilibrium because if there are no harsh penalties in place, then each individual can benefit from changing from staying home to going out. However, if the guidelines become better enforced (e.g., you get a fine if you go outside), this is actually the government using #shapingbehavior to change the payoff values so that the payoff of going out and getting fined is less than the payoff of staying in and not getting fined.
+- Game theory can be used to explain a wide range of social phenomena. An example is the Volunteer’s Dilemma, a situation in which each player can either “take one for the team” in a way that benefits everyone in the group, or choose to wait in the hopes of someone else volunteering. An analysis of the equilibrium strategies in such games reveals that the cost of volunteering actually increases the more players are in the game. This is commonly termed the Bystander Effect. For example, - A group of colleagues may desire a pay raise, but each one prefers that someone else incurs the cost of raising this idea.  - It takes just one person to veto an undesired outcome under unanimity voting, but such vetoes may be politically costly.  - When an emergency occurs in a public space, witnesses may be reluctant to contact the police. They do not want to incur the personal costs of getting involved and it’s reasonable to assume that someone else will do it, especially if lots of other witnesses are present.
+
+KEY RESOURCES
+1. Game theory - New World Encyclopedia. (2017, May 19). New World Encyclopedia. http://www.newworldencyclopedia.org/entry/Gametheory
+- Why/use: This short introductory resource provides definitions of game theory terms and provides some practical examples of game theory.
+2. Spaniel, W. (n.d.). The Basics. Game Theory 101. http://gametheory101.com/courses/game-theory-101/
+- Why/use: This is a video series of foundational game theory concepts. Start with “The Basics” and then explore the other sections for more advanced concepts and examples. International Relations 101  is an interesting spinoff to this series!
+3. Easley, D. and Kleinberg, J. (2010). Chapter 6: Games, in Networks, Crowds, and Markets: Reasoning About a Highly Connected World. Cambridge University Press. https://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch06.pdf
+- Why/use: This resource provides in-depth explanations about game theory concepts, and also provides practice questions to test your understanding at the end.

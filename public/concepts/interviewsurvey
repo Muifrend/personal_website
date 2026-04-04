@@ -1,0 +1,186 @@
+#INTERVIEWSURVEY
+
+BLURB
+Design and interpret primary research performed as interviews or surveys (individually or in groups).
+
+PITCH
+Interviews let you go deep, surveys let you go wide.
+
+PARAGRAPH DESCRIPTION
+Particularly in the social sciences and public health areas, much primary research involves interviewing or surveying human participants. Considerable research on such methodologies has produced a set of best practices. For example, interviews may be structured (the same questions are asked of all participants), as opposed to having a freeform discussion. Surveys should avoid leading questions. Web-based interviews and surveys present special challenges, including verification of participant characteristics.
+
+CATEGORIZATION
+Foundational Concept | Empirical Analyses | Thinking Creatively | Applying Research Methods
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analyses | Semester One
+- Unit: Research Design
+- Big Question: How do we mitigate human-caused climate change?
+
+GENERAL EXAMPLE
+You are the owner of an airline and you decide to investigate why your customer-base has been decreasing of late. To that end, you have your product team devise a survey asking about several aspects of travel in your planes. You are surprised to learn that your customers are dissatisfied with the amount of space they have in their seats. You ask to see the survey and find that the relevant item asks “On a scale of 1-5, rate the space and comfortability of our seats”. You point out that the results are ambiguous because the question really combines two separate questions, one about how much space the customer has and another about the comfort of the seat materials. You ask to have the questions separated on the survey so that the problem can be diagnosed more accurately. You further decide to add an open-ended question, “What (if anything) makes you most uncomfortable about our seats?”, to gain qualitative input of what you might want to change as well. You further devise a way to codify qualitative input to make it usable for decision-making by creating categories of what people complain most about (legroom vs seat material vs seat ergonomics) and ranking what is mentioned most frequently.
+
+Footnote: A mixed-method survey is used to gain insight on customers’ experience of the airline's seats, and a question design flaw that impairs meaningful conclusions is identified and fixed. An open-ended, qualitative question is also added to allow customers to complain about unforeseen aspects affecting comfort.
+
+IS THIS THE RIGHT HC?
+Is #interviewsurvey the right HC? If the answer to the following questions is yes, #interviewsurvey could be useful:
+
+- Are you designing a survey/interview for research purposes?
+- Are you critiquing a survey or interview designed by someone else?
+
+Depending on the work product, there might be other HCs to consider:
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#sampling  |  Describes the sampling methods to select a subgroup of a target population to take a survey or be interviewed.
+#dataviz  |  Creates data visualizations to observe trends from collected survey data. This HC is often used after conducting a survey.
+#studyreplication  |  Replicates a survey/interview study in a different time frame or with a different target population.
+#biasidentification  |  Identifies the potential cognitive biases that may apply to respondents or interviewers when doing surveys/interviews.
+#biasmitigation  |  Explains certain aspects of a survey or interview that is designed to mitigate cognitive biases.
+#confidenceintervals, #correlation, #descriptivestats, #distributions, #regression, #significance, #variables  |  Conducts statistical analyses on quantitative survey data. These HCs are usually used after data collection.
+SELF STUDY QUESTIONS
+1. What are the different approaches when designing surveys?
+
+   Answer: - Qualitative approach
+   
+   - Non-numerical data
+   - May contain open-ended survey responses, essay answers, or group-brainstormed ideas
+   - Not limited to words only (may include art and design!)
+   
+   - Quantitative approach
+   
+   - All data would be quantified or counted
+   
+   - Mixed method approach
+   
+   - Uses both qualitative (for in-depth information) and quantitative (for efficiency) approaches
+   - The approaches usually complement each other
+
+2. What are the advantages and disadvantages of each survey approach?
+
+   Answer: 
+
+3. For mixed methods, what is the difference between concurrent design and sequential design?
+
+   Answer: Concurrent mixed methods collect qualitative and quantitative data from respondents simultaneously. For example, one would conduct a survey and multiple interviews at the same time. In contrast, sequential mixed methods collect data iteratively, in which data from one phase contributes to the subsequent data collection phase. For example, one would first collect survey data, conduct data analysis, then select a few respondents for interviews (to collect qualitative data further). 
+   
+   This table summarizes the advantages and disadvantages of both designs:
+
+4. What are the general steps to conduct a survey study?
+
+   Answer: - Design the survey approach
+   - Design questions
+   - Pre-test
+   - Data collection
+   - Data analysis
+
+5. What are the general considerations when designing the survey approach (setting up the survey)?
+
+   Answer: - Target population (Survey the whole population? Or a subgroup of the population?)
+   - Timing (When is it appropriate to implement the survey?)
+   - Delivery mode (Is the survey on paper or electronic?)
+
+6. What are the criteria for evaluating a survey question?
+
+   Answer: - Reliability: the extent to which repeatedly measuring the same property produces the same result
+   - Validity: the extent to which a survey question measures the property it is supposed to measure
+
+7. What is a preamble?
+
+   Answer: A preamble is the information or context respondents should know before reading the actual question. For example, “This question is about commuting to work. When answering, please consider only events during the last 30 days.”
+
+8. What is a screening question?
+
+   Answer: A screening question is usually presented before the actual survey questions. It filters the population to make sure that your respondents are within your target population. For example, suppose the target population is senior citizens. In that case, you might want a screening question asking the age of the respondents and only allow respondents above 65 years old to proceed with the survey.
+
+9. What are the principles of good question design?
+
+   Answer: The following table (Thayer-Hart et al., 2010) summarizes the principles (and pitfalls):
+
+10. What are the ethical principles for a survey?
+
+   Answer: - Do no harm -  Participants should be protected from risks, including emotional costs (e.g., avoiding sensitive questions)
+   - Informed consent - Investigators must obtain written consent from survey participants before collecting data (e.g., asking participants to sign a consent form before the survey).
+   - Confidentiality - Investigators must respect the privacy of participants (e.g., destroying non-anonymous data after the survey research is complete)
+   - Avoid coercion - Participants should have the freedom to withdraw from the study at any time.
+
+11. What are the types of interviews?
+
+   Answer: - Structured interview
+   
+   - Has a list of pre-determined questions
+   - No follow-up questions
+   - Easy to administer, but limited participant responses
+   
+   - Semi-structured interview
+   
+   - Has several key questions to define the area of interest, but allows the interviewer or interviewee to diverge and pursue an idea or response in detail
+   - Flexible and allows the elaboration of information simultaneously
+   
+   - Unstructured interview
+   
+   - Does not reflect any preconceived theories or ideas
+   - Starts with an opening question, then progresses based on the initial response
+   - Used if nothing is known about the subject area or a different perspective of the subject area is required
+   - Time-consuming, difficult to administer
+
+12. How do you process qualitative data?
+
+   Answer: The general method is coding: identifying ideas, topics, themes, concepts, words, terms or phrases that appear frequently or seem important in your interviews. These major trends may help to explain quantitative data patterns and answer the research question with contextual information.
+
+13. What is a pretest?
+
+   Answer: A pretest means administering your survey/interview to a few respondents from the target population. This stage identifies the flaws of your survey/interview design (e.g., confusing phrasing) via the test respondents’ feedback. Fixing these problems will minimize the issues during the actual data collection phase.
+
+14. How is Institutional Review Board (IRB) oversight helpful?
+
+   Answer: The institutional review board (IRB) at Minerva reviews and monitors research with human subjects at Minerva. These reviews ensure that ethical guidelines are being followed when human subjects are involved in a study. Whenever conducting external interview/survey studies, students and faculty should always consult Minerva University’s IRB.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you defined the target population and the sampling methods?
+2. Have you explained the underlying reasons for screening questions?
+3. Have you conducted a pretest?
+4. Are your questions concise and unambiguous?
+5. Have you outlined an appropriate method to analyze survey/interview data?
+6. Have you connected the survey/interview results to the research question?
+7. Have you explained the strengths and limitations of your survey/interview?
+8. Have you proposed solutions to overcome the limitations of your survey/interview?
+
+COMMON PITFALLS
+- The survey or interview violates the ethical principles of research design.
+- The target population is inappropriate for the research question.
+- The survey or interview was not pre-tested.
+- The survey or interview has an obvious question design flaw (e.g., leading questions, unclear language).
+- The selected survey approach (e.g., mixed method) is inappropriate or not well-explained.
+- The results from a survey or interview are improperly interpreted, or are too superficial.
+- The results of the survey or interview do not sufficiently connect to the research question.
+- The application does not include a copy of the survey in the appendix.
+
+APPLYING THIS HC AT MINERVA
+- When developing a software application, surveys help collect data from the user end. If testers can self-report data, developers can evaluate the current performance of the prototype and make changes where needed.
+- Many cornerstone and capstone projects either collect survey data and/or interpret it!
+- Minerva uses surveys to collect data from students. For example, the end-of-semester course evaluation survey allows students to provide feedback on a course. These surveys are anonymized to protect students’ privacy.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Interviews and surveys are also valuable when interventional/observational studies are unrealistic. For example, to evaluate patients' pain levels, doctors cannot observe and record the relevant variables themselves. Instead, patients must self-report their pain levels on a Likert scale. Macfarlane et al. (2001) conducted a survey study on patients who report body pain, followed by an eight-year prospective cohort study. The survey results show that patients who report “widespread pain” and “regional pain” have higher mortality rates eight years later.
+- Zhou and Zhang (2021) surveyed US college students about their learning experiences during the Covid-19 pandemic. The survey found that despite the lack of interactions between teachers and classmates, most respondents reported increased mental health and an overall positive perceived belongingness to their learning community. The study prompted further research on the role of online learning in higher education.
+
+KEY RESOURCES
+1. ACET, Inc. (2013). Selecting an evaluation: Qualitative, quantitative, and mixed method approaches. Minneapolis, MN. https://nebula.wsimg.com/bd826bd49ca46a96f4753327670b560a?AccessKeyId=B57BB715D0A0546646BB&disposition=0&alloworigin=1
+- This short article introduces the types of survey approaches (qualitative, quantitative, mixed methods), along with their respective advantages and disadvantages.
+2. Thayer-Hart, N., Dykema, J., Elver, K., Schaeffer, N. C., & Stevenson, J. (2010). Survey fundamentals: A guide to designing and implementing surveys. Office of Quality Improvement. https://www.lonestar.edu/departments/honorsprogram/A%20Guide%20to%20Designing%20and%20Implementing%20Surveys.pdf
+- This guide is the main resource for the survey aspect of this HC. It outlines the survey process and the best practices of question design.
+3. Meta Connects. (n.d.). Surveys as a research method. https://web.archive.org/web/20181007104310/http://metaconnects.org/survey-overview
+- This resource summarizes the survey design process. Read the overview, sample, design, pretesting, and analysis sections.
+4. Gill, P., Stewart, K., Treasure, E., & Chadwick, B. (2008). Methods of data collection in qualitative research: interviews and focus groups. British Dental Journal, 204(6), 291-295. http://www.nature.com/bdj/journal/v204/n6/pdf/bdj.2008.192.pdf
+- This article is the main resource for the interview aspect of this HC. It outlines the interview process, the best practices, and when to use focus groups instead of individual interviews.
+5. Meta Connects. (n.d.). Interviews as a research method. https://web.archive.org/web/20180731162942/http://metaconnects.org/node/118
+- This resource summarizes the interview design process. Read the overview, sample, design, pretesting, and analysis sections.
+6. Minerva University’s IRB. https://my.minerva.edu/application/login/?next=/academics/learning-resources/human-subjects-research/
+- Always consult this guide when considering conducting interviews or surveys for research.
+7. Research Principles - document. https://docs.google.com/document/d/1cFx6JEDf82wlko3dwup98pI8oDb5uxQz0u9m2FiLATw/edit
+- A primer on key principles when engaging in human subjects research.
+8. Bhandari, P. (2020, October 26). Ordinal data: examples, collection, and analysis. Scribbr. https://www.scribbr.com/statistics/ordinal-data/
+- This short article introduces the statistical methods to analyze ordinal data, which is frequently used in surveys.
+9. Flora, T., Koloskov, N., & Terrana, A. (2020, August 17). Variables - Custom Cornerstone Guide. Minerva Schools at KGI. https://my.minerva.edu/academics/hc-resources/cornerstone-custom-hc-guides/
+- This whitepaper outlines the types of variables. Focus on ordinal variables, which is frequently used in surveys.

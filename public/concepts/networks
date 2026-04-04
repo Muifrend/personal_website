@@ -1,0 +1,113 @@
+#NETWORKS
+
+BLURB
+Analyzing the structure of connections to understand system-level outcomes.
+
+PITCH
+Meet one person, and have access to one person; meet three people and have access to a hundred; meet six people and have access to the entire world.
+
+PARAGRAPH DESCRIPTION
+Network analysis is a valuable tool for understanding the relationships or connections among agents within a system. For example, analysis of these networks can help us understand how ideas, resources, information, or diseases propagate through a social system. Network analysis begins with an explicit definition of the nodes in the network and the criteria for determining which nodes are connected by edges. Of particular interest are social networks, where nodes represent individuals. In this context, edges might represent friendship, communication, physical proximity, authority, or some other relevant social relationship. Analyzing network structures can help illuminate phenomena that cannot be explained by relying on the characteristics of individuals. A student may be the most influential trendsetter of their class not because they are the most innovative, outgoing or charismatic - but simply because of their location in the network of connections. If the structure of the network would change, because other students have formed new relationships, the trendsetter may lose their position of influence. Such a phenomenon is called a network effect.
+
+CATEGORIZATION
+Foundational Concept | Complex Systems | Interacting Effectively | Understanding and predicting complex patterns
+
+CORNERSTONE INTRODUCTION
+- Class: Complex Systems | Semester One
+- Unit: Characteristics of Complex Systems
+- Big Question: How should the world be governed?
+
+GENERAL EXAMPLE
+You have spent the past two summers working as an intern in an office. You’ve gotten to know the organization, and you have some great ideas for how to improve performance. For the past few weeks, you’ve been sharing your ideas with the people you know; they are enthusiastic, but the ideas never seem to go anywhere. One day, you notice that the people you know in the office spend most of their time interacting with each other. You realize that you are part of a cluster of nodes that is densely connected, but not well connected to the rest of the organization. You spend a few days walking around different parts of the facility, taking note of who interacts with whom. You determine that there are many isolated clusters of people in the company, but there is one person who seems to interact regularly with people from many of those different groups. One day, you make a point to eat lunch with this person, and you pitch your ideas to them. Within a week, people throughout the company are talking about your ideas, and you think there is a good chance that they will be implemented by the time you come back next summer. 
+
+Footnote: The application begins with a recognition of the local network structure. The fact that the individual is in a small cluster that is not well connected to the rest of the network has led to their ideas not spreading beyond their immediate group. The larger network structure of interpersonal interactions was analyzed and an individual with a high centrality was found. Targeting this key node led to rapid propagation of their ideas through the system.
+
+IS THIS THE RIGHT HC?
+Is #networks the right HC? If the answer to the following questions is yes, #networks could be useful:
+
+- Are you looking at a network that could be visualized with nodes and connectors?
+- Are you focusing on one type of interaction/connection that links together a network?
+- Are you analyzing how the structure of the network can address an explanatory challenge or suggest an intervention in a system?
+
+Depending on the work product, there might be other HCs to consider. ….
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#complexcausality  |  Focuses on how variables cause changes in one another over time (e.g., feedback loops, necessary and sufficient causes), rather than an overall representation of the pattern of connections in a network.  Involves a diagram in which the edges represent causal relationships between nodes that trace higher-order effects; this causal diagram should not be confused with a #networks diagram, which represents agents and the structure of their connections.
+#systemmapping  |  Focuses on the definition of agents in the system, contrasting that definition with other possible choices. Note that an application of #systemmapping might be involved in defining the meaning of a node in your network.
+#emergentproperties  |  Focuses on some global behavior of the higher-level system modeled by your network, where that behavior is qualitatively different from the properties of individual nodes, you may be looking at an emergent property.
+#powerdynamics  |  Focuses on the application and consequences of power, which could result from one’s position within a network.
+SELF STUDY QUESTIONS
+1. Every network consists of nodes and edges connecting those nodes. What are some other key properties of networks?
+
+   Answer: Size, degree, density, diameter, clustering coefficient, reachability, robustness.
+
+2. What are some important classes of network structures/topologies?
+
+   Answer: - Random network: each node has the same probability p of being connected to another node, short path lengths, and clustering coefficients. 
+   - Centralized network: a couple of nodes that are highly connected (hubs), that pattern occurs at different levels. 
+   - Decentralized network: the network is not dominated by one or few hubs, but connections are more evenly distributed. 
+   - Small-world network: short path lengths and above average clustering, while most nodes might not be directly connected they are relatively close to each other.
+   - Scale-free network: a network where the distribution of the number of links connecting to a particular node follows a power law
+
+3. What would be the difference between a decentralized, high-density network and a centralized, low density network when thinking about the speed at which (for example) information travels through the system from a random node?
+
+   Answer: Although a centralized network can lead to faster transmission of information from the central node itself, density is more important when considering the spread of information. The denser the network, the more connections there are, meaning that information will travel much faster.
+
+4. What are some important quantities that can be used to describe networks and nodes?
+
+   Answer: - Network-level properties:
+   
+   - Size: Could refer to the number of nodes or number of edges.
+   - Density: The number of edges, relative to the maximum number of possible edges in a network with this many nodes.
+   - Average degree: The average number of edges connected to a node in the network.
+   - Degree distribution: The distribution of the number of edges connecting to nodes in the network.
+   - Diameter: The shortest distance between the two most distant nodes.
+   - Characteristic path length: The average shortest path length between all pairs of nodes.
+   - Clustering coefficient: A measure of the probability that two nodes linked to a particular node are also directly linked to each other.
+   - Connectedness: Can all of the nodes in the network be reached from other nodes?
+   
+   - Node-level properties:
+   
+   - Degree centrality: The number of links connecting to a node.
+   - Closeness centrality: That average length of a shortest path from this node to all other nodes in the graph.
+   -  Betweenness centrality: The fraction of shortest paths connecting pairs of nodes that pass through this node.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you defined what a node is and what an edge is?
+2. Have you operationalized (how to measure/quantify) your edges?
+3. Have you described the structure of the network - identified potential clusters and broader, patterns, hubs, and isolated nodes that are relevant to your explanatory challenge?
+4. Have you clearly explained how the structure of the network leads to the phenomena of interest? (it’s not enough to just mention them both)
+5. If you are proposing an intervention, have you considered all the possible outcomes it could lead to? (not just the one you expect to get)
+6. If you are analyzing a phenomenon related to the structure of the network, have you considered whether it is the result of the network structure, or the network structure is the result of a particular phenomenon?
+7. Have you referred to all the network concepts (degree distribution, centrality, reachability, density, etc) and outlined them in your analysis?
+8. Have you visualized the network somehow?
+9. Have you justified why it is the structure of the network that determines how the agents interact, and not some other factor?
+
+COMMON PITFALLS
+- The application discusses connectedness per se, but remains in the general realm of speculation, instead of using terms and concepts for a deep analysis of networks.
+- The application confuses applying #systemmapping with #networks and focuses on the interactions between some agents (A does B, which causes C to do D), and not on the structure of the overall network, which carries characteristics such as reachability, density, and other generalizable network patterns that have system-level impacts.
+- The application is attempted towards a network of just a few agents (four, five, etc.), and does not properly connect interpersonal interactions (#systemmapping) to generalizable network patterns (one person is a hub and communicates with everyone). (Note: it is genuinely harder to properly apply #networks in such cases, and it should be done carefully).
+- Analyzing a network with too many different types of interactions and not picking what kind of interaction to focus on – define your edges!
+
+APPLYING THIS HC AT MINERVA
+- Ecology: NS112 has its own LO titled #networks, which focuses on the same principles - structures of biological communities, upstream and downstream gene/protein interactions, food chains, and how those determine system-level phenomena.
+- Computer Science:  - Organizing the communication between nodes in a system is crucial for the development of machine learning models, and students will explore this more in machine learning courses at Minerva. An example of a network algorithm is a neural network, which is a machine learning model that mimics the brain, made up of layers of connected nodes (neurons). It learns patterns in data to solve tasks like recognizing images or making predictions. For CS applications, it can be important to compare alternative ways of constructing a network algorithm for the performance of the algorithm in a given context, and explain why you chose the structure you did.  - In data structures and algorithms, networks (or graphs) are useful tools for data analysis, especially for understanding relationships between items. For example, in reconstructing a genealogy (family) tree from gene sequences, each sequence can be represented as a point (node) in the network, and connections (edges) between them are based on how similar the sequences are, measured using LCS (Longest Common Subsequence) scores. By visualizing this network and focusing on the strongest connections, groups of closely related sequences can be easily identified, offering a clear way to understand the relationships and structure of the family tree.
+- Biochemistry and Genetics: Interactions among genes and proteins are often studied in terms of their network structures. Examples include protein-protein interaction networks and gene-regulation networks.
+- Social Sciences: Analysis of Complex Systems does not have to end with CX50; it can continue to other social sciences such as politics or economics, where understanding the structure of societies could, for example, explain how isolation of towns and cities might worsen the stability or stop development.
+- Business: In any given field, understanding networks of people and enterprises will help you navigate the network and leverage it optimally. Similarly, understanding networks of potential customers can be a valuable start to getting a product to sell well. If certain customers are more likely to be connected in a relevant way to other possible customers, they can help increase the reach of your product.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Your (professional, personal, community) relationships: being aware of your place in various networks can help you best recognize how to move about in those networks. Sometimes, this might mean being critical of the network structure when recognizing effects like isolation of bubbles of people. Other times, we can find out how to optimize our position in a network, for example by surrounding ourselves with people who are more likely to share information, opportunities, and connections we are interested in.
+- Understanding and characterizing networks might be an invaluable skill for research projects where you are analyzing communication between nodes in a network (e.g. how the connectivity of our brains changes in certain diseases?)
+- Understanding the properties of networks might help you build a more successful organization or startup - knowing how to structure your employees or departments to facilitate communication and avoid unnecessary managerial layers, might significantly boost productivity.
+- For anyone interested in spreading information publicly for marketing strategies, considerations of which nodes in the network are most connected and likely to spread something quickly might be crucial for a successful strategy.
+
+KEY RESOURCES
+1. McAllister, K. and Wilkins, J. F. (2020, August). Network Analysis. Minerva Guide 2 v3.0. https://docs.google.com/document/d/1hdpjbUhDEw8Trwk-JqDS8M-wK3P1E-uGtX4FEJVH0/edit
+- This reading provides necessary concepts for applying #networks by Minerva faculty.
+2. Sheskin, M. (2021) Characteristics of Complex Systems – a Brief Introduction. Minerva Guide 3. - https://docs.google.com/document/d/1cxCp8FqZBbNAaMTUgAnv36gu0bDEHpRwMgkEI5VX8/edit
+- This resource explains some of the properties of complex systems, how to differentiate them, and apply them towards an explanatory challenge.
+3. Loem, M. (2021) What is Network Analysis?. Medium. https://towardsdatascience.com/network-analysis-d734cd7270f8
+- This article explains network analysis in the context of graphs and computer sciences.
+4. Complexity Explorer (2018). Introduction to Complexity: Networks. YouTube. https://www.youtube.com/watch?v=i1URjc29MAo&pp=ygUdbmV0d29ya3Mga25vd2xlZGdlIGNvbXBsZXhpdHk%3D

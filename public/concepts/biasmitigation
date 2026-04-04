@@ -1,0 +1,107 @@
+#BIASMITIGATION
+
+BLURB
+Identify methods to mitigate the effect of biases and determine when it is appropriate to do so.
+
+PITCH
+Knowing we’re prone to biases isn’t enough - we have to do something about it.
+
+PARAGRAPH DESCRIPTION
+Biases can prevent us from considering important information when making decisions and drawing accurate conclusions. The key to minimizing the effects of bias is first to become aware of them and then determine how to reduce or eliminate their influence in a particular context. Learning to recognize common biases can help one to avoid them, but others may need to be mitigated by implementing specific processes. For this purpose, heuristics designed for preventing biases can be useful.
+
+CATEGORIZATION
+Habit of Mind | Empirical Analyses | Thinking Criticallly | Analyzing Decisions
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analyses | Semester Two
+- Unit: Biases
+- Big Question: How reliable is testimony?
+
+GENERAL EXAMPLE
+You are working on the campaign team for a Presidential candidate whose policy platform includes sweeping reforms to address climate change. The team is focusing on strategies that can appeal to supporters of the opposition party, but they are concerned that confirmation bias from those voters will lead them to overlook and devalue your Candidate’s arguments. While confirmation bias is certainly a core one to identify in this situation, you suggest the team also consider how emotional bias may interact with confirmation bias to make supporters of the opposition party more resistant than they otherwise would be. The political discourse has made voters on both sides of the aisle likely to feel anger when confronted with opposition views, and you point out that anger is an emotion associated with high certainty, which will only strengthen a person’s existing confirmation bias. You explain that other emotions like surprise and fear are associated with low certainty, which would affect voters’ depth of thought on the issue. By identifying voters’ biases in a more nuanced way, the team now has clearer direction on how to shape a successful strategy. To mitigate those biases in the campaign materials about climate change, the team decides a few things. First, potential swing voters from the opposing party will be targeted with ads that only address the ideological issues without reference to the Candidate to reduce the opportunity for confirmation bias. Further, talking points from the opposing party in support of addressing climate change will be used in the ads to capitalize on confirmation bias. If swing voters engage with those ads, then your Candidate’s platform will be presented. Even though humans have caused the current climate crisis, your materials avoid that language to reduce the emotional biases that might arise from anger about hot-button issues. Instead, the materials focus on how humans can be the solution to the problem, and interesting facts like how the US is a world leader in wind energy and the surprising number of jobs that industry provides. By avoiding language known to provoke anger among the target demographic, and including information that will provoke pride and surprise, you substantially reduce the emotional bias against your Candidate’s climate change policies. 
+
+Footnote: The campaign strategy clearly understands the effect of confirmation bias and emotional bias on decision-making, and employs nuanced approaches to avoid and counteract the existing biases that the target demographic hold.
+
+IS THIS THE RIGHT HC?
+Is #biasmitigation the right HC? If the answer to the following questions is yes, #biasmitigation could be useful:
+
+- Are you proposing strategies to mitigate one or more of the cognitive biases?
+- Are you evaluating an existing bias mitigation strategy?
+
+Depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#biasidentification  |  Identifies cognitive biases and their consequences on a behavior.
+#heuristics  |  Uses heuristics to develop solutions, potentially to mitigate biases (e.g., considering the opposite).
+#sampling  |  Proposes strategies to mitigate sampling biases (e.g., randomization) that do not relate to cognitive biases.
+#interpretivelens  |  Focuses on how past experiences, expectations, or purposes affect our perspectives; in some cases, these prior experiences can lead individuals to develop cognitive biases which could then be evaluated using #biasmitigation. However, applying #interpretivelens to identify factors shaping one’s viewpoints does not always imply an associated cognitive bias.
+SELF STUDY QUESTIONS
+1. What is the GI Joe fallacy?
+
+   Answer: The fallacy where one assumes that knowing about biases is “half the battle” when it’s really much less than half the battle. The name of this fallacy comes from the G.I. Joe show, inspired by the quote “Now you know, and knowing is half the battle.”
+
+2. What are ways to mitigate confirmation bias?
+
+   Answer: - Blinding (e.g. anonymizing irrelevant information from applications)
+   - Double-blinding (both the administrators and the test subjects are unaware of the ones who receive the treatment)
+   - Linear sequential unmasking protocol (LSU)
+   - Considering the opposite
+   - Considering alternatives
+   - Embraces surprises from unexpected results
+   - Dual verification (have two people perform the same task without communicating to each other to verify if the results are the same)
+
+3. What are some ways to mitigate emotional bias?
+
+   Answer: - Time delay
+   - Reappraisal (reframing the meaning of stimuli that led to an emotional response)
+   - Increasing awareness of misattribution (e.g., considering whether your anger is actually because you’re hungry and not as much about the situation at hand)
+   - Dual-emotion solution (inducing a counteracting emotional state)
+   - Choice architecture (e.g., reorganizing cafeterias by presenting healthier food choices first, to avoid emotionally-biased decisions due to hunger)
+
+4. What are some ways to mitigate attentional bias?
+
+   Answer: Because attentional bias is deep-rooted and in some cases an evolutionary advantage, it can be difficult to mitigate.
+   - Training is one possible way to reduce attentional bias - for example, people suffering from depression can be trained to focus on positive stimuli.
+   - Feedback is another - having trusted family or friends point out to you when you are only paying attention to a subset of stimuli (e.g., only noticing the rude comments someone made)
+
+5. What are some ways to mitigate memory bias?
+
+   Answer: - Use recordings or audio transcripts. Whenever you need to verify something in a meeting, you can always go back to the recordings. For example, if you need to do makeup work, while asking someone else for a class recap is convenient, Forum recordings are always unambiguous. As another example, CCTV footage is more reliable than eyewitness testimony.
+   - #scienceoflearning! Learning techniques, such as practice testing and spaced practice, use underlying learning principles to encourage long-term memory retention.
+
+6. When is it necessary to mitigate a bias?
+
+   Answer: Not all biases are necessarily harmful and mitigating them can be very cognitively demanding. So, before mitigating a bias, we should assess the impact and ethics of acting under this bias. For example, if a person is walking in the forest and, due to bottom-up attentional bias, they mistake a stick for a snake, mitigating this bias would not be necessary. They could be slightly surprised or scared, but, in this case, the cost of making a type I error is pretty low, and mitigating this bias would likely be a waste of energy and resources. However, if a police officer mistakes a person holding a phone for holding a gun and shoots them, it would be a mistake with a very large cost. If we know that black people are disproportionally killed in police shootings, we may use #biasidentification to recognize the bias in place and #ethicalconsiderations to decide that spending resources to minimize the bias as much as possible is necessary.
+
+7. How to know when to apply #biasidentification, #biasmitigation, or #interpretivelens?
+
+   Answer: These HCs are often interconnected. However, they serve different purposes. With #biasidentification, a specific instance of bias should be recognized, described, and explained, focusing on the cognitive blindness that bias caused and the impact of that blindness. With #biasmitigation, a particular bias should have already been identified, and a technique to mitigate the bias should be explained in detail and backed up with evidence that supports its effectiveness. With #interpretivelens, a bias may or may not be identified, but an instance of a certain interpretation will be recognized and connected back to a previous experience, expectation, or purpose, and the connection will be explained. Notice that it’s possible for cognitive biases (that can be evaluated with the bias HCs) to stem from one’s prior personal experiences or expectations. However, applying #interpretivelens to evaluate how one's past shapes their perspectives does not always imply an associated cognitive bias.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you identified a relevant bias mitigation strategy?
+2. Have you explained the relationship between the mitigation strategy and the relevant bias (or biases)?
+3. Have you evaluated the strength of your bias mitigation strategy?
+
+COMMON PITFALLS
+- The application is mitigating a bias that isn’t a cognitive bias (e.g., sampling biases).
+- The application suggests a bias mitigation strategy but fails to explain the underlying mechanism.
+- The application claims to "eliminate" biases. Cognitive biases can be minimized, but never eliminated.
+- The application discusses a bias mitigation strategy without identifying the relevant cognitive bias.
+
+APPLYING THIS HC AT MINERVA
+- A Civic Project on "How might we educate men on how to be better allies to women in the workplace?" They approached this by designing interactive group training modules using social learning and games that workplaces could adopt for their employee training programs. Their training modules implemented numerous techniques (e.g., blinding, gender-neutral names) that aimed to mitigate biases, including emotional biases and unconscious beliefs, regarding gender equality. Their goal was for the training program to foster an open-minded environment, so it was important to account for biases that may keep participants from retaining the information presented to them.
+- Cognitive biases may also apply in design courses at Minerva. For example, confirmation bias, particularly about what a "normal" user's body is like, has a huge impact on the design of objects and spaces. Attentional bias is also used to explain forms of ableism in design (paying too much attention to some users at the expense of others). Universal design (UD) is "design that’s usable by all people, to the greatest extent possible, without the need for adaptation or specialized design." The seven principles of UD provide guidelines to mitigate confirmation bias for certain populations. One specific application of UD is DeafSpace, which is a collection of architectural concepts that maximize sensorial orientation for the deaf when designing living spaces. These concepts help home designers to mitigate implicit biases in favor of non-disabled users.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Bias mitigation is incredibly important in relationships. Confirmation bias, especially, can affect interpersonal relationships when a person only hears or sees what is in line with their pre-existing views. This could affect professional relationships and more personal ones. It is important to be able to mitigate confirmation bias through the techniques suggested above.
+- Minerva’s Diversity, Equity, and Inclusion (DEI) board aims to mitigate implicit biases on “race, ethnicity, gender, age, disability, sexual orientation, gender identity, national origin or citizenship, religious or political beliefs, social class.” For example, all faculty and staff had “unconscious bias training,” and academic courses are revised from a DEI perspective.
+- The United States Intelligence Community applies the Analysis of Competing Hypotheses (ACH) to reduce cognitive biases in policy making. ACH is a methodology for evaluating multiple competing hypotheses for observed data. It was developed by Richards (Dick) J. Heuer, Jr., a 45-year veteran of the Central Intelligence Agency, in the 1970s for use by the Agency. ACH is used by analysts in various fields who make judgments that entail a high risk of error in reasoning. The ACH shares commonalities with the "Consider the Alternate/Opposite" techniques, as both methods encourage exploring multiple perspectives to enhance decision-making. This approach is particularly effective in mitigating confirmation bias, as it systematically challenges analysts to consider and weigh evidence against all plausible hypotheses, rather than favoring information that confirms pre-existing beliefs or expectations.
+
+KEY RESOURCES
+1. Santos, L. (n.d.). Cognitive Biases: The GI Joe Fallacy [Video]. Khan Academy. https://www.khanacademy.org/partner-content/wi-phi/wiphi-critical-thinking/wiphi-cognitive-biases/v/gi-joe-fallacy
+- This 4-minute video introduces the GI Joe fallacy, which explains the importance of this HC.
+2. Lerner, J. S., Li, Y., Valdesolo, P., & Kassam, K. S. (2015b). Emotion and Decision Making. Annual Review of Psychology, 66(1), 799–823. http://www.annualreviews.org/eprint/vVKIPZU5r9dTCzbgdD3M/full/10.1146/annurev-psych-010213-115043
+- This paper is also used in #biasidentification. Sections 1-3 outlines how emotional bias can influence decision making, while Section 8 describes strategies to mitigate emotional biases. This paper also includes weak strategies with justification from existing studies.
+3. Kassin, S. M., Dror, I. E., & Kukucka, J. (2013). The forensic confirmation bias: Problems, perspectives, and proposed solutions. Journal of Applied Research in Memory and Cognition, 2(1), 42–52. https://doi.org/10.1016/j.jarmac.2013.01.001
+- This paper details strategies to mitigate confirmation bias, specifically in forensic analysis.

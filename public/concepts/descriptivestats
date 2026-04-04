@@ -1,0 +1,117 @@
+#DESCRIPTIVESTATS
+
+BLURB
+Calculate and interpret descriptive statistics appropriately.
+
+PITCH
+If data had social media, this would be its bio page.
+
+PARAGRAPH DESCRIPTION
+Descriptive statistics describe properties of a set of data. Two important categories include measures of location (such as mean, median, mode) and measures of spread (such as standard deviation and range). Instead of considering each data point separately, such statistics provide an overview of key properties of the entire set of data. The mean, median and mode can be very different if the distribution of scores is skewed or there are big outliers. It is important to use the relevant descriptive statistics for a particular purpose, to interpret them appropriately, and to recognize their uses and limitations.
+
+CATEGORIZATION
+Habit of Mind | Formal Analyses | Thinking Critically | Analyzing Data
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester One
+- Unit: Probability and Statistics
+- Big Question: What does it mean to be random? How can data help us discover what is true?
+
+GENERAL EXAMPLE
+You want to choose a career, and you start by conducting market research on salaries of different jobs. Looking into how much physicians make on average, you see the mean is the highest among the careers you consider. But when checking the median salary, you discover that it is worse than what a ship’s first mate makes! Plotting a histogram of the physician salaries from a database, you find that the mean is positively skewed by heart surgeons and a few other high-paying specialists. Additionally, you see that the standard deviation is large, indicating that there is substantial variation from the mean salary. You note that, while the mean is higher for physicians, you would have to be one of the few high earning physicians to earn a lot. Because of the higher median and low variance of the first mate’s salary, you infer that this could actually be a safer choice: mid-level shipmates make more than mid-level physicians. In other words, in the top 50% of earners, the lowest-paid shipmates make more than the lowest-paid physicians. However, your ambition and love of medicine drive you to go for the ultimately higher earning potential of physicians, with the caveat that you will have to specialize in your discipline to achieve your desired salary (as your research shows that being a mid-level physician is not worth it, comparatively). 
+
+Footnote: The mean, median, and standard deviation of the data were interpreted and analyzed to inform decision-making based on goals. When examining the salary of a “typical” physician, the median was consulted after identifying outliers in the histogram that skew the mean and used the standard deviation to understand the variation from the mean.
+
+IS THIS THE RIGHT HC?
+Is #descriptivestats the right HC? If the answer to the following questions is yes, #descriptivestats could be useful: 
+- Does calculating or interpreting summary measures of a dataset, such as the mean, mode, median, standard deviation, or range, yield relevant insights for the task at hand?  
+ - Does the work calculate or interpret the descriptive statistics in a way that addresses the explanatory challenge?
+ 
+However, depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#distributions  |  Uses descriptive stats, likely in combination with a histogram, to summarize the shape of a dataset's distribution, possibly for the purpose of statistical inference.
+#confidenceintervals  |  uses descriptive stats, like mean and standard deviation, to construct and interpret confidence intervals.
+#variables  |  uses descriptive stats, like mean, mode, or standard deviation, as a variable to analyze a problem, model or a system.   or gives thoughtful consideration to the variable type or role when selecting which descriptive statistics to use for it.
+#dataviz  |  produces a data visualization to summarize the descriptive statistics, (e.g., histograms).
+SELF STUDY QUESTIONS
+1. What is the difference between “sample” data and “population” data? Why does this matter for the purposes of #descriptivestats?
+
+   Answer: Sample data refers to the data collected on a subset of the population while the population data refers to the data including each individual member of the whole population of interest. For example, if you are collecting population data on the price of coffee in Hyderabad, you will have to collect the data from all cafes in the city. Most of the time, it is impossible, or too resource-intensive, to obtain population data. Therefore, you can do convenience sampling and visit cafes in your neighborhood and obtain sample data instead.  
+   
+   This is important for #descriptivestats because we need to know which type of data our descriptive statistics are summarizing. The calculation might even be different depending on whether we are working with sample or population data; this is true for the standard deviation). In statistics, it’s conventional to use different notation depending on the type of data, adopting lowercase letters for sample statistics (e.g., x̄, s) and Greek letters for population parameters (e.g., µ, σ).
+
+2. What are some examples of “measures of location”? How are they helpful?
+
+   Answer: Measures of location can also be referred to as measures of central tendency. They include mean, median, and mode. They are can be used to understand what a typical member of the dataset looks like and where the data tends to cluster. The mean adds up all the data points and divides the sum by the total number of data points. The median is the middle value of a dataset. The mode is the value that occurs most frequently in a dataset.
+
+3. What are some examples of “measures of spread”? How are they helpful?
+
+   Answer: Measures of spread, such as range or standard deviation, tell us how spread or dispersed the dataset is. We can use measures of spread to estimate the likelihood of extreme values and the shape of the distribution. 
+   -   Range  shows the difference between the highest and lowest values. It’s a helpful quantity to show the span of possible values a variable takes on, but it might be misleading as a measure of spread when there are outliers. The majority of data could be closely clustered, but one outlier could drastically impact the value of the range. The interquartile range can be used in such cases which is more robust against outliers. 
+   -   Standard deviation  quantifies the amount of variability or spread in a dataset according to how much the data points deviate from the mean. To find this quantity, the deviations from the mean are squared, averaged, and then square-rooted. A smaller standard deviation indicates that the values in the dataset are closer to the mean, implying less variability. Conversely, a large standard deviation indicates a more dispersed distribution.
+
+4. What is skewness? Describe what left and right skew looks like in a distribution.
+
+   Answer: Skewness determines the extent to which a distribution deviates from being symmetric. Skewness can be quantified using different formulas, but a good rule of thumb is (mean - median) / (standard deviation). 
+   
+    Positive Skewness (Right Skew): A positively skewed distribution has a longer tail on the right side, meaning the distribution is stretched towards higher values. In this case, the majority of the data points are concentrated on the left side of the distribution, while a few larger values pull the mean towards the right. The skewness value would be greater than zero.
+   
+   Negative Skewness (Left Skew): A negatively skewed distribution has a longer tail on the left side, meaning the distribution is stretched towards lower values. In this case, most of the data points are concentrated on the right side of the distribution, while a few smaller values pull the mean towards the left. The skewness value would be less than zero. 
+   
+   Distributions with a positive skew tend to have mean > median > mode, while the opposite is true for a negatively skewed distribution. While this rule of thumb holds true for many unimodal distributions, it may not hold true for all. A simple counterexample is when there is a right skew, but the majority of cases are less than or equal to the mode, which is also the median. In this case, the mean would be located at the heavier left tail. Here, the mean is not greater than the median or mode. Fig.1 Example of a counterexample for the rule of thumb (Hippel, 2005)
+   More explanations and details on skewness, including different ways to quantify it, can be found here: Statistics How To  and Wikipedia.
+
+5. How are descriptive statistics displayed in histograms?
+
+   Answer: A histogram shows how a quantitative variable in a dataset is distributed. It is a visual representation of several descriptive statistics, including mean, median, skew, standard deviation, range, and skew. In particular, the mode can sometimes be estimated by identifying the peak or the highest bar. The mean could be estimated by visualizing the center of mass or the balancing point of the distribution. The median can be estimated from the histogram by trying to visualize the point where half of the area is to the left and half of the area is to the right. 
+   
+   It is crucial to remember that a few descriptive statistics alone are not sufficient to fully infer the exact shape of the distribution. A full histogram is needed to know the shape of the distribution.
+
+6. How is calculating the standard deviation (SD) of a sample and population different?
+
+   Answer: When calculating the standard deviation of a sample of data, there is a difference regarding the formula because of Bessel’s correction  which is needed to correct for an upward bias in this quantity. The standard deviation formula (without Bessel’s correction) for a population is 
+   
+   where xi is each value from the population, N is the size of the population, and µ is the population mean. When applying Bessel’s correction to calculate the standard deviation of a sample, we would replace N with n-1 and µ with the sample mean. 
+    
+   The correction is especially important for small sample sizes.
+
+7. It’s important to consider the limitations of descriptive statistics. Give an example of a variable for which the mean alone would be unhelpful or misleading. Do the same for the median and mode.
+
+   Answer: The mean could be misleading if there are outliers. A mean with outliers at the upper end of the distribution may not match the point where most of the data clusters. 
+   The median would be unhelpful to capture a “typical” member of the dataset if it had a bimodal distribution. 
+   The mode would be unhelpful for continuous data that was measured with a high enough level of precision such that it's rare for values to be repeated. There may not even be a mode. For example, temperature readings that are measured in Celsius to 4 decimal places.
+
+8. Write an algorithm using Python to calculate mean, median, mode and standard deviation.
+
+   Answer: Check your notes and assignments from Formal Analyses
+
+GUIDED REFLECTION QUESTIONS
+1. Have you computed accurate and relevant statistics?
+2. Have you interpreted all the relevant descriptive statistics (including measures of location, measures of spread, and skewness) as appropriate for your context?
+3. Have you explained what relevant insights are gained as a result of the descriptive statistics?
+4. Have you considered if presenting a histogram would be helpful, and if so, are you able to identify how the descriptive stats are visualized in the histogram, and have you interpreted the histogram regarding your own context?
+5. If calculating standard deviation using a Python library package, have you examined whether the library uses the formula for population or sample standard deviation and accounted for it?
+
+COMMON PITFALLS
+- The application quotes isolated statistics without a sufficient interpretation of what they mean for the whole dataset or what conclusions can be drawn for the given context.
+- The application provides only a single descriptive statistic or misses key descriptive statistics that are relevant to the context.
+- The application mixes up the sample standard deviation and the population standard deviation.
+- The application provides visualizations, such as histograms, but does not sufficiently connect them with the descriptive statistics or does not interpret them effectively for the context at hand.
+- The application fails to recognize limitations of the descriptive statistics when making inferences.
+
+APPLYING THIS HC AT MINERVA
+- This HC is applicable whenever the task at hand involves data analysis or interpretation, which may be common across CS, NS, and business.
+- This HC is applicable whenever you are using statistics to understand a particular context. For example, in economics courses, in order to understand inequality in a particular country, you may look at the average income, quantiles, and skew of the income distribution.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- This HC can be applied in various ways when interpreting statistics presented in news articles, advertisements, and all sorts of media. Not only is it important to understand what descriptive statistics can tell you, it’s crucial to understand what they don’t tell you. One must keep in mind the common ways in which descriptive statistics are misinterpreted or used to suggest misleading conclusions.   - Suppose that you are seeking out a new job, and you notice a low starting salary of $30,000. However, the employer tells you that the average salary within the company is $150,000, and you may get a raise later on. This information might be misleading. There could be a single outlier CEO earning $500,000 a year, which is skewing the distribution to the right, while in reality, no workers are earning more than $100,000. Using the principles of #descriptivestats, and recognizing the limitations of one isolated statistic, you might consider asking for the mode or the median wage.
+
+KEY RESOURCES
+1. Saylor Academy. (2012). Chapter 1: Introduction & chapter 2: Descriptive statistics. Introductory Statistics v. 1.0. https://saylordotorg.github.io/textintroductory-statistics/index.html
+- This resource takes a direct mathematical approach. It provides very concise definitions and explanations similar to a standard textbook. It also serves as a valuable resource for practice problems.
+2. Khan Academy. (n.d). Displaying and describing quantitative data. AP College Statistics. https://www.khanacademy.org/math/ap-statistics/quantitative-data-ap
+- This resource covers the same material as above using video explanations and practice problems. Try the practice problems and quizzes to assess your understanding.
+3. Khan Academy. (n.d). Summarizing quantitative data. AP College Statistics. https://www.khanacademy.org/math/ap-statistics/summarizing-quantitative-data-ap
+- Same as above.

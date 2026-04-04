@@ -1,0 +1,163 @@
+#CORRELATION
+
+BLURB
+Apply and interpret measures of correlation; distinguish correlation and causation.
+
+PITCH
+Giving "correlation is not causation" the full attention it deserves.
+
+PARAGRAPH DESCRIPTION
+Correlation is a statistical relationship that describes the degree to which two variables are associated. It’s often used to estimate how likely two events or characteristics are to occur together, which can be used to predict one variable in terms of the other. However, care must be taken to apply and interpret correlation appropriately. In particular, correlation does not indicate that one event or characteristic causes the other: Both can be caused by a third event or characteristic or can be merely coincidental. There are several different ways to measure correlation, depending on the types of variables involved. One common measurement is Pearson’s correlation coefficient (﻿r﻿), which quantifies the strength of the linear relationship between quantitative bivariate data.
+
+CATEGORIZATION
+Habit of Mind | Formal Analyses | Thinking Critically | Analyzing Data
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester One
+- Unit: Probability and Statistics
+- Big Question: What does it mean to be random? & How can data help us discover what is true?
+
+GENERAL EXAMPLE
+You are interning as a business analyst for a large multilateral development bank. You are working on an annual report of projects under your department, and your manager asked you to examine the relationship between projects' duration and their media coverage, quantified based on a linear formula. You calculate the correlation coefficient from the data and find an r-value of 0.48, which suggests a positive and moderately strong correlation between the variables of interest. This seems to indicate that media coverage increases linearly with project duration. However, features in the scatterplot make you hesitant about the relationship. Firstly, your boss was mainly interested in the relationship between these variables for projects with a very long duration, for which you have next to no data points. You know that while the relationship may appear somewhat linear over the given range of available data, it may be non-linear for long projects, and you should be cautious to extrapolate. Secondly, you notice substantial deviations from homoscedasticity (equal variance) which indicates there might be a more complicated relationship between the variables. For that reason, the r-value should not be taken as reliable evidence for a linear relationship, let alone a causal connection. It’s possible, for example, that both have a common cause, such as the amount of funding for the project or the size of the client. 
+
+Footnote: The correlation between duration and media coverage was calculated and the r-value suggested a linear relationship exists. Upon looking at the scatter plot, the reliability of the r-value was questioned due to heteroscedasticity, especially for long-duration projects which would require some extrapolation. The difference between correlation and causation is explained and possible confounding variables are identified.
+
+IS THIS THE RIGHT HC?
+Is #correlation the right HC? If the answer to the following questions is yes, #correlation could be useful:
+
+- Does your work involve analyzing how strongly two variables are associated?
+- Are you deliberately recognizing that correlation does not automatically imply causation in a way that’s relevant and important for your context? 
+- Are you using an established correlation to support an argument for a causal relationship? 
+- Are you calculating a correlation coefficient to quantify the strength of association between bivariate data?
+- Are you utilizing data visualizations (e.g., scatter plots) to visualize the association between two variables?
+
+Depending on the work product, there might be other HCs to consider. ….
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#fallacies  |  Focuses on examining flawed reasoning in arguments, which could include fallacies that arise due to misidentifying correlation as causation, such as the reverse-cause fallacy, third-factor fallacy, or “cum hoc ergo propter hoc.”
+#regression  |  Goes beyond simply analyzing how strongly variables are related and uses a regression equation to describe the actual relationship between variables, serving as a model to predict one variable in terms of the other(s); regression analyses are often accompanied by correlational analyses.
+#complexcausality  |  Identifies multiple variables or causes and the ways they interact to produce secondary, tertiary, and higher-order effects. Such examination of the causal structure (e.g., identifying common causes or root causes) can complement and enhance a correlation analysis.
+#dataviz  |  Generates a detailed data visualization appropriate for the context of analysis and data, which can include using scatter plots to assess how strongly two variables trend together.
+#descriptivestats  |  Focuses on calculating or interpreting descriptive statistics (e.g., mean, median, standard deviation) to summarize a data set. The correlation coefficient can be considered one such descriptive statistic to summarize the strength of association when working with bivariate data.
+#hypothesisdevelopment  |  Focuses on identifying an explanation (e.g., a causal mechanism) for an empirical relationship or pattern, which can include an observed correlation between variables. The correlation analysis can thus inform the development of a hypothesis.
+SELF STUDY QUESTIONS
+1. When a correlation between two variables is observed, what are the possible explanations for it?
+
+   Answer: - Spurious correlation: This occurs when two variables appear to be related even though there’s no direct causal link between them. The observed correlation might be due to sheer chance or coincidence.
+   - Common causes: There is a third factor or set of factors that influence both of the observed variables. These common causes create a correlation between the two variables, but they do not directly cause each other.
+   - Actual causal relationship: In some cases, the observed correlation could be the result of a true cause-and-effect relationship between the two variables. A change in one variable may directly lead to a change in the other.
+
+2. Why does correlation not imply causation?
+
+   Answer: Correlations can indicate that one variable changes in a specific way as another one changes. For example, a positive linear correlation would imply that y increases as x increases. This does not imply that x causes y to change or the other way around. Establishing a causal relationship is a more complex process that usually involves carefully conducted studies and controls. 
+   
+   One must be careful not to cause the fallacy of cum hoc, ergo propter hoc, otherwise known as “with this, therefore because of this.” This (very common but very problematic)  fallacy occurs when two events occur together or are correlated, and a person asserts that one of the events must have caused the other. If causation is not established or directly being analyzed, we must refrain from saying things like x “causes” y (or “influences” or “leads to” or “impacts” or “effects”).
+
+3. Distinguish between positive and negative correlation.
+
+   Answer: In a positive correlation, as the values of one variable increase, the values of the other variable also increase. The data points on a scatter plot would tend to form a roughly upward-sloping pattern. 
+   
+   In a negative correlation, as the values of one variable increase, the values of the other variable decrease. The data points on a scatter plot would tend to form a roughly downward-sloping pattern.
+
+4. What is a scatter plot? How does it help you evaluate #correlation?
+
+   Answer: A scatter plot is a graphical representation of data points on a two-dimensional plane, where each data point is represented by a dot. It is often used to visualize the relationship between two variables. Scatter plots are especially useful for evaluating correlation, as it visualizes the degree to which two variables are related or trend together.
+
+5. What does it mean for the scatter plot to fulfill the linearity condition?
+
+   Answer: Linearity condition refers to the assumption that the relationship between two variables can be adequately represented by a straight-line pattern. In a scatter plot, one would observe the data points clustering around a straight line, sloping either up or down, like a slanted elongated oval. If the scatter plot fulfills the linearity condition, it suggests that as one variable changes, the other variable changes in a consistent and proportional manner. Outliers, heteroscedasticity, and/or curved (nonlinear) trends would break this condition.
+
+6. Explain the differences between homoscedasticity and heteroscedasticity. What does it look like in a scatter plot and why is it relevant for correlational analyses?
+
+   Answer: Homoscedasticity means that the vertical scatter of the data points around the trend line is consistent throughout the range of values for both variables. On a scatter plot, the points will form a roughly even, symmetrical, and constant-width cloud around the trend line. Note that we can use the SD to measure the scatter.
+   
+   Heteroscedasticity means that the vertical variability of the data points around the trend line is not constant across the range of values. The data points might look like they are forming a cone around the trend line. This makes it impossible to confidently suggest the exact trend of the data (e.g., conclude a linear relationship) and often indicates there could be a more complicated relationship between the variables that requires further investigation.
+
+7. How do you quantify correlation? What does it mean? How might this depend on the type of variables?
+
+   Answer: One common measure to quantify correlation is Pearson’s correlation coefficient, denoted by r. This correlation coefficient takes values between -1 and 1. When r = 1, it indicates a perfect positive correlation, meaning that as one variable increases, the other increases proportionally. r = -1 is a perfect negative correlation. 
+   
+   However, we should choose different methods to quantify correlation for different types of variables. For example, while we can use Pearson’s correlation coefficient for quantitative variables, Spearman’s rank correlation coefficient is better for qualitative ordinal variables. Spearman’s rank correlation coefficient assigns ranks to data, calculates the squared differences between ranks, then sums up the squared differences to calculate the coefficient using the formula 1 - (6  Σd2) / (n  (n2 - 1)) where Σd2 is the sum of squared differences and n is the number of data points in each set.
+
+8. What are the limitations of Pearson’s correlation coefficient?
+
+   Answer: - Pearson’s correlation coefficient involves several assumptions, which makes the coefficient misleading when there is: 
+   
+   - Nonlinear relationship. Pearson’s r only measures linear relationships.
+   - Outliers. Outliers may distort the correlation and lead to misleading results, especially when the sample size is small.
+   - Heteroscedasticity. This would hinder our ability to conclude a linear relationship.
+   
+   - Correlation does not imply causation. Further causality analysis is needed.
+   - Pearson’s correlation coefficient is valid only for quantitative data. For other variables, for example ordinal data, other measures like Spearman’s rank correlation coefficient is more appropriate. 
+   - Correlation detected on sample data does not necessarily imply a genuine relationship in the population. Tests of statistical significance would be needed to confirm this.
+
+9. What is multicollinearity? How may it impact your correlation analysis?
+
+   Answer: Multicollinearity is when there are correlations between the predictor variables in the context of multiple regression. 
+   
+   Multicollinearity firstly makes it difficult to isolate which variables are the most important for the regression analysis. Because other predictors are correlated, it would render slope coefficients in the linear regression equation misleading because it is impossible to hold everything else constant while interpreting the slope coefficients. Multicollinearity also becomes especially problematic if we are attempting to infer causal relationships by conducting further analysis, as when two or more variables are highly correlated, it becomes difficult to disentangle their effects and attribute the observed changes in the dependent variable to specific causes.
+
+10. What are some ways to perform a meaningful correlation analysis without quantitative measures?
+
+   Answer: Even without quantifying correlations, you may effectively perform correlation analysis by:
+   
+   - Identifying the type of association, the direction, and the strength of correlation.
+   - Visualizing the correlation by using scatter plots and drawing meaningful observations.
+   - Considering and evaluating the possible explanations for the observed correlation.
+   
+   Generally, a good qualitative application would encompass all the aspects that a good quantitative application would have as well, just without the numerical correlation coefficient.
+
+11. If correlation does not mean that one variable causes the other, then what does it mean? How is it useful?
+
+   Answer: It might appear to have a limited scope, but it is indeed useful! The linear correlation coefficient tells us how close two variables are to having a linear relationship with each other and the direction of that relationship. It doesn't constitute a complete analysis on its own, but it's a crucial step in many types of larger statistical analyses. In particular, correlational analysis is useful because it can indicate the potential existence of causal relations (but cannot indicate what the causal relationship, if any, might be) and can also indicate a predictive relationship that can be used in practice to predict one variable given the other (covered more under #regression). Many regression models are supported by correlational calculations, such as multicollinearity and auto-correlations. There are many important applications throughout economics, biology, and virtually any area of science. As a specific example, Business Cycles in macroeconomics started off with a correlation and ended with a Nobel Memorial Prize in Economics for Finn Kydland and Edward Prescott!
+
+12. If correlation does not mean that one variable causes the other, then how CAN one demonstrate that there is in fact a causal link? What kind of reasoning does this involve (inductive or deductive)?
+
+   Answer: It is difficult to definitively prove causality but we can build a reliable #induction to support it. To strongly support the claim that one variable causes another, we can use the following:
+   
+   - Scientific models and simulations that allow one to evaluate the mechanistic plausibility of the causal link.
+   - Well-designed experiments or research studies in which potential confounding variables are controlled for.
+   - Statistical methods
+   
+   - For example, one should at least demonstrate whether the correlation from a sample is statistically significant.
+   - Stratification of the data, to see if the observed correlation holds within controlled subsets of the data.
+   
+   These three strategies could all be classified as eliminative induction because we are eliminating alternative causes for the effect.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you listed and evaluated any conditions that are needed to validate your correlation analysis?
+2. Have you chosen an appropriate measure of correlation for the variables you’re working with, justified its use, and calculated it correctly?
+3. Have you interpreted the value of the correlation coefficient to demonstrate what it means about the strength of association between the variables and why it’s relevant for your purpose?
+4. Have you used graphs (e.g., scatter plots) to visualize the correlation between the variables under study and effectively connected them with the rest of your correlation analysis?
+5. Have you carefully avoided language that would indicate that your correlation analysis automatically implies a causal relationship?
+6. Have you considered possible explanations for an observed correlation (or lack of correlation) and discussed their plausibility, including spurious associations, common causes, or extraneous variables?
+
+COMMON PITFALLS
+- The work includes claims or language that makes it seem like a causal relationship is implied from a mere correlation, possibly as a result of unknowingly committing a fallacy, genuine misunderstanding, careless habit, or lack of proofreading.
+- The application fails to recognize the limitations of the correlation coefficient, possibly neglecting certain conditions that should be met in order to validate its interpretation.
+- The correlation analysis does not effectively integrate data visualizations or use them to complement quantitative measures.
+- The application extrapolates an existing correlation beyond the range in which it was observed to exist without sufficient justification.
+- The application fails to identify reasons for an observed correlation or lack of correlation, such as direct causal relationships, spurious associations, common causes, or extraneous variables.
+- The application involves multiple linear regression but does not discuss multicollinearity.
+- Have you considered the presence of multicollinearity and evaluated its impacts on your analysis?
+
+APPLYING THIS HC AT MINERVA
+- Analyzing correlations is often one of the first steps in many data analysis projects, so you will likely find yourself applying this HC throughout computational sciences, natural sciences, or any assignment in which you are analyzing trends in data. Correlational analyses will likely accompany any data analysis task that attempts to describe relationships or trends between variables and use these relationships to solve problems or make decisions, such as predictive modeling, regression analyses, machine learning, and classification models. For example, multicollinearity is important to examine when constructing a multiple regression model.
+- This HC may be helpful in the natural and social sciences in the context of hypothesis development, research studies, experimental design, and case studies. Establishing a correlation is usually an important initial step when attempting to support a hypothesized causal mechanism. However, more support for a causal relationship must be provided through well-designed experiments with adequate controls, properly conducted research studies, established scientific theories, simulations or other modeling techniques, and/or appropriate statistical analyses.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Understanding the concept of correlation, what it tells us, and how it distinguishes from causation is an important skill in understanding scientific research outside of Minerva. Importantly, we must be able to recognize when correlation is misleadingly portrayed as causation and prevent ourselves from hastily equating the two. This type of flawed reasoning is easy to commit but can be extremely problematic. It’s all around us! News articles, advertisements, and even scientific journal articles can fall victim to disguising correlation as causation. Here are some examples:  - Let’s look at a recent New York Times headline that reads “Vast New Study Shows a Key to Reducing Poverty: More Friendships Between Rich and Poor.” This article is published in the Upshot section of the newspaper, where they discuss more data-oriented research, and is based on a research study published in Nature. The original study’s headline in Nature is “Social Capital I: Measurement and Associations with Economic Mobility.” Do you see a problem? Let’s see! Generally, when we use terminologies such as A reduces B, or it increases, decreases, affects, or impacts B, we are talking in a causal tone. For example, “more rain increases agricultural productivity,” or “antioxidants reduce the chances of heart attacks” imply that rain and antioxidants are the culprits or causes in changing agricultural productivity or risks of heart attacks. So to say that a key to reducing poverty is having more friends usually implies that having more or fewer friends affects poverty. Note that this may be the case but it is not implied in the original study’s title. The title only suggests an association between the two variables. This is where your knowledge of #correlation can be useful! Knowing what correlation means and its limitations can help you have a more critical lens when interpreting these findings. Investigating correlations among variables is still useful and is a critical step in exploring scientific questions but it should not be confused with implying any causal relationships. - Questionable causes are often found in marketing and advertising. An advertisement for a high-cholesterol treatment might claim that their product has been shown to reduce cholesterol levels in their patients, but we should invoke healthy skepticism for claims like this. Perhaps there was an association between cholesterol levels and dosage of the medication, but can we be sure that the medication actually caused the reduction in cholesterol? Did the researchers effectively control for other potential causes, such as diet, lifestyle, or other medications? Did they consider phenomena such as regression to the mean? As above, the principles of HC are crucial in order to accurately assess such claims.
+- Correlations can be used to suggest powerful insights in economics and business. For example, the Nobel Memorial Prize winning paper on business cycles by Finn Kydland and Edward Prescott involved correlation and regression analysis. They observed correlations between economic output and factors like consumption, investments, hours worked, and labor productivity. The paper made further analyses to show that investments and relative price movements transmit the effects of variations in the rate of technology growth to the economy, thereby giving rise to short-run fluctuations around the economy’s long-run growth path. These insights all started with a correlation analysis!
+
+KEY RESOURCES
+1. Cotton, R. (2022, Aug). Data Demystified: Correlation vs. Causation. DataCamp. https://www.datacamp.com/blog/data-demystified-correlation-vs-causation
+- Why/use: This blog post succinctly explains correlation vs. causation. It mentions a few different reasons that one variable might be correlated with another and makes note of the types of studies and experiments needed to support a causal relationship.
+2. Lane, D. (n.d.). IV. Describing Bivariate Data. OnlineStatBook. http://onlinestatbook.com/2/describingbivariatedata/bivariate.html
+- Why/use: This resource provides in-depth explanations about bivariate data, Pearson’s correlation coefficient, scatter plots, and a final exercise section at the end to test your understanding.
+3. Khan Academy. (n.d.). Unit 5: Exploring two-variable quantitative data. Retrieved from https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap
+- Why/use: This resource provides video tutorials on scatter plots and correlation coefficients, as well as quizzes in between to practice your learnings.
+4. Diez, D., Cetinkaya-Rundel, M., & Barr, C. (2015). Sections 7.1.4 and 7.5.1 in OpenIntro statistics - Third edition. Open Textbook Library. Retrieved from https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view
+- Why/use: Chapter 7 of this textbook includes explanations and practice problems on the topic of correlation.
+5. Stark, P. B. (n.d.). Chapter 5: Multivariate data and scatterplots, Chapter 6: Association, Chapter 7: Correlation and Association, and Chapter 8: Computing the correlation coefficient. SticiGui. Retrieved from http://www.stat.berkeley.edu/~stark/SticiGui/
+- Why/use: This resource helps you build intuition regarding scatter plots and correlation. All the chapters encompass useful exercises to practice your learnings.

@@ -1,0 +1,107 @@
+#SYSTEMDYNAMICS
+
+BLURB
+Use the tools of phase spaces--including attractors, critical points, and basins--to describe and predict the ways a complex system changes over time.
+
+PITCH
+All roads lead to Rome because Rome is an attractor in the classical-era transportation phase space.
+
+PARAGRAPH DESCRIPTION
+Complex systems change over time. Phase spaces can be used to describe and predict these changes, providing the foundation for planning interventions. The dimensions of a phase space (similar to axes on a graph) describe measurable features of the system that can increase or decrease over time. Attractors are locations on the phase space that represent stable equilibria: a system at that combination of values on the dimensions is likely to stay at that combination. Attractors can be described as surrounded by basins of attraction, representing a range of values on the dimensions that are likely to move towards the attractor in the basin. This implies critical points at the edges of each basin: a system is unlikely to move to a specific attractor unless it reaches a critical point on the boundary of that attractor’s basin, but if it does pass that critical point then it is likely to move to the attractor.
+
+CATEGORIZATION
+Foundational Concept | Complex Systems| Interacting Effectively | Interacting within Complex Systems
+
+CORNERSTONE INTRODUCTION
+- Class: Complex Systems | Semester One
+- Unit: Characteristics of Complex Systems
+- Big Question: How should the world be governed?
+
+GENERAL EXAMPLE
+You have recently been elected mayor of a small, struggling town named Lakeville. Your victory is due mostly to the unpopularity of the previous mayor you ran against: she had a record of many failed interventions to revitalize the town, including a recent high-profile disaster in which the town put every effort into recruiting a regional company to move their headquarters to Lakeville, only to see the headquarters set up in the nearby town of Oceanview. Determined to do better than your predecessor, you realize that important features of many towns can be described by a 2-dimensional phase space representing “personal and professional opportunities for citizens” and “attractiveness to large businesses.” Lakeville is stuck in the problematic bottom-left corner of the phase space that you label “economic floundering,” whereas towns like Oceanview are secure in the opposite upper-right corner you label “economic flourishing.” You recognize feedback loops that support Oceanview’s economic flourishing, such as how the presence of many businesses provides employment for citizens, leading to a bustling Main Street; the high quality of life is then attractive to further businesses, closing the loop. In contrast, Lakeville’s Main Street has many empty storefronts and a high homeless population, and no new businesses want to move to the town. You convene a diverse panel of experts, including economists, social workers, business leaders, and community activists. You realize a historian will also help, to think about how other towns have floundered or flourished in the past. Finally, you and your team produce a phase space that suggests the easiest place to intervene on the system: the town should stop trying to recruit businesses, and instead spend its small budget to hire local unemployed citizens to improve the town’s infrastructure and general beautification. Some people are even hired to help build houses that they then live in. Having moved up sufficiently on “personal and professional opportunities for citizens” the town then starts attracting large businesses, and is soon past the critical point that will lead it to “economic flourishing.” 
+
+Footnote: You create a phase space with relevant dimensions and name two attractors in the phase space. You then use the specific shape of the basins to determine the best place to intervene on the system to move from one basin to another.
+
+IS THIS THE RIGHT HC?
+Is #systemdynamics the right HC? If the answer to the following questions is yes, #systemdynamics could be useful:
+
+- Are you describing/drawing the phase space of a system, with its attractors, basins of attraction, and/or critical points?
+- Are you predicting what could/will cause the system to change, or are you suggesting an intervention to either make that happen or prevent it?
+- Are you reducing a complex system to a set of a few important variables that describe the state of the system to simplify the changes and interactions amongst those?
+
+Depending on the work product, there might be other HCs to consider. ….
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#variables  |  Identifies/classifies the relevant variables of a system/problem/model. Might be relevant to apply before you apply #systemdynamics, but especially focuses on those cases where the type of variable is significant for a full interpretation of it.
+#complexcausality  |  Describes interactions in complex causal structures. Complex causality usually drives the dynamics of a system, a deep analysis of what types of causality and interaction lies behind your defined dynamic system space might help you!
+#emergentproperties  |  Describes a phenomenon arising from lower levels that is significantly different from the sum of the interactions at lower levels giving rise to it.
+#modeling  |  Represents a system with a model. It is possible to model a dynamic system including phase spaces and critical points, especially useful for predicting future behavior (in different scenarios) for your system.
+SELF STUDY QUESTIONS
+1. How many dimensions should a phase space have?
+
+   Answer: There is no set number of dimensions you need to include in your analysis. 
+   
+   - Just note that often 2 are chosen, because it is easy to visualize and simplifies the system to (hopefully) the most crucial interactions and an overseeable number of attractors. 
+   - Using 1 is possible, if describing the underlying mechanisms of attractors in a sophisticated way.
+   - 3 or more is usually complex. Although 3 can still be visualized, you will need complex models for 4 dimensions and more. This will mostly be something you could do if you combine with #modeling and use digital tools to analyze the system.
+
+2. Name one way in which a system could move from one basin into the other. What is the moment called when it transitions from one to the other?
+
+   Answer: Correct answers:
+   
+   - A shock to the system, dramatically changing one of the variables/dimensions involved
+   - An input of energy or effort into changing a system in a certain direction
+   - Changing rules of the system (shifting of critical point)
+   
+   Incorrect:
+   
+   - Random: in essence, the basins should capture where a system remains under normal random circumstances. Random is not specific enough.
+   - Feedback loops (of the dimensions): negative feedback loops keep systems in their attractors, positive feedback loops can be activated when a system crosses into a new basin, pulling a system faster towards a new attractor. A (positive) feedback loop of some external variable can exacerbate the effect of a shock to the system. In that case it might be part of explaining why a system changes attractors.
+   
+   Points of transition are called: critical points
+
+3. You want to analyze the change within Minerva’s student population and how to improve learning. For the following dimensions, explain what is good or what might be problematic about including it for an analysis of #systemdynamics: 
+- Student Satisfaction
+- Time
+- Number of students having a gpa of 3.0 or higher
+- Play (0-100% where 0% means student focus on work and at 100% they focus on partying)
+
+   Answer: Student Satisfaction - OK. This might lead to a great analysis. It is not so much a group-level property, but an average of all students. It will also need a careful and more precise definition of how it could be measured.
+   
+   Time - BAD. It is a common mistake to include time, since systems usually change over time, but time is not a dimension of a system, rather you want to pick those variables that change over time.
+   
+   Number of students having a gpa of 3.0 or higher -  OK. This might lead to a great analysis. It is not so much a group-level property, but a statistic about all students. 
+   
+   Play (0-100% where 0% means students focus on work and at 100% they focus on partying) - GOOD. Group-level property that could be central in your analysis. It would just need careful operationalizing.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you chosen a few important variables to simplify the system and explained why you chose those?
+2. Have you described what underlying causal mechanisms cause the system to change from one state into another?
+3. Have you predicted what conditions can trigger a phase change?
+4. Have you included a visual to describe the dynamics of the system, preferably including a legend for attractors and their basins, as well as critical points in between?
+5. Have you explained the internal dynamics of the system that stabilize any points you have identified as attractors?
+
+COMMON PITFALLS
+- Simply describing a phase space, without justifying the different aspects of it (why are the critical points/attractors/basins where they are?)
+- Not including a figure
+- Not explaining how consideration of the phase space contributes to your addressing your explanatory challenge
+- Vague definitions of the axes in your phase space, which make it difficult to interpret specific points in the space.
+
+APPLYING THIS HC AT MINERVA
+- Earth’s Systems: geological, climate, and ecosystems (amongst others) are great areas to apply this HC. It is important to recognize which dimensions best capture interesting basins of the system. An example that you might already be familiar with are the tipping points (critical points) of our climate system in context of global warming: there are points at which the Earth’s atmosphere warms more than 1.5 degrees at which “there is no turning back”. It means that at those points, certain mechanisms (feedback loops mostly) are again stimulating further warming. What is interesting is that these tipping points are not completely predictable (although 1.5 degrees has scientific consensus), we might see many dynamics occur when a system like the global climate is disturbed beyond a basin we are familiar with.
+- Political and Cultural Systems: Social systems that persist for any length of time can often be thought of as existing near some attractor in a complex phase space. Dramatic social changes, including revolutions, may be thought of as transitions across critical points, and may be followed by a period of continuous change, as the system approaches a new attractor.
+- Physics: Phase spaces are commonly used in physics to analyze the behavior of complex systems. In this context, these phase spaces are typically treated with formal mathematical and computational tools. Examples include mechanistic descriptions of thermodynamics, where the concept of entropy is closely linked to a conception of a phase space. Other examples include models of complex mechanical systems, where attractors may not just be points, but may take on other forms, such as limit cycles or “strange attractors.”
+- Biology: Developmental biology involves the realization of multiple distinct cell fates originating from the same genetic and cellular material. Each cell type can be thought of as an attractor in a developmental phase space (which ensures, e.g., that we have skin cells and nerve cells, but no cells that fall halfway between the two). The overall developmental program can be thought of as consisting of pushing cells into different basins of attraction based on, e.g., their physical location in the organism.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Professional life - teams and organizations: from low to high motivation, from supporting one way of working to changing approaches completely as soon as a pandemic rolls around. What interactions within the system are most important for determining how a system gets “stuck” in one place or moves to another? And how does one apply pressure effectively to cross a critical point? You will find that looking for the most significant dimensions will be a very important first step to understanding how to intervene, if desired. Similarly, understanding the causal links that keep systems stable can be key to making sure an organization or team stays on a stable track!
+- Health - your body is a complex system of many functions. Slowly our bodies change, and we might need to adjust our behavior to find a new point of stability. Where a 20 year old can function vitally on 5 hours of sleep a night, this could be detrimental to a 30-year old with a fulltime job. The basin for a functional body has shifted, maybe it shrank, but understanding which dimensions one can influence to push your body back into a stable state could be helpful. Of course, consulting a doctor or health professional would be most important. System dynamics may help you explain why the changes in diet, exercise, sleep, routine, etc. lead you to a healthy life.
+
+KEY RESOURCES
+1. Sheskin, M. (2020) System Dynamics. (Perry, T.J. Ed.) Minerva Guide 4. https://docs.google.com/document/d/19GrL26OrUNVtHj-zO745TBegVB5S3nvKKUKWMdhtKBc/edit
+- The main resource for this HC. Provides an introduction to all relevant concepts to think of when applying this HC, from how to define a phase space to regime changes.
+2. Sheskin, M. (2021). Characteristics of Complex Systems – a Brief Introduction.  https://docs.google.com/document/d/1cxCp8FqZBbNAaMTUgAnv36gu0bDEHpRwMgkEI5VX8/edit
+- This reading is the overview of how six characteristics of complex systems interrelate.  It goes more into depth into each HC and how it is different from the other HCs.
+3. Miller, J. H., & Page, S. E. (2007). 2.3: A tale of two cities. In Complex adaptive systems: An introduction to computational models of social life (pp. 17-20). Princeton University Press. pp. 17-20
+- This reading provides an example of how noise in a complex social system can significantly shift the functioning of the system. It might be important to read if you want to understand how random events can influence a system.

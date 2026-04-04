@@ -1,0 +1,225 @@
+#DISTRIBUTIONS
+
+BLURB
+Identify different types of distributions and make inferences based on samples from distributions appropriately.
+
+PITCH
+The powerhouse of probability and statistics.
+
+PARAGRAPH DESCRIPTION
+The distribution of a variable is a function that maps all possible values of the variable to how often they occur (the frequency of occurrence). There are several types of distributions, but the most commonly used in statistics is the familiar bell curve, called a “normal” or “gaussian” distribution. When distributions are used to describe data, one must distinguish between population data (all possible values or elements of interest) and sample data (a subset of the population). Drawing statistical inferences about a population from sample data often requires a “sampling distribution,” a theoretical distribution of the values of a specified statistic (i.e., mean, proportion) over all possible random samples of a specific size that can be made from a given population. The shape of the sampling distribution is ensured by the Central Limit Theorem when certain criteria are met. However, statistical analyses often require assumptions about the underlying distributions, requiring one to state those assumptions and analyze their limitations. Considering distributions can help one recognize phenomena such as regression to the mean.
+
+CATEGORIZATION
+Foundational Concept | Formal Analyses | Thinking Critically | Analyzing Data
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester One
+- Unit: Probability and Statistics
+- Big Question: What does it mean to be random? & How can data help us discover what is true?
+
+GENERAL EXAMPLE
+You are an engineer, hired to construct elevators for a shopping mall. Your manager asks you to determine the probability that the elevator will be over the threshold safety weight (700 kg) when there are 9 people in it. Past research shows that the shoppers at the mall have a mean weight of 55 kg and a standard deviation of 12 kg. While you don’t know the shape of this underlying distribution of weights, you realize that as long as it is somewhat symmetric, you can employ the Central Limit Theorem to conclude that the sampling distribution of the sample mean (with sample size 9) is approximately normal, with a mean of 55 kg and a standard error of 4 kg (SE = SD/sqrt(n)). This allows you to accurately compute, using z-scores, the probability that the mean weight of 9 randomly selected mall shoppers is over 78 kg (700 kg / 9) as the area under the upper tail of the sampling distribution. However, you realize that perhaps the original distribution is very skewed to the left, with mostly adults at the mall but a few babies as well. In this case, since the small sample size of interest is only 9, the sampling distribution would still be skewed to the left, meaning that the probability you computed under the assumption of normality is an underestimate. You deliver these results to your manager with all caveats laid out.
+
+Footnote: The sampling distribution of the sample mean was explained and used to compute the probability of the elevator being overweight. The normality of the sampling distribution was justified using the Central Limit Theorem, with the assumptions and effects of the underlying distribution clearly stated.
+
+IS THIS THE RIGHT HC?
+Is #distributions the right HC? If the answer to the following questions is yes, #distributions could be useful: 
+-  Are you applying properties of probability distributions to solve a problem or analyze a situation (e.g., using normal distributions to find percentiles, using binomial distribution to determine probabilities)? 
+-  Are you evaluating the features of a distribution of a quantity or dataset to provide useful insights for your purpose (e.g., checking shape of sample distribution to meet conditions for inference, noticing skew in a distribution and discussing implications)? 
+-  Are you using properties of distributions to make statistical inferences about a population (e.g., sampling distributions, checking conditions)? 
+-  Are you analyzing the implications of drawing samples from a distribution (e.g., regression to the mean, sampling with vs without replacement)? 
+
+ However, depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#dataviz  |  Generates or interprets a data visualization appropriate for the data, which is often helpful to demonstrate features of distributions.
+#probability  |  Involves calculating and/or interpreting the probability of an event, which may rely on properties of distributions of random variables and implications of sampling from distributions.
+#descriptivestats  |  Focuses on calculating or interpreting descriptive statistics (e.g., mean, median, standard deviation), which might be used to summarize a distribution.
+#sampling  |  Focuses on sampling methods (e.g., convenience, stratified, simple random) to obtain data from a population, often as part of study design, which could have impacts on properties of the distributions used to make statistical inferences about the population.
+#significance  |  Conducts hypothesis testing to evaluate if a sample contains strong evidence for a genuine difference or pattern in the population. Applying #distributions might be required in this process to choose the right distribution for inference and examine the distribution of sample data to observe whether conditions for tests (e.g., normality for t-tests, independent sampling) are met.
+#confidenceintervals  |  Accurately calculates and interprets confidence intervals, which may require choosing an appropriate sampling distribution to properly calculate the margin of error and examining the distribution of sample data to observe whether conditions for tests (e.g., normality for t-tests, independent sampling) are met.
+SELF STUDY QUESTIONS
+1. What is a Probability distribution? What ‘rules’ do they satisfy?
+
+   Answer: A probability distribution is a mathematical function that describes the likelihood of occurrence of different outcomes in a probabilistic event or experiment. It provides a mapping between possible outcomes and their associated probabilities. Probability distributions can be classified into two main types: discrete and continuous.
+   
+   For discrete probability distributions, they satisfy the following rules: 
+   - The outcomes listed must be disjoint.
+   - The probability of each possible outcome must be between 0 and 1, inclusive. 
+   -  The sum of the probabilities for all possible outcomes must equal 1. 
+   
+   For continuous probability distributions, they satisfy the following rules: 
+   -  The probability of any specific outcome is zero. 
+   - Instead of probabilities, continuous distributions are represented by probability density functions, which is a continuous positive distribution such that the probability that an outcome falls within an interval is given by the integral of the probability density function over that interval (the area under its curve). 
+   - The total area under the probability density function over the entire range is equal to 1.
+
+2. What is a Probability Density Function?
+
+   Answer: A Probability Density Function (PDF) is a mathematical function that describes the probability distribution of a continuous random variable. Unlike discrete probability distributions, which assign probabilities to specific outcomes, PDFs allow you to assign probabilities to intervals of values. The probability of a random variable falling within a particular interval is given by the integral of the PDF over that interval, which is basically the area under the curve.
+
+3. What is the difference between a continuous and a discrete distribution? Why does it matter?
+
+   Answer: In a continuous distribution, the random variable can take on any value within a certain range or interval. There are essentially infinitely many possible values. In a discrete distribution, the random variable can only take on specific, separate values. The outcomes are typically represented by integers or a countable set of values.
+   
+   The distinction matters because the way in which we obtain probabilities from the distribution is different. In continuous distributions, probabilities are represented as areas under the curve, requiring integration. In discrete distributions, probabilities are directly obtained by reading off the graph.
+
+4. Explain Population data vs sample data. Explain how their distributions might differ.
+
+   Answer: Population data refers to information or characteristics that are collected from an entire group or population of interest. Sample data refers to information collected from a subset or smaller portion of the population. A sample is a representative selection of individuals, objects, or events taken from the population to infer conclusions or make generalizations about the entire population.
+   
+   Since it’s usually impossible to collect all data from an entire population, the population distribution is typically unknown. For example, we don’t know the exact distribution of income for every individual in a country. Assuming that we have a sample that is representative of the population, we can use the sample distribution to get insights about the population. However, these distributions might be quite different if the sample is biased in some way (e.g., only sampling from a particular province within a country).
+
+5. What does it mean to sample from a distribution?
+
+   Answer: When we say we sample from a distribution, we mean that we choose some values randomly, with likelihood defined by the distribution. The purpose of sampling from a distribution is to simulate or approximate the behavior of the underlying population.
+
+6. Describe the following distributions by describing it, providing a formula (if appropriate), the parameters, describing the shape, and examples of where it’s used.
+
+   Answer: Bernoulli distribution 
+   - Description: The Bernoulli distribution models a random experiment with two possible outcomes: success (usually represented by 1) and failure (usually represented by 0). It is a discrete distribution. 
+   - Formula: P(x) = p^x  (1 - p)^(1-x) 
+   - Parameters: Within the above formula, x is the outcome (0 or 1) and p is the probability of success.
+   - Shape: The Bernoulli distribution is a simple discrete distribution with two bars at 0 or 1. 
+   - Examples of use: It is commonly used to model binary events, such as coin flips (heads or tails) or success/failure experiments.
+   
+    
+   Binomial Distribution 
+   - Description: The binomial distribution describes the number of successes in a fixed number of independent Bernoulli trials. It is a discrete distribution. 
+   - Formula: Px = (n choose k)  p^k  (1 - p)^(n - k) 
+   - Parameters:Within the above formula, k is the number of successes, n is the number of trials, and p is the probability of success in each trial.
+   - Shape: The binomial distribution is bell-shaped and becomes skewed when p is different from 0.5. As n increases, it becomes more symmetric and approaches a normal distribution. 
+   - Examples of use: It is used to model situations with a fixed number of independent trials, such as the number of successful sales calls in a day or the number of defective items.
+   
+   Uniform 
+   - Description: All outcomes are equally likely. It can be continuous or discrete.
+   - Formula: For a continuous uniform distribution, the probability density function is: f(x) = 1 / (b - a), for a ≤ x ≤ b 
+    For a discrete distribution: f(x) = 1/n 
+    - Parameters:  a and b are the lower and upper bounds that limit possible values; n is the number of possible outcomes. 
+   - Shape: The uniform distribution has a rectangular shape, with a constant probability density over the defined range.
+   - Examples of use: It is often used to model situations where each outcome within a range has the same likelihood, such as generating random numbers or simulations. It also corresponds to the distribution for rolling a fair die. 
+   
+    
+   Normal Distribution 
+   - Description: The normal distribution is a continuous probability distribution that is symmetric and bell-shaped. 
+   - Formula: The probability density function is f(x) = (1 / sqrt(2πσ^2))  e^(-(x - μ)^2 / (2σ^2)) 
+   - Parameters:  In the above formula, μ is the mean and σ is the standard deviation. 
+   - Shape: The normal distribution is bell-shaped and symmetric around the mean. 
+   - Examples of use:  It is used in various fields for modeling continuous variables, such as heights, weights, test scores, and many natural phenomena. It is also widely used when employing the Central Limit Theorem.
+   
+   T-distribution  
+   - Description: The t-distribution is a continuous probability distribution that resembles the normal distribution but has heavier tails. It is commonly used for inference for means when population variance is unknown.
+   - Parameters: Degrees of freedom (dof) are the maximum number of possible independent values. When using the t-distribution to make inferences about an unknown population mean, we set dof = n-1 (we lose one dof because the sample mean is used to estimate the sample standard deviation).  
+   - Shape: The t-distribution is symmetric and bell-shaped, similar to the normal distribution, but with thicker tails. It approaches the normal distribution with increasing of.  
+   - Examples of use: It is used in hypothesis testing and confidence intervals for means when the population variance is unknown.
+
+7. Under what conditions is the binomial distribution approximately normal?
+
+   Answer: The binomial distribution is discrete and its shape depends on the parameters, n (the number of trials) and p (the probability of success). It’s only completely symmetric for p=0.5, otherwise, it is skewed. With a bigger sample size, the binomial distribution becomes less skewed and sufficiently continuous such that it approximately resembles a normal distribution. One rule of thumb to ensure that the binomial distribution can be well-approximated by a normal distribution is that the number of successes and failures in a given sample is expected to exceed 10: np>10 and n(1-p)>10.
+
+8. What is a percentile?
+
+   Answer: The percentile is the percentage of values in a set of data that fall below a given value. Equivalently, it’s the probability of an outcome being less than a given value. For continuous distributions, it would be represented by an area under the probability density function: the entire area from the value to the left.
+
+9. What is a Z-score? A T-score?
+
+   Answer: Z-scores and T-scores are both used to standardize and compare data points within a distribution. They both measure the number of standard deviations a particular data point is away from the mean of a distribution. They allow for a comparison of data points from different distributions of variables by transforming them into a common scale. We call this standardized measure a “Z-score” when working with the normal distribution and a “T-score” when working with the t-distribution.
+
+10. How do you convert between z-scores and percentiles? What about converting between t-scores and percentiles? How would this work for other distributions other than the normal distribution and t-distribution?
+
+   Answer: There are several ways to do this, including statistical software, online calculators, using distribution tables, and Python. For Python, the following line of codes may be helpful, but it is necessary to read the documentation for these functions from the scipy library: 
+   
+   Z-scores and percentiles
+   stats.norm.ppf(p)
+   stats.norm.cdf(zscore)
+   
+   T-score and percentiles: 
+   stats.t.ppf(p,df)
+   stats.t.cdf(tscore,df)
+   
+   When dealing with distributions other than the normal distribution and t-distribution, the conversion process can vary depending on the specific distribution, and should utilize the probability distribution function or cumulative distribution function associated with that distribution. For some distributions, it will be relatively easy to find the percentile for a given deviation from the mean using analytical methods (e.g., uniform distribution, discrete distributions). For others, we'll have to rely on numerical methods and use Python or other software.
+
+11. When does the t-distribution approach normal distribution?
+
+   Answer: The t-distribution approaches the normal distribution as the degrees of freedom increases. With a large dof, the t-distribution becomes closer to the normal distribution, with thinner tails and more probability concentrated around the mean. In practical terms, a common guideline is that when the dof is above 30, the t-distribution can be approximated by the normal distribution for most purposes.
+
+12. When would we use t-scores instead of z-scores for circumstances like calculating confidence intervals?
+
+   Answer: It depends on what we are making inferences about. For example, typically, z-scores would be the appropriate choice when constructing confidence intervals for proportions because the sampling distribution is the normal distribution, while t-scores would be a better choice for constructing for means because the sampling distribution is best approximated by a t-distribution, especially if the population standard deviation is unknown.
+   For large sample sizes (typically over 30), the difference between these distributions becomes small as the t-distribution can be approximated by the normal distribution. However, the t-distribution is technically the appropriate choice when making inferences about an unknown population mean.
+
+13. What is the difference between the standard deviation and the standard error?
+
+   Answer: The standard deviation is a measure of how much a quantity varies within a dataset. The standard error is the standard deviation of a sample statistic’s sampling distribution. For example, the standard error of the mean is the standard deviation of the sample means. We imagine taking lots of samples, finding the mean of each sample, and then finding the standard deviation of the means. Assuming independent sampling from a population, the standard error of the sample mean can be found by dividing the population standard deviation by the square root of the sample size. It’s usually estimated using the sample standard deviation in place of the (typically unknown) population standard deviation.
+
+14. Distinguish between the population distribution, the sample distribution, and sampling distribution.
+
+   Answer: The population distribution refers to the distribution of a specific characteristic or variable within an entire population. It is often theoretical since we usually can not observe the whole population in practice.
+   
+   A sample distribution is the distribution of a specific characteristic or variable within a sample. A sample is a subset of individuals or items selected from the population.
+   
+   The sampling distribution refers to the theoretical distribution of a statistic, such as the mean or proportion, obtained from multiple samples of the same size drawn from the same population. It represents the variability of the statistic across different samples. Adopting a frequentist perspective, we imagine taking many samples of a certain size, computing the mean (or proportion or other statistic) of each sample, and then plotting the distribution of those means.
+
+15. What is the mean and the standard deviation of the sampling distribution of the sample mean equal to? What is the shape of the sampling distribution?
+
+   Answer: The mean of the sampling distribution of the sample mean is equal to the population mean. This means that if you take multiple random samples from a population and calculate the mean of each sample, the average of all those sample means will be equal to the population mean.
+   The standard deviation of the sampling distribution of the sample mean is the standard error. It is equal to the population standard deviation divided by the square root of the sample size and it represents the average amount of variability or spread among the sample means. 
+   
+   The sampling distribution’s shape can be approximated by the central limit theorem, under the assumption that certain conditions are met (see the question below). If it does, it can be approximated as a normal distribution. If the conditions are not met, the shape of the sampling distribution cannot be guaranteed. For example, if the population distribution is highly skewed and the sample size is small, the sampling distribution will also be skewed.
+
+16. What is the Central Limit Theorem? What is its relationship with the sampling distribution?
+
+   Answer: The Central Limit Theorem tells us that under certain conditions, the sampling distribution of the sample mean will approximate a normal distribution. The central limit theorem says that the sampling distribution of the mean will always be normally distributed, as long as the sample size is large enough (typically over 30), the samples are independent and identically distributed random variables, and the population distribution is not highly skewed (in which case a larger sample size is required). This is a very powerful theorem! It tells us something that must be true for any population, which is very helpful given that we rarely have complete population data. It allows us to use the properties of the normal distribution to estimate confidence intervals, perform hypothesis testing, and make inferences about the population mean, even if we do not know the underlying population distribution.
+
+17. Why does sampling from a distribution without replacement imply that sampling is not independent? What does this have to do with the “10% rule” that is often quoted when verifying the conditions for inference?
+
+   Answer: When sampling without replacement, the successive individual draws are not independent because the probability of drawing a member of the population on the next draw changes depending on what we have previously drawn. From Khan Academy, "The 10% condition says that if we sample 10% or less of the population, we can treat individual observations as independent since removing each observation doesn't change the population all that much as we sample."
+
+18. Describe the concept of regression to the mean. How does this phenomenon rely on properties of distributions?
+
+   Answer: It is a phenomenon where if one sample of a random variable is extreme (e.g. a very high/low value), the next sampling of the same random variable is likely to be closer to its mean. Understanding regression to the mean requires one to consider properties of distributions. In particular, the shape of the distribution is important. This phenomenon is only expected to occur for approximately normal distributions (unimodal bell-shaped). In this case, a draw from the tail of the distribution would be a very low probability, so the chance of getting such an extreme draw again would also be very low (and thus, it’s much more likely for the draw to be closer to the mean. These probabilities can be visualized as areas under the distribution. However, regression to the mean would not be expected for other distributions, like uniform distributions or ones that are “dumbbell” shaped. Consider coin flips: individual coin flips follow a uniform distribution in which it is never going to be more likely to be closer to the mean (there are only two options that are equally far from the mean). On the other hand, we know that the number of heads in a sample of size 20 follows a symmetric binomial distribution that is approximately normal, which is why we were able to state that it is more likely than not that the next 20 coin flips will have less than 20 tails. The central limit theorem is powerful here. It tells us that the distribution of sample means for n>30 is approximately normal (assuming these 30+ observations are independent and the population distribution is not highly skewed). So, the mean of any non-point sample of sufficiently large size is more likely to be close to the population mean (thus, will regress to the mean).
+
+19. What is the Finite Population Correction factor? When is it needed? What quantity is it used to 'correct'?
+
+   Answer: Using sampling distributions to form statistical inferences (e.g. hypothesis tests and confidence intervals) usually requires an assumption that sampling was “independent.” However, it's possible for the independence condition to break down if the sample size (n) is large (>10%) relative to the population size (N) and sampling is done without replacement (see answer above), which is often the case in practice. This impacts the standard error. Consider inference for a mean: The formula for the standard error of the mean, SE=SD/sqrt(n), is only accurate under the assumption of infinite populations (that remain unchanged upon sampling and thus adhere to independence). If sampling without replacement from a finite population, using this formula would result in an overestimate in the standard error.  
+   The finite population correction factor, given by FPC = sqrt[(N-n)/(N-1)] is used to correct the estimate of the standard error whenever sampling without replacement from a finite population. Notice that its impact is only non-negligible when n is large (>10% or so) compared to N. We can apply the finite population correction factor directly to the standard error, SE = FPCSD/sqrt(n), to provide a better estimate.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you identified an appropriate distribution for your purpose and justified why?
+2. Have you utilized or applied specific properties of an appropriate distribution to obtain relevant insights that advance your work?
+3. In the context of statistical inference, have you clearly distinguished between the sample distribution, the population distribution, and the sampling distribution?
+4. Have you listed and thoroughly evaluated any conditions for the underlying distribution or sampling process that may be required by your statistical analysis (e.g., the conditions for the central limit theorem)?
+5. Have you stated any assumptions that are needed about the underlying distribution or how the distribution was sampled from, and explained the impacts of those assumptions on your analyses?
+6. Have you discussed the implications of drawing samples from a distribution (e.g., regression to the mean, sampling with vs without replacement) in a way that’s relevant to your analysis?
+7. Have you effectively utilized graphs or other visualizations (e.g., histograms or probability density curves) to support your analysis?
+
+COMMON PITFALLS
+- The application uses an inappropriate distribution for the given context.
+- The distribution was applied incorrectly, leading to errors in probability calculations (e.g., incorrect conversions of z-scores to percentiles), possibly resulting from neglecting to draw the distribution and identify the area under the distribution that corresponds to the desired or relevant probability.
+- The application does not adequately identify and distinguish between the sample, population, or sampling distribution.
+- The required conditions on the distributions were simply listed and assumed, instead of thoroughly evaluated for the given context and data.
+- The application fails to recognize potential limitations of the analysis arising from problematic assumptions on the underlying distribution or sampling process.
+- The application confuses regression to the mean with the gambler’s fallacy.
+- The application focuses on evaluating sampling methods without mentioning implications on the analysis of distributions (this would fall more in the purview of #sampling).
+
+APPLYING THIS HC AT MINERVA
+- This HC is introduced in Formal Analyses by focusing on a limited set of types of distributions (e.g., normal, binomial, uniform, t-distribution), but students should note that there are many other types of distributions (e.g., poisson, geometric, gamma), some of which will be encountered in Cores and Concentrations, and all of which rely on the foundations of #distributions.
+- Distributions are involved when making any kind of statistical inference across all disciplines, ranging from natural sciences to social sciences. For example, when conducting significance testing, you may need to examine the distribution of sample data to observe whether conditions for tests (e.g., normality, independence) are met, but analyzing the underlying distributions and evaluating any required assumptions is a fundamental step in statistical analysis.
+- In physics and chemistry, particularly statistical mechanics and thermodynamics, tools from statistics and probability theory are essential. In these fields, we are interested in understanding systems with a large number of microscopic entities. It’s intractable to characterize the exact properties of each particle, but we can describe their properties probabilistically. For example, consider molecules in a gas. We can’t determine the precise speed of each molecule, but further, the molecules won’t all have the exact same speed. However, the distribution of molecular speeds is predictable (the speeds in an ideal gas follow the Maxwell-Boltzmann distribution), and this distribution is tightly connected to the temperature of the system and other thermodynamic quantities. Properties of this distribution can help one understand thermodynamic processes like condensation and evaporation.
+- In finance applications, probability distributions are often used in risk management. It’s impossible to know the exact return on an investment, but distributions can be used to determine the probability of losses or estimate the expected value of returns. Distributions can be constructed using historical market data and may also be based in finance theory, and in particular, lognormal distributions are commonly used in finance to model asset prices. This means that the natural logarithm of the asset price follows an approximately normal distribution. The validity of this model stems from the central limit theorem but rests on certain assumptions about the distribution of continuously compounded returns.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- This HC can give you a useful perspective and way of modeling many real-life quantities. For example,  -  Numerous variables can be well-approximated by a normal distribution, such as heights, IQ, birth weights, and the sum of numbers on two dice. Even when the quantity of interest is not approximately normally distributed (e.g., income in the population is commonly skewed by a small number of very wealthy individuals), the central limit theorem guarantees that the sampling distribution of the sample mean is approximately normal, allowing one to make well-reasoned statistical inferences about the population. This theorem allows us to make reliable estimations despite not having access to the complete population data and thus not knowing the exact shape of its distribution.  - Uniform distributions are used whenever all possible outcomes are equally likely, like flipping a coin, rolling a die, or using Python to generate a random number between 0 and 1.  - Binomial distributions are useful in any situation in which we are interested in how many items in a sample satisfy a certain criteria (commonly termed“success”), such as determining the probability of obtaining five CS majors in a group of ten randomly selected students, or the probability that the number of passengers that show up to their flight on time is equal to the number of seats on the plane.  In the examples above, recognizing the most appropriate distribution to model the situation is essential. We can then use properties of the corresponding distribution to characterize the scenario, understand the quantity of interest, and make inferences and predictions. For example, if you know a distribution is normally distributed, you can make valid claims such as “68% of the data is within 1 standard deviation of the mean.”
+- Regression to the mean is a common phenomenon that can arise in situations that involve both skill and luck (random chance). It shows up with test scores, athletic performance, movie sequels, social science research studies, and more. Simply put, when something weird or extreme happens, we shouldn’t expect it to happen again. For example, if a group’s performance (on a test, in sports, or some other way) is extraordinarily good or bad, we should expect their average performance to be less extreme on the next try. The OnlineStatBook reading by Lane in the Key Resources might refresh your memory on this phenomenon. This HC offers a valuable perspective to understand regression to the mean as a pattern that results from random sampling from distributions. See the associated self-study question above for more details.
+
+KEY RESOURCES
+1. Terrana, A. (2022). What is Statistical Inference?. Minerva University. Retrieved from https://docs.google.com/document/d/1-WZpMTLNOerZpfi4o9kNgmANrf7IpbsdxwfacUx84pE/edit#
+- This resource provides a visual overview of where distributions are used within statistical inference, clarifying the relevance of the population distribution, the sample distribution, and the sampling distribution.
+2. Diez, D., Barr, C., & Cetinkaya-Rundel, M. (2015). Sections 2.1.4, 2.4, 2.5, 3.2 3.3.1, and 3.4, 4.1, 4.4, 5.1. OpenIntro Statistics (3rd ed.). Retrieved from https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view
+- The following chapters include in-depth explanations and practice questions for many foundational concepts related to #distributions mentioned within the handbook.
+3. Khan Academy. (n.d). Sampling distributions. AP Statistics. https://www.khanacademy.org/math/ap-statistics/sampling-distribution-ap#what-is-sampling-distribution
+- These videos introduce essential concepts for understanding the basis of the central limit theorem. Conceptualizing the "sampling distribution" and how it differs from the population distribution is an important concept within this HC. This unit covers sampling distributions for both means and proportions. There are numerous beneficial practice questions throughout and at the end to test your understanding.
+4. Kunin, D. (n.d.). Probability distributions: Central limit theorem. Seeing Theory. https://seeing-theory.brown.edu/probability-distributions/index.html#section3
+- This interactive website allows you to visualize the central limit theorem in action. Read the paragraph under Central Limit Theorem and change alpha and beta to alter the population distribution's shape. Try different sample sizes and number of draws. Checking the Theoretical box displays the sampling distribution after an infinite number of draws. Notice: how does its shape compare to that of the population distribution?
+5. Lane, D. (n.d.). Regression toward the mean. OnlineStatBook. http://onlinestatbook.com/2/regression/regressiontowardmean.html
+- This resource provides an introduction to regression to the mean, providing examples and common misunderstandings. You may be interested to skim through the New York Times Article linked at the bottom of the page.

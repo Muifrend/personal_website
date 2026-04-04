@@ -1,0 +1,99 @@
+#TESTABILITY
+
+BLURB
+Evaluate whether hypotheses lead to testable predictions.
+
+PITCH
+If it can’t be tested, it falls outside of science.
+
+PARAGRAPH DESCRIPTION
+Scientific thinking requires the ability to identify hypotheses that generate testable predictions. One must learn to identify hypotheses that do not lead to testable predictions and hence cannot be evaluated. One should also be able to generate multiple predictions from a hypothesis and determine how well they will allow us to conclude whether a hypothesis is supported or refuted.
+
+CATEGORIZATION
+Habit | Empirical Analysis | Thinking Critically | Evaluating Claims
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analysis | Semester One
+- Unit: Scientific Method
+- Big Question: How do we mitigate human-caused climate change?
+
+GENERAL EXAMPLE
+You work on a local politician's campaign team for the upcoming local elections. You suggest employing more door-to-door campaigning will increase support among residents because they seek more face-to-face interactions. Your colleague argues that while your proposal makes sense, you don't have the means to determine the impact of door-to-door visits. Your colleague is suggesting that your hypothesis that increasing face-to-face interactions will cause an increase in support among residents is untestable. First, you suggest randomizing the intervention (door-to-door campaigning) among the city’s neighborhoods. Then, you inform the other campaign channels to keep the same strategy over the research period. You predict that there will be a larger increase in support among residents in the neighborhoods that received the door-to-door intervention compared to the other campaign channels (control groups). While your hypothesis is testable in principle, however, you still need to find out whether it is testable in practice. You ask your manager how much budget you would be able to allot for this experiment and they give you a sufficient amount to cover all expenses. You then investigate how long your experiment would take and realize you would need to have the results done by the end of the campaign. Since the entire research project would take around 2 months, and the elections are in 4 months time, your hypothesis is determined to be testable in both principle and practice. To improve the testability of the hypothesis even more, you generate a second prediction: that polling numbers will increase significantly in the neighborhoods with door-to-door campaigning compared to the neighborhoods without. Both of these predictions are useful while testing your hypothesis.
+
+Footnote: Available methods were used to assess the testability of door-to-door visits. Once it was determined to be testable in both principle and practice, multiple predictions were generated that will be used to test the hypothesis.
+
+IS THIS THE RIGHT HC?
+Is #testability the right HC? If the answer to the following questions is yes, #testability could be useful:
+
+- Are you generating multiple predictions to test a hypothesis?
+- Are you evaluating the testability of a hypothesis in principle and/or practice?
+
+Depending on the work product, there might be other HCs to consider. ….
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#hypothesisdevelopment  |  Identifies a knowledge gap and generates an informed conjecture in an attempt to eliminate the gap. The hypothesis includes an explanation for a relationship between variables which should be used to generate predictions.
+#significance  |  Uses different statistical tests to assess the statistical and practical significance of a pattern or relationship, which typically involves constructing null and alternative “hypotheses” that serve as predictions to be tested. Note that because the null and alternative are two sides of the same prediction, it counts as one prediction.
+#plausibility  |  Evaluates the hypothesis by looking at the premises and assumptions it is based on. This HC is typically used along with #testability to evaluate hypotheses.
+#interventionalstudy, #observationalstudy, #casestudy  |  Involve designing a study to test a hypothesis. The processes of generating predictions and designing studies are often iterative,  whereby predictions help determine relevant variables.
+#deduction  |  Uses deductive reasoning to derive conclusions that follow necessarily from a set of premises, which can be used to derive testable predictions from a hypothesis and identify predictions that can be used to refute a hypothesis.
+SELF STUDY QUESTIONS
+1. What is the difference between testability in principle and testability in practice? Provide examples to support your explanation.
+
+   Answer: A hypothesis that is testable in principle is one that leads to predictions that can either support or refute the hypothesis, whereas a hypothesis that is testable in practice is one that leads to predictions for which data can currently be collected to either support or refute the hypothesis. Sometimes a hypothesis or theory has predictions that could test the hypothesis, but currently are not possible to test due to technological, ethical, or other constraints, which would make the hypothesis testable in principle, but not testable in practice. 
+   
+   For example, Einstein’s Theory of General Relativity made predictions about how light would be bent in an eclipse, but when published in 1915 this was only testable in principle because there were no total eclipses on Earth that could be measured. When a total solar eclipse occurred in 1919, then General Relativity became testable in practice, because data could be collected that might support or refute General Relativity. Likewise, General Relativity predicted a phenomenon of gravitational waves that technology was not able to measure in 1915. One hundred years later in 2015, technological advances enabled the first direct measurements of gravitational waves, making that prediction testable in practice when it previously had been only testable in principle.
+   
+   Note that testability in principle always comes first. In other words, a hypothesis cannot be testable in practice if it is not testable in principle.
+
+2. What is the difference between generating multiple predictions and simply negating an initial prediction?
+
+   Answer: Multiple predictions are different approaches to testing the hypothesis. For example, a hypothesis that all the continents were arranged together in a supercontinent (Pangea) in the past was tested using multiple predictions. One prediction could be: if the supercontinent used to exist, then we would expect the edges of the current continents to fit together. Another prediction: if the supercontinent used to exist, we would expect land animal fossils to match the sides of continents that used to be connected together. A third could be: if the supercontinent used to exist, rock formations should line up on the edges of continents that used to be connected together. Although the predictions are widely different, they all test the same hypothesis. Refer to the reading on Pangea if you want to learn about other evidence. 
+   
+   An example of a negation of a prediction is the following: the hypothesis would be supported if we notice a positive correlation between X and Y. However, if we obtain a negative or no correlation then the results will contradict the hypothesis. Although it is useful to provide clear interpretations of different results, the negated prediction does not make the argument stronger. Note that the negation is not a new prediction. 
+   
+   This is relevant in the realm of #significance when using hypothesis tests to test the statistical and practical significance of a relationship or pattern. The alternative hypothesis expresses a prediction about a certain relationship, for example, there is a positive correlation between X and Y. The null hypothesis simply represents the status quo, for example, there’s no correlation between X and Y. Overall, the significance test is being used to test a single prediction (e.g., about the existence of a correlation between two variables).
+
+3. How do we generate multiple predictions?
+
+   Answer: There is no single recipe for generating multiple predictions as it depends on the hypothesis. One way to generate predictions is to vary the object. For example, if you want to test the effectiveness of an antibiotic your predictions can be about its effects on cells in petri dishes, and on humans. You can also think about different relevant variables. For example, one of the explanations for why men cite themselves more often than women do can be that men publish more papers, therefore, they have more work to cite. The first prediction that can test the hypothesis is that there is a positive relationship between the number of papers published and self-citation in both, men and women. The second prediction would be that over the first X papers, the rate of self-citation is similar among men and women. You can see more examples of multiple predictions in the Minerva University whitepaper linked in the Key Resources.
+
+4. How do scientists evaluate competing explanations and how can #testability aid the generation of effective explanations?
+
+   Answer: The main step of evaluating competing hypotheses involves analyzing how predictions match the observations. The stronger hypothesis will be the one that more closely explains the observed data. One can use #testability to cleverly identify predictions that will enable competing explanations to be ruled out (i.e., the prediction would clearly support one hypothesis and refute another).
+
+5. Explain how #hypothesisdevelopment, #testability, and #plausibility work together in the process of generating a hypothesis.
+
+   Answer: The first step of generating a hypothesis is to identify patterns of regularity among observations and suggest an explanation of the pattern (#hypothesisdevelopment). One needs to ensure that the generated hypothesis is based on well-established theories and plausible assumptions (#plausibility). We also need to identify predictions that would either support or refute the hypothesis and ensure that these predictions are testable given the constraints (i.e. evaluate whether the hypothesis is testable in principle and in practice as part of #testability). If the hypothesis is either based on implausible assumptions or is untestable, we need to go back and revise the hypothesis.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you generated multiple, independent predictions that would clearly refute or support the hypothesis?
+2. Have you sufficiently explained and justified your process for generating or deriving predictions?
+3. Have you identified a prediction that can distinguish between competing hypotheses?
+4. Have you justified why you focus on a specific prediction?
+5. Have you considered the practicality of testing the prediction (e.g., budget, duration, ethics)?
+6. Is your interpretation of the expected results insightful for the purpose of your work?
+
+COMMON PITFALLS
+- Provides only a single prediction.
+- Considers the simple negation of a prediction as an additional prediction.
+- Provides multiple predictions but they are not connected to the hypothesis or are not specific enough.
+- The testability in principle and/or practice is not assessed where needed.
+- Fails to identify and critique untestable hypotheses.
+
+APPLYING THIS HC AT MINERVA
+- You can use this HC in your business classes to suggest a test of a hypothesis regarding the success of a product, or marketing strategy. Very often, a question will arise regarding the best way to market a product. In this way, you might hypothesize that the best marketing strategy will be social media ads for one month as compared to billboards because social media has the greatest reach. This then leads to clear predictions: (1) a comparison of sales before and after the social media ad campaign should show a statistically significant increase in sales post-campaign. (2) In areas without the social media advertising, sales do not change. (3) One month of only social media ads should lead to greater sales compared to one month of only billboards in regions that are similar demographically. Of course, we should be careful to consider confounding variables!
+- This HC is applicable to your research proposal assignments in the Natural Sciences college. For example, your research proposal on solar geoengineering technologies would require a thorough analysis of the testability of your hypothesis given the costly, under-researched, and ethically controversial nature of such technologies.
+- You can use #testability to generate and evaluate hypotheses in politics, economics, and other social sciences. Let’s say you want to conduct research to test whether the increase in government investment in public education leads to a decrease in youth unemployment. If the relationship between the variables (investment in education and youth unemployment) is true you would expect (1) states with higher government investment to have higher employment rates of recent graduates, (2) skills provided by improved public education to match with the demands of the job market and (3) long term economic growth (reflected in GDP) due to lower unemployment and high skilled labor. Once you generate multiple predictions, you may test one or more depending on the time, financial, and data constraints.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- The HC can help you assess claims encountered in your daily conversations. Imagine a scenario where your neighbor called to warn you about an unfortunate event foreseen in their dream. Intrigued by the claim, you decided to collect data on all the negative events throughout your day; however, nothing particularly bad happened. When you reported this to your neighbor, they responded by claiming that the future changed because of their warning. It seems that any outcome, whether the predicted event occurred or not, could be interpreted as supporting the claim.  Furthermore, even if something negative had happened, the prediction was too broad, meaning that a random event could wrongly be ascribed as a supporting outcome. The inability to falsify makes your neighbor’s claim untestable in principle.
+- If your career is in R&D, you will often use #testability to design experiments by selecting to test the prediction that not only supports a hypothesis but also contradicts the alternative ones, making research less costly and time-consuming.
+
+KEY RESOURCES
+1. Minerva University. (2020). Developing hypotheses and determining their testability and plausibility. https://docs.google.com/document/d/1xEqs2OkagDNfeAvzVgzsI5H3EZJSTTMBsraITeuJ50/edit
+- This guide outlines the relationship between #hypothesisdevelopment, #plausibility, and #testability using multiple examples.
+2. The University of California Museum of Paleontology. (2015). Testing scientific ideas. Understanding Science. https://undsci.berkeley.edu/understanding-science-101/how-science-works/testing-scientific-ideas/
+- This short page explains the importance of testability, and how predictions and results are used to make judgments about the hypothesis.
+3. BBC Radio 4. (2015, August 5). Karl Popper’s Falsification. [Video]. Youtube. https://www.youtube.com/watch?v=wf-sGqBsWv4
+- This 2-minute video provides a brief background on Karl Popper’s ideas on falsification in science. This is useful when considering whether a hypothesis is testable in principle, but is not the only way to design hypotheses.

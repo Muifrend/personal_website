@@ -1,0 +1,117 @@
+#DECISIONTREES
+
+BLURB
+Apply and interpret decision trees to explore the consequences of alternative choices.
+
+PITCH
+A formal approach to consciously analyze decisions using branches, roots, and leaves.
+
+PARAGRAPH DESCRIPTION
+Decision making is enhanced when appropriate decision support tools are developed and used. Decision trees are one such tool. In decision trees, a large, complex decision is replaced by a series of smaller (sometimes binary) decisions that are made in sequence. Once each decision is made, that particular outcome leads to a specific further decision (which would have been different if another decision had been made). Developing and analyzing a decision tree helps one determine the best series of choices under different criteria, such as expected value, maximax, and maximin.
+
+CATEGORIZATION
+Habit of Mind | Formal Analyses | Thinking Critically | Analyzing Decisions
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester Two
+- Unit: Decision Theory
+- Big Question: What is a good decision?
+
+GENERAL EXAMPLE
+You need to decide where to unwind for the coming weekend: the beach or the mountains. Whether you have fun at either location is highly dependent on the weather, since you love kayaking and skiing. However, bringing the equipment adds to the gas money and mental effort to take care of them. You create a decision tree with four possible outcomes: beach with kayak, beach without kayak, mountains with skis, mountains without skis. Without additional weather information, your guess is as good as a coin flip — a mere 50% accuracy. Luckily, a friend recommended a precise weather forecast app that costs $10, which predicts beach weather with 80% accuracy and mountain weather with 65% accuracy. To evaluate whether it’s worth purchasing the additional information, you construct two decision trees: one with your own probabilities and one including the app’s accuracies. Combining these probabilities with the utilities of each outcome allows you to compute expected utilities for both trees. Since your expected utility rises if you buy and use the app, even after incorporating its cost, you decide to buy it. Three days prior to the trip, the app predicts sunny weather at both the beach and the mountains, suggesting that kayaking at the beach is the clear winner. Note that, rather than employ maximin or maximax heuristics (something you might do without the app’s information), you believe it’s more rational to trust the expected utility approach. The weather turned out to be horrible, but you recognize that the highest expected utility doesn’t guarantee the best outcome.
+
+Footnote: A decision tree was created to break down and map out a complex decision into a sequence of smaller, simpler decisions. Different choice strategies are considered and justified, and the value of imperfect information (weather app) is evaluated.
+
+IS THIS THE RIGHT HC?
+Is #decisiontrees the right HC? If the answer to the following questions is yes, #decisiontrees could be useful:
+
+- Are you constructing a decision tree to analyze a decision-making scenario?
+- Are you using a tree to visualize the possible outcomes and associated probabilities of a decision?
+- Are you using a decision tree to elucidate different decision-making strategies, personalities, and/or risk preferences?
+- Are you using decision trees to aid in the evaluation of perfect or imperfect information in a decision-making scenario?
+
+ Depending on the work product, there might be other HCs to consider.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#utility  |  Focuses on how to represent one’s preferences using utilities and/or utility functions, and calculates the expected utility for a decision-making scenario. Decision trees provide a way to visualize the utilities and probabilities for all potential outcomes in a decision-making scenario and assist with systematizing the expected utility calculation for multi-step sequential decisions.
+#probability  |  Relies on fundamental probability concepts, which are often relevant in a decision-making scenario in which some events are up to chance (chance nodes in a decision tree). Trees can assist with Bayesian updating to evaluate the impact of imperfect information in a decision-making scenario.
+#modeling  |  Identifies or constructs models to describe a system, test theories, and make predictions. A decision tree constitutes a conceptual model that allows one to visualize a decision-making scenario. The tree also aids in modeling how one might make a decision (how one would navigate through the tree) based on certain descriptive models of human behavior.
+#heuristics  |  Focuses on analyzing how heuristics (i.e., simple rules or criteria) can be used to make a decision, often requiring/using limited information. A decision tree can help visualize how heuristics, such as “maximax” and “maximin,” can be applied in a decision-making scenario.
+#algorithms  |  Focuses on how algorithms can be used to solve problems or make decisions, which can include using machine learning algorithms to construct a decision tree for regression or classification tasks. These trees usually serve a different purpose than the trees associated with #decisiontrees, typically used as models to classify or predict an outcome based on certain features rather than for mapping out and analyzing a real-life decision-making scenario.
+#gametheory  |  Evaluates a decision-making scenario with multiple interacting agents, each one faced with a set of decisions. A game analysis fully integrates the perspectives of all agents, whereas a decision tree is always drawn from the perspective of one agent, and the other agents’ decisions are captured as chance nodes. Both analyses can complement each other but usually come with different assumptions about the agents and the context.
+SELF STUDY QUESTIONS
+1. Why and when would you use a decision tree?
+
+   Answer: Decision trees are a graphical reasoning tool that formalizes decision-making scenarios as an ordered sequence of smaller decisions, helping us to make well-informed, rational decisions in the presence of risk. Decision trees systematically map out the choices to be made, accounting for the uncertainty introduced by probabilistic events, and quantifying the relative value associated with each possible outcome. We comprehensively evaluate each possible pathway through the tree based on an appropriate decision criterion, allowing us to choose the ideal course of action. Decision trees are not only useful to help one make well-informed rational decisions, but it is also useful to determine how different individuals would make the decision under different risk preferences.
+
+2. What are the different types of nodes involved in a decision tree?
+
+   Answer: Decision trees are visual models that have a tree-like appearance. The root/decision nodes represent the decision (typically drawn as squares), and each diverging branch represents a choice or action that you can take. The event nodes (represented by circles), capture the chance events that we do not have control over. The branches extending from the event nodes to the terminal/outcome nodes (drawn as sideways triangles), capture the probabilities associated with each possible outcome of the chance events. Based on our chosen decision criterion, we can assign values to each pathway through the tree in order to select the most appropriate series of decisions. The figure below is included in the Decision Tree Strategies (Flora & Terrana, 2024) white paper linked in the key resources section below.
+
+3. Explain the following strategies: Maximin, Maximax, and expected value. Explain how a person with the following strategies would act for a decision tree below.
+
+   Answer: There are various strategies and decision criteria that guide our choices at each decision node when using a decision tree model. Note that these strategies are used to describe decision-making processes rather than provide rationally optimal decisions.
+   
+   - Maximax (i.e. optimistic strategy) – Maximax is high-risk a strategy in which the action with the highest potential return is chosen for each decision (i.e. the choice that could lead to the highest value/payoff). You must first specify the maximum possible payoff for each action option at the decision node, and choose the option with the highest maximum payoff – choose the max of the max. This strategy ignores the worst-case outcomes and the probabilities associated with each outcome of the chance event.
+   - Maximin (i.e. pessimistic strategy) – Maximin is a conservative strategy that involves choosing the option with the maximum worst-outcome payoff – choose the max of the mins. First, enumerate the minimum payoff associated with each possible action at the decision node, then, choose the option with the largest minimum payoff. This strategy ignores the largest potential gains and the probabilities associated with each outcome of the chance event.
+   - Expected Value/Expected Utility – The expected value strategy is arguably the most rational decision criterion it offers a balance of odds (probabilities) and payoffs (outcome values). This approach involves choosing the option that maximizes the expected value, defined as the average of the possible outcomes weighted by their probabilities. We can compute this criterion by multiplying the value of each outcome of an event node by their respective probabilities and taking the sum of those products.
+
+4. What is the process of a decision tree rollback? What are the steps involved?
+
+   Answer: Decision tree rollback allows us to evaluate scenarios involving multiple decisions occurring in a sequence (i.e., the choice made at the previous node or even the outcome of chance events influences the subsequent decisions). As the name suggests, this process operates from right to left, beginning at the terminal nodes of the tree and working backward to the root node. First, you should select a decision-making strategy (maximax, maximin, expected value) that you will use to evaluate each node comprising the tree. Beginning at the terminal nodes, trace back the branches until they meet at the right-most decision node. Using the strategy you selected earlier, determine the best choice at this node. Once you have defined the optimal choice at each of the right-most decision nodes, trace back the branches to the next decision node and apply your strategy again. Repeat this process until you have arrived at the root node. Now you have identified the optimal path or series of choices that one can make in this sequential decision scenario.
+
+5. What is “information” in the context of decision-making? What is the difference between perfect and imperfect information?
+
+   Answer: We think of this as additional information that would help us decide which option to choose. There are usually chance events that are out of our control, but if we had some information about which event was going to actually occur, it would aid in our decision-making. By computing the value of information, we can determine if you should invest in collecting additional information regarding a particular topic of interest to improve your decision-making process.
+   
+   Perfect information removes all of the uncertainty and risk about the outcomes for the decision alternatives. Note that perfect information is often unavailable or impossible to collect in most real-world decision-making scenarios. Imperfect information may give us some extra insight to update the probabilities of the outcomes and improve the accuracy of our decision evaluations, but it doesn't remove risk entirely. For example, there could be a chance that the information is wrong. Perhaps your source of information indicates that you will be promoted, but there's a chance that your source is incorrect. Maybe they misread the staffing plan or they are trying to deceive you for some reason.
+
+6. How would you compute the value of perfect and imperfect information? How can a tree aid in the calculation of the value of information?
+
+   Answer: The value of information is usually given as the difference in the expected value of the best choice with information and the best choice without the information. 
+   
+   - The expected value of perfect information (EVPI) is computed by taking the difference between the highest expected value with perfect information and the highest expected value without the additional information. The EVPI is the maximum amount you would pay for perfect information. 
+   - The expected value of imperfect/sample information (EVSI) is slightly more complex to compute. We use the accuracy of the sample information to update the probabilities of each outcome given the prediction by the imperfect information source. The EVSI is the difference between the maximum expected value obtained from the decision tree constructed from our current knowledge of outcome probabilities and the maximum expected value obtained from the decision tree constructed based on the posterior probabilities derived from the information provided by our imperfect source. 
+   
+    When we compute the value of information, we are comparing the maximum expected value without additional information (i.e., based on our current knowledge of the situation) to the case in which we do acquire additional information. In the latter scenario, our decision tree should capture the cost of acquiring the information and the accuracy of our source. The trouble is that the accuracy of a particular information source is often given as the probability of a particular prediction given the actual outcome as they are based on the historical record (i.e., the chance node of the actual event precedes the chance node of the source’s prediction). But to update our decision tree, we require the probability of the outcome given the prediction of our information source which is the reverse conditional probability (i.e., the chance node of the source’s prediction precedes the chance node of the actual event). To resolve this discrepancy, we apply a deductive process called tree flipping which involves calculating the probabilities of each outcome node with the order of the chance nodes reversed. The process of tree flipping is detailed in section 3.4 of the Decision Tree Primer  (Kirkwood, 2013), also linked in the key resources section below. Tree flipping is equivalent to applying Bayes’ formulas to flip the conditional probabilities, i.e., convert from P(predicted event | event) to P(event | predicted event).
+
+7. How is Bayesian updating relevant in decision trees?
+
+   Answer: Bayesian reasoning involves updating probabilities as new information is obtained. This is particularly relevant when using decision trees to evaluate the impact of imperfect information. In this context, the prior probabilities are regarded as the probabilities of the outcomes of the event node without information, and the posterior probabilities are the probabilities of the outcomes with additional information. Moreover, to determine the value of information, we need to determine the updated (posterior) probability that a chance event will occur, given the information that we have and our initial belief about the chance of the event occurring (prior). This is exactly Bayesian updating! For example, we want to know P(outcome will occur | source predicts this outcome). Determining this conditional probability will involve using probability trees and Bayes' theorem. This updated probability will then impact the calculation of expected values and help one determine the value of the information.
+
+GUIDED REFLECTION QUESTIONS
+1. Does your tree include all possible outcomes that are relevant to your decision analysis purpose, and have you provided sufficient justification for any simplifications made in modeling the decision-making scenario in the tree?
+2. Have you used different types of nodes correctly in your decision tree?
+3. When assigning probabilities/values to different nodes or branches in a tree, have you justified your reasoning for the probabilities/values?
+4. Have you accurately used the tree to evaluate one or more decision-making strategies, effectively demonstrating how different criteria or preferences can impact the pathway through the tree?
+5. Have you effectively justified which decision tree strategies are most appropriate or desirable, considering the decision-maker’s preferences, the context of the scenario, and the purpose of your analysis?
+6. Have you correctly executed decision tree rollback to analyze a sequential decision-making process and sufficiently explained the steps?
+7. Have you considered how perfect or imperfect information would impact the decision-making scenario, justified its relevance to your analysis, and effectively incorporated such information in your decision tree analysis?
+8. Have you used trees to effectively facilitate Bayesian updating in pursuit of determining the value of imperfect information, sufficiently explaining your process and its relevance to your analysis?
+
+COMMON PITFALLS
+- The decision tree is incorrectly constructed (e.g., using incorrect types of nodes, neglecting to include important branches).
+- The probabilities and values in the decision trees are completely arbitrary or implausible, with insufficient justification.
+- The application fails to consider different strategies to evaluate/traverse the decision tree, or fails to indicate the most appropriate one given the context.
+- The application does not explain how the strategies would materialize in full detail for all the decisions in a sequential decision-making scenario, only evaluating for a single decision node.
+- The application does not effectively use probability fundamentals, such as conditional probabilities and Bayes’ Theorem, when evaluating a decision-making scenario involving imperfect information.
+- The application confuses decision trees constructed by a machine learning algorithm for classification or regression purposes as an application of #decisiontrees.
+
+APPLYING THIS HC AT MINERVA
+- In the social sciences, decision trees are a great analysis tool for understanding and modeling how and why humans make the choices they make. One can model decisions made by government leaders, citizens, and anyone in between. Making certain assumptions about the personalities, tendencies, and risk preferences of these individuals can allow you to use a decision tree to predict or understand how they would behave in a certain decision-making scenario. For example, if you have reason to believe that a certain decision-maker would be pessimistic and risk-averse in a certain situation, you can use a decision tree to visualize how they would navigate a decision-making scenario.
+- In finance or business applications, you may use a decision tree to analyze investment or expansion opportunities. The potential cash flows for a given decision would be the sum of cash flows for all potential options, weighted based on their assigned probability of the investment’s success/failure. The probability can be obtained or estimated in various ways, such as by observing the historical success/failure of a similar project or consulting external experts. Upon constructing the trees, companies could use them to navigate a decision based on their risk preferences.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- There are two main use-cases of this HC:  - As a decision-making tool to assist with your own personal decisions  - As a modeling tool to understand how others make decisions (as mentioned above for SS applications).
+- Decision trees are a valuable tool for personal day-to-day decision-making. They allow you to comprehensively evaluate sets of interrelated decisions by mapping out the decisions that need to be made, the possible chance events, and all resulting outcomes. The tree ultimately serves as a visual aid to capture all relevant information about the decision-making scenario so that we can systematically evaluate it. This can lead to more objective, well-informed, and rational decisions. There are so many use cases! For each of the examples below, one could identify decision nodes and chance nodes, and consider different ways to enumerate the terminal nodes.  - Should you work on your assignment tonight or go watch a movie? - Should you declare your intended major as CS or SS?  - Which flight home should you book and which travel insurance option should you choose?  - Which summer internship offer should you accept?
+- Even when faced with complicated situations and uncertainty, which makes it impossible to construct a fully complete tree, it can still be a useful tool. Making the attempt to map out everything that is known about a decision-making scenario can help one be as objective and systematic as possible. Plus, even when working with limited information, as long as we can rank the available outcomes from best to worst, heuristic methods (e.g., maximin or maximax) can still be applied. These heuristics can illuminate consistent and practical decision-making tactics that we can apply in our own daily lives.
+- This HC need not be confined to assist with simple, low-stakes choices we make on a daily basis. It can also be valuable to assist with hugely important decisions made by global leaders that impact entire populations! For example, consider international disputes like the Cuban Missile Crisis. One can create a simple tree from the perspective of the Soviets: This tree focuses only on one of the major decisions and uses a simple scale of 0 (least perceived safety) to 10 (most perceived safety). It’s definitely a simplification of reality. For instance, there are many different factors (lives saved/killed, economic costs, social impacts, and political consequences) that would contribute to the Soviet’s overall utility. Nonetheless, the tree still has use from both normative and empirical perspectives. Creating a tree that maps out all options, even if there is substantial uncertainty, can help the decision-maker be as objective and rational as possible. It can also help us understand how and why the Soviets ended up navigating this situation.
+
+KEY RESOURCES
+1. Flora, T. & Terrana, A. (2024, Mar). Decision Tree Strategies. Minerva University. https://docs.google.com/document/d/1uFaDkib-Ff-sbJaVYHDy1mbnTAJhFT3v3WrlztMxOy8/edit
+- Why/use: This resource includes concepts and strategies regarding decision trees, and example cases to aid comprehension.
+2. Kirkwood, C. (2013, January 11). Decision Tree Primer. Retrieved from: https://www.public.asu.edu/~kirkwood/DAStuff/refs/decisiontrees/
+- Why/use: This text-book-like resource includes in-depth explanations about decision tree concepts and risks, as well as practice questions with solutions to practice your understanding.
+3. Joshua, E. (n.d.) Decision Trees Youtube Playlist. Retrieved from: https://www.youtube.com/playlist?list=PLD3fYc0bAjC-o3BI760gREvqW3oPmtFCe
+- Why/use: This playlist includes explanations of decision tree concepts and examples of how to solve problems with decision trees. The first 4 videos are especially helpful.

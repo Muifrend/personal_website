@@ -1,0 +1,207 @@
+#DEDUCTION
+
+BLURB
+Analyze and apply deductive reasoning.
+
+PITCH
+Reasoning toward indisputable conclusions.
+
+PARAGRAPH DESCRIPTION
+Deduction involves reasoning to a logically certain conclusion on the basis of one or more propositions that serve as premises. This type of reasoning is a crucial aspect of logical thinking, whether it be for constructing arguments or carrying out mathematical derivations. Part of deduction involves analyzing relationships among propositions, for example by identifying logical inconsistencies, tautologies, and logical equivalence. Deductive arguments are evaluated on their validity (whether the premises entail the conclusion) and soundness (whether the premises are true).
+
+CATEGORIZATION
+Foundational Concept | Thinking Critically to Evaluate Justifications
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analysis | Semester One
+- Unit: Logical Thinking
+- Big Question: How is free choice manipulated?
+
+GENERAL EXAMPLE
+You are wondering whether the bank is open today, a Saturday, because your little brother needs you to wire him money. 
+
+You know that on any given day, either the bank is closed for the whole day or the cafe next to it is closed for the whole day. You remember that last month you and your best friend were hanging out at the cafe and you discussed the basketball game that was scheduled for that evening. It was the championship game, which took place on a Saturday. Therefore, you conclude that the bank is not open on Saturdays. 
+
+You analyze that your argument is valid through a disjunctive syllogism: knowing that either the bank or the cafe is open on a day but not both, and knowing that the cafe was open on a Saturday allows you to validly infer that the bank was not open on Saturday. However, your deduction is only sound if all of your premises are true: it is possible, for instance, that the café you visited on a game day, on Saturday, was atypically open because of the game, and thus that the bank was actually also open on that (and normally all) Saturdays. You call the café to confirm, and they tell you that they do, in fact, open every Saturday, which in turn supports your premise (that either the bank or the café are open on a given day, but not both). 
+
+Footnote: Available knowledge is used to construct a deductive argument in the form of a disjunctive syllogism with an exclusive or. Let P = “bank is open on Saturday” and Q = “cafe is open on Saturday”, the argument reads: (P or Q) and not (P and Q); Q; therefore, not P. Since the argument is valid, the truth values of the premises are evaluated and confirmed to be true. Both the validity and soundness of the deductive reasoning are explained in detail and justified as necessary.
+
+IS THIS THE RIGHT HC?
+Is #deduction the right HC? If the answer to the following questions is yes, #deduction could be useful: 
+- Did you use deductive reasoning to derive a conclusion that follows necessarily from the premises? 
+- Did you evaluate a deductive argument’s validity and soundness?
+- Are you performing a mathematical derivation or proof?
+- Does analyzing an argument from an deductive lens provide useful insights that are relevant to the purpose of the work?
+
+However, depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#induction  |  uses inductive reasoning to provide likely support for a conclusion using evidence, data, experience, and/or observations.
+#fallacies  |  focuses on analyzing informal or formal fallacies in the argument’s structure, which may result from misapplying the principles of deductive reasoning.
+#persuasion  |  focuses on how persuasive techniques, which can include elements of deductive reasoning, are used in communication.
+#testability  |  assesses the testability of a hypothesis, which can include using deductive reasoning to derive testable predictions from a hypothesis and/or identify predictions that can refute a hypothesis.
+#plausibility  |  evaluates the plausibility of a hypothesis, which can include deductive reasoning to conclude that a hypothesis is implausible (e.g., as a result of inconsistent premises or false assumptions).
+SELF STUDY QUESTIONS
+1. Define “atomic sentences.” Give two examples and three non-examples.
+
+   Answer: Atomic Sentences: Sentences that contain a logical truth value and cannot be further broken down into smaller components.
+   - The cat is on the chair.
+   - It is raining outside
+   - John is a man.
+   
+   Non-examples include questions, commands, and exclamations. These sentences cannot hold truth values.
+   - Is Seoul the capital of Korea?
+   - Read this handbook.
+   - Awesome!
+   
+   Sentences like “Jo and Lola love cats” and “He does not like cats” are not technically atomic because they include logical connectives like “and” and “not.” The first sentence is comprised of two atomic sentences: “Jo loves cats” and “Lola loves cats.”
+
+2. Define logical connectives. List five essential connectives in sentential logic.
+
+   Answer: Logical connectives are symbols or words used to combine atomic sentences or other compound statements to create more complex logical expressions. This table from Magnus (2017) contains a list of five key connectives for SL (see key resources):
+
+3. Define the following terms: tautology, contradiction, contingent.
+
+   Answer: Tautology: a logical sentence that is always true, regardless of the truth values of its individual components. In other words, it is a statement that is true in every possible interpretation. For example, the statement "Either it is raining or it is not raining" is a tautology since it is always true, regardless of what “raining” means in the context.
+   
+   Contradiction: a logical sentence that is always false as a matter of logic alone. A contradiction commonly involves a proposition in conjunction with its negation. For example, the statement "It is raining outside and it is not raining outside" is a contradiction, regardless of what “raining outside” even means. 
+   
+   Contingent: In logic and philosophy, a contingent statement is one that is neither necessarily true nor necessarily false. Its truth value depends on the specific circumstances or conditions under which it is evaluated. A contingent statement can be true in some scenarios and false in others. For example, the statement "It is currently raining outside" is contingent because its truth value depends on the weather conditions at the particular moment of evaluation. This can get tricky when considering sentences like “Narwhals are the best sea creature,” which seem to be undeniably true. However, even sentences like this are contingent because it’s possible, in some (weird) world, for someone to believe that narwhals are not the best.
+
+4. What does it mean for sentences to be logically consistent?
+
+   Answer: A set of sentences is logically consistent if and only if it is possible for all the members of that set of sentences to be true. A set of sentences is logically inconsistent if at least one of the sentences within the set conflicts with another.
+
+5. What does it mean for sentences to be logically equivalent? Give an example of two sentences with different connectives that are logically equivalent.
+
+   Answer: Two sentences are said to be logically equivalent if they have the same truth value in every possible interpretation or situation. “If a then b” is logically equivalent to “not a or b”. This is an example of the negation of a conditional. You can check the equivalence of two sentences with truth tables.
+
+6. What is De Morgan’s law?
+
+   Answer: De Morgan's first law states that the negation of a conjunction (AND) is equivalent to the disjunction (OR) of the negations of the individual propositions. It can be expressed as follows: ¬(P ∧ Q) = ¬P ∨ ¬Q.
+   
+   De Morgan's second law states that the negation of a disjunction (OR) is equivalent to the conjunction (AND) of the negations of the individual propositions. It can be expressed as follows: ¬(P ∨ Q) = ¬P ∧ ¬Q.
+
+7. What is sentential logic? What is quantified logic? Are there other logic languages?
+
+   Answer: Sentential logic (SL), also called propositional logic, is a logical language system based on statements and the relationships between them. Atomic sentences form the basis of sentential logic, and compound sentences can be formed by combining atomic sentences with connectives like conjunctions, disjunctions, and conditionals. 
+   Other logical systems exist too. One example is quantified logic (QL), also known as predicate logic or first-order logic. This system uses quantifiers like “all” (∀) or “some” (∃) Its basic constituents are not atomic sentences,  but rather predicates, like “is a cat.”  
+   SL and QL are explored in chapters 2 and 4 respectively of Magnus (2017), listed in the key resources. DeLancey (2017) covers the same material in Parts I and II of the text.  
+    For a list of other non-classical logical systems, check out this Wikipedia page.
+
+8. List and explain common patterns of deductive reasoning.
+
+   Answer: Some common types of deductive rules include: 
+   -  Modus ponens
+    - Modus tollens
+    - Hypothetical syllogism (conditional derivation)
+   -  Disjunctive syllogism (modus tollendo ponens) 
+   -  Adjunction 
+   - Simplification 
+   
+   . 
+   - Modus ponens is known as affirming the antecedent, as the first premise is a conditional statement, the second premise is the antecedent of the conditional statement, and the conclusion is the consequent. 
+   - P → Q 
+    - P
+    - Q
+   
+    
+   - Modus tollens is known as the law of contrapositive, as the first premise is a conditional statement, the second premise is the negation of the consequent, and the conclusion is the negation of the antecedent.
+   - P → Q 
+    - ¬Q
+    - ¬P
+   
+    
+   - Hypothetical syllogism takes two conditional statements and forms a conclusion by combining the hypothesis of the first statement with the conclusion of the other. 
+   - P → Q 
+    - Q → R
+    - P → R
+   
+    
+   - In disjunctive syllogism, also known as modus tollendo ponens,  if we know that at least one of the two statements are true and the premise is that the antecedent is false, then we draw the conclusion that the consequent must be true. 
+   - P ∨ Q 
+    - ¬P
+    - Q
+
+9. What terminology is used to evaluate the quality of a deductive argument? Define the terms.
+
+   Answer: In deduction, arguments can be valid/invalid or sound/unsound.
+   - An argument is valid if the conclusion necessarily follows from the premises based on logical structure alone, irrespective of the truth values of the atomic sentences. An argument is sound if it meets two conditions: it is valid and has true premises. 
+   - Soundness involves both logical structure and the truth value of the premises, ensuring that the conclusion is true in context. The interpretation of 'true' premises requires critical evaluation of the propositions and their representation of facts.
+
+10. How is the terminology for deductive arguments different from the terminology used for inductive arguments?
+
+   Answer: An inductive argument can be strong/weak and reliable/unreliable. A strong inductive argument’s conclusion follows from the premises with high probability. A reliable inductive argument is strong and all the premises are true. Inductive’s “strength” is similar to deductive’s “validity,” while inductive’s “reliability” is similar to deductive’s “soundness”. More details can be found within the HC handbook for #induction.
+
+11. Give an example of a claim that is logically valid but not sound.
+
+   Answer: - Everyone who eats carrots is a football player.
+   - John eats carrots.
+   - Therefore, John is a football player.
+   
+    This claim follows the modus ponens logical structure, and is thus valid. However, the premises themselves are not true or reliable, as the first premise is a faulty generalization.
+
+12. What are five factors you can use to distinguish between inductive and deductive reasoning?
+
+   Answer: The Wilkins factors are a number of factors to consider when classifying an argument as deductive or inductive. From most to least important: relationships of necessity, conclusion relative to the scope or domain of the premises, definition and rules versus observation and evidence, use of specific forms, and use of indicator words. More details can be found in the Inductive Reasoning guide (see key resources).
+
+13. What is the ‘domain’ or ‘scope’ of a deductive argument?
+
+   Answer: The domain of an argument refers to the scope or range of issues or ideas that the argument’s premises address. This is important to understand for deductive reasoning, because a deductive conclusion should remain within the domain of the premises. Let's say you have 2 premises:
+   - All dogs are pretty
+   - Bobby is a dog
+   
+    The domain in this case is all the dogs. A conclusion like “Bobby is pretty” is in the domain. A conclusion about something that is not specified, like “Turtles are awesome,” is out of the domain.
+
+14. Explain why providing a counterexample requires deductive reasoning.
+
+   Answer: If A were to be true, then B would be true. But B is not true (counterexample). So A cannot be true. This type of reasoning follows a modus tollens structure.
+
+15. Give an example of a deductive argument that your brain executed (either consciously or subconsciously) in your regular cognitive activities today.
+
+   Answer: I can have oatmeal or toast for breakfast. I’ll only make oatmeal if I have bananas ready to use (to put in my oatmeal). My bananas are still too green. So I won’t have oatmeal. I’ll have toast. It’s valid via disjunctive syllogism and modus tollens. It’s sound in the context as long as we assume it accurately reflects the opinions of the arguer and the options available to them.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you ensured that your application is in the realm of deductive reasoning rather than inductive reasoning (e.g., using the Wilkins factors)?
+2. Have you clearly identified the premises and the conclusions of the argument?
+3. Have you classified the type or form of the deductive argument and justified your classification?
+4. Have you considered using formal tools such as atomic sentences, logical connectives, predicates, quantifiers, truth tables, or formal proof techniques? If so, did you implement them correctly?
+5. If using a formal logic system, did you provide a clear and accurate symbolization key?
+6. If working with atomic sentences, are they clear, connective-free, logical sentences that hold a truth value?
+7. Have you provided a detailed and well-justified evaluation of the validity or soundness of the argument, being sure to distinguish clearly between these concepts?
+8. When considering validity, have you supported this with a truth table, formal proof, or some other pattern recognition?
+9. When considering soundness, have you given a thoughtful and well-supported evaluation of the acceptability of the premises in the relevant context? This may involve providing credible evidence.
+10. If crafting an argument or deriving a result, have you ensured that your conclusion follows with 100% certainty and that there are no gaps, holes, missing steps, or missing implied premises?
+
+COMMON PITFALLS
+- The application confuses deduction for induction or lacks an explanation for why an argument is deductive rather than inductive.
+- The application’s logic does not follow a correct deductive form.
+- The application fails to identify the argument under consideration (the premises and conclusions of the argument).
+- The application does not distinguish between soundness and validity and/or does not define them accurately.
+- The application does not effectively make use of formal logic tools, such as atomic sentences, logical connectives, predicates, quantifiers, symbolic logic, direct proofs, and truth tables.
+- The atomic sentences within the application are not logical sentences.
+- The application chooses an inappropriate formal system (e.g., using sentential logic in cases where quantified logic would be better).
+
+APPLYING THIS HC AT MINERVA
+- This HC is introduced in Formal Analyses using one particular formal logic system, sentential logic (SL), also called propositional logic. This system is based on logical statements and the relationships between them. However, there are many other formal logic systems that one can use, and all of them require the basic principles of #deduction! One example is quantified logic (QL), also called first-order logic or predicate logic. Depending on the situation, one system may be more useful than the other. SL and QL are explored in chapters 2 and 4 respectively of Magnus (2017), listed in the key resources. DeLancey (2017) covers the same material in Parts I and II of the text. For a list of other non-classical logical systems, check out this Wikipedia page.
+- Deductive reasoning is essential for any course involving math (e.g., calculus, statistics, physics, chemistry, economics, business, etc.). When solving math problems, executing calculations, or performing proofs, deductive reasoning is essential. Mathematical axioms, rules, and theorems must be used correctly to derive each step, producing a result (conclusion) that is guaranteed to follow from the previous steps (premises).   - An example is the definition of continuity. A function f(x) is said to be continuous at a point x = a, in its domain if these conditions are true:  - f(a) exists - limx -->a f(x) exists - limx -->a f(x) = f(a) - Treating these conditions as premises, you can create an ‘argument’ where deductive reasoning is applied. For a function with these conditions, it is necessarily true that the function is continuous at a point x = a.
+- This HC comes in handy in many areas of science given that the scientific method relies heavily on deductive reasoning. For example, we can use deductive reasoning to derive valid predictions and implications of a model, hypothesis, or theory. However, the predictions will only be true if the assumptions (premises) that the model or theory rests upon are true. Faulty assumptions can lead to problematic predictions (unsound argument). So, in these applications, the distinction between validity and soundness is really valuable for recognizing that the conclusions you draw from your model are only as good as its assumptions. Further, if observations or experimental results do not align with the predictions, we can use deductive reasoning to refute the hypothesis or identify problematic assumptions in our model.
+- This HC is applied widely throughout the Philosophy, Ethics, and the Law core and concentration courses, both as a way to reconstruct arguments in resources you read and as a way to develop your own arguments. Students learn to pair deductive outlines with argument diagrams to improve their ability to visually distinguish premises from inferences in a deductive argument, identify multiple lines of reasoning in support of the same conclusion, make it easier to distinguish lines of reasoning from one another, and enable clear and precise objections to a deductive argument. Students practice two kinds of objections: objections to premises and objections to inferences.  An example of a simplified argument diagram using deductive reasoning principles is provided below:     Peter Singer, "Examined Life - Modern Social Philosophy Documentary" (2008)  - All people are morally obliged to maximize the greatest good for the greatest number. (normative principle) - Purchasing luxury goods fails to increase utility for the greatest number. - Money could be spent on life-saving efforts. (empirical) - Donating to life-saving efforts maximize the greatest good for the greatest number. - Those who can afford to buy luxury goods should instead donate to life-saving efforts.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Unless you go into one of a very small number of niche academic fields, you may not be doing formal deductive proofs on a daily basis. However, this HC equips you with the ability to think carefully and critically about how to formalize something messy in the real world into a system that allows us to apply rigorous tools to solve the problem. For example, there is a defensive application, where you can use this HC to protect yourself from being overly swayed by arguments you encounter from, e.g., advertisements and politicians. There is also a generative application, where you can use this HC to sit down and look at everything you DO know (the premises), and you can think through what you can conclude from that information.
+- There are several deductive strategies that we employ in our daily lives, such as “process of elimination” to arrive at the only viable conclusion, and using “counter-examples” to disprove a conclusion. For example, you might be figuring out who ate your leftover chicken from yesterday, among your flatmates, Tom, Chris, and Ashlyn. You know that Tom is a vegan, so he wouldn’t eat your chicken. You also know that Ashlyn is on a trip for a week, so she didn’t eat the chicken. Through eliminating Tom and Ashlyn, you conclude that Chris is the only one that could have possibly eaten the chicken. This argument is valid as the conclusion follows necessarily from the premises. Soundness might be questioned by examining the premises themselves. For example, if it turns out that Tom isn’t actually a vegan, then the accusation against Chris may not be justly supported. One single counter-example in which Tom was found eating non-vegan food would falsify that claim and make the argument unsound.
+- Many professions make use of deductive reasoning: judges, mathematicians, physicists, neurologists, and CEOs. For example, for judges, there are relevant legal principles, statutes, regulations, and precedents that are set by previous court decisions. These serve as premises to reach a verdict. Judges can use deductive reasoning to connect these premises at hand and reach a conclusion.
+
+KEY RESOURCES
+1. Wilkins, J. (2020, Aug). Inductive Reasoning. Minerva University. Retrieved from https://my.minerva.edu/academics/hc-resources/cornerstone-custom-hc-guides/
+- The guide gives an in-depth overview about what induction is and contrasts it with deduction. Read the section titled, “Distinguishing Deduction from Induction.”
+2. Magnus, P. D. (2017). Forallx: An Introduction to Formal Logic. https://www.fecundity.com/codex/forallx.pdf
+- This textbook is a great introduction to sentential logic and quantified logic. It’s a helpful source of examples and practice problems.
+3. DeLancey, C. (2017). A Concise Introduction to Logic. Open SUNY Textbooks. https://milnepublishing.geneseo.edu/concise-introduction-to-logic/
+- This is another excellent textbook that can introduce you to the fundamentals of formal logic, both propositional logic and first-order logic, and provide an abundance of practice exercises.
+4. Spaniel, W. (2013-2016). Rules of Inference and Proofs. Logic 101. Game Theory 101. http://gametheory101.com/courses/logic-101/
+- This resource includes video explanations and examples for concepts relating to deductive reasoning.
+5. Lau, J. & Chan, J. (2015). [A05] Valid Patterns. Critical Thinking Web. http://philosophy.hku.hk/think/arg/valid2.php
+- Serves as a brief summary of common rules of deduction with examples.

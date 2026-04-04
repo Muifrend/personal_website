@@ -1,0 +1,104 @@
+#OBSERVATIONALSTUDY
+
+BLURB
+Design and interpret observational studies.
+
+PITCH
+“A few observations and much reasoning lead to error; many observations and a little reasoning to truth.” - Alexis Carrel
+
+PARAGRAPH DESCRIPTION
+Science typically begins with observation. Only after phenomena have been described can one search for patterns and principles that underlie them. The nature of observational studies varies in different disciplines, but in all cases the researcher measures variables without manipulating them. It is critical that observational studies are designed to ensure that measurements are careful, systematic, and unbiased. Different observational study designs each have strengths and weaknesses, but can effectively test hypotheses.
+
+CATEGORIZATION
+Foundational Concept | Empirical Analyses | Thinking Creatively | Applying Research Methods
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analyses | Semester One
+- Unit: Scientific Method
+- Big Question: How do we mitigate human-caused climate change?
+
+GENERAL EXAMPLE
+A teacher wants his class to listen carefully to lectures. He notices that sometimes the students are attentive and sometimes they seem to fall asleep. He notes different times in class when the students tune out, and finds that this is most likely to occur when temperatures are above 82 degrees F (28 C). He found scientific research that supports his conjecture, that increase in temperature increases dehydration and lowers blood pressure, which in turn makes people drowsy. Furthermore, he asks his colleagues to repeat his observational study (without telling them the results he expects), to collect enough data to ensure that the results are reliable, including measuring other factors that could be relevant to the students' behavior like the length of the class, the enthusiasm of the speaker and the subject. If the results could be replicated in other subjects while accounting for other factors that could affect student attentiveness, the conclusion regarding the role of the heat would be more robust.
+
+Footnote: Given an observed phenomenon, an observational procedure is designed to investigate factors that are associated with and potentially causing the phenomenon. Investigating the underlying principles behind the phenomenon strengthens the hypothesis. Collecting data from multiple classes and on other factors that may affect attentiveness contributes to the study's potential explanatory power.
+
+IS THIS THE RIGHT HC?
+Is #observationalstudy the right HC? If the answer to the following questions is yes, #observationalstudy could be useful:
+
+- Are you designing an observational study to test a hypothesis?
+- Are you critiquing someone else’s observational study design?
+
+Depending on the work product, there might be other HCs to consider:
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#heuristics  |  Uses the “participant observation” heuristic to create a solution, instead of designing an observational study.
+#interventionalstudy  |  Designs a study with an intervention/treatment. Observational studies do not have any interventions.
+#casestudy  |  Interprets a case report, which is an observational study. Designs an observational study that focuses on outliers of another study.
+#hypothesisdevelopment  |  Generates a testable hypothesis based on existing observations. Hypothesis development is usually a step prior to designing a study. Depending on the research question, designing an observational study may be the appropriate next step.
+#sampling  |  Designs a single- or multi-stage sampling method, which may be part of an observational study. Critiques the sampling methods of an existing observational study.
+#comparisongroups  |  Identifies comparison groups, which may be part of an observational study. Justifies the relevance of a particular comparison group (e.g. natural history group), within an observational study’s context.
+#induction  |  Uses inductive reasoning to support a conclusion based on evidence and observation, which is crucial in observational studies wherein one aims to use observations to support or test hypotheses, possibly including causal mechanisms. Effective study design and high-quality evidence are required to form strong and reliable inductions.
+#confidenceintervals, #correlation, #descriptivestats, #distributions, #regression, #significance, #variables  |  Conducts statistical analyses on quantitative survey data. These HCs are usually used after data collection.
+SELF STUDY QUESTIONS
+1. What are the general types of observational study?
+
+   Answer: - Cohort study
+   - Case-control study
+   - Cross-sectional study
+   - Case study (Note: in this case, the HC #casestudy is likely more applicable; case studies can also be interventional)
+
+2. What are the advantages and disadvantages of the various types of observational studies?
+
+   Answer: 
+
+3. What is the difference between a prospective and a retrospective study?
+
+   Answer: The difference lies in the direction of data collection over time. A prospective study observes the exposure, then collects data. A retrospective study first observes outcomes, then looks backwards to see what exposures the groups have experienced. A cohort study can be either prospective or retrospective, while a case-control study is always retrospective. For example, suppose we are interested in the effect of pre-kindergarten (pre-K) studies on Grade 12 performance. 
+   
+   - A prospective cohort study first identifies two groups of kids (those who go to pre-K vs those who do not), then observes them from kindergarten age until they are Grade 12 students. This can be done by tracking the students’ grades from Grade 1 to Grade 12. 
+   - A retrospective cohort study also identifies the same two groups of students, but observations are done from present to past. In this case, we would track students’ grades from Grade 12 all the way to Grade 1. We do not spend 13-15 years observing students’ performances, as opposed to a prospective cohort study.
+   - A case-control study focuses on Grade 12 only. We create two groups of recent high school graduates (those who excelled in high school vs those who struggled), then “look back” to determine if the excelling group has more students who received pre-K education. We are not interested in students’ performances from Grade 1 to Grade 11, as opposed to cohort studies.
+
+4. Are interventional studies stronger than observational studies?
+
+   Answer: No. Interventional studies can sometimes be better than observational studies in terms of causal inference. That said, observational studies use inductive reasoning to make cases for causation. As you know, induction is stronger if it is based on multiple lines of evidence. Plate tectonics theory, the most important theory in all of the Earth sciences, was developed through a combination of many quality observational studies. In addition, because observational studies tend to use data “from the real world” (as opposed to a tightly controlled laboratory), their results are often more generalizable than those of interventional studies.
+
+5. When should we prioritize using observational studies over interventional studies?
+
+   Answer: Observational studies are better when it is challenging to implement an intervention. This condition usually happens in two scenarios:
+   
+   - Logistical constraints: It may be too expensive to carry out an intervention, or the temporal scale is beyond a human’s average lifespan. For example, an interventional study is more suitable to study the evolution of a bacteria species since their lifespans are short, and it doesn’t cost much to create a chemical stimulant. In contrast, an observational study is more suitable for the evolution of tortoises, which can live for more than 100 years. It also might just be impossible to perform an intervention. For example, we can’t manually adjust the rate of plate spreading and see how it affects earthquakes; we use what nature provides by observing different plate spreading rates and monitor the effect on earthquakes..
+   - Ethical issues: Some interventions may raise ethical conflicts; observational studies can avoid them since they do not have interventions. For example, to study the negative effects of a an illegal drug, we would collect data on recreational users of the drug and compare to non-users.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you completed all aspects of an observational study design (e.g., data collection methods, defining comparison groups)?
+2. Have you identified and explained the type of observational study that suits your research question the most?
+3. Have you justified why an observational study is more appropriate than an interventional study with context?
+4. Have you identified the strengths, limitations, and future directions for potential improvements?
+
+COMMON PITFALLS
+- The application makes an empirical observation and claims it as an 'observational study' when there is no hypothesis.
+- The application uses an observational study when there is clear evidence that an interventional study would be more effective.
+- The description of the study design is superficial.
+- The application identifies a type of observational study without any explanation.
+- The application inaccurately categorizes the study (e.g., it is an interventional study and student says it is observational).
+- The application designs an observational study that fails to test the hypothesis.
+- Important extraneous variables that would affect the dependent variable are overlooked.
+
+APPLYING THIS HC AT MINERVA
+- We explored measuring evolution using observational studies in Empirical Analyses. For example, we studied the changes in snow lotuses’ sizes as an evolutionary response to harvesting. If we consistently collected data on snow lotuses’ sizes in the past, we can conduct a retrospective cohort study by studying the change in sizes over time in a region with heavy harvesting vs an isolated region. Otherwise, we can do a cross-sectional study by measuring the sizes today in these regions and compare their averages.
+- Psychological studies on human subjects require much ethical consideration. For example, to study the psychological factors of brain development, we cannot apply psychological stress on children as a “treatment,” as it may potentially lead to mental health disorders such as depression. The alternative is to do a prospective cohort study and observe a group of children.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Observational studies are commonly used in Earth sciences, especially for natural phenomena at large temporal scales. For example, by studying plate tectonics (the dynamics of the lithosphere, which is the outermost layer of the Earth), we can understand the location of volcanoes and earthquakes. Observational studies are powerful because we cannot administer an intervention on the Earth itself.
+
+KEY RESOURCES
+1. Lesh, M. (2015). Observational vs. experimental study. [Video]. YouTube. Retrieved from https://www.youtube.com/watch?v=71CZQZSrOy0
+- This 5-minute video uses an interventional and observational study for the same study to show their different purposes.
+2. Minerva Study Resource. (2021). Study Designs for Testing the Gateway Belief Model. Retrieved from https://docs.google.com/document/d/1uERLteXxYjbNwX9qwxF3GqIBxPt6DnpeplBwGhaxaMA/edit?usp=sharing
+- This document summarizes the Gateway Belief Model study from van der Linden et al. (2015) and Ding et al. (2011). The former is an interventional study, while the latter is an observational study.
+3. Besen, J., and Gan, S. D. (2014). A critical evaluation of clinical research study designs. Journal of Investigative Dermatology, 134(3), e18. http://www.jidonline.org/article/S0022-202X%2815%2936682-3/pdf
+- This paper introduces the various types of observational studies and their advantages and disadvantages in a medical context.
+4. Sagarin, R., and Pauchard, A. (2010). Observational approaches in ecology open new ground in a changing world. Frontiers in Ecology and the Environment, 8(7), 379-386. Cognella Copyright Cleared https://course-resources.minerva.edu/uploadedfiles/mu/00247169-0705/saaharin.pdf
+- This paper highlights the importance of observational studies in ecological studies and describes how they can complement interventional studies.

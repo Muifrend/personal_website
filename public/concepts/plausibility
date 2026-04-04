@@ -1,0 +1,99 @@
+#PLAUSIBILITY
+
+BLURB
+Evaluate whether hypotheses are based on plausible premises or assumptions.
+
+PITCH
+Be sure your assumptions are reasonable before proposing a hypothesis.
+
+PARAGRAPH DESCRIPTION
+Scientific thinking requires the ability to identify well-constructed hypotheses. Such hypotheses rest on well-defended and internally consistent premises or assumptions and are consistent with well-established scientific results. One should learn to identify hypotheses that lack such solid foundations and recognize that they are implausible.
+
+CATEGORIZATION
+Habit of Mind | Empirical Analyses | Thinking Creatively | Applying Research Methods
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analyses | Semester One
+- Unit: Scientific Method
+- Big Question: How do we mitigate human-caused climate change?
+
+GENERAL EXAMPLE
+A norovirus has infected many students in the residence hall. Symptoms include vomiting, diarrhea, and low-grade fever. You begin to feel nauseous and feverish. A friend says that he had the norovirus for a few days, but started taking an antibiotic that he had leftover from a previous illness and he hypothesizes that the antibiotic helped him overcome the norovirus. He tells you to go get some. In your feverish state you think about this hypothesis, but decide to disregard his advice because it is based on an implausible assumption that antibiotics can kill viruses. You consider that in some cases viruses act in symbiosis with bacteria, and further that a virus-weakened immune system could in theory be subject to opportunistic bacterial infections that could be causing your illness. Nonetheless, you recognize that these possibilities lack in parsimony, and that you lack the hallmarks of bacterial infection like production of pus and inflammation. Finally, you conclude that it is more plausible that your friend recovered because norovirus illness typically resolves in a few days. 
+
+Footnote: The friend's hypothesis is evaluated against the existing body of knowledge on viruses and antibiotics. The conclusion that the antibiotics helped overcome the norovirus is rejected due to its incompatibility with the established irrelevance of antibiotics to viruses, and the lack of parsimony in alternative explanations, making the claim implausible.
+
+IS THIS THE RIGHT HC?
+Is #plausibility the right HC? If the answer to the following questions is yes, #plausibility could be useful:
+
+- Are you identifying the underlying assumptions of a hypothesis?
+- Are you evaluating the assumptions of a hypothesis?
+
+Depending on the work product, there might be other HCs to consider:
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#dataviz  |  Generates data visualizations to show data patterns, which can be used to justify assumptions.
+#testability  |  Evaluates a hypothesis using testable predictions, instead of assumptions. This HC is typically used along with #plausibility to evaluate hypotheses.
+#hypothesisdevelopment  |  Formulates a hypothesis using evidence (e.g., extending previous studies). This HC often contains the hypothesis that is evaluated with #plausibility.
+#evidencebased  |  Integrates evidence from previous studies, and/or uses existing data to justify an assumption.
+SELF STUDY QUESTIONS
+1. What is an assumption?
+
+   Answer: In the context of research design, an assumption is the underlying premise of a hypothesis. In other words, all the premises must be true to arrive at the hypothesis. Assumptions themselves can be thought of as “mini-hypotheses” that could be tested if desired, but we consider assumptions true for the study at hand. Suppose the study results do not support the hypothesis. In that case, it means either the hypothesis is rejected, or perhaps one of the assumptions is invalid. 
+   
+   For example: 
+   
+   - Hypothesis: Cardinals learn to “sing” by mimicking the song of their parents.
+   - Predictions (#testability): 
+   
+   - If baby cardinals are raised near a different species of bird, they will sing a different song than the traditional “cardinal song”.
+   - If a juvenile bird is raised in isolation with silence, then it will not sing.
+   
+   - Assumptions:
+   
+   - Adult birds still sing the song they learned as a juvenile (i.e., bird songs are consistent across time)
+   - Parent birds sing in close proximity to the nest containing juveniles
+   - Birds can hear in infancy
+   - Birds can mimic sounds
+   
+   Note that for the hypothesis to be plausible, these assumptions must be justifiable.
+
+2. How can we justify assumptions?
+
+   Answer: Again, assumptions themselves can be thought of as “mini-hypotheses”. They can be independently verified via tests (e.g., we could do a research study to determine whether adult birds still sing the songs they learned as a juvenile). Often though, assumptions have already been studied by previous researchers (which is where #evidencebased comes in!). This previous research can be used to justify assumptions. In other cases, assumptions are taken as true because there is no reason to think otherwise given current knowledge.
+
+3. How many assumptions are considered “enough”?
+
+   Answer: There’s not a magic number of assumptions you should aim for when applying this HC. Here are some guidelines:
+   
+   - Typically, a hypothesis has multiple underlying assumptions. Identifying just one is superficial, but identifying all assumptions may be unrealistic (imagine a hypothesis with ten assumptions). The most important thing is to highlight the assumptions that are most critical to the hypothesis. Beyond justifying how these assumptions are plausible, it’s equally important to explain how they build the foundation of the hypothesis.
+
+GUIDED REFLECTION QUESTIONS
+1. Does your hypothesis fit within previously established knowledge (i.e., is it consistent with how the world works)?
+2. Have you identified all the key assumptions for a hypothesis?
+3. Have you linked the relevance of the assumptions to your hypothesis (why are they important)?
+4. Have you justified the strength of your assumptions (how likely are they true)?
+5. Is there evidence to support your assumptions?
+
+COMMON PITFALLS
+- The application claims a hypothesis “makes sense” without considering the underlying assumptions.
+- The assumptions are not specific enough or not connected to the hypothesis.
+- The application only considers one assumption, or misses a fundamental assumption.
+- The application identifies relevant assumptions but does not present evidence to support them.
+- The hypothesis is clearly implausible/out of alignment with prior knowledge.
+- The application is too narrow in strictly requiring all assumptions to be true with 100% certainty, when in reality, the assumptions only have to be likely to be true and reasonably supported by existing evidence.
+
+APPLYING THIS HC AT MINERVA
+- Creating research proposals is a common type of assignment for natural sciences. On top of developing a hypothesis, you must explain its relevance: how it fits within and extends our current understanding of the world. Assumptions draw knowledge from previous studies, making the hypothesis more plausible.
+- This HC may also be used in business contexts. Organizations may need to evaluate how “plausibe” it is to implement a new strategy. For example, when launching a new product, the assumption is that the market demonstrates a need for the product. The forecasted effectiveness of the strategy may be evaluated using case studies of other organizations or existing research studies on similar strategies.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- When we engage in daily-life conversations, we often evaluate the plausibility of other people’s arguments. For example, someone may hypothesize “implementing the new ‘7-regular-extensions-only’ policy will increase students’ productivity because it gives students more flexibility to account for unforeseen events (e.g., regular illnesses).” The assumption is that students will use the regular extensions sparingly and efficiently, which may be implausible, making the hypothesis weak. The hypothesis and the associated assumption can be evaluated after collecting data from students for one semester.
+
+KEY RESOURCES
+1. Minerva University. (2020). Developing hypotheses and determining their testability and plausibility. https://docs.google.com/document/d/1xEqs2OkagDNfeAvzVgzsI5H3EZJSTTMBsraITeuJ50/edit
+- This whitepaper describes how to identify assumptions of a hypothesis, along with some examples in various fields. Pages 1-5 discuss hypothesis development, while Pages 6-10 discuss hypothesis evaluation.
+2. The University of California Museum of Paleontology. (2015). Competing ideas: a perfect fit for the evidence. Understanding Science. http://undsci.berkeley.edu/article/000/howscienceworks11
+- This short article offers examples of how scientists evaluate competing explanations to determine which is the most plausible. Read along with the following article.
+3. The University of California Museum of Paleontology. (2015). Making assumptions.  Understanding Science. https://undsci.berkeley.edu/article/000/howscienceworks13
+- This short article briefly describes how to come up with assumptions. Note that “assumptions of tests” in this article are slightly different from “assumptions of hypotheses,” which is the core of this HC.

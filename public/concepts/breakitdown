@@ -1,0 +1,120 @@
+#BREAKITDOWN
+
+BLURB
+Organize problems into tractable components and design solutions.
+
+PITCH
+Don't try to solve a problem all at once. Break it down before it breaks you down.
+
+PARAGRAPH DESCRIPTION
+Many problems are daunting when taken as a whole, but become much easier to address when broken into components. However, not all ways of breaking a problem into subproblems are equally useful, nor do all invite equally effective strategies for solving the subproblems and assembling the solutions into a coherent whole.
+
+CATEGORIZATION
+Habit of Mind | Empirical Analyses | Thinking Creatively | Analyzing Problems
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analyses | Semester One
+- Unit: Problem Solving
+- Big Question:  How should we allocate water?
+
+GENERAL EXAMPLE
+You are on a team tasked with drafting a governmental policy that will help alleviate the negative consequences of a local mining operation. However, you realize that the problem is too large to tackle. Thus, you break the main problem down by the type of problem (environmental degradation, residents’ health concerns, and legal rights). An alternative way of breaking down the problem would be to use the “triple bottom line model” (financial sustainability, environmental sustainability, social sustainability). You realize that breaking down the problem by type makes it easier for different organizations to take action, so you proceeded with that breakdown. Your personal expertise and interests revolve around environmental impacts, so you decided to tackle the environmental degradation subproblem. Iterating the process, you break down the first order subproblem by type, forming second order subproblems (land pollution, water pollution, air pollution). Data from the United States Environmental Protection Agency suggests that the local air pollution is extreme enough to cause health issues. Hence, you decided that air pollution is the most urgent issue and proceeded with this subproblem. By focusing on the chemistry of pollutant molecules, the subproblem seemed tractable and you proceeded to the next stage of the policy-drafting process.
+
+Footnote: You broke the main problem down with two iterations. For each iteration, you selected one specific subproblem to proceed with sufficient justification (the first order subproblem by expertise, the second order by actual data). You also provided rationale on the tractability of the final subproblem, hence stopping the iteration process.
+
+IS THIS THE RIGHT HC?
+Is #breakitdown the right HC? If the answer to the following questions is yes, #breakitdown could be useful:
+
+- Does the work decompose a problem into tractable parts?
+- Does the work explain multiple subproblems, their connection to each other, and how they are relevant to the larger problem?
+- Does the work detail a solution that takes multiple subproblems into account?
+
+Depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#rightproblem  |  characterizes a problem with initial state, goal state, key obstacles, and scale.
+#systemmapping  |  decomposes a system into functional units (compared to decomposing a problem into subproblems). focuses on interactions among individual units to answer an explanatory challenge (compared to exploring subproblems in isolation, then reassembling subsolutions).
+#responsibility  |  plans or analyzes a plan to effectively reach certain goals. analyzes an individual’s strengths and weaknesses.
+#strategize  |  constructs a coherent strategy that ties together the diagnosis, guiding policy, and a set of specific actions for the sake of initiating an action plan for a particular situation. evaluates an organization with a SWOT analysis (strengths, weaknesses, opportunities, threats)
+#constraints  |  identifies a constraint. Unlike a subproblem, the work will not attempt to solve a constraint.
+#algorithms  |  breaks down the process for solving a problem into a clear step-by-step process with well-defined inputs and outputs (as opposed to breaking down a problem into sub-problems that are solved on their own).
+SELF STUDY QUESTIONS
+1. What do we mean by an “iterative” breakdown?
+
+   Answer: Simply breaking down the main problem once is usually insufficient, because the first order subproblems may still be intractable. You may need to repeat the breakdown process on these subproblems until it’s realistic enough to tackle one. For example, if the main problem is “pollution in SF,” the subproblem “high plastic consumption” is still not tractable, hence the need to further break it down.  One iterative technique is the “five whys” in which you start with a problem and keep asking why the problem and its subproblems are occurring.
+
+2. What are two techniques to visualize an application of #breakitdown?
+
+   Answer: You can create a fishbone/Ishikawa diagram or an outline. 
+   For example, a dental office wants to understand the subproblems that are leading to its main problem (bad service) Fishbone DiagramOutlineBad Service
+   - Pain
+   
+   - Medicine
+   - Procedure
+   
+   - Wait Room
+   
+   - Furniture
+   - Magazines
+   
+   - Noise
+   
+   - Drill
+   - Screams
+   
+   - People
+   
+   - Training
+   - Hiring
+   
+   .
+
+3. Why is a fishbone diagram helpful?
+
+   Answer: Fishbone diagrams help people brainstorm the possible causes of a problem using categories. It’s also a nice way to organize subproblems and help readers understand a problem breakdown. For example, if you’re hosting a team meeting, you would draw a fishbone diagram on a whiteboard to make sure everyone is on the same page.
+
+4. What is the difference between a key obstacle and a subproblem?
+
+   Answer: These terms are interchangeable! In your initial characterization of the problem, you likely identified obstacles that are examples of subproblems. 
+   
+   The key difference is the HC applications. In #rightproblem, a key obstacle is usually a high-level subproblem, which helps us to better understand the main problem. In #breakitdown, we break down the obstacles to identify multiple levels of subproblems. The focus is on the iterative process and selecting relevant subproblems to be addressed.
+
+5. What is the difference between first, second, and third order subproblems? Why is it important to make the distinction?
+
+   Answer: An “order” refers to the number of breakdowns before a subproblem is identified. For example, a second order subproblem only arises after you iterated the breakdown process twice, starting from an obstacle. These distinctions help to organize subproblems and improve writing clarity, such that readers can understand the subproblems to which you are referring. 
+   
+   That being said, the focus is still on tractability of subproblems. Depending on the main problem, tractable subproblems could occur at the first, second, or third order. While it may be helpful to reference the order, ultimately you stop the breakdown process only when the subproblem is tractable. And remember - there is no "one way" to break the problem down!
+
+GUIDED REFLECTION QUESTIONS
+1. Have you made the subproblems tractable, clear, and well defined?
+2. Have you listed all the subproblems relevant to your problem?
+3. Have you ensured the subproblems are problems rather than constraints?
+4. Can you explain your breakdown process in simple terms? Note that there isn’t 'one way' to break down a problem, so clearly articulating why you decided to break down the problem into the subproblems you did is an important aspect of applying #breakitdown.
+5. Have you explained how the subproblems are connected and necessary to solve the big problem?
+6. Out of the list of subproblems, how did you select the relevant subproblems to tackle?
+7. Have you included a caption for a diagram used to break down a problem?
+8. Can you describe the subproblems of interest with sufficient depth?
+
+COMMON PITFALLS
+- The application misidentified a constraint as a subproblem. Subproblems are obstacles you should overcome to get to your goal. To reduce deforestation in Mexico, one subproblem might be the lack of communication between local foresters and multinational companies. One constraint is to ensure foresters’ financial sustainability.
+- The application misidentifies an effect of the problem as a subproblem.
+- The application identifies correct subproblems, but does not explain:  - Why the subproblems are relevant to the problem. - How the subproblems are connected to each other. - How the break down into subproblem categories was decided upon given multiple possible ways to break a problem down (e.g., breaking down by region or breaking down by problem type)
+- The application identifies subproblems that are neither relevant to solve the issue nor tractable.
+- The application uses the phrase ‘break it down’ in the colloquial sense, neglecting what it encompasses as a problem-solving HC.
+
+APPLYING THIS HC AT MINERVA
+- As part of your capstone, you should divide your goal into smaller subproblems to plan your work schedule and deadlines. Breaking down capstone tasks is likely a #breakitdown application, while planning is likely a #responsibility or #heuristics (means-ends analysis) application.
+- From getting your visa, to navigating a new city and keeping yourself well-fed, it will be necessary to apply #breakitdown to prevent yourself from being overwhelmed.
+- In Civic Projects, you need to break down the big challenge questions to identify subtopics that are worth pursuing.
+- In the CS college, or whenever writing a sophisticated algorithm to address a problem or need, you will need to break down the bigger task into smaller chunks. The “sub-problems” in this context often take the form of individual “functions” in the code that are designed to tackle key steps of the algorithm. An effective break down would require thinking through the use of functions and/or sub-routines and justifying the way they are integrated into the algorithm as a whole.  - Please note that “breaking down your code” by structuring your files or making your code more readable is likely an application of #organization or #composition more than #breakitdown.
+- The principles of this HC are highly valuable for problem solving in mathematics and physical sciences. For example, when studying two or three-dimensional motion in physics, it’s often productive to break the system down into perpendicular components (e.g., horizontal and vertical, or north/south and east/west). This is highly valuable because the physics along perpendicular directions is independent, allowing one to apply the laws of motion to each direction in isolation. Thus, we treat each component as as different “sub-problem” we can analyze independently. For instance, one can analyze the motion in the x-direction to determine the x-component of an object’s velocity, do the same for the y-component, and then assemble both components to determine the resultant magnitude and direction.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- When developing social policies on climate change, it is important to understand which subproblems are necessary to address to solve the bigger challenge.
+- When investigating a natural phenomenon, hypotheses are often addressing one tractable subproblem of a larger overall problem or research question.
+- When building a company, software product, or creative work, it is important to segment the goal into tractable components to ease time and resource allocation.
+
+KEY RESOURCES
+1. Dosmann, A. (2023). Identifying components of complex problems: #breakitdown. Minerva Guide. https://docs.google.com/document/d/1mOjUHvGCLH6H3ZA2Ahd9Gng5voILSEzSRZESz-TPXug/edit
+- This resource provides an overview of the key elements in #breakitdown and how to apply it.

@@ -1,0 +1,188 @@
+#HEURISTICS
+
+BLURB
+Identify when to use heuristics and when to avoid them.
+
+PITCH
+As a rule of thumb, it’s often a good idea to use heuristics.
+
+PARAGRAPH DESCRIPTION
+Heuristics are decision-making processes and strategies that use limited information. They are simple, efficient rules that can make problem solving and decision making faster and easier. They encompass conscious and unconscious strategies that help us take action under uncertainty, generate creative solutions, and quickly categorize or estimate entities. Heuristics do not guarantee correct or useful solutions but can often be efficient and effective tools when time and information are limited. As effective as they can be, heuristics commonly lead to systematic inaccuracies, known as biases. Identifying and understanding heuristics is crucial to fruitfully applying them in appropriate situations and avoiding them when they are likely to lead one astray.
+
+CATEGORIZATION
+Habit of Mind | Empirical Analyses | Thinking Creatively | Solving Problems
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analyses | Semester One
+- Unit: Problem Solving
+- Big Question: How can we feed the world?
+
+GENERAL EXAMPLE
+You work in a neuroscience lab, and your current assignment is to develop a protocol for immunohistochemical (IHC) analyses of human skin tissue. Despite being a common procedure in analyzing mouse skin tissues, a standard protocol has never been developed for the human tissue. You recognized that the existing protocols for mouse tissue may inform the overarching plan, so you decide to use the heuristic of analogical thinking to facilitate problem-solving. Keeping in mind the similarities and differences between human and mice anatomy, you noted three relevant steps that can be adopted from mice protocols to human protocols: tissue extraction, tissue processing, and antibody attachment. Then, you clearly defined the desirable end states for each of the three steps: samples of human tissue stored in 30% sucrose solution, 20-µm cross-sectional slices of human skin tissue, and ultimately the tissue slices with antibodies attached to the proteins of interest. From the third and final state, you work your way backwards to the second final state, so on and so forth until you reach the initial condition. You found multiple pathways from the final state to the initial state, and you tested each of them to identify the strengths and weaknesses of each before demonstrating the protocol to your supervisor. 
+
+Footnote: Given a task without clearly defined steps, two heuristics are utilized to facilitate problem-solving: analogical thinking and working backwards. Guided by thoughtful consideration of superficial similarities, analogical thinking informs the process of creating the overarching outline. Working backwards illuminated multiple possible pathways to reach the goal state from the initial state.
+
+IS THIS THE RIGHT HC?
+Is #heuristics the right HC? If the answer to the following questions is yes, #heuristics could be useful:
+
+- Does the work use available frameworks to simplify decision making or problem solving?
+- Does the work create new solutions with guidance from existing frameworks?
+
+Depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#analogies  |  Focuses on the “extrapolating from problems already solved” creative heuristic. Critically analyzes source and target problems.
+#breakitdown  |  Iteratively breaks down a larger problem to form tractable subproblems. Means-ends analysis iteratively breaks a subgoal down. While subgoals and subproblems are not the same, they are very closely related. For example, if the subgoal is to reduce plastic consumption, we can reframe it as high plastic consumption to form a subproblem.
+#biasidentification  |  Explains how heuristics can often lead to cognitive biases which influence decision making.
+#biasmitigation  |  Explains ways to improve a heuristic application by mitigating cognitive biases.
+#gapanalysis  |  Analyzes the strengths and weaknesses of an existing solution, rather than a novel solution formed by a creative heuristic. Explains how the new solution addresses the gaps in existing solutions.
+#decisiontrees  |  Employs simple heuristics like maximax or maximin to evaluate a decision-making process in a tree.
+#algorithms or #optimization  |  Employs heuristics within the steps of the algorithm to make the next best choice (e.g., greedy algorithms), possibly impacting the algorithm’s efficiency and performance.
+SELF STUDY QUESTIONS
+1. What are the three main categories of heuristics?
+
+   Answer: - Problem-solving heuristics: Guides problem-solving actions when there is uncertainty about the situation
+   - Cognitive heuristics: Eliminates cognitive processing in decision making
+   - Creative heuristics: Generates new ideas for hypotheses or products
+   
+   Note: These categories are not mutually exclusive. A heuristic may fall under one or more categories.
+
+2. What does it mean for a heuristic to be “creative”?
+
+   Answer: The definition of “creativity” is developing “new and useful ideas.” Creative heuristics provide simple frameworks that guide decision makers to generate ideas or solutions. While there is no guarantee that creative heuristics will lead to fruitful outcomes, they are often quite useful when time and information is limited.
+
+3. What are the problem-solving heuristics?
+
+   Answer: - Working backwards
+   
+   - Start with the goal state
+   - Imagine the preceding step to the goal state
+   - Repeat until you reach a realistic step from where you currently are
+   
+   - Successive approximation
+   
+   - Make an initial attempt at a solution
+   - Assess the outcomes and revise
+   - Repeat until you reach a satisfactory goal state
+   
+   - Means-ends analysis
+   
+   - Identify the initial and goal states
+   - Form a subgoal that reduces discrepancies between these states
+   - Break down the subgoal iteratively until you identify tractable ones
+   - Complete the subgoals for incremental progress
+   
+   - External representation
+   
+   - Describe the main features of a problem in the form of a list or a diagram
+
+4. Why are some heuristics considered “fast and frugal”?
+
+   Answer: Fast and frugal heuristics are cognitive heuristics, such as the recognition heuristic, which are rooted in the psychological capacities we have evolved as human animals (e.g., memory and perceptual systems). They are often applied subconsciously and are useful when time and energy is limited. 
+   
+   Not all heuristics are fast and frugal! For example, a complete means-ends analysis would require much more time and effort relative to the recognition heuristic.
+
+5. What are the cognitive heuristics?
+
+   Answer: Disclaimer: Only the first two cognitive heuristics are briefly introduced in EA50. The remaining six heuristics are introduced in EA51. If you’re a student taking EA50, do not worry for not recognizing all these cognitive heuristics!
+   
+   - Recognition heuristic
+   
+   - Choose the option you know
+   
+   - Take-the-best heuristic
+   
+   - Select one characteristic
+   - Choose the option that is best for that characteristic
+   
+   - Representativeness heuristic
+   
+   - Estimate the probability that an object/event A belongs to class B by looking at the degree to which A resembles B
+   
+   - Availability heuristic
+   
+   - Estimate the probability of an event solely based on how easily a past example comes to mind
+   
+   - Anchoring heuristic
+   
+   - Use a number as a reference point
+   - Make subsequent quantitative estimates from that reference point
+   
+   - Affect heuristic
+   
+   - Rely on feelings in relation to a stimulus before making a decision
+   - Framing can really influence the affect heuristic. For example:  “Out of 200 M25 students at Minerva, 20 students failed at least one cornerstone course during freshman year.” vs “90% of M25s passed all cornerstone courses during freshman year.” might lead to different feelings and thus different behavioral choices.
+   
+   - Satisficing heuristic
+   
+   - Make decisions by satisficing (a combination of sufficing and satisfying) rather than optimizing 
+   - Choose options that meet some basic decision criteria, as long as they are “good enough” in light of the costs and constraints involved
+   
+   - Tallying heuristic
+   
+   - Count the number of cues favoring some decision (e.g., a checklist)
+   - Make decisions based on whether a threshold number of cues is met or not
+
+6. What are the creative heuristics?
+
+   Answer: - Accounting for deviations from the general trend
+   - Analyzing one’s own behavior in similar situations
+   - Role playing one’s own behavior in similar situations
+   - Extrapolating from problems already solved
+   - Juxtaposing opposite problems to suggest reciprocal solutions
+   - Intensive case studies
+   - Participant observation
+   - Reversing the plausible direction of causality
+   - Pushing a reasonable idea to an unreasonable extreme
+   - Imagining the effects of reducing a variable to zero
+   - Shift your attention to the opposite pole of the problem
+   - Generating multiple explanations for a given relationship
+   - Using an idea stimulating checklist
+   - Recombination and rearrangement
+   - The power of groups
+   
+   Note: You do not have to memorize all heuristics! The key point is understanding the heuristics to know which to use when appropriate.
+
+7. What is the relationship between #analogies and #heuristics?
+
+   Answer: #analogies is one of the creative heuristics because it helps generate new solutions! (see “extrapolating from problems already solved.”) Because analogies are such a powerful tool for coming up with solutions and requires an in-depth analysis, we gave it a separate HC.
+
+8. When should you use fast-and-frugal heuristics?
+
+   Answer: - Do you have limited time and/or information? If so, using a fast-and-frugal heuristic is most likely an appropriate (if not intuitive) step.
+   - What are the costs of making a mistake? If the stakes are too high, you would want to avoid any mistakes, hence avoiding most heuristics (although there might be situations in which a heuristic could be appropriate if the stakes are high, such as means-ends). For example, suppose you use the recognition heuristic and buy flight tickets only by identifying the airline you know. You may lose a few hundred dollars for not buying the cheapest ticket, which is not good for a financially-dependent college student. Also, consider #biasidentification: are the consequences of biased decisions critical?
+
+9. When should we avoid heuristics?
+
+   Answer: - If a gap analysis shows that existing solutions are sufficient, we would avoid creative heuristics. There’s no need to ideate new solutions!
+   - When the information and time is sufficient to carry out a thorough analysis, or when the costs of making wrong decisions are high, we would avoid cognitive heuristics. See the previous question “When should you use fast-and-frugal heuristics?”
+
+GUIDED REFLECTION QUESTIONS
+1. Have you explained whether it is appropriate to use heuristics for your problem/situation?
+2. Have you identified the correct heuristic?
+3. Is there a need to integrate multiple heuristics?
+4. Have you sufficiently explained how the heuristic helped you in idea generation/solution ideation/decision making?
+5. Have you investigated potential problems or weaknesses in using a particular heuristic for your problem/situation?
+
+COMMON PITFALLS
+- The application identifies an inappropriate heuristic.
+- The application identifies an appropriate heuristic but does not show an understanding of how the heuristic works.
+- The application does not show the relevance of the heuristic throughout the solution ideation/decision-making process.
+- The application misidentifies an application of #analogies or #gapanalysis as #heuristics, or vice-versa.
+
+APPLYING THIS HC AT MINERVA
+- In the Decision Theory unit of FA, we learn how to analyze decisions from both an empirical and normative approach. For example, in the context of decision trees, we learn formal tools, such as expected utility, to determine the best sequence of decisions (the best path through the tree). We contrast this with heuristic approaches, such as "maximax" and "maximin," which provide shortcut methods to evaluate how one would make the sequence of decisions under an optimistic or pessimistic mindset. These heuristics are valuable decision analysis tools in the face of uncertainty: when we don't have enough information to quantify all outcomes and probabilities.
+- You are researching the benefits and risks of the use of AI technologies in self-driving car systems and you use a Utilitarian ethical framework to defend the claim that these innovations are ethically permissible because, you argue, they result in fewer human deaths than car systems without those technologies. You then explain how this applies the ethical rule of thumb that we should maximize the greatest good for the greatest number.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- We use unconscious heuristics in everyday decisions (e.g., what to eat for lunch, which in-game item to buy). For another instance, when we decide if we should take a personal extension for an assignment, we use the availability heuristic (e.g., estimating how likely you would take an extension this time, based on the most recent instance where you took an extension for another assignment).
+- Business startups may have limited information about the current market. Heuristics may be useful when deciding whether or not a business strategy should be implemented.
+- You rely on moral heuristics in everyday circumstances to help you make decisions about how to conduct yourself and treat others. For example, you might subscribe to the moral rule of thumb that it’s wrong to steal, and so you wait in line to pay for something, even when the item is inexpensive and the line is long.
+- As a voter, if you decide who to vote for based on what they believe about a single key issue, you are using the “take-the-best” heuristic.
+
+KEY RESOURCES
+1. Dosmann, A. (2020). "A brief guide to different categories of heuristics." Minerva University. https://docs.google.com/document/d/1FsL2FVFa1tUD8KeQNqRTQ39EwuadjGM5kgSL-zK0nw/edit
+- This whitepaper, which you can find listed on the page with all Cornerstone custom HC guides, introduces the three types of heuristics and provides a guideline on when to use/avoid heuristics.
+2. Dosmann, A. (2019). “Creative heuristics for novel solutions.” Minerva University. https://docs.google.com/document/d/1mFfTyY-VZEtfrTWNJc0pZsMSws-wqf7atdaFgt7Dw9s/edit
+- This whitepaper, also linked from the main Cornerstone custom HC guides page,  summarizes 13 common creative heuristics with application examples.

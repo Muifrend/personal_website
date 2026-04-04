@@ -1,0 +1,202 @@
+#UTILITY
+
+BLURB
+Use utility to represent preferences and analyze purposeful decision-making.
+
+PITCH
+A formal approach to understanding our preferences.
+
+PARAGRAPH DESCRIPTION
+Lying at the heart of decision theory is the concept of utility, an abstraction that represents the amount of satisfaction an individual derives from an outcome. If we assume that decision-making is purposeful action aimed at realizing pre-existing preferences, we can use the concept of utility to formalize the content of these preferences and relate them to outcomes. Specifically, a utility function serves as a mathematical model that describes one’s preferences by mapping the value of outcomes (e.g. time, money) to a particular individual’s derived satisfaction by attaching a value to each of the possible outcomes. The most common applications of utility hinge on an assumption that agents are rational, meaning that their utility function adheres to certain properties (e.g., consistency, transitivity). In the context of decision making, agents are typically thought of as utility maximizers. This means that when sufficient information is available to quantify outcomes and corresponding probabilities, a decision maker will choose the option with the maximal “expected utility,” which is the probability-weighted average utility of an action. Personal characteristics, such as risk preferences and cognitive biases are represented by utility functions with different shapes and can further affect one’s expected utility by skewing the perception of probabilities. Common tendencies to be aware of include risk-seeking and risk-averse attitudes, distorting probabilities, disproportionately weighting losses versus gains, and inconsistently valuing utilities over time. Evaluating utility, utility functions, and expected utilities can help one analyze decision-making scenarios from both an empirical and a normative perspective.
+
+CATEGORIZATION
+Foundation Concept | Formal Analyses | Thinking Critically | Analyzing Decisions
+
+CORNERSTONE INTRODUCTION
+- Class: Complex Systems (Semester One) & Formal Analyses (Semester Two)
+- Unit: Decision Theory
+- Big Question: What is a good decision? 
+
+GENERAL EXAMPLE
+You are trying to understand why your friend purchased the extended warranty on their headphones. A straightforward expected value analysis reveals that they’re actually expected to lose money due to the costly insurance price and the low probability for the headphones to break. You realize that your friend’s utility, the satisfaction they derive from goods, is different from the expected monetary value of goods. Prospect Theory suggests various ways in which their utility is likely affected. Firstly, your friend’s aversion to taking risks implies that their utility function is concave down rather than linear. Further, their aversion to loss (losing their headphones) is so strong that they would derive more dissatisfaction from a loss than they would derive satisfaction from an equivalent gain. They may also be struggling to perceive the probabilities objectively: even though there is a tiny probability of something bad happening, it’s common to have a distorted view that makes one believe that losing their headphones is more likely than it really is. Considering all of these personal attitudes in the utility function and expected utility calculation reveals that the friend is indeed acting in accordance with their maximal expected utility. The friend is likely viewing this decision under a narrow frame. However, if they were to bundle this decision with other similar ones under a broad frame, their loss aversion would be diminished, and they would realize that they are losing money on average by purchasing the warranty. 
+
+Footnote: The combined impacts of risk-aversion, loss-aversion, probability distortion, and narrow framing on the utility function and expected utility are considered and together help us understand the friend’s decision-making behavior from an empirical perspective. This is contrasted with the normative perspective offered by the broad framing approach.
+
+IS THIS THE RIGHT HC?
+Is #utility the right HC? If the answer to the following questions is yes, #utility could be useful:
+
+- Are you using utilities and/or utility functions to represent preferences?
+- Are you calculating or interpreting expected utilities to analyze a decision-making scenario?
+- Are you identifying the impact of cognitive biases on an individual’s utility?
+- Are you using the concept of utility to evaluate or apply descriptive or normative theories of decision-making, such as Rational Choice Theory or Prospect Theory?
+
+Depending on the work product, there might be other HCs to consider.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#decisiontrees or #gametheory  |  Involves constructing/analyzing decision trees or game theoretic models to explain/predict decision-making scenarios. Utility considerations may enrich such analyses, possibly by calculating expected utilities for a decision tree or using ordinal/cardinal utilities within a game theory payoff matrix.
+#probabilities  |  Applies probability concepts, including expected values and expected utilities, which may be important when analyzing a decision-making scenario.
+#modeling  |  Constructs or applies an appropriate model to explain phenomena or make predictions. In the context of #utility, we rely on descriptive and normative models of decision-making to construct utility functions, which can be considered mathematical models to represent one’s preferences or happiness.
+#optimization  |  Defines and solves an optimization problem, which can be relevant in the context of #utility because decision-making scenarios can often be framed as optimization problems: rational decision-makers will make the choice that maximizes their expected utility.
+#biasmitigation & #biasidentification  |  Identifies and mitigates biases arising from psychological mechanisms or heuristics. Such biases can be represented formally through their impacts on the utility functions, expected utility calculations, and the ultimate decision-making scenario at hand.
+#psychologicalexplanation  |  Uses psychological theories and principles to explain human behavior and generate insights about individuals, groups, and a complex society’s behavior. Connecting with #utility would involve demonstrating the impacts of psychological theories and principles on the utility functions, expected utility calculations, and the ultimate decision-making scenario at hand.
+#shapingbehavior  |  Analyzes how tools such as incentives, disincentives, and nudges can be used to influence behavior. Recognizing a connection with this HC is useful: incentives and disincentives can modify the utilities of certain options in a decision, whereas choice architecture and nudges shape behavior without directly altering utilities.
+SELF STUDY QUESTIONS
+1. What is utility? What is it used for?
+
+   Answer: Utility is a numerical representation of- the amount of satisfaction an individual derives from an outcome. We use it to represent our preferences in precise mathematical terms so that we can analyze our (and others’) preferences and characterize them. For example, the mathematical formalization of preferences helps us see if our preferences are consistent with each and so many have used it to characterize the more general idea of rationality. In simple terms, utility is a number that represent how much a person enjoys a particular state of affairs: the higher the number, the more that person enjoys it.
+
+2. What is a utility function?
+
+   Answer: In short, a utility function, U(x), maps outcome values, x, to the amount of satisfaction derived from each outcome. These functions give us a way to compare various outcomes, which may consist of bundles of goods or events of different types, under a common currency of utility ('utils' are the conventionally used units). The mapping provided by the utility function is important because, among other things, the utility associated with a good may not be linearly proportional to the quantity of that good (it's not always the case that U(x) = x).
+
+3. What is the difference between empirical and normative theories?
+
+   Answer: Empirical theories aim to describe and/or generate predictions about human behavior. Normative theories aim to prescribe how and why things ought to be done.
+
+4. What is Rational Choice Theory?
+
+   Answer: Rational choice theory aims to explain or understand agency by developing a model for rational, or more colloquially correct, good,or wise, decision-making. The empirical version of the theory aims to predict social outcomes by assuming agents make rational decisions. However, as we know, there is a lot of evidence that humans often do not behave rationally. Hence, the empirical variant of rational choice theory is useful only insofar as rational choice is a useful approximation of people’s actual behavior. It would be useful if it can be used to make predictions and understand complex systems, even if these approximations may not be entirely accurate. The normative variant doesn’t make the claim that agents already make decisions rationally but rather recommends that they do. This is based on the idea that rational decisions are, in some sense, good decisions. The concept of rationality aims to provide minimal criteria for decision-making that are self-evident and non-controversial, of the kind that most people will accept. It aims to show individuals potential gaps in their reasoning that they may wish to avoid. In other words, the normative theory of utility says that the right way to make decisions is to make a cost-benefit analysis in terms of a clearly defined set of values and goals, which can be framed in terms of a utility function.
+
+5. What is instrumental rationality?
+
+   Answer: Instrumental rationality (also known as rationality of means) expects that given a set of goals and desires an individual adopts the means appropriate for achieving these goals. In simple words, it’s the idea that people do the thing that’s likely to generate their preferred outcome. A person who wants to leave the room, will use the door handle to open the door rather than bang their head against the door - because the former will achieve their desired result.This simple and minimal condition seems trivial and sometimes it is, but there are enough examples of case where people fail to do simple actions that would lead to their desired results (can you think of one?). Note that instrumental rationality doesn’t make any judgment over the morality of goals and means - it describes as ‘rational’ any action which serves the stated goal of the agent, regardless of whether this goal is in itself good.
+
+6. Why does rational choice theory model rational agents as exhibiting utility-maximizing behavior? What does such behavior entail?
+
+   Answer: According to rational choice theory, rational agents exhibit utility-maximizing behavior simply because that is the behavior that leads to the best result for them (as, by definition, their utility is a representation of their preferences). In other words, utility-maximizing is just a formal way to describe behavior that has the best chance of satisfying someone’s preferences. Utility maximizing may sound trivial and in some cases it may be simple enough but in many case it’s a very demanding process (try to think of some): in order to maximize their utility agents have to be capable of predicting the consequences of each of their possible course of action,evaluating them in a comparative manner so that they could be ranked, and doing so quickly enough to make a decision before the opportunity to act passes.
+
+7. In utility functions, what are the assumptions of completeness and transitivity?
+
+   Answer: Transitivity assumes that if an actor prefers outcome A over outcome B, and outcome B over outcome C, then they also prefer A over C. Completeness assumes that all possible choices that an actor can take are comparable to each other. In other words, each outcome has a utility value that can be compared to all the others.
+
+8. What is bounded rationality?
+
+   Answer: Bounded rationality is an approach that models human behavior as falling short of rationality in some specific way, which still allows to model that behavior in a succinct and simple way. For example, some people model human beings as ‘satisficing’ decision-makers rather than utility maximizers. Satisfying is making decisions in order to find a ‘good enough option’ rather than the ‘best option’ which may be preferred when individuals have limited time or capacity to fully assess and analyze the utility of each possible consequence.
+
+9. What assumptions does the rational choice theory make? When and why might they be problematic?
+
+   Answer: Rational choice theory assumes agents are rational decision-makers. This means that they are able to accurately assess the individual satisfaction they derive from different outcomes (also called expected utility) and always choose the option that maximizes it. There is lots of evidence that in many cases these assumptions do not hold. Agents may not have perfect information to assess satisfaction, they may be influenced by external factors or may behave prosocially or for the sake of others even if the outcome does not benefit them personally. Critics of rational choice theory claim that since the theory’s basic assumptions are false, the model lacks predictive power and may lead to conclusions that are not applicable to real-world situations. On the other hand, proponents of rational theory argue that even though its assumptions don’t precisely describe human behavior, models based on these assumptions may still be useful for predicting social outcomes because rational behavior is a sufficiently accurate approximation of human behavior, at least in some contexts.
+
+10. Explain the difference between risk and uncertainty.
+
+   Answer: Risk refers to situations in which all possible outcomes are known and can be quantified probabilistically, while uncertainty refers to situations in which the nature or the ensemble of outcomes is not known. Casino games, where all outcomes and probabilities are well understood, fall under the category of risk. Any scenario in which it is impossible to obtain enough information to quantify all outcomes and their probabilities would fall under uncertainty. Note: Although 'risk' is often used colloquially to have a negative connotation, risk does not mean loss (see intro focus questions). So, someone who is 'risk averse' will avoid gambles involving probabilistic outcomes; they'd prefer a certain outcome. On the other hand, someone who is 'loss averse' will avoid losses, even if that means taking a risk.
+
+11. What is expected value and expected utility? What are their differences? Why are these quantities useful?
+
+   Answer: Expected value: long-run average of a random variable, calculated by taking the probability-weighted average of all its possible values – E[x]. Expected utility: the long-run average utility, determined by mapping x to utility in the calculation of the expected value – E[U(x)]. Their main difference is that the expected value measures the average value obtained from a probability event, while the expected utility quantifies the average satisfaction derived. Expected value is a useful concept to understand the likeliness of outcomes occurring and the cost of a gamble for it to be a fair game. The expected utility can then describe the preferences of an agent toward the gamble. Comparing the two can provide insights into risk preferences, as well as potentially inform and reframe decisions.
+
+12. Explain different risk attitudes/preferences.
+
+   Answer: While utility generally increases as the value of outcomes increases, the rate at which it increases differs in each case. The Law of Diminishing Marginal Utility explains how each unit of consumption of a good or service provides us with less utility than the previous unit (this applies to unpleasant experiences as well, you may hate the second instance of an unpleasant experience, but probably less than double as much). Taking this into account, we may find different risk attitudes:
+   
+   → Diminishing Positive Marginal Utility - Risk Averse: Valuing each additional unit less than the last (may depend on the agent’s reference point) [U(x) = x^𝑎, 0  1 or − 2 (− 𝑥)^𝑎, 0 < 𝑎 < 1]. This function shows the diminishing marginal utility for outcomes associated with negative utility.
+   
+   → Constant Marginal Utility - Risk Neutral: The utility function is strictly linear, you want to maximize your utility no matter what, and are not influenced by different risk values to do so [U(x) = x]. Expected value = Expected utility.
+
+13. How does a utility function change depending on a risk preference? How about its curvature?
+
+   Answer: For risk-averse attitudes, U(x) will produce a concave-down curvature. A risk-neutral function will be linear. And for a risk-seeking attitude, U(x) will produce a concave-up curvature.
+
+14. How does “discounting” alter one’s utility? Why do humans tend to discount the future?
+
+   Answer: The general idea is that goods tend to be perceived as less valuable if we have to wait for them. We tend to assign lower utilities to rewards based on how long we have to wait to receive them. There are two primary reasons we might discount future rewards (e.g., why we prefer $100 today compared to $100 received in one year):
+   
+   Risk: Waiting for a payout in the future is inherently a gamble; there is a risk that the reward may not materialize, thus it's more valuable to take the $100 now.
+   
+   Opportunity cost: We could invest the money today and earn interest, thus it's more valuable to have it now.
+
+15. What are the main distinctions between exponential discounting and hyperbolic discounting?
+
+   Answer: The hyperbolic discount factor is steeper initially, meaning that they place more value on immediate rewards compared to the exponential discounter. Additionally, the hyperbolic discount factor is flatter in the far future, so events that are separated by a fixed period in the future are not that different in value. Exponential discounting is time-consistent because its ratio is constant over time whereas hyperbolic discounting is time-inconsistent, demonstrating preference reversal and an asymmetric preference for the present.
+
+16. What is a time-inconsistent temporal preference and preference reversal?
+
+   Answer: Hyperbolic discounting can be described as present-biased, or involving an asymmetric preference for the present. Using a hyperbolic discounting function will result in choices that are inconsistent. When confronted with a choice of taking something now, or a little later, people lean toward taking something now. However, when there is a choice between rewards at two different points in the far future, they are more likely to wait for a greater reward. This indicates a preference reversal.
+
+17. What is a sunk cost and how might it impact one’s utility?
+
+   Answer: Any cost that is no longer recoverable is ‘sunk’. Examples include equipment that cannot be resold, tickets that cannot be refunded, time invested in a project, and restaurant meals you've already paid for. Many would argue that rational decision-making should not be impacted by sunk costs. No matter what option is selected in a given decision-making scenario, the costs have already been sunk. The decision should be made based on the utilities of the possible options and not how much has already been sunk into any of the options. However, there may be cases in which individuals are influenced by these ‘sunk costs’ when making decisions. For example, a medicine student who hates their university by their second year may still finish their degree and go into a career they don’t like because of how much time they spent studying to pass the entrance exam.
+
+18. Among descriptive and normative models, where does Prospect Theory lie?
+
+   Answer: Descriptive. Prospect Theory attempts to model real-life decisions by accounting for cognitive biases; it does not aim to model optimal decisions. Nevertheless, it's useful for a couple of reasons: (1) to understand how people tend to act in various decision-making scenarios and thus predict how people will act, (2) to better understand and anticipate our own cognitive biases so that we can then take steps to mitigate them when needed.
+
+19. Define the following terms within Prospect Theory, and give an example: Reference Point, Law of diminishing sensitivity, Loss aversion, Possibility effect, Certainty effect, Probability distortion
+
+   Answer: Reference Point: Quantity or value used as the basis for evaluation. Example: Typically, if presented with a gamble with money involved, our reference point would be 0. Anything above $0 would be a “win”. However, imagine the process of looking for a new job. The reference point wouldn’t be $0 – it'd probably be your salary right now at your current job.
+   
+   Law of diminishing sensitivity: The relative satisfaction (or disappointment) an individual experiences in relation to gains (or losses) decreases for each additional unit of consumption of that good or service, relative to the reference point. Example: We get more satisfaction from gaining$200 than we get from gaining $100, but we get less than twice as much satisfaction.
+   
+   Loss aversion: Humans tend to perceive the loss of a quantity as relatively worse than the gain of that same quantity. Example: We may choose not to play a gamble with two outcomes: the potential loss of $100 or the potential gain of $120, even if the expected value is positive for us. This is because we are more averse to the potential loss of $100 than we are appreciative of the potential gain of $120.
+   
+   Possibility effect: Humans may focus on the fact that there is a possibility that something will happen (regardless of its probability) rather than properly evaluating the actual probability of such an event. This effect is especially relevant when the probability of the event is small. This effect stems from an interesting combination of the curvature of the utility function and probability distortion. Example: Fearing being struck by lightning more than being involved in a car accident, even though the latter is more likely than the former. Another example is choosing to play the lottery even if there is a very small chance of winning (and the probability of winning is typically so low that it can’t justify the investment of even the small cost of the ticket).
+   
+   Certainty effect: Humans tend to prefer outcomes that are certain rather than those that have a possibility of not occurring even if they are still very likely to happen and when their expected value is higher. Example: Choosing the option where you know for sure you will win 300 dollars instead of the option where there is 90% chance that you will win 500.
+   
+   Probability distortion: Perceived probabilities that people tend to assign to outcomes are not necessarily proportional to the actual probabilities. Lower probabilities are usually over-weighted and larger probabilities are usually under-weighted. One consequence of this is that humans tend to overestimate the likeliness of rare events. Example: Humans tend to overestimate the likeliness of having an accident and therefore buy expensive life insurance.
+
+20. What is a s-shaped utility function?  What features does it have and what are the implications of these features?
+
+   Answer: The 'S' is the shape predicted by Prospect Theory. It has the following features:
+   
+   - For positive outcomes (gains), the function is concave down ('concave'). This indicates that the individual is risk-averse and has diminishing marginal utility. This is the idea that the more you have of something, the less you get out of having a little bit more of it. A consequence of this is that the sensory difference between 55 and 60 is less than between 5 and 10.
+   
+   - For negative outcomes (losses), the function is concave up ('convex'). This indicates that the individual is risk-seeking in the loss domain and has increasing marginal utility. This can also be thought of as diminishing sensitivity for losses.
+   
+   - The function is not symmetric about 0. In this plot, 0 is the 'reference point' which separates losses and gains. The fact that the function is steeper for negative outcomes implies that the individual is more sensitive to losses than to gains. This is 'loss aversion,' a consequence of reference dependence.
+
+21. What are some differences between rational and prospect theory?
+
+   Answer: Modeling individuals under Rational Choice Theory assumes that risk behavior doesn’t change (even in different states) and the probabilities are never distorted. In Prospect Theory, we recognize that individuals tend to have different risk behaviors in states of gain versus loss and distorted probabilities that could be powerful enough to give a riskier option a higher expected utility even with a risk-averse utility function.
+
+22. What are narrow framing and broad framing in a sequence of decisions?
+
+   Answer: Approaching a set of decisions under a narrow frame, we make each decision one at a time, picking the best choice for each decision separately in isolation. Under a broad frame, we consider the set of decisions together in a single bundle and make the best choice altogether. This essentially amounts to basing the decision on the expected value: the average outcome over many trials if the scenario were repeated. So, the essential difference is that in broad framing, we consider multiple decisions together in a bundle, while in narrow framing, we make decisions individually.
+   
+   People may think that broad framing is equivalent to making the best decision for the long term. Instead, the key distinction is as above: the broad frame bundles multiple decisions together. This bundle could consist of multiple offers occurring over a long time span, but it need not. Importantly, when using broad framing, we are not considering the value of the offer/outcome to be changing over time in the long term. As an example, suppose someone made a decision to take a new job so that they'd be happier in the long run. This is not an example of broad framing.
+   
+   It’s helpful to consider that narrow framing aligns more with System 1 because it's cognitively easier and is driven by emotion. On the other hand, broad framing aligns more with System 2 thinking because it requires more effort and adopts an objective perspective across all decisions in a set.
+
+23. Why is narrow framing more susceptible to cognitive biases such as loss aversion and inconsistent decisions? Give an example case.
+
+   Answer: Making decisions under a narrow frame, we are more susceptible to loss aversion (treating a loss frame differently than a gain frame in terms of risk appetite). Using a broad frame, in which we aggregate gambles and choose the option with the highest expected value, can help us to overcome emotions and cognitive biases, such as loss aversion, leading to more objective decisions.
+   
+   For example, in the Samuelson problem as explained in Chapter 31 of Thinking, Fast and Slow by Kahneman (see Key Resources below), framing decisions narrowly led Sam to reject the coin toss offer when considering just one toss, yet he accepted the offer when considering two or three tosses. This means that if he encountered this offer on two separate occasions he would turn it down - but if he considers both tosses together, he would have taken them! This inconsistency, the root of which is loss aversion, points towards irrationality. 'A utility maximizer who rejects a single gamble should also reject the offer of many.' Kahneman explains how, by bundling favorable gambles together in a broad frame, the probability of losing rapidly diminishes, and thus also decreases the impact of loss aversion on one's preferences. The broad frame will lead to the same decision that an objective expected value calculation would indicate and is thus argued to be more rational.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you effectively explained how preferences can be mapped to utilities in your context, and sufficiently justified the mapping for your purpose?
+2. Have you identified and sufficiently explained what factors (e.g., time, cost, joy, amount) impact one’s preferences and utilities in the scenario under study?
+3. Have you identified an appropriate utility function for the context under study and sufficiently justified its form and its parameters?
+4. Does your application correctly compute and/or effectively interpret expected utilities and apply them to analyze a decision-making scenario?
+5. Have you effectively used the analysis of utilities to suggest meaningful conclusions (that are relevant to your work) about how individuals would or should behave in a decision-making scenario?
+6. Does your application appropriately apply normative and descriptive theories of utility such as Prospect Theory or Rational Choice Theory?
+7. Does your application identify potential cognitive biases or tendencies and evaluate their impact on utility functions or expected utilities in a way that’s relevant to your purpose?
+8. Have you used the concept of utility to identify methods to mitigate common biases or tendencies and discussed the impacts of such mitigations on the utilities and decision-making scenario at hand?
+9. Have you considered the effects of one’s utilities changing over time (e.g., discounting) and incorporated this in your analysis in a way that’s relevant to your purpose?
+
+COMMON PITFALLS
+- The application identifies utilities or utility functions with insufficient justification for where the values came from and how they represent preferences.
+- The application mixes up or neglects the distinction between normative and descriptive models.
+- The application incorrectly computes expected utilities, for example, by neglecting to sum the resulting products of probabilities and utilities.
+- The application mentions cognitive biases but does not sufficiently identify their impacts on utility functions or expected utilities and the overall decision-making scenario under study.
+
+APPLYING THIS HC AT MINERVA
+- Utility functions are used in many economic models. An example is an indifference curve, which shows various combinations of two goods or commodities that consumers can choose, where at any point on the curve, the combination of the goods leaves the consumer equally well-off. These curves are level curves of the function itself, and are used widely in areas like welfare economics.
+- This HC is applicable in a few different ways in business courses. For example, you can predict an entity’s decision by identifying and explaining the biases that may affect their perception of utility, and hence affect their decision-making. For example, when there is an investment with a small chance of a large loss, findings from Prospect Theory can be used to suggest that a firm would tend to adopt a risk-averse behavior, thus deciding not to invest. Also, in business and finance applications, expected utilities can be calculated and used to analyze risky projects with multiple outcomes and evaluate investment opportunities.
+- Utility considerations can even be useful in computational sciences. For example, you can devise an algorithm that uses utility functions to model personal preferences. Consider a personal scheduler algorithm that takes a list of tasks and their task types as inputs, and outputs a schedule for the day by scheduling tasks in an order based on a utility function. For example, you may have a preference to finish tasks that take longer time earlier in the day due to having a better attention span in the morning. In such cases, your utility function would give higher weights to tasks with longer duration, which the scheduler would then prioritize to schedule earlier in the day.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- The concept of utility can be useful for your own personal decision-making. This is a great tool to help you think through your preferences and identify the factors that matter to you in a decision-making scenario. Even when it seems challenging or impossible to assign numerical values to outcomes, it’s still helpful to rank the outcomes from lowest utility to highest utility, and use these ordinal utilities to gain more clarity on the situation. Here are some more specific ways to utilize the concepts of this HC in your personal lives:  - Risk preferences: An understanding of common tendencies (e.g., suggested by Prospect Theory) will help you better anticipate your own cognitive biases (and their impact on your utility) so that you can then take steps to mitigate them when needed. You can consciously reflect and ask yourself questions like, Am I being risk-averse here? Why? Am I in a domain to lose something? How impactful would that loss be? Am I overestimating the chance of losing? Is being risk-averse the most appropriate approach? What if I were to consider this decision as one of many in a broad frame? Such awareness can help bring clarity and objectivity to your decision-making approaches!   - Broad framing: The concept of broad framing is useful for all of us. This approach activates our system 2 thinking, requiring us to think critically and objectively about decisions. If we can see each decision we make as part of a bundle of many decisions and rely on expected values to indicate the best option, we can make more rational decisions. Adopting a broad frame helps us avoid the cognitive bias of loss aversion that treats a loss frame differently than a gain frame in terms of risk appetite. We are more susceptible to this bias when making decisions under a narrow frame. - Discounting: It can be helpful to recognize that you (like many individuals) tend to discount future rewards according to a hyperbolic discounting function, thus leading to inconsistencies and preference reversal. Acknowledging this tendency allows you to mitigate it by employing a pre-commitment mechanism (see this article by Kurth-Nelson and Redish), which involves the elimination or restriction of our future choices to overcome the preference reversal associated with non-exponential discounting. For example, you want to go to the gym on Thursday, but you know that when you're waking up Thursday morning you will change your mind. To prevent yourself from choosing not to go, you “pre-commit” by planning to meet a friend at the gym.
+- Prospect theory can be used to explain a lot of political and government decision-making behavior. For example, during times of war, when policymakers or generals are in a perceived domain of loss, they are more likely to take risks that would otherwise have been avoided, such as a risky mission to revert the situation or implementing radical domestic reform to support military efforts.
+- There are common examples in sports that illustrate human tendencies suggested by Prospect Theory. In particular, Prospect theory suggests that individuals are risk-averse when it comes to positive utilities but risk-seeking when it comes to negative utilities (as indicated by the different curvature of the S-shaped utility function). This changing risk preference is easy to see in sports. If your team is winning (domain of “gain”) you will tend to play it safe by avoiding risky plays, sticking with simple effective game strategies, and focusing on defense rather than offense. If your team is losing (domain of “loss”) you will want to avoid the sure loss by seeking out more risky strategies. For example, pulling the goalie in hockey or soccer/football is a risky move teams make when they're losing. Other common similar strategies include swinging for the fences (baseball) and throwing a "Hail Mary" (American football).
+
+KEY RESOURCES
+1. Perry, T. & Morgan, R. (2023). Utility: Modeling complex social systems with Rational Choice Theory. (McAllister, K., Ed.). Minerva Guide. https://docs.google.com/document/d/1gtPRmht-TVBRMVuYYJdPUdNWi7MY560iYO4UMgdt3mU/edit
+- Why/use: This custom guide introduces rational choice theory, distinguishing between its normative and empirical variants. The guide includes easy-to-understand examples.
+2. Terrana, A & Wilkins, J. (2025, Feb). Utility, Expected Utility, and Risk. Minerva University. https://docs.google.com/document/d/1z5cqDEGsg4tsmIo9slRz8MSm32Q6NDl49oeRzWG33o/edit
+- Why/use: This custom guide explains in detail key terms regarding utility, expected utility, risk, and prospect theory. It also includes practice questions to test your learning.
+3. Wilkins, J. (2021, Feb 27). Delay Discounting. Minerva University. https://docs.google.com/document/d/1APdwWQ7hEY2474lcCz20TpJsG-wVTTpWqOhXLkkELY8/edit
+- Why/use: This custom guide defines and explains the key terms regarding delay discounting, digging deeper into distinguishing between different discount functions.
+4. Kahneman, D. (2013).  Chapters 1 and Chapters 25 - 31, Thinking, fast and slow. New York: Farrar, Straus and Giroux.
+- why/use: This book introduces many crucial concepts within utility. More specifically, while chapter 1 introduces more general dual systems theories of cognition, Chapter 25 to 31 include aspects from Prospect Theory such as the endowment effect, fourfold patterns of utility, and broad & narrow framing.

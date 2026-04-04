@@ -1,0 +1,139 @@
+#PROBABILITY
+
+BLURB
+Apply and interpret fundamental concepts of probability, including conditional and Bayesian probabilities.
+
+PITCH
+Making progress in the face of imperfect predictability.
+
+PARAGRAPH DESCRIPTION
+A probability specifies how likely it is that a specific event will occur. There are different interpretations of probability, which provide different frameworks for understanding claims about the probability of various events. In addition, a conditional probability is the probability of an event occurring given the occurrence of another event. One important type of conditional probability is the "posterior probability" (the degree of belief, conditional on new data, in a hypothesis) based on a “prior probability” (the baseline or the degree of belief in the hypothesis prior to the new data). The posterior probability is updated as new data are obtained. One must take care to identify the appropriate method to calculate the probability of an event and to properly interpret probabilities.
+
+CATEGORIZATION
+Foundational Concept | Formal Analyses | Thinking Critically | Analyzing Data
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester One
+- Unit: Probability and Statistics
+- Big Question: What does it mean to be random? & How can data help us discover what is true?
+
+GENERAL EXAMPLE
+You have your annual physical, and they take some blood. They have randomly been testing people for meningitis. They believe that 1 in 10,000 people in your city has this disease. The sensitivity (true positive) and specificity (true negative) of the blood test are both 99%. Your test comes back positive. Before you panic, you start analyzing the situation. Assuming that the probability of you catching meningitis is the same as the city population, the prior probability is P(Sick) = 0.0001. The posterior probability is calculated based on the prior probability and the sensitivity and specificity of the test: P(Sick|+) = P(+|Sick)P(Sick) / [P(+|Sick) + P(+|¬Sick)] = 0.990.0001 / (0.990.0001 + 0.010.9999) — which is just under 1%. The low prior probability of being sick and the possibility of a false positive explain this relatively low chance of having the disease even in light of its high accuracy. It is also noted that the calculation depends on the assumption of prior probability. If instead you worked in a clinic and knew that one out of ten providers contracted the disease, you would use P(Sick) = 0.1 in the probability calculation, yielding a much higher probability. Luckily, you work a corporate job, so you don’t stress about it too much.
+
+Footnote: Information is appropriately interpreted and represented as various types of probabilities: prior, posterior, conditional. Competing assumptions are considered and the most relevant is selected. Bayes Theorem is used to calculate the result, which is then interpreted with sufficient details.
+
+IS THIS THE RIGHT HC?
+Is #probability the right HC? If the answer to the following questions is yes, #probability could be useful: 
+- Are you calculating and/or interpreting the probability of an event?
+ - Does your work involve randomness or outcomes that are not perfectly predictable (and thus, can only be described probabilistically)? 
+ 
+However, depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#estimation  |  approximates and interprets a quantity after explaining how it was calculated using clear and detailed steps.
+#confidenceintervals  |  constructs or interprets a confidence interval to estimate an unknown population parameter The interpretation of confidence intervals can be enhanced by understanding the confidence level using the frequentist interpretation of probability.
+#distributions  |  analyzes the distribution of a variable, including but not limited to probability distributions of random variables.
+#significance  |  conducts a hypothesis test to determine statistical and practical significance. Knowledge of probability can enhance the explanation of parts of the test (e.g., interpreting the type I and II error rates, interpreting the p-value).
+#fallacies  |  analyzes flawed logic in an argument. Some fallacies result from misunderstanding probabilities, such as the gambler’s fallacy and the base rate fallacy.
+SELF STUDY QUESTIONS
+1. What is the difference between expected value and a probability?
+
+   Answer: Probability is a measure of the likelihood of an event occurring. It is expressed as a number between 0 and 1, with 0 indicating that an event is impossible, 1 indicating that an event is certain, and values between 0 and 1 indicating the level of uncertainty or likelihood of an event occurring. Expected value, on the other hand, is a measure of the long-term average value of a random variable. It is the average outcome we would expect to see if we repeated a statistical experiment many times. It is equivalent to the mean (balancing point) of the random variable’s probability distribution.
+
+2. What does it mean for events to be independent? Provide examples.
+
+   Answer: Two events are independent if the outcome of one event does not provide any useful information about the outcome of the other. So, if knowing that event A has occurred provides some information about the probability of B occurring, then events A and B are not independent.
+   An example of an independent event is flipping coins. For example, we may get heads when flipping a coin for the first time. For the second time, we may get heads again. The outcome of the first coin flip provides no useful information about the outcome of the second coin flip.
+   In the context of coin flips, a set of non-independent events could be as follows: event A = ‘getting at least one 1 when rolling two dice’ and event B = ‘getting a sum of 12 when rolling two dice’. The occurrence of event A does indeed influence the probability of event B. In particular, if event A occurs, we know that event B is impossible.
+
+3. What does it mean for events to be mutually exclusive? Provide examples.
+
+   Answer: Two events are called mutually exclusive or disjoint if they cannot both happen at the same time. As an example of two mutually exclusive events, consider the example provided above for non-independent events: it's impossible to get a 1 and a sum of 12 when rolling two dice. An example of non-mutually exclusive events could be as follows: event A = ‘getting at least one 1 when rolling two dice’ and event B = ‘getting a sum of 7 when rolling two dice’. Here, it's possible to obtain a sum of 7 with a 1 (and a 6).
+
+4. Define prior and posterior probability.
+
+   Answer: In Bayesian reasoning, the prior probability is the initial belief about the chance of an event occurring, before collecting any new information. A posterior probability is obtained after updating the prior probability in light of evidence, observations, or information. If we update our probabilities one more time, we’d treat the posterior probability as our new prior.
+
+5. Explain the difference between marginal, conditional, and joint probabilities.
+
+   Answer: Marginal probability refers to the probability of a single event or variable occurring, without considering any other events or variables. It focuses on a single outcome or event in isolation. Conditional probability represents the probability of one event happening given that another event has already occurred. Joint probability refers to the probability of two or more events occurring simultaneously. It describes the probability of the intersection of multiple events or variables.
+
+6. Explain the General Multiplication Rule. How does this rule simplify when events are independent?
+
+   Answer: P(A and B) = P(A|B)P(B), where A is the outcome of interest and B is the condition. When events A and B are independent, the General Multiplication Rule simplifies because the occurrence of B has no influence on the probability of A. Thus, the probability of event A occurring given that event B has already occurred is simply the probability of event A occurring: P(A|B) = P(A). Therefore, for independent events A and B, the multiplication rule becomes P(A and B) = P(A)P(B).
+
+7. Explain the General Addition Rule. How does this rule simplify when the events are mutually exclusive?
+
+   Answer: P (A or B) = P(A) + P(B) - P(A and B). When the events A and B are mutually exclusive, if event A occurs, then event B cannot occur, and vice versa. In other words, there’s no intersection in which both events can occur. In this case, P(A and B) is equal to zero. Therefore, when the events are mutually exclusive, the addition rule simplifies to P(A or B) = P(A) + P(B).
+
+8. Provide the formula for calculating conditional probabilities.
+
+   Answer: P(A|B) = P(A and B) / P(B)
+
+9. How does the independence of events A and B simplify the calculation of conditional probability, P(A|B)?
+
+   Answer: Since the events are independent, meaning that knowing the outcome of one event provides no additional information on the probability of the other event, conditioning does not change the probability: P(A|B) = P(A). This demonstrates that the probability of event A is the same regardless of whether or not event B occurs.
+
+10. What is a Bernoulli random variable? Provide an example.
+
+   Answer: A Bernoulli variable is a random variable with two possible outcomes (commonly termed success or failure). An example would be flipping a coin, as we either get heads or tails.
+
+11. When might using conditional probability be helpful? Give an example.
+
+   Answer: Conditional probability can be used when we want to update our beliefs based on collected information. For example, consider a medical test for a disease. Event A represents the presence of a disease, and event B represents a positive result on a medical test. The conditional probability P(A|B) is the probability of having the disease given that the test result is positive. If we introduce another event C, which represents the presence of symptoms in the patient, we can now consider the conditional probability P(A|B&C), which is the probability of having the disease given that the test result is positive and the patient has symptoms. The conditional probability P(A|B&C) can help us update our belief by taking into account the additional information about the presence of symptoms. Determining this probability via Bayes’ theorem would require knowing other conditional probabilities, such as the false positive and false negative rates of the test, P(B|¬A) and P(¬B|A) respectively, and other marginal probabilities, like the base rate (prevalence) of the disease in the population, P(A), and the base rate of symptoms, P(C). Failure to recognize the applicability of conditional probability in this scenario may lead to common fallacies or other errors in reasoning.
+
+12. What are some fundamental differences between frequentist and Bayesian interpretations of probability?
+
+   Answer: The Frequentist interpretation views probability as the long-term frequency or proportion of an event occurring repeatedly, utilizing the law of large numbers. On the other hand, Bayesian inference incorporates prior beliefs and combines them with observed data to obtain posterior probabilities. The prior probability represents the initial belief about probability. This prior is then updated using Bayes' theorem to obtain the posterior probability. See the Wilkins reading on interpreting probabilities in the key resources below for more on this distinction.
+
+13. What are the conditions for events where the frequentist interpretation could apply?
+
+   Answer: Events need to be random, repeatable, and independent.
+
+14. Relate the concepts of probabilities to some common fallacies (Gambler’s fallacy, base-rate fallacy, confusion of inverse) arising due to misinterpretation of probabilities.
+
+   Answer: Gambler’s Fallacy: This fallacy occurs when independent events are mistaken as a series of dependent events. For example, if someone flips a fair coin and gets heads five times in a row, they might think that tails is "due" and more likely to occur next. However, in reality, each coin flip is an independent event, and the probability of getting heads or tails remains 50% for each individual flip.
+   
+   Base-rate fallacy: The "base rate" refers to the initial or background marginal probability of an event occurring in a general population. The base-rate fallacy occurs when people ignore the base-rate information and focus too heavily on specific, individual information, leading to errors in judgment and probability assessments. For a detailed example, see 'Applying the HC Outside of Minerva' section below.
+   
+   Confusion of Inverse:  Confusion of inverse is where a conditional probability is falsely equated with its inverse. For two events A and B, the probability of A happening given that B has happened is assumed to be the same as the probability of B given A.
+
+15. What is the Bayes theorem and its formula?
+
+   Answer: Applying the Bayes theorem allows us to update our beliefs or knowledge about an event based on new evidence or information. 
+   - Formula: P(A|B) = P(A) P(B|A) / P(B) 
+    - P(A|B): This is the conditional probability of event A occurring given that event B has occurred. It represents the posterior probability of event A happening given the new evidence provided by event B. 
+    - P(A): This is the prior probability of event A. It represents our initial belief or knowledge about the probability of event A before considering any new evidence. In some contexts, this may represent the “base rate” of an event.
+   - P(B|A): This is the conditional probability of event B occurring given that event A has occurred. In the context of Bayesian reasoning, it’s referred to as the likelihood. 
+   - P(B): This is the marginal probability of event B. In the context of Bayesian reasoning, this represents the probability of the evidence of data occurring without conditioning on any hypothesis.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you considered within which framework (i.e., Bayesian or frequentist) your probability analysis lies and interpreted it correctly within this framework, providing a sufficient explanation?
+2. Have you accurately calculated an appropriate probability with clear and detailed steps?
+3. Have you interpreted the implication of probabilities on your research question?
+4. Have you ensured your probabilities are correct by conducting a sanity check (e.g. between 0 and 1)?
+5. Have you double-checked your calculations and/or used multiple calculation methods to verify correctness?
+
+COMMON PITFALLS
+- The resulting probabilities are incorrect or nonsensical (negative quantities or greater than 1).
+- The application does not sufficiently outline the steps or formulas used to derive the answers.
+- The application does not sufficiently state and justify the assumptions underlying the calculations.
+- The application lacks sufficient interpretation of the probabilities for the given context or fails to capture useful insights from the probabilities for the desired purpose.
+- The application confuses the concept of expected value with probability.
+- The application commits a fallacy associated with probability, like the gambler’s fallacy or base-rate fallacy.
+- The application adopts frequentist approaches to perform the analysis but uses Bayesian language to interpret the results (e.g., incorrectly interpreting a p-value as the probability of the null hypothesis being true).
+
+APPLYING THIS HC AT MINERVA
+- In business and finance, where uncertainty and risk are inherent, probability plays a crucial role. Outcomes in this field are rarely perfectly predictable and can only be described probabilistically. Probability can be used to model and assess investment risks, estimate future market trends, and make informed decisions based on probabilistic forecasts.
+- In statistical physics and thermodynamics, #probability is essential. The systems studied in these fields have an enormous number of degrees of freedom. Even for a simple system of gas particles in a box, the number of possible “microstates” (the positions and velocities of the gas molecules) becomes intractable. The characteristics of these systems can only be described statistically. We cannot precisely predict the exact locations or velocities of every gas molecule, but we can use #probability and #distributions to describe the macroscopic thermodynamic properties of the system.  - Relatedly, but more specifically, we can view the second law of thermodynamics as a statement about #probability. This law states that the total entropy in the universe always increases, but there are several other formulations of the law as well. One formulation states that the direction of spontaneous change in a system is from an arrangement of lesser probability to an arrangement of greater probability. Regardless of the formulation, this law is inherently statistical in nature. There’s no physical force that forbids entropy from decreasing, but for any macroscopic system, the probability of this happening is so unimaginably small that it’s essentially impossible. Students taking courses in the physics track may encounter calculations that demonstrate this! These probability calculations require knowledge of combinators and fundamental probability rules.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Most things in life are not perfectly predictable! We need to understand the principles of #probability to describe most real-life problems, systems, and decision-making scenarios.  - In medicine, for example, probabilities can help determine the likelihood of a patient developing a certain disease based on their genetic history, lifestyle, and other factors.  - In finance, probabilities can be used to measure the risk associated with investments and inform decisions about portfolio management.  - In sports, probabilities can be used to analyze player performance and predict the outcome of games.  - In quality control systems, the probability of defects or errors occurring in a production line can be calculated.
+- Understanding this HC can help mitigate common fallacies such as gambler’s fallacy or base rate fallacies in real life. As an example of the base-rate fallacy, let's consider a hypothetical medical diagnostic test scenario where a certain disease affects 1% of the population. This 1% prevalence would be the “base rate.” Given this information, we know that in a population of 10,000 people, 1% (100 individuals) have the disease, and the remaining 99% (9,900 individuals) do not. If the test’s false-positive rate is 5%, it will produce false positives in 5% of the 9,900 disease-free individuals, which amounts to 495 false positives. One might commit the base-rate fallacy here if they perceive a positive test result to be ‘95% accurate’, without considering the base rate. The probability of having the disease after a positive test result is actually much lower than one might originally think due to the large number of false positives which stems from the tiny base rate of the disease. Assuming there are no false negatives, the probability of actually being infected after one is told that one is infected is only 17% (100/(100+495)).
+
+KEY RESOURCES
+1. Diez, D., Barr, C., & Cetinkaya-Rundel, M. (2015). Section 2.1: Defining probability (special topic). OpenIntro statistics (3rd ed.). https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view
+- This resource includes a wide range of practice questions for probability, as well as in-depth explanation about concepts.
+2. Wilkins, J. (Oct, 2020). Interpreting probabilities. Minerva University. https://docs.google.com/document/d/1ikOunBGOKD8rGUOcC2b1q4AJ8r6X58cK8UwZDdBI4/edit
+- This resource explores frequentist and Bayesian perspectives on probability in detail.

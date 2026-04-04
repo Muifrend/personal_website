@@ -1,0 +1,174 @@
+#SIGNIFICANCE
+
+BLURB
+Apply, interpret, and distinguish practical and statistical significance.
+
+PITCH
+Is there enough evidence that the pattern you’re seeing really exists in the population? And is its effect big enough to matter? 
+
+PARAGRAPH DESCRIPTION
+Measurements drawn from samples are used to make inferences about broader populations, often for the purpose of evaluating whether patterns in the population are “significant.” Tests of statistical significance tell us when a difference or pattern in a sample is likely due to chance or instead reflects strong evidence for a genuine difference or pattern in the population. Setting up, executing, and interpreting the results of significance tests requires one to identify and contemplate the unavoidable statistical errors that are possible. Statistical significance, however, says nothing about whether the size of the difference or pattern matters practically. That is the domain of practical significance, which is evaluated by measuring the effect size. One must take care to distinguish these two very different concepts, using appropriate calculations and interpretations.
+
+CATEGORIZATION
+Foundational Concept | Formal Analyses | Thinking Critically | Analyzing Data
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester One
+- Unit: Probability and Statistics
+- Big Question: What does it mean to be random? & How can data help us discover what is true?
+
+GENERAL EXAMPLE
+You read a journal article that reports on a large clinical trial carried out to compare a new medical treatment for hangover headaches with standard paracetamol. The analysis shows a statistically significant difference in the average duration of a headache when using the new treatment compared to the standard treatment, reported with a standard significance level (p<0.05). This means that, assuming there is zero difference in effect, it is quite unlikely (less than 5% chance) to observe results this extreme or more. However, given the very large sample size, you know that the statistical power is high, so even small practical differences would be deemed statistically significant. Upon closely examining the size of the effect, you note that the decrease in headache duration is only 15 minutes compared to the standard treatment group. Recognizing that a typical hangover headache lasts from 5-12 hours, you become more reserved about the practical implications of the clinical trial. Your reservation is supported by the small Cohen’s d value of 0.1, a standardized measure of practical significance (effect size) when comparing two means, which in this case indicates that the effect of the new treatment is small relative to the existing one. 
+
+Footnote: A measure of significance was interpreted to explain the observed statistical difference considering the sample size, and statistical significance was distinguished from the practical significance of the results.
+
+IS THIS THE RIGHT HC?
+Is #significance the right HC? If the answer to the following questions is yes, #significance could be useful: 
+-  Are you conducting or interpreting a hypothesis test to evaluate if a sample contains strong evidence for a genuine difference or pattern in the population? 
+- Are you quantifying and/or interpreting statistical and practical significance? 
+
+However, depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#probability  |  Focuses on calculating or interpreting probabilities where the work involves randomness or outcomes that are not perfectly predictable. #probability could apply in the context of hypothesis testing when interpreting Type I and II error rates, values of statistical power, and p-values.
+#distributions  |  Evaluates properties of distributions, which could apply when executing a hypothesis test and examining the distribution of sample data to observe whether conditions for tests (e.g., normality for t-tests) are met.
+#confidenceinterval  |  Constructs or interprets a confidence interval, possibly used to complement the results of a hypothesis test (e.g., by observing if the null value falls within the interval).
+#correlation  |  Investigates the degree of correlation between variables, which may be subjected to hypothesis testing to investigate the statistical significance of the correlation coefficient.
+#regression  |  Constructs or interprets a regression model, which may be subjected to significance testing to investigate the statistical significance of regression coefficients (e.g., slopes).
+#hypothesisdevelopment  |  Generates a testable hypothesis that explains the reasons or causal mechanisms for underlying patterns or observations. From a hypothesis, one can derive predictions that can be directly tested through significance testing. Note that the null and alternative hypotheses are better thought of as “predictions” than explanatory hypotheses.
+SELF STUDY QUESTIONS
+1. Define the following terms and give an example: null hypothesis, alternative hypothesis, null value, p-value, significance level (α).
+
+   Answer: Null Hypothesis: denoted as H0, the null hypothesis is a statement of no effect or no difference. It represents the status quo or the default assumption that there is no relationship or effect between the variables being studied. 
+   
+   Alternative hypothesis: denoted as H1 or Ha, represents the proposition that there is a real relationship or effect between the variables under study in the population. 
+   
+   Null value: the value of the population parameter if the null hypothesis is true. 
+   
+    P-value:  a measure of the strength of evidence against the null hypothesis in a statistical hypothesis test. It indicates the probability of obtaining the observed results or more extreme results if the null hypothesis were true. A small p-value (typically less than the significance level) suggests strong evidence to reject the null hypothesis in favor of the alternative hypothesis. 
+   
+   Significance level: the threshold to determine the level of evidence required to reject the null hypothesis. It represents the probability of making a Type I error.
+
+2. Explain what Type I and Type II errors are.
+
+   Answer: Type I: Rejecting a null hypothesis that is actually true  (false positive). It happens when we conclude that there is a significant effect or relationship between variables when, in reality, there is no such effect or relationship in the population. 
+   
+   Type II: failing to reject a null hypothesis that is actually false. In this case, we miss detecting a real effect or relationship that exists in the population. 
+   
+    Type I and Type II errors are inversely related – reducing the risk of one type of error increases the risk of the other.
+
+3. Distinguish between one and two-tailed hypothesis tests. When should they be applied?
+
+   Answer: One-tailed and two-tailed hypothesis tests have different alternative hypotheses.
+   
+   In a one-tailed hypothesis test, the alternative hypothesis specifies the direction of the effect or difference. It focuses on determining whether a parameter is significantly greater than or less than a certain value. 
+   
+   In a two-tailed hypothesis test, the alternative hypothesis does not specify a particular direction of the effect or difference. It only tests whether there is a change or difference in either direction from the null hypothesis. 
+   
+   The choice of performing a one or two-tailed test depends on your research goals and what kind of difference you are interested in analyzing. You might be interested in any sort of difference or you might be only interested in differences in one direction. However, the choice must be made before looking at the data to avoid biasing the results. In particular, changing from a two-tailed test to a one-tailed test will inflate the Type I error rate. Unless it’s impossible or irrelevant to imagine the difference or effect going in a certain direction, it’s safest to opt for a two-sided test.
+
+4. How does considering Type 1 and Type 2 errors influence your decision on choosing the significance level?
+
+   Answer: The significance level dictates the probability of committing a Type 1 error. Thus, lowering the significance level will reduce the risk of committing Type I error. However, there is an inverse relationship between Type I and II errors, so a lower significance level would increase the risk of committing Type II error. Thus, assessing the dangers of Type I and Type II errors is important for selecting the significance level: 
+   - If making a Type 1 error is dangerous or especially costly, we should choose a small significance level. This would reflect the fact that we want to be very cautious about rejecting the null hypothesis, so we demand very strong evidence favoring the alternative hypothesis before we would reject the null. 
+   - If a Type 2 error is relatively more dangerous or much more costly than a Type 1 Error, then we should choose a higher significance level. This would reflect the fact that we want to be cautious about failing to reject the null hypothesis when the null is actually false. 
+   - If neither error is particularly dangerous, we typically choose the conventional significance level 0.05. On pg 191 in OpenIntro, students can follow a link to an interactive task (with videos too) that helps to clarify why this significance level is often a good choice: https://www.openintro.org/book/stat/why05/. 
+   
+    As a specific example, consider an airport security screening situation. A Type I error would mean that a threat is overlooked, allowing dangerous individuals to pass through undetected, causing harm that could kill thousands of people. Type II error, here would result in the unnecessary delay or scrutiny of innocent individuals. The consequences of Type I errors are larger, which would warrant reducing the significance level.
+
+5. What is a difference-of-means test? Explain using an example null and alternative hypothesis.
+
+   Answer: The null hypothesis for a difference-of-means test is typically, “The mean of group 1 is the same as the mean of group 2” or “There is no difference between the mean of group 1 and the mean of group 2.” Symbolically the null hypothesis is: μ2 - μ1 = 0.
+   The corresponding alternative hypothesis (assuming a two-tailed test) is “The mean of group 1 is different from the mean of group 2” or “There is a difference between the mean of group 1 and the mean of group 2.” Symbolically: μ2 - μ1 ≄ 0.”
+
+6. Suppose you're doing a hypothesis test to make inferences about a mean. Should you use a z-test or t-test?
+
+   Answer: If the population standard deviation is unknown, the t-test is the right choice. The Z-test assumes a known population standard deviation. However, if the sample size is large enough (Typically greater than 30), the normal distribution and the t-distribution are not substantially different, so it is not problematic to conduct a z-test even when it's not technically the correct choice.
+
+7. Interpret the following scenario, by outlining the null/alternative hypothesis, and interpreting the significance test's result in natural language: You read about a study evaluating the effectiveness of a new drug in treating a specific medical condition. The study involved a sample of 500 patients, with half of them receiving the new drug and the other half receiving a placebo. The results showed that the average cholesterol level of the patients who received the new drug was 180 mg/dL, while the average cholesterol level of those who received the placebo was 190 mg/dL. A two-sample t-test was conducted, yielding a p-value of 0.035.
+
+   Answer: H0: There is no difference in the average cholesterol level for patients who received the new drug and those who received the placebo. 
+   HA: The average cholesterol level differs between patients who received the new drug and those who received the placebo. 
+   At a confidence level of 95% and significance level (alpha) of 0.05, since the obtained p-value is 0.035 < 0.05, we reject the null hypothesis. What we observed is so unusual with respect to the null hypothesis that it casts doubt on H0 and provides strong evidence favoring HA. The observed difference in the means, where the average cholesterol level of patients receiving the new drug (180 mg/dL) is lower than the average cholesterol level of patients receiving the placebo (190 mg/dL), is very unlikely to have occurred if the null hypothesis were true. This result provides strong evidence to suggest a real difference between these two groups in the population, implying that patients that have taken the drug have genuinely different average cholesterol levels than patients that haven’t. However, the result does not indicate if this difference is big enough to be important (if it is “practically” significant), nor does it indicate whether the drug was the true cause of the difference (we cannot conclude causal relationships).
+
+8. What is Effect size? Give an example of an effect size.
+
+   Answer: Effect size refers to a numerical measure that quantifies the strength or magnitude of a relationship between variables. It is used to provide a standardized and meaningful way to understand the practical significance of statistical results. Practical significance conveys the real-world importance or impact of a finding. An example is Cohen’s d, commonly used to measure effect size when comparing the means of two groups: d = (mean1 - mean2) / pooledSD. Another common example is Pearson’s correlation coefficient, which can be considered a measure of effect size when making inferences about associations in bivariate data. There are different measures of effect size for different types of variables and tests.
+
+9. What is a Family-wise error rate and where is it used?
+
+   Answer: Family-wise error rate is the probability of rejecting at least one true null hypothesis (committing a Type I error) when conducting multiple tests simultaneously. Family-wise error rate = 1 – (1-α)n, where α is the significance level for a single hypothesis test and n is the total number of tests. So for example, for 5 tests with an alpha of 0.05, there would be a 0.2262 probability of committing at least one type 1 error (a.k.a., a false positive) just by chance. This demonstrates the multiple comparisons problem: inflated Type I error rates when performing multiple tests.
+
+10. What is the Bonferroni Correction?
+
+   Answer: The Bonferroni correction is a simple method to control the family-wise error rate, as it adjusts the significance level when conducting multiple statistical tests simultaneously. To apply the Bonferroni correction, you divide the desired α level by the number of tests, resulting in a new, smaller significance level for each test. While the Bonferroni correction controls the family-wise error rate (the probability of committing at least one Type I error) well, it may lead to a higher likelihood of Type II errors.
+
+11. How do we quantify statistical significance? How do we quantify practical significance?
+
+   Answer: Statistical significance is quantified by a p-value. Practical significance is quantified by a measure of effect size, such as Cohen's d.
+
+12. Can an effect be statistically significant but not practically significant? How so?
+
+   Answer: Yes. A large sample size might reveal a very tiny effect to be statistically significant. Suppose we're measuring whether a drug has a significant impact on reducing fever. It's possible for results to show that the drug does produce a statistically significant difference (p < 0.05) in fever, however, the drug only reduces the fever by 0.2°. This tiny reduction is not practically significant.
+
+13. Can an effect be practically significant but not statistically significant?
+
+   Answer: One might be tempted to say "yes" because the sample might be too small to reveal a statistically significant effect even though the size of the effect seems practically significant. However, a better answer, requiring more subtle reasoning is "no". If the p-value is big, then you cannot reject the null hypothesis, and therefore cannot reject the hypothesis that the effect size (measure of practical significance) is 0. It would be false to say that "you have practical significance" because this calculation is partly based on noise. If this happens with a small sample size, then you probably just need more evidence.
+
+14. Define statistical power.
+
+   Answer: Statistical power refers to the probability of detecting a true effect or relationship in a statistical test assuming that one actually exists. In other words, it is the ability of a statistical test to reject the null hypothesis given that an effect or difference of a certain size truly exists.
+
+15. What is the relationship between statistical power and 1) effect size 2) Type 1 and Type 2 error rates 3) sample size?
+
+   Answer: Effect size and power are positively correlated - as practical significance increases, power increases. This makes sense since the power is the probability of detecting an effect (rejecting the null) assuming that an effect of a given size actually exists. Since we’re assuming the effect actually exists, if it’s bigger, then we are more likely to detect it. 
+   
+   Type 1 and Type 2 error rates: Statistical power is the complement of the Type 2 error rate (false negative rate): P = 1 - β. By increasing statistical power, the probability of making a Type 2 error decreases. Conversely, as the power increases, the probability of committing type 1 error increases. 
+   
+   Increasing the sample size generally increases the power of a statistical test. With a larger sample size, there is a higher probability of detecting a true effect or relationship if it exists.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you correctly stated the null and alternative hypotheses for the test, abiding by proper statistical conventions?
+2. Have you evaluated whether your test needs to be one-tailed or two-tailed and sufficiently justified your choice?
+3. Have you effectively justified your chosen significance level, referencing relative risks associated with Type I and II errors?
+4. Have you effectively verified the assumptions underlying the statistical test you are using?
+5. Have you interpreted the p-value or other measure of statistical significance, and considered its meaning in the context of your research?
+6. Have you determined and sufficiently interpreted the practical significance of the difference, effect, or pattern under study?
+7. Have you justified your choice of effect size to quantify practical significance and interpret it sufficiently?
+8. Have you correctly interpreted the results of the hypothesis test so that the conclusions and resulting insights are clearly communicated to your audience?
+
+COMMON PITFALLS
+- The null and alternative hypotheses that define the test are problematic, possibly because of inappropriate phrasing, failure to abide by statistical conventions, focusing on the wrong quantity (e.g., the wrong measure or mixing up sample statistics and population parameters), incorrectly suggesting a causal relationship, and/or using the wrong number of tails (one or two).
+- The application confuses Type I and II errors.
+- The application does not provide justification for the chosen significance level or statistical power.
+- The application does not control for the family-wise error rate when performing multiple tests.
+- The p-value or other measure of statistical significance is misinterpreted. This list of six principles from the American Statistician (2016) provides common errors.
+- The conclusions of the significance test are stated problematically, possibly with inappropriate levels of certainty (claiming to have proved one of the hypotheses true or false) or incorrectly suggesting a causal relationship.
+- The final p-value is indicated to be exactly zero (probably as a result of misinterpreting the output of statistical software) even though this is impossible.
+- The application fails to effectively incorporate both practical and statistical significance, possibly including one without the other, or including both without recognizing how they should be used and interpreted together.
+- The application does not justify the choice of effect size or interpret what it means in the given context.
+- The application fails to effectively interpret the results of a significance test and communicate what insights the test provides in the context of the research study.
+
+APPLYING THIS HC AT MINERVA
+- This HC is introduced in Formal Analyses by focusing on t-tests for means and regression coefficients, but there are many other types of tests for statistical significance, and many other measures of practical significance. For example, there are chi-squared tests, ANOVA tests, and several other common tests that are not covered in the Cornerstones. The choice will depend on the variables involved and the purpose of the study. Regardless, all such tools rely on the foundations of #significance.
+- In business applications, hypothesis testing may be employed to evaluate the effectiveness of marketing campaigns or strategies. For example, you may test hypotheses about whether there was a significant difference in mean sales across a time period after a new advertisement campaign or compare customer satisfaction levels between two product variations.
+- For many natural sciences courses (and some social sciences courses), students are required to read articles published in scientific journals. Knowing the core principles of #significance is often crucial to be able to understand the research methods of the study and evaluate the strength of the conclusions presented by the researchers. In particular, this HC can help you critique the study and the results. For instance, you might read an article that claims to have found multiple p-values less than 0.001. However, it doesn’t discuss practical significance at all! This would lead you to question the practical importance of the observed effect, rather than blindly accepting the conclusions of the paper. You might further notice that no correction was employed to mitigate the effects of doing multiple tests, and thus, the family-wise type I error rate is unacceptably high.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- You’re going to see statistical claims everywhere around you, but you must ask yourself if they are SIGNIFICANT. Applying ﻿#significance﻿ helps us answer questions like… - Is this difference "true" (“real”, "genuine") in the population? - Can you be confident that this difference would happen again in a repeated scenario?  - Is this difference big enough to be important?
+- Hypothesis testing can be applied across many disciplines. Here are some examples:  - Biomedical Research:  Hypothesis testing can be used to evaluate the effectiveness of new drugs or medical treatments. Researchers can set up a hypothesis test to compare patient outcomes in groups with and without treatment. Evaluating both statistical and practical significance is crucial here. For example, it's possible for results to show that a drug does produce a statistically significant difference in improving patient outcomes, however, the improvements might be too tiny to practically matter.  -  Psychology: Hypothesis testing is applied to investigate various aspects of human behavior. For example, researchers might use hypothesis tests to test predictions suggesting differences in cognitive abilities between two different groups.
+
+KEY RESOURCES
+1. Diez, D., Barr, C., & Cetinkaya-Rundel, M. (2015). Section 4.3, 5, 6, and 7.4. OpenIntro Statistics (3rd ed.). https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view 
+- Why/use: Involves in-depth explanation about hypothesis testing, while also involving guiding practice questions.
+2. Khan Academy. (n.d.) Significance tests (hypothesis testing). Statistics and Probability. https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample 
+- Why/use: Involves video explanation of concepts regarding #significance, and many practice problems.
+3. Terrana, A. (2022, Oct 2022). What is Statistical Inference? Minerva University. https://docs.google.com/document/d/1-WZpMTLNOerZpfi4o9kNgmANrf7IpbsdxwfacUx84pE/edit 
+- Why/use: This paper gives an overview of statistical inferences, defines important terminology, and identifies the role of this HC in the process.
+4. Magnusson, K. (n.d.). Understanding statistical power and significance testing. RPsyschologist. http://rpsychologist.com/d3/NHST/ 
+- This is an elegant visualization to help you understand the relationships among power, significance level, effect size, and sample size.
+5. Terrana, A. (2023, Dec). Inference for the Population Slope in Linear Regression. Minerva University. https://docs.google.com/document/d/1dXvCZ0X5Z4ScIZ9ZGzbfkJxDcfvOMclq1hvvv9PaQ/edit 
+- This paper outlines the steps to execute a hypothesis test for the slope of a simple linear regression line. It also contains practice questions at the end to test your understanding.
+6. Simon, L., Young, D., & Pardoe, I. (2018). Lesson 2 & 6. Penn State Stat 501: Regression Methods. https://online.stat.psu.edu/stat501/lesson/2 
+- Lessons 2 and 6 explain how to perform hypothesis tests for simple and multiple regression models.

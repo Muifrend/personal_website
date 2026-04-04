@@ -1,0 +1,245 @@
+#FALLACIES
+
+BLURB
+Identify and correct logical fallacies.
+
+PITCH
+So that you can tell exactly why an argument is wrong.
+
+PARAGRAPH DESCRIPTION
+Human beings are not perfect logic machines. Instead, we are prone to making logical errors—and often do so systematically. There are numerous common flawed patterns of reasoning, typically grouped into two large classes: formal fallacies and informal fallacies. Formal fallacies result from errors in an argument’s structure, while informal fallacies contain issues with the content of the propositions in an argument. One can learn to identify and correct the most common sorts of logical fallacies in both inductive and deductive reasoning.
+
+CATEGORIZATION
+Foundational Concept | Formal Analyses | Thinking Critically | Evaluating Claims
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester One
+- Unit: Logical Thinking
+- Big Question: How is free choice manipulated?
+
+GENERAL EXAMPLE
+A presidential candidate has proposed a new way to provide health care that involves increases in taxation and inclusiveness, but his opponent says that this approach is socialism and eventually will bankrupt the country. In fact, while the proposal does have 'socialist' components, it is complex and nuanced, with many checks-and-balances. The opponent has committed a “straw man fallacy,” attacking a superficial version of the proposal and thus failing to address the proposition in question. Let X be taxation and inclusiveness, Y be socialism, and Z be bankruptcy. In simplified symbolic form, the politician claims that X → Y, that Y → Z and therefore, by hypothetical syllogism, that X → Z. While this argument is valid, it is unsound because the premises X → Y and Y → Z are not necessarily true. While it might be plausible to argue against socialism in health provision, the opponent extremified the proposition to label it ‘socialism’ and refute it, a false premise that makes his argument unsound. The fallacy could have been corrected by arguing only against the specific parts of the proposal: taxation and inclusiveness.
+
+Footnote: The opponent commits a "straw man" fallacy, an informal fallacy of relevance, as his objection is directed towards a distorted version of the original proposition and thus fails to address the relevant question.
+
+IS THIS THE RIGHT HC?
+Is #fallacies the right HC? If the answer to the following questions is yes, #fallacies could be useful: 
+-  Are you identifying logical fallacies in an argument by analyzing its structure and content? 
+- Are you suggesting methods to correct or mitigate logical fallacies by modifying an argument’s premises and/or conclusion? 
+- Does performing an analysis of fallacies yield relevant insights for the purpose of the work? 
+
+However, depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#deduction  |  evaluates a deductive argument’s validity and soundness, possibly identifying and/or correcting a logical fallacy in the process.
+#induction  |  evaluates an inductive argument’s strength and reliability, possibly identifying and/or correcting a logical fallacy in the process.
+#probability  |  focuses on particular types of fallacies that arise due to misinterpretations of probabilities, such as the gambler’s fallacy or the base-rate fallacy.
+#critique  |  critiques texts, speeches, or other forms of communication by critically engaging with their logic, evidence, structure, or contents.
+#biasidentification  |  identifies and evaluates cognitive biases, which may potentially relate to logical fallacies.
+SELF STUDY QUESTIONS
+1. Explain the differences between formal and informal fallacies.
+
+   Answer: Formal fallacies result from misapplying the rules or patterns of deductive logic, thus resulting in an invalid deductive argument. The issue is with the structure of the argument: the premises do not provide guaranteed support for the conclusion. Informal fallacies originate from an error in reasoning that occurs due to issues in the content and context of the argument, rather than a poorly constructed logical structure. The premises of the argument are faulty or problematic. Arguments containing informal fallacies can be formally valid but still fallacious.
+
+2. For the following formal fallacies, give a description of the fallacy and an example for each: Denying the antecedent, Affirming the consequent, Affirming the disjunct, Denying the conjunct, and Non-sequitur.
+
+   Answer: Denying the antecedent: Denying the antecedent can be seen as an erroneous application of modus tollens. It follows the following structure: 
+   
+   - If A then B
+   - Not A
+   - Therefore, Not B
+   
+   An example: If it rains, I should bring an umbrella. It’s not raining, so I shouldn’t bring an umbrella.
+   
+   Affirming the consequent: Affirming the consequent is a logical fallacy that occurs when one mistakenly assumes that if the consequent (B) of a conditional statement (If A then B) is true, then the antecedent (A) must also be true. It follows the following structure:
+   
+   - If A then B 
+   - B 
+   - Therefore, A
+   
+   An example: If I study hard, I will get good grades. I got good grades, so I must have studied hard.
+   
+   Affirming the disjunct: when one incorrectly concludes that one of the disjuncts in a logical disjunction (A or B) must be true because the other disjunct is false. This is faulty because, assuming the disjunctive is inclusive, “A or B” is true even when both A and B are both true. It follows the following structure:
+   
+   - A or B 
+   - A 
+   - Therefore, not B
+   
+   An example: Either Mary went to the party, or John did. Mary went to the party, so John didn't go.
+   
+    Denying the conjunct: occurs when one erroneously concludes that one of the conjuncts in a logical conjunction (A and B) must be false because the other conjunct is true. It follows the following structure:
+   
+   - A and B 
+   - A 
+   - Therefore, not B
+   
+   An example: 
+   
+   Sarah likes tennis, and she also likes chess. Sarah likes tennis. Therefore, she does not like chess.
+   
+   Non-sequitur: A non-sequitur is a logical fallacy where the conclusion does not logically follow from the premises, meaning the argument is invalid. It can take various forms, but an example structure is:
+   
+   - If A then B
+   - A
+   - Therefore C
+   
+   An example: If it's a sunny day, I should go out for a picnic. It is very sunny today, so I should buy a new pair of shoes. (The conclusion is not logically connected to the premise about the weather being sunny.)
+
+3. Name and define two types of informal fallacies.
+
+   Answer: Fallacy of Relevance: occurs when the desired conclusion is not logically related to the premises presented. An extra (false) premise is needed to link the conclusion that actually follows from the given premises to the conclusion that’s desired.
+   
+   Fallacy of Evidence: occurs when an argument fails to establish a conclusion. In other words, the premises alone do not support a conclusion other than the premises themselves. An extra (false) premise is needed to connect the desired conclusion to the stated premises.
+
+4. Explain the following fallacies and give an example of each: Genetic fallacy, Ad hominem, Two wrongs make a right, Tu quoque, Bandwagon, Red herring. Under which category of informal fallacies do they fall?
+
+   Answer: The following fallacies all fall under fallacies of relevance. 
+   
+   Genetic fallacy - claiming that if something comes from a bad source (a bad company or person), it must necessarily also be bad.
+   
+   Example: "You shouldn't believe in climate change because that theory was first proposed by a scientist with controversial views."
+   
+   Ad hominem -  attacking the character, motive, or some other attribute of the person making an argument rather than attacking the substance of the argument itself.  
+   
+   Example: "You can't trust A's opinion, regardless of what he says; he's a known criminal."
+   
+   Two wrongs make a right - justifies or excuses a wrong action by pointing out similar or worse actions committed by others.
+   
+    Example: A: "You cheated on the exam, which is against the rules and unethical." B: "Well, others have cheated before, so why shouldn't I?"
+   
+   Tu quoque - Attacks the inconsistency of the speaker’s opinions and actions.
+   
+   Example: A: "You shouldn't smoke; it's harmful to your health." B: "You smoke too, so why are you telling me not to?" It can be seen as a specific kind of a "two wrongs make a right" fallacy.
+   
+   Bandwagon - occurs when someone argues that a claim must be true or valid because many people believe or support it.
+   
+   Example: "I think we should invest in Apple. They have a lot of popular support and many people are buying their stock."
+   
+   Red herring - provides a seemingly plausible but irrelevant claim, distracting away from the argument.
+   
+   Example: “We could get pizza for dinner. But have you heard about the new Korean restaurant that just opened? I heard it’s amazing.”
+
+5. Explain the following fallacies and give an example of each: false dichotomy, appeal to ignorance, slippery slope, hasty generalization, questionable cause, weak analogy. Under which category of informal fallacies do they fall?
+
+   Answer: The following fallacies all fall under fallacies of evidence.
+   
+   False dichotomy - presenting a situation (typically in an argument’s premise) as having only two possible options or outcomes, when, in reality, there are more choices available.
+   
+   Example: "You can either believe in science or religion. If you believe in science, you must reject the claims of religion and religious experience."
+   
+   Appeal to ignorance - when someone argues that a claim must be true because there is no evidence or proof against it. It relies on the lack of evidence rather than providing positive evidence.
+   
+   Example: "Aliens must exist because no one has been able to prove they don't."
+   
+   Slippery slope - assuming that a particular event will lead to a chain of events, without enough evidence to support such a relationship.
+   
+   Example: "If you continue playing games, you will develop an addiction to playing. You won’t be able to focus on your studies, so you will get bad grades and fail school, and overall have a miserable life."
+   
+   Hasty generalization - the fallacy of examining just one or very few examples or studying a single case, and generalizing that to be representative of the whole class of objects or phenomena.
+   
+   Example: “The three people I’ve met since I’ve moved to the city were rude. Everyone in this city must be rude.”
+   
+   Questionable cause - This fallacy asserts a cause-and-effect relationship between two events without adequate evidence to support the connection.
+   
+   Example: "Every time I go to sleep, the sun goes down. Therefore, my going to sleep causes the sun to set." The two events may coincide, but have no causal connection.
+   
+   Weak analogy - A weak analogy occurs when a person draws a comparison between two concepts, situations, or things to link them together in an argument, even though the connection between the two is not strong enough to make the case.
+   
+   Example: "Football and basketball are both sports played on a rectangle with balls. I know how to play football, so I’ll be skilled at playing basketball too."
+
+6. Apart from the fallacies given above, name, distinguish the type, and give an example of another fallacy.
+
+   Answer: Straw Man fallacy – an informal fallacy that falls under the category of fallacy of relevance. It occurs when someone distorts their opponent's argument to make it easier to attack or refute. 
+   
+   Example: 
+   
+   A: "I believe we should invest more in public education to improve the overall quality of our schools." 
+   
+   B (using the Strawman Fallacy): "So you're saying we should just throw unlimited money at schools without holding teachers accountable for their performance?"
+
+7. Give an example of a fallacy you have committed recently, and distinguish what category that fallacy falls under.
+
+   Answer: Yesterday, I thought that if it's raining, the ground will be wet. When I stepped outside my door, without observing the sky, I saw that the ground was wet, so I thought that it must be raining, and I went inside and grabbed an umbrella. It turns out it wasn’t raining. The rain had stopped. Here, I’ve committed the formal fallacy of affirming the consequent.
+
+8. What are some strategies to detect common fallacies?
+
+   Answer: Some strategies to detect and analyze fallacies:
+   
+   - Practice! Familiarity with proper logic will help you find misapplications of it. You will more readily be able to identify certain standard forms and patterns, sentence structures, or indicator words.
+   - When starting out with these concepts, it is important to analyze the argument thoroughly before jumping to identify the fallacy. Start by breaking down the argument into clear premises and a conclusion, possibly using a formal logic system like sentential logic, keeping in mind that some propositions may be implied rather than explicitly stated. Translating the argument into a complete and simple form will make it easier to spot logical errors in its structure.  
+   - When possible, (e.g., in conversation or debates with others) it is helpful to strive for clarity and insist upon the exact meaning for all propositions. Vague claims and hidden premises can change the interpretation of an argument. 
+   - Invoke critical skepticism and suspicion for any argument that:
+   - does not provide appropriate evidence
+   - is presented by someone who might have ulterior motives
+   - evokes emotion
+
+9. What are the main steps of a thorough fallacies analysis?
+
+   Answer: The main parts of the process include:
+   
+   - Identification: Clarify the argument 
+   - Identify the premises and the conclusion (some might be implied). If possible, write them using formal symbolic logic.
+   - Identify the type of argument (inductive or deductive). If possible, classify its specific form or structure. 
+   - Identify whether the argument is valid and sound (for deductive forms) or strong and reliable (for inductive forms).
+   
+   - Analysis: Assess for Fallacies
+   - Is there a flaw that makes the argument, invalid, unsound, weak or unreliable? 
+   - Is the flaw a common type of fallacy?
+   - Why is the fallacy present? Does it serve a purpose?
+   
+   - Mitigation: Correct the Fallacies
+   - If you keep the premises as is, what conclusion can be drawn?
+   - Can you update the premises of the argument to come to the original conclusion without a fallacy?
+   - Are more drastic changes needed to form a fallacy-free argument that serves the author’s original intentions? Is it even possible?
+   
+   For the complete list of steps, guidance on executing them, and examples, see the fallacies analysis framework in the Minerva guide in the Key Resources.
+
+10. What are some strategies to mitigate or correct fallacies?
+
+   Answer: 1. It might be possible to keep the premises as is, but modify the conclusion so that it actually follows from the premises presented. However, this is unlikely to reach the arguer’s desired conclusion. 
+   
+   2. The premises of the argument may need updating to arrive at the intended conclusion without a fallacy. Faulty premises should be removed or corrected. New premises might be needed to connect the stated premises to the desired conclusion. However, it might be challenging to ensure that these extra premises are indeed true and acceptable.
+
+11. Why are fallacies so common?
+
+   Answer: A few potential reasons why fallacies are so common:
+   
+   - As the arguer typically has an interest (political, economic, personal, psychological, etc.) in making people accept their argument, they'll often use these common flawed patterns of reasoning as a means of persuasion.
+   - Humans have careless habits - we do not always engage in critical reasoning. This goes for both the arguer and the audience.
+   - The above points indicate that fallacious arguments may be intentional (as a means of persuasion) or unintentional (due to a lack of critical reasoning put into the argument).
+
+GUIDED REFLECTION QUESTIONS
+1. Have you identified and sufficiently explained the type or class of fallacy?
+2. Have you broken down the argument into clear premises and a conclusion, possibly using a formal symbolic system, to better identify the fallacy present?
+3. Have you explained how exactly the fallacy violates proper logic by evaluating its impact on the argument’s validity, soundness, strength, or reliability (depending on the type of fallacy)?
+4. Have you identified methods to correct or mitigate the identified fallacy and evaluated the effectiveness of these methods?
+5. Have you discussed how your proposed correction of a fallacy improves validity, soundness, strength, or reliability?
+6. Have you considered why the fallacy has been presented and what purpose it serves?
+7. Have you demonstrated why analyzing fallacies is relevant for the purpose of your work by identifying interesting insights that stem from the analysis?
+
+COMMON PITFALLS
+- The application merely identifies the name of a fallacy without explaining what the argument is to begin with (the premises and conclusion), how the fallacy is applied, or how it violates proper logic.
+- The application prioritizes breadth over depth, listing multiple fallacies, but explaining each one only at the surface level.
+- The application suggests that there is a fallacy in a single statement or sentence without recognizing the full argument as a whole.
+- The application identifies fallacies but does not demonstrate why doing so is relevant for the purpose of the work.
+- The application does not provide corrections for the identified fallacy or does not elaborate on how a correction is an improvement in terms of formal logic concepts such as validity, soundness, strength, or reliability.
+
+APPLYING THIS HC AT MINERVA
+- You may apply this HC to check yourself on whether you have committed a fallacy or not within your works. For example, if you are evaluating the impact of introducing universal basic income, you may say that “If we introduce a universal basic income, people will feel less of a need to work. It will create a culture of dependence on the government, leading to a complete collapse of our economy”, which is committing the slippery slope fallacy. Knowing #fallacies, you may recognize that there is insufficient evidence to conclude such drastic relationships in the premises of the argument. Correcting this fallacy would require adding more support or evidence to justify that the weak predictions in the argument are actually true, or developing new, more acceptable premises.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Mastering this HC will allow you to identify fallacies when someone is trying to persuade you regarding areas of media, political discourse, speeches, and debates. For example, When Al Gore was speaking for public engagement on the topic of global warming, he was criticized by his opponents for traveling by private jet ( Meade, n.d./05%3AConsiderationsforSpeech/5.03%3AFallacies--WarningDeceptiveHatefulSpeechComingYourWay)). Having knowledge of #fallacies, you would identify the usage of a “tu quoque” argument.
+- When viewing advertisements, knowing #fallacies can help you make informed decisions. For example, a United Van Lines TV commercial (Nikolopaulou, 2023) asked the following questions: “Is United right for your move? Ask yourself, do you want: a) A seamless professional move? or b) Your possessions set on fire? If you answered A, call United.”  Awareness of false dichotomy fallacies would help you realize that the seemly extreme presentation of these two options is a common marketing ploy. Options (a) and (b) are not so black and white. Perhaps it’s reasonable that you want them both or neither. This flawed premise makes the advertisement’s underlying argument unsound.
+
+KEY RESOURCES
+1. Flora, T., Koloskov, N., Stan, T., & Terrana, A. (2021, Sept 14). Fallacies Applications, Document 1: Framework & Excerpts. Minerva University. Retrieved from https://docs.google.com/document/d/1ly2V0TXWdwSx3i1Mnt6Hhp7i6mAr8CoGhR6dUvybnE/edit#
+- Why/use: This custom HC guide provides a good framework for practicing recognizing/correcting fallacies. Use in tandem with the resource below.
+2. Flora, T., Koloskov, N., Stan, T., & Terrana, A. (2021, Sept 14). Fallacies Applications, Document 2: Solutions. Minerva University. Retrieved from https://docs.google.com/document/d/1POnVKFHVp6kZ3UIlNgCVMixcuVlp4d4BuPgfOS-YeQ/edit#
+- Why/use: This custom HC guide provides excellent example solutions for the resource above to model what constitutes thorough fallacy analyses. Use after trying out the first resource for yourself.
+3. Stark, P. B. (n.d.). Chapter 2: Reasoning and fallacies. SticiGui. Retrieved from http://www.stat.berkeley.edu/%7Estark/SticiGui/Text/reasoning.htm
+- Why/use: This reading defines and explains formal and informal fallacies in detail. There are lots of examples here too.
+4. List of fallacies. (2018, June 4). In Wikipedia. Retrieved from https://en.wikipedia.org/wiki/Listoffallacies
+- Why/use: This is helpful as a lookup for a multitude of fallacies.
+5. Elder, J. (n.d.). Additional Practice: Recognizing Fallacies. Exercise Your College Reading Skills. https://highered.mheducation.com/sites/0073513474/studentview0/appendixthree/additionalpracticerecognizingfallacies.html
+- Why/use: For practice! This resource provides a list of multiple choice questions regarding recognizing fallacies.

@@ -1,0 +1,163 @@
+#REGRESSION
+
+BLURB
+Apply and interpret regression.
+
+PITCH
+Taking the “line of best fit” to new powerful levels.
+
+PARAGRAPH DESCRIPTION
+Regression is a statistical method that allows one to estimate the average value of the dependent (or “response”) variable conditional on one or more independent (or “predictor”) variables. A regression function is formulated for this purpose and represents a model for the relationship between the variables. The strength of the relationship (the extent to which the model can be used for prediction) is quantified by the coefficient of determination, more commonly known as R-squared. This quantity indicates how much of the variability in the dependent variable can be explained by the regression model. Multiple regression enables one to make predictions about the response variable conditional on values of more than one predictor variable, and make inferences about the relationship between a single predictor and the outcome variable when holding all other predictors constant. Regression analyses are most often used to make predictions and to classify or categorize information, but one should be cautious about using regression to infer causal relationships.
+
+CATEGORIZATION
+Foundational Concept | Formal Analyses | Thinking Critically | Analyzing Data
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester One
+- Unit: Probability and Statistics
+- Big Question: What does it mean to be random? & How can data help us discover what is true?
+
+GENERAL EXAMPLE
+You are a public health consultant striving to combat child obesity by changing policies in high schools across the country. To determine how to allocate your resources, you wish to find the variables that are the strongest predictors of body mass index (BMI), a numerical measure that can indicate obesity, derived from one’s height and weight. You have considerable amounts of historical data at your disposal. As a first step, you investigate how well BMI (dependent variable) can be predicted from the time spent exercising (independent variable) for your target population. You create a simple linear model and find that the coefficient of determination (R-squared), indicating the amount of variation in BMI explained by the variation in exercise, is 0.4. Thus, the predictive strength of your simple model is not so convincing, leading you to explore more variables. In addition to exercise, you extend the model to include other predictor variables, including the intake of carbohydrates, protein, and fiber. The revised model has an increased R-squared of 0.89. You also examine the regression coefficients which, for a given variable, indicate the expected change in BMI per unit change in the selected variable, holding all other predictors constant. Comparing these coefficients, you note that carbohydrate intake has by far the largest influence on BMI, with time spent exercising being second most important. Further examination of the relationships between the independent variables reveals strong multicollinearity between carbs, protein and fiber intake, leading you to realize that you can ignore the least helpful variables (protein and fiber intake) and still predict BMI with reasonable accuracy. While these findings may not indicate a causal connection, the relationships are compelling enough to help you decide how to invest your resources: provide more low-carb alternatives in school cafeterias and invest in programs involving youth fitness, physical education, and athletics. 
+
+Footnote: Two regression models, one simple and one multivariate, are compared based on their explanatory power, quantified by R-squared. The most impactful predictors of BMI are revealed by interpreting the coefficients in the regression equation and the relationship among predictors, allowing for an appropriate allocation of resources.
+
+IS THIS THE RIGHT HC?
+Is #regression the right HC? If the answer to the following questions is yes, #regression could be useful:
+
+- Are you constructing a regression equation or function to describe the relationship between variables?
+- Are you using a line or curve of best fit to describe trends between variables in a dataset? 
+- Are you interpreting a regression model, including the parameters of the regression function and the coefficient of determination?
+- Are you utilizing a regression model for prediction?
+
+Depending on the work product, there might be other HCs to consider. ….
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#correlation  |  Involves analyzing how strongly two variables are associated and usually accompanies a regression analysis. For example, one may first assess the correlation between two variables before constructing a regression model, or one may assess the correlation between predictor variables (multicollinearity) to evaluate or critique a multiple regression model.
+#estimation  |  Estimates a quantity of interest using calculations from inexact or incomplete information. A regression model can be considered a specific type of estimation technique in which we construct an equation/function to predict the dependent variable based on the independent variable(s).
+#significance  |  Conducts/interprets a hypothesis test to evaluate if there is strong evidence for a genuine difference or pattern in the population. A hypothesis test allows us to formally assess whether the estimated regression equation based on sample data provides sufficient evidence for a true relationship between the variables in the population.
+#confidenceintervals  |  Constructs and interprets confidence intervals to estimate a population parameter and indicate the precision of your estimate using margins of error or upper and lower bounds. A confidence interval may be constructed to estimate an unknown regression coefficient.
+#modeling  |  Develops or applies a simplified representation of a system to explain phenomena and make predictions. A regression equation is an example of a model between the dependent and independent variable(s). Like any model, it is a simplified representation of the real relationship, is built on certain assumptions, has valuable uses (e.g., prediction or inference), and also has limitations.
+SELF STUDY QUESTIONS
+1. What is a predictor and a response variable?
+
+   Answer: A predictor variable is a variable that is used to make predictions or estimates about the response variable. The response variable is the variable that you are trying to predict or explain based on the values of the predictor variables.
+
+2. What is a residual?
+
+   Answer: A residual refers to the difference (deviations) between the observed value of a variable (the actual data points) and the predicted value of that variable based on a regression model (the points that lie on the regression function). The goal is to create a model that minimizes the sum of the squared residuals.
+
+3. What is a least-squares regression line?
+
+   Answer: A least-squares regression line is a straight line that best fits a set of data points in a scatter plot. The line is determined by minimizing the sum of the squared vertical distances (residuals) between each data point and the line itself. 
+   
+   The equation of a least-squares regression line is typically represented as y = mx + b where y is the response variable, x is the predictor variable, m is the slope of the line (the rate of increase or decrease), and b is the y-intercept (the value of y when x is 0).
+
+4. What are the conditions or assumptions needed to validate a simple linear regression equation? How does one evaluate them?
+
+   Answer: Like all mathematical models, we are generating a simplified representation of a system, and its validity and usability rest on certain conditions. If these conditions cannot be verified, we may need to make assumptions and/or conclude that our model’s usefulness is limited. 
+   
+   - Linearity. The data should show a linear trend. This can be evaluated by looking at the scatter plot to see the data points clustering around a straight line, sloping either up or down, like a slanted elongated oval. 
+   - Nearly normal residuals. This can be evaluated by plotting a histogram or a Q-Q plot for the residuals. The histogram should resemble a symmetric bell-shaped curve, and the Q-Q plot should show the points closely following a straight line.
+   - Constant variability. The variability of points around the least squares line should remain roughly constant. To evaluate this, one can plot the residuals vs fitted values and observe whether the residuals are equally scattered, showing homoscedasticity.
+   - Independent observations. This condition is necessary as we don’t want one data point to be related to another data point. To assess this condition, you may observe the data collection process. For instance, in a randomized controlled experiment, this assumption is likely to be met. However, in cases like time series data, independence may be more difficult to assess.
+
+5. What are the parameters of the least squares regression line and what do they tell you? For example, suppose that we have a regression equation to predict the top running speed of a cat, s, in km/h from its body mass, m, in kg: s = -2.2m + 35. What do the parameter values -2.2 and 35 mean?
+
+   Answer: The parameters of the least squares line are the slope and the intercept. Using the example question to aid interpretation, -2.2 is the coefficient or the slope of the regression line. It indicates the change in one unit of the dependent variable (top running speed in km/h) for each one-unit increase in the independent variable (body mass in kg). In this case, for every additional kilogram of body mass, the top running speed of the cat is expected to decrease by 2.2 km/h. The value of 35 is the intercept of the regression line, which represents the predicted value of the dependent variable (top running speed in km/h) when the independent variable (body mass in kg) is equal to zero. In this context, it implies that if a cat had a body mass of zero kilograms, its predicted top running speed would be 35 km/h. We see that for this model, the intercept is not practically meaningful because it’s impossible to have a cat with zero mass. In general, if there are no data points close to the intercept, then interpreting its value would be an extrapolation of the regression model, which would be a potentially problematic inference.
+
+6. Explain how to interpret R-squared, the “coefficient of determination.”
+
+   Answer: R-squared (coefficient of determination), is a statistical measure used to evaluate the goodness of fit of a regression model. It indicates the proportion of the variance in the dependent variable that is accounted for by the independent variable(s) in the model. One can think of R-squared multiplied by 100 as the percent of the variation in y that is ‘explained by’ the variation in the predictor(s) x.
+
+7. How can regression equations be used for predictions?
+
+   Answer: Once you have a well-fitted regression equation, you can use it to make predictions for new or unseen data. You can plug in the values of the independent variables for the new data points into the regression equation, which will provide an estimate of the dependent variable's value for those input values.
+
+8. How can regression equations be used for inference?
+
+   Answer: Inference is about trying to describe the relationship in a general population based on limited sample data. This happens in the context of #regression when one constructs a regression equation based on sample data and wishes to use this “estimated” regression equation to make inferences about the relationship between the variables in the population. If you want your model to generalize well to the population, you must conduct further analysis, such as hypothesis tests to evaluate statistical significance and/or confidence intervals to illustrate the precision of the estimated regression coefficients.
+
+9. What are some limitations of using regression models for predictions?
+
+   Answer: - Imperfect fit: If the model is constructed on real-world data, it’s unlikely to be able to construct a regression line that passes through all data points. There is bound to be some scatter. Thus, we can’t expect a predicted value to lie exactly on the regression function. It could be above or below. The value of R-squared can help indicate the prediction strength of the model.
+   - Generalization: If the model was constructed from sample data, the estimated regression equation may not be representative of the true relationship between the variables in the population. Further statistical analyses are required to assess the reliability of the model for use in the population. Overfitting can limit a model’s generalizability.   
+   - Extrapolation: When you extend the regression model beyond the range of the observed data, the model is essentially making assumptions about the behavior of the data in regions it has not seen. This introduces uncertainty as the model may not accurately capture the underlying patterns in the data outside its training range. For example, in the case of simple linear regression, we assume a linear relationship between the predictors and the response variable. However, it may be the case that for cases outside the range of the training data, there may be a new pattern other than the simple linear pattern we’ve seen.
+   - Conditions may not be met: Like all mathematical models, we are generating a simplified representation of a system, and its validity and usability rest on certain conditions. If these conditions cannot be verified, we may need to make assumptions and/or conclude that our model’s usefulness is limited. 
+   - Causation: Just because one or more variables can be used to predict another does not automatically mean that there’s any causal relationship between the variables. Further causality analysis would be required to support this claim.
+
+10. What quantity does a simple linear regression equation minimize? What is this quantity?  How does this relate to R-squared, the “coefficient of determination”?
+
+   Answer: A simple linear regression equation minimizes the sum of the squared differences between the observed dependent variable and the predicted values from the regression line. The quantity being minimized is called the "sum of squared residuals" or "sum of squared errors" (SSE). SSE is represented as Σ(y - ŷ)². R-squared is defined as: R-squared = 1 - (SSE / SST) where SST is the total sum of squares, which represents the total variance of the dependent variable y around its mean.
+
+11. Explain what is needed when conducting multiple regression, compared to a simple bi-variable regression.
+
+   Answer: Compared to a simple bi-variable regression, conducting multiple regression involves multiple predictors. For example, instead of a simple linear regression equation with one predictor (x) and one slope coefficient (β1), y = β0 + β1x, we’d have an equation with multiple predictors and multiple slopes, y = β0 + β1x1 + β2x2 + β3x3 + ···. For multiple regression, we should use an adjusted R-squared instead of the conventional R-squared. While R-squared is given by 1- (variability in residuals / variability in the outcome), the adjusted R-squared has an extra factor of (n-1)/(n-k-1) where n is the number of data points and k is the number of predictors. This causes the adjusted R-squared to be less than R-squared in models with many predictors as k is never negative, but the difference between them diminishes for a large number of data points. Lastly, for multiple regression, one must be careful of overfitting and multicollinearity (see below).
+
+12. What are some methods to find the best multiple regression model?
+
+   Answer: There are several methods to find the best multiple regression model. One simple example method is backward elimination, which starts with the model that includes all potential predictor variables, and then eliminates variables one at a time from the model until it cannot improve the adjusted R-squared value. The strategy within each elimination step is to eliminate the variable that leads to the largest improvement in adjusted R-squared. There also is the forward selection strategy, where instead of eliminating variables one at a time, we add variables one at a time until we cannot find any variables that improve the model (as measured by adjusted R-squared). Depending on one’s goals, p-values or other measures of statistical significance would be used within these strategies to ensure that the variables kept in each step of the process are statistically significant. 
+   
+   More generally, when we are finding the best regression model, we are considering sample size, data, multicollinearity, uncertainty (variance) of regression estimates, and your purpose of the regression model. In a practical setting, if you want to know which model is best, ask: 
+   
+   - Which model incorporates predictors for which I actually have data? 
+   - Do I need a model for prediction or inference?  
+   - Which model predicts a lot without overfitting?
+
+13. Why do we need to be cautious about multicollinearity and overfitting in multiple regression models? How do we identify them?
+
+   Answer: Multicollinearity occurs when two or more independent variables in a multiple regression model are highly correlated with each other. Multicollinearity limits the model’s predictive power because it becomes impossible to isolate which variables exactly are the most essential in predicting the response variable. To identify multicollinearity, you may use a correlation matrix between independent variables and observe the correlation coefficients. 
+   
+   Overfitting occurs when a regression model is excessively complex and too closely fits the training data. This means that the model captures the random noise in the data, instead of a real genuine relationship between the variables. Overfit models are limited in their predictive power because they won't generalize well to new, unseen data. To identify overfitting, you may split your data to training and testing sets, and evaluate the performance on the testing data.
+
+14. Why might one use a nonlinear regression model? What would such a model look like?
+
+   Answer: One might use a nonlinear regression model when the relationship between the dependent variable and the independent variables is not linear. The choice of the specific nonlinear function depends on the nature of the data and the problem at hand, and the model would look different accordingly. For example, exponential regression would have a shape of an exponential function.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you clearly outlined your process of constructing the regression model?
+2. Have you evaluated whether the conditions needed to validate the regression model are satisfied?
+3. Have you stated any assumptions that are needed for using the regression model and explained the impacts of those assumptions?
+4. Have you correctly interpreted what the regression equation means in your context, including explaining the interpretation of parameter values of the equation (e.g., slope and intercept)?
+5. Have you correctly quantified and interpreted the strength of the regression model (e.g., R-squared) in a way that’s relevant to your specific context?
+6. Have you explained the usefulness and limitations of your model regarding prediction and/or inference that are relevant to your purpose?
+7. Have you effectively utilized data visualizations (e.g., scatter plots, residual distributions) to support your analysis?
+
+COMMON PITFALLS
+- An inappropriate regression model is used for the context.
+- The regression equation is calculated or interpreted with incorrect or unidentified units for the variables.
+- The application does not sufficiently evaluate whether the conditions for using the regression equation are satisfied.
+- The application provides interpretations that simply restate definitions rather than truly applying them to the variables and context under study.
+- The application does not sufficiently describe the usefulness of the regression model and how it serves the purpose of the work.
+- The application neglects to identify limitations of the regression model, possibly overlooking common issues such as overfitting, multicollinearity, or extraneous variables.
+- The application falsely assumes a causal relationship based on the regression model.
+- The application extrapolates the regression model beyond the range of observed data without sufficient justification.
+
+APPLYING THIS HC AT MINERVA
+- Prediction: Even though simple, many data science experts believe that regression models fit in the description of machine learning methods. A simple regression model learns the behavior of a system by finding the parameters. Using training data, a regression model can learn to predict the outcome variable (dependent variable) using the explanatory variables (independent variables).
+- Classification: A special form of regression model, called logistic regression, can be used in classification. You can think of a classification problem when the outcome variable is binary, or in general, categorical.
+- Causal inference using observational data: In causal inference, one of the ways we can find the causal effect of the treatment variable on the outcome variable is to control for other variables. This task can be simply done using regression models. In the context of causal inference, if we properly control for confounding variables, the coefficient on the treatment variable gives us the causal effect of the treatment variable on the outcome.
+- Causal inference using randomized experiments: You may think that in randomized experiments we do not really need to use regression analysis to capture the treatment effect because we do not have to worry about confounding bias. However, you will be surprised to know that even in randomized settings, especially in small sample sizes, the treatment and control groups often end up being imbalanced when it comes to the covariates. This means that the distributions of the covariates across control and treatment groups are often not similar. In this case, a simple linear regression that comprises the treatment variable and the unbalanced confounders on the right-hand side of the regression should help improve the imbalances.
+- The statistical modeling course explores how regression can be used in the settings mentioned above, particularly focusing on regression as a prediction technique. For instance, imagine you want to predict your performance at a course at Minerva. You want to be able to somehow predict your final grade using certain information such as hours of study per week, your performance in prerequisite courses, and the total number of absences. To perform such analysis, you first need to “train” your regression model. You need to collect data on previous students who took the same course and given that you know their overall score in the course, you can find the coefficients for each of the variables above. Something like this:Final grade = 0.05  Hours of study per week + 0.9  Grade in a pre-requisite course - 0.03  Number of absencesThis function is simply a linear regression model! Now, to predict your own final grade, you can insert the information pertaining to you and find the predicted score.
+- This HC is also extensively discussed in econometrics, in which regression models are used for causal inference. This course explores regression models with different types of outcomes (logistic, regression with count data, multinomial logit, ordered probit), as well as regression models with nonlinear terms (logarithmic, quadratic, cubic, and interaction terms). Constructing and interpreting such advanced models requires extra care. In particular, it’s important to understand the assumptions that have to be met for regression results to be valid such as normality, no-multicolinearity, and no-autocorrelation assumptions.
+- In finance, students may explore the Capital Asset Pricing Model (CAPM) model, which is used to project the expected returns for a stock in terms of its risk, commonly used to evaluate whether a stock is fairly valued. It’s a simple linear regression model, ERi = Rf + ꞵi(ERm - Rf), where ERi  is the expected return on investment, Rf is the risk-free rate, ꞵi is the beta coefficient of the investment (which captures the asset's sensitivity to non-diversifiable risk), and ERm is the market risk premium. The principles of #regression can help us understand the uses and limitations of this model. This model can be useful to determine if a stock is fairly valued relative to risk in simplified scenarios, but it’s important to understand the idealized assumptions about the market and the investor that limit its real-world applicability.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Imagine your role as a data scientist at your company is to estimate how much you should compensate employees for their ride shares. You can use a regression model that includes variables such as distance, time of the day, weather conditions, Uber vs. Lyft, or any other relevant variables. You use prior data to train a model that predicts the price of a ride based on these characteristics. Now you can use this model on the employees’ data (given that you know when they usually use ride share, the distance between their home and work, etc.) to be able to predict fares for each employee and eventually estimate the total compensation that should be allocated in the company’s budget.
+- Imagine a medical study in which you as the researcher are interested in finding the effect of sleep apnea on memory in a group of 1,000 patients. You are given data on patients' characteristics such as gender, age, race, other conditions, and whether they have apnea or not. You also have patients' scores from a memory test done at your lab. First off, this is a causal study since you clearly have a treatment variable (having apnea or not) and an outcome variable (memory performance). Since your study uses observation data, it likely suffers from confounding bias. If you think the set of variables above is enough to get rid of confounding bias, you can use a regression model and control for these variables. The resulting coefficient on the variable apnea should give you the effect of having apnea on memory performance.
+- Regression is used in machine learning, especially supervised learning. Depending on the types of variables you are dealing with, different regression models should be employed. For example, if the dependent variable is continuous and the resulting model has collinearity, then you might opt for the ridge, lasso, or elastic net regression models (SSLA, n.d.).
+- Logistic regression is a commonly used type of regression in which the dependent variable is binary (a dummy variable with two levels/classes). The model outputs the probability of the outcome being in one of the levels. An example is text classification applications, such as toxic speech detection, topic classification, or email sorting. Text data are preprocessed to be suitable for logistic regression beforehand.
+- This HC is likely to be useful in any scientific research context, even studying African wildlife! This example is adapted from an M25’s summer research project that aimed to study the impact of a new porous fence model on a wildlife reserve. The main purpose of the fence is to safely enclose black rhinos to ensure their security and improve ease of monitoring, but it can have impacts on other species in the region too, and studying these impacts is important to inform decisions about fence features and placement. In this study, a logistic regression model was developed with the underlying question: what behaviors predict an animal’s probability of crossing the fence, given they are observed near it? A logistic regression model was most appropriate given that crossing behavior can be measured as a binary variable: did the animal cross the fence or not? Predictor variables, measured using camera traps, included factors related to animals’ motion and activities and the distance to the nearest settlements. Analyzing the multicollinearity and statistical significance of the predictors can help identify the most important factors for predicting crossing behavior. From this analysis, we can visualize the relationship between the probability that an animal will cross the fence and the predictor variables, as depicted in the image below.
+
+KEY RESOURCES
+1. Terrana, A. (2023, Dec). Inference for the Population Slope in Linear Regression. Minerva University. https://docs.google.com/document/d/1dXvCZ0X5Z4ScIZ9ZGzbfkJxDcfvOMclq1hvvv9PaQ/edit
+- Why/use: This paper outlines the steps to perform tests of statistical significance and construct confidence intervals for simple linear regression. It also contains practice questions at the end to test your understanding.
+2. Diez, D., Cetinkaya-Rundel, M., & Barr, C. (2015). Sections 7 and 8 in OpenIntro Statistics - Third edition. Open Textbook Library. Retrieved from https://drive.google.com/file/d/0B-DHaDEbiOGkc1RycUtIcUtIelE/view
+- Why/use: These textbook sections provide in-depth explanations about the concepts regarding regression and have practice problems you can solve to test understanding.
+3. Simon, L., Young, D., & Pardoe, I. (2018). Penn State Stat 501: Regression Methods. https://online.stat.psu.edu/stat501/
+- Why/use: This resource provides real-life example applications of multiple linear regression as well as an in-depth intuitive explanation of the concepts. Lessons 1-7 cover the fundamentals of simple linear regression and multiple linear regression, while 8-13 cover more advanced topics.
+4. Khan Academy. (n.d.). Unit 5: Exploring two-variable quantitative data and Unit 15: Advanced regression (inference and transforming). https://www.khanacademy.org/math/statistics-probability
+- why/use: This resource provides video tutorials on simple linear regression and more advanced regression, as well as useful exercises to practice your learnings.
+5. B. Foltz. (n.d.). Playlist: Statistics PL15 - Multiple Linear Regression. Retrieved from: 
+- why/use: This resource provides video explanations on both basics and advanced concepts regarding multiple linear regression.

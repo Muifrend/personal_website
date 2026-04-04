@@ -1,0 +1,108 @@
+#GAPANALYSIS
+
+BLURB
+Identify and evaluate whether there are suitable existing solutions to a problem or whether a creative new solution is required.
+
+PITCH
+When it comes to solutions, there's no need to reinvent the wheel (unless there is).
+
+PARAGRAPH DESCRIPTION
+A novel solution to a problem is only required when an adequate solution does not already exist. Thus, the first step in “filling a gap” with a new product, process, or procedure is determining whether there is a gap to be filled. This requires evaluating whether existing solutions are sufficient, can be suitably modified, or if a new solution is needed instead.
+
+CATEGORIZATION
+Foundational Concept | Empirical Analyses | Thinking Critically | Analyzing Problems
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analyses | Semester One
+- Unit: Problem Solving
+- Big Question: How can we feed the world?
+
+GENERAL EXAMPLE
+A small agricultural NGO supports rural farmers and aims to increase crop yields. To address this goal, the NGO first considers using an existing, well-known mobile app that provides planting schedules, fertilizer recommendations, and pest alerts. However, they discover that the app was designed for large, commercial farms with reliable internet access and high-input farming systems. When the NGO tests it with their partner farmers, they find that many recommendations are unrealistic, depend on resources the farmers do not have, assume reliable connectivity, and sometimes encourage excessive fertilizer use. The NGO then evaluates several other existing digital farming tools, but encounters that despite using different approaches, all have similar issues. They all assume an infrastructure level that does not match the farmers’ context.  After critically assessing the current options and confirming that none can be used or adapted without losing usefulness, the NGO decides to design a simpler, offline-friendly tool that provides low-input recommendations tailored to local conditions. Once deployed, farmers report improved yields using guidance that finally matches what they are looking for.
+
+Footnote: A thorough consideration of potential existing digital farming solutions is carried out. After concluding that existing tools are not suitable for the farmers’ context, a new, simpler, user-friendly solution is developed to fill this “gap,” benefiting from highlighting unique features currently unavailable in alternative solutions.
+
+IS THIS THE RIGHT HC?
+Is #gapanalysis the right HC? If the answer to the following questions is yes, #gapanalysis could be useful:
+- Are you analyzing or modifying existing solutions, rather than creating novel solutions?
+- Are you critiquing the strengths and weaknesses of current solutions?
+
+Depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#constraints  |  Analyzes constraints (non-negotiable restrictions), instead of existing solutions’ shortcomings.
+#heuristics  |  Uses frameworks to create new solutions, rather than evaluating or modifying existing solutions.
+#analogies  |  Draws solutions from problems that are similar in structure but in a different domain, followed by similarity mapping and modifications tailored to the target problem’s context. Drawing the exact solution from another problem is an application of #gapanalysis (implying there is no need to devise novel solutions).
+#rightproblem  |  Identifies the initial state, goal state, and key obstacles of a problem. Note that any gap between the initial and goal state is the problem and thus #rightproblem instead of #gapanalysis.
+#strategize  |  Performs a SWOT analysis (strengths, weaknesses, opportunities, threats) on an organization.
+SELF STUDY QUESTIONS
+1. What are the two aspects of a gap analysis?
+
+   Answer: - Identifying existing solutions
+   - Evaluating existing solutions to determine whether they can be used as-is, if they need to be modified, or whether a novel solution is required
+
+2. Why are gap analyses necessary?
+
+   Answer: Gap analyses are critical to the “solution analysis” of the general problem-solving framework. There is no need to spend copious time and effort ideating new solutions if sufficient ones already exist. In many cases, a gap analysis will uncover existing solutions that could work for your problem, or require small modifications. Even if not, a gap analysis  enables the identification of “solution gaps,” meaning why existing solutions cannot solve the problem at hand. In this case, it gives a sense of what the new solution should look like.In contrast, #analogies and #heuristics are the HCs related to solution ideation. #gapanalysis gives us a better direction if and when novel solutions are needed.
+
+3. What are the general steps to carry out a gap analysis?
+
+   Answer: Note: This list of questions is not exhaustive! Instead, use it as a guideline to perform your gap analysis.
+   
+   - Consider existing solutions.
+   
+   - What approaches have we tried?
+   - What have others tried?
+   - What are the internal and external constraints on implementing a solution?
+   - If existing solutions are insufficient for the current problem, why? In other words, what’s the gap?
+   - If existing solutions are sufficient, you can stop the gap analysis here (with a sufficient justification).
+   
+   - Consider the ideal solution.
+   
+   - What requirements must a solution meet?
+   - How can we implement the solution?
+   - How will solutions be evaluated and success measured?
+   - Can we modify existing solutions to satisfy the requirements? 
+   - Is there a need to build a novel solution from scratch?
+
+4. Is it still a quality gap analysis if we find that existing solutions will suffice?
+
+   Answer: Yes!. If existing solutions can comprehensively solve your problem, great! It means there are no gaps in these solutions, and you can directly employ them. Another possible outcome is that there are some gaps, but they can be addressed by modifying the existing solutions. Hence, you don’t have to build a novel solution from scratch. 
+   
+   Quality applications of #gapanalysis do not require a novel solution! Remember that gap analyses are not confined to critiquing the shortcomings of existing solutions; they may include the strengths too. When modifying solutions, you would need to justify which parts of the existing solution to keep, and which parts to change.
+
+5. What exactly is the relationship between #gapanalysis and #analogies?
+
+   Answer: Both HCs attempt to find solutions for a problem. #gapanalysis focuses on existing solutions and evaluates whether they are sufficient. If the target and source problems have the same domain, using the candidate solution with minimal modifications is just a #gapanalysis application. 
+   
+   In contrast, #analogies generates new solutions by looking at source problems with a similar structure but different domain. We use similarity mapping to identify the features of a candidate solution that can be used in the novel solution and the aspects that require modification when changing domains. The solution is novel because we are not directly transferring a solution (or slightly modifying) from another problem, which is done in #gapanalysis.
+   
+   The following in-class slide is an excellent example of distinguishing between these HCs. Source Problems 1-3 have the same domain as the target problem, so using their candidate solutions is related to #gapanalysis. Source Problems 5 and 6 have a distinct domain from the target problem, so drawing similarities from the candidate solution is related to #analogies. Source Problem 4 represents an edge case.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you documented all relevant existing solutions you found?
+2. Have you evaluated the strengths and weaknesses of the existing solutions?
+3. Have you considered whether modifying an existing solution would fill the solution gap?
+4. Have you provided evidence for any solution gaps that require a novel solution?
+
+COMMON PITFALLS
+- The application misidentifies the “gap” between the initial and final states of a problem as a gap analysis.
+- The application lists a few existing solutions but does not evaluate their potential in depth.
+- The application overlooks a particularly obvious and useful existing solution (e.g., not a thorough enough search for workable existing solutions)
+- The application only explores one existing solution.
+- The application creates a novel solution but misidentifies it as part of a gap analysis.
+- There is misalignment between the goal state and the gap analysis.
+
+APPLYING THIS HC AT MINERVA
+- For Cornerstones Civic Projects, one of the first steps is to perform research on the topic. This helps students acquire background knowledge, learn the current status of the issue, and refine their project direction. This usually involves evaluating existing solutions to the challenge problem and identifying possible gaps in the current solutions. Students might then propose to fill one or more gaps as their final deliverable.  - For example, one CCP group was working on designing optimal hybrid spaces to foster equity in educational experiences. They identified the existence of hybrid learning programs that they could refer to, such as the ZoomRoom and the Learning Studio. After the initial gap analysis, they noted that the mere existence of a hybrid learning room was not a suitable reference point for their deliverable idea. They carefully considered the constraints that an optimal solution should include, such as a guide that can aid the design process through questions. Upon further landscape analysis, they found that Steel Case proposed an adjacent solution worth considering. The advantages of the Steel Cases design were identified. However, the group decided there was still a solution gap to fill as the Steel Case solution had a key disadvantage. They took note of this disadvantage and aligned their solution towards filling that missing part.
+- #gapanalysis is a core HC in Empirical Analyses.  - As an example, a student was working to solve the subproblem of drug addiction in the Tenderloin area of San Francisco and completed a gap analysis. They first identified the key constraints related to budget and the chronic availability of drugs on the streets. Since homeless people have low incomes, the analysis assumed that the non-profit would have to provide drug treatment services for free. They also assumed that illegal drugs would always be available on the streets.  - They then explored existing solutions such as pharmacotherapy, therapeutic community, and outpatient counseling. For reasons including the lack of a current medicine for methamphetamine addiction and cost considerations, none of the existing solutions were considered workable. They thus used evidence to make the case that a novel solution would be required.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- The Gap Analysis Project (2019) aims to study the efficiency of nature conservation efforts by collecting species, land cover, and protected areas data. Using the dataset, they evaluate current strategies and determine if new strategies are needed. For example, the project found out that most protection was allocated to regions that lack biodiversity, while biodiversity-rich regions were neglected. The data helped decision makers to reform land protection programs (the existing solutions). Refer to the official website for more information.
+
+KEY RESOURCES
+1. Gahl, M. K. (2018). Gap analysis. Minerva University.  https://docs.google.com/document/d/1X8cpDalqsna-do1S1IkZfNwUKtjqwjnZngtdsBJdrho/edit
+- This whitepaper gives a brief overview of gap analysis, with an example on medical solutions in rural areas.
+2. Spradlin, D. (2012). Are you solving the right problem? Harvard Business Review. https://hbr.org/2012/09/are-you-solving-the-right-problem
+- This article describes the general steps to conduct a gap analysis, with a focus on business strategies. This annotated version of the article guides you through the article in terms of problem-solving HCs.

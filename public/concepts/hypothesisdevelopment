@@ -1,0 +1,98 @@
+#HYPOTHESISDEVELOPMENT
+
+BLURB
+Evaluate the link between hypothesis-driven research and the theories or observations that motivate it.
+
+PITCH
+Understanding the world one hypothesis at a time.
+
+PARAGRAPH DESCRIPTION
+Scientific research begins with observations, which then must be organized to suggest underlying patterns of regularity. Such patterns in turn suggest hypotheses about the nature of the factors that may give rise to these patterns in the data. As science progresses, scientists formulate and use theories to develop further hypotheses and design additional studies. A well-formed hypothesis requires one to appreciate the links between data, theories, and models. Hypothesis-driven research is essential to the iterative cycles of data collection and theorizing that forms the core of the scientific method.
+
+CATEGORIZATION
+Foundational Concept | Empirical Analyses | Thinking Creatively | Applying Research Methods
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analyses | Semester One
+- Unit: Scientific Method
+- Big Question: How do we mitigate human-caused climate change?
+
+GENERAL EXAMPLE
+You read a story about Blue Moon butterflies in the Samoan Islands. The butterflies were attacked by a parasite that destroyed only male embryos and resulted in males being only 1% of the population. But after 10 generations (about 1 year) males are now 40% of the population. Based on these facts, you come up with two competing explanations: (a) an extinction event could have led to the sudden disappearance of the parasite, which would explain the sudden resurgence of male butterflies, or (b) male butterflies developed a resistance against the parasites, which might also explain such resurgence. Hypothesis (b) also stems from your knowledge of genetics and the plausibility of developing resistance to particularly harmful species through genetic mutations coupled with natural selective pressures. You discuss predictions that stem from these two explanations, specifically that in case (a) most parasites would be gone, and in case (b) that the parasites might still be present in butterflies that developed resistances. Finally, you make the connection between study design, testing the mentioned predictions, and deciding which of your hypothesis is corroborated. (And in fact, researchers found that the parasite was still present and that currently, males all carried the mutation that allowed them to survive the parasite’s attack.).  
+
+Footnote: This study provides an example of coming up with multiple explanations that may account for observations, thereby creating testable hypotheses, suggesting predictions that stem from these competing hypotheses, and creating a study according to these predictions.
+
+IS THIS THE RIGHT HC?
+Is #hypothesisdevelopment the right HC? If the answer to the following questions is yes, #hypothesisdevelopment could be useful:
+
+- Are you trying to form an explanation for some set of observations?
+- Are you forming alternative hypotheses in response to a hypothesis from an existing study?
+
+Depending on the work product, there might be other HCs to consider:
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#interventionalstudy  |  Designs a study with an intervention to test a hypothesis.
+#observationalstudy  |  Designs a study without any intervention to test a hypothesis.
+#dataviz  |  Generates data visualizations to observe data patterns, which can be the basis of a hypothesis (e.g., trying to explain the observed patterns or outliers).
+#plausibility  |  Evaluates a hypothesis by looking at the underlying assumptions. This HC is typically used with #hypothesisdevelopment.
+#testability  |  Evaluates a hypothesis by generating testable predictions to be used in the study design. This HC is typically used after #hypothesisdevelopment.
+#thesis  |  Formulates a thesis instead of a hypothesis. A thesis does not describe a trend or a process, but rather an author’s position on a topic.
+#significance  |  Constructs null and alternative hypotheses to assess statistical and practical significance of a pattern or relationship. The null and alternative hypotheses are actually more like "predictions" than "hypotheses" (as defined under #hypothesisdevelopment) because they express only a relationship without an explanation or causal mechanism.
+SELF STUDY QUESTIONS
+1. What are the ways to develop a hypothesis?
+
+   Answer: - Generalizing from patterns in data
+   - Building from existing theories
+
+2. Must every hypothesis follow the “If-Then-Because” format?
+
+   Answer: No, but the phrase “If-Then-Because” is a good reminder that a hypothesis must have a causal mechanism. A hypothesis without the “Because” part is merely a prediction. One thing to keep in mind is that a strong hypothesis involves more than one prediction (students often get stuck with the first ‘if-then” and can’t go further). Hypothesis statements that are direct explanations for an observation might be easier when generating predictions (e.g., Athletes get a ‘hot hand’ (i.e. go on a streak of consecutive successes) because the previous success produces a psychological state that improves subsequent performance.) No matter the format, it is a quality hypothesis as long as your hypothesis includes a causal mechanism to explain observations, and that causal mechanism is evidence-based.
+
+3. How can we evaluate the strength of a hypothesis?
+
+   Answer: #evidencebased, #plausibility, and #testability! The general rules are:
+   
+   - Is the hypothesis supported by the data (i.e. does it explain the observations)? 
+   - Is the hypothesis supported by plausible assumptions?
+   - Can you generate multiple predictions from the hypothesis(es)?
+   - Can you measure the variables to test your hypothesis?
+   
+   Refer to those HC handbook entries for more information.
+
+4. What are the differences between a hypothesis and a thesis?
+
+   Answer: A hypothesis is something you aim to test in your work, whereas a thesis is something you aim to conclude and defend in your work. The thesis is something you arrive at once you've already decided what you can support convincingly. Refer to the #thesis handbook for more information.
+
+5. How is #hypothesisdevelopment used in the context of constructing null and alternative hypotheses for a hypothesis test?
+
+   Answer: From a hypothesis, one can derive predictions that can be tested with hypothesis tests. Confusingly, the null and alternative hypotheses are more like "predictions" than "hypotheses" because they express relationships or patterns between variables, but do not suggest an explanation or underlying reason for the relationship. For example, using this HC, you might develop a hypothesis: "If x increases, then y increases because z." From this, you might be interested in testing the following predictions using a hypothesis test: H0: the correlation coefficient between x and y is zero; HA: the correlation coefficient between x and y is not zero. The null and alternative hypotheses say nothing about "z."
+
+GUIDED REFLECTION QUESTIONS
+1. Have you fully developed your hypothesis with a clear, concise causal mechanism?
+2. Have you considered alternative hypotheses?
+3. Have you supported your hypothesis development with evidence (e.g., existing theories or studies)?
+4. Is your hypothesis specific enough?
+
+COMMON PITFALLS
+- The application mistakes a prediction as a hypothesis. A prediction does not have a causal mechanism.
+- The hypothesis is not specific enough (e.g., Humans cause climate change).
+- The hypothesis is not grounded by some form of evidence (there’s no reason motivating the hypothesis).
+- The application generates a sensible hypothesis but does not explain how the causal mechanism explains the patterns seen in data visualizations.
+- The application does not consider alternative hypotheses.
+- The application attempts to include too many mediator variables in the hypothesis, making it hard to test.
+- The hypothesis is too obvious/already known (e.g., CO2 is a greenhouse gas and causes warming of the atmosphere).
+
+APPLYING THIS HC AT MINERVA
+- This HC is commonly used in research-based courses in natural sciences. Forming a hypothesis is the first step of a research proposal.
+- This HC may also be used to explain social-driven phenomena. For example, in economics, you may need to formulate a hypothesis to explain the dynamics of currency fluctuations. Hypotheses are not necessarily confined to scientific contexts!
+
+APPLYING THIS HC OUTSIDE MINERVA
+- When we try to explain daily-life observations, we are proposing hypotheses. For example, implementing the new “7-regular-extensions-only” policy will increase students’ productivity because it gives students more flexibility to account for unforeseen events (e.g., regular illnesses).
+- Even if you aren’t doing a full study design, in your personal or professional relationships hypotheses might be useful. For example: if I complete quality work on time, my boss will be satisfied with me because I can be relied upon. Or, if I commit to a better sleep schedule, I will get along better with my wife because lack of sleep can affect mood. An alternative hypothesis for this could be: It isn’t sleep, it’s actually the amount of gifts. If I give my wife more gifts, then I will get along better with her because she will feel thought about. Then you can pay attention to the results and adjust accordingly. Just be sure to avoid confirmation bias!
+
+KEY RESOURCES
+1. Minerva University. (2020). Developing hypotheses and determining their testability and plausibility. https://docs.google.com/document/d/1xEqs2OkagDNfeAvzVgzsI5H3EZJSTTMBsraITeuJ50/edit
+- This whitepaper, which you can find on the main Cornerstone custom HC guides page, describes how to build hypotheses, along with some examples in various fields. Pages 1-5 discuss hypothesis development, while Pages 6-10 discuss hypothesis evaluation.
+2. West, J. (2017, April 25). Calling bullshit 2.3: Entertain multiple hypotheses.  [Video]. YouTube. https://www.youtube.com/watch?v=JEKUWo2OivA
+- This 5-minute video explains the importance of considering alternative hypotheses. If the hypothesis of interest turns out to be false after completing the research, alternative hypotheses point us to potential research directions for further work.

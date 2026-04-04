@@ -1,0 +1,112 @@
+#ANALOGIES
+
+BLURB
+Use analogies in problem solving appropriately.
+
+PITCH
+No need to reinvent the wheel.
+
+PARAGRAPH DESCRIPTION
+We often reason by analogy, which requires comparing two things in specific ways in which they are similar (e.g., a human heart versus a water pump or the atom versus the solar system). Although such reasoning has limitations, analogies can be invaluable in reasoning and problem solving. For example, once a problem has been solved, key elements of the solution can be abstracted and applied to solve other analogous problems using strategies such as reverse engineering. This process requires learning to ignore salient but idiosyncratic features that pertain only to a particular problem.
+
+CATEGORIZATION
+Foundational Concept | Empirical Analyses | Thinking Creatively | Solving Problems
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analyses | Semester One
+- Unit: Problem Solving
+- Big Question: How can we feed the world?
+
+GENERAL EXAMPLE
+Conservation ecologists have the problem of trying to determine which species are most important to the health and persistence of the overall ecological community. Despite obvious superficial differences between food webs and the internet, they realized there were some key similarities that might mean solutions to determining which webpages were the most important could be applied to determine which species are more important. Food webs are networks where the edges represent who eats whom in nature, whereas the internet is a network where edges represent webpages that link to one another. Because of this key structural similarity, the ecologists took the Google PageRank algorithm, which is an effective solution to determine the importance of webpages, and applied it to food webs. Importantly, they noted that one of the mathematical modifications Google made to account for the particular network structure of the internet could not realistically apply to food webs. They used the PageRank algorithm, but eliminated the mathematical modification and instead made a change to the network structure of food webs so that the PageRank algorithm could produce a solution of which species were most important to the health and persistence of the ecological community. Comparisons with other proposed solutions showed that the analogically derived PageRank solution outperformed others. 
+
+Footnote: Two superficially different problems were recognized as sharing deep similarities, and that a solution applied to one network, the internet, could potentially be applied to another network, ecological food webs. The ecologists worked to understand the source problem and solution by evaluating the PageRank algorithm and the network structure of the internet. They actively searched for key differences between the source problem and target problems, then adjusted the PageRank algorithm to account for those differences.
+
+IS THIS THE RIGHT HC?
+Is #analogies the right HC? If the answer to the following questions is yes, #analogies could be useful: 
+- Does the work analyze the similarities and differences between two structurally similar problems? Note: if the problems are very similar, then [#gapanalysis is more likely the one to apply. See table below.] 
+- Does the work generate a novel solution that draws from existing solutions?
+
+Depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#gapanalysis  |  Obtains solutions from similar problems in slightly different contexts (e.g., useful solution to increase rider safety on public transit in Paris being suggested for use in San Francisco public transit). Deduces that there is no gap within existing solutions, and that it’s viable to use these solutions directly (or with slight modifications) to solve the problem at hand.
+#critique  |  Identifies literary analogies in a text, along with a close explanation of the author’s motive and the choice of analogy based on the wider literary work.
+#induction  |  Uses perceived similarities between two entities to infer some additional similarity.
+#fallacies  |  Focuses on the “weak analogy” fallacy - making an invalid conclusion about something just because it is similar to something else.
+#heuristics  |  Compares and contrasts different heuristics, one of them being analogies.
+SELF STUDY QUESTIONS
+1. What are the key components of an analogy in the problem-solving context?
+
+   Answer: - Target problem - the problem to be solved
+   - Source problem - the problem with an existing solution
+   - Candidate solution - the solution of the source problem
+   - Similarity mapping - the similarities and differences between the target and source problems
+   - New solution - the novel solution for the target problem
+
+2. What are the four steps when creating an analogy, according to Gavetti & Rivkin (2005)?
+
+   Answer: - Recognize the analogy and identify its purpose.
+   - Understand the source.
+   - Assess similarity.
+   - Translate, decide, and adapt.
+
+3. What biases or heuristics may cause analogies to fail?
+
+   Answer: - Emotional bias: If one gets too emotionally attached to the candidate solution, they may extrapolate idiosyncratic features to the new solution which are irrelevant to the problem (emotions leading to confirmation bias).
+   - Confirmation bias: Since analogies create novel solutions, one may seek evidence confirming their solutions, thus ignoring disconfirming data.
+
+4. What are the differences between reasoning by analogy, analogy as a literary device, and analogy as a solution framework?
+
+   Answer: Reasoning by analogy is a deduction framework. One compares two similar things, then concludes that since they have similarities, what is correct about one should also be correct for the other (Marteney, n.d.). For example:
+   
+   Premise 1: A and B are triangles.
+   
+   Premise 2: A has 3 sides.
+   
+   Conclusion: B has 3 sides. 
+   
+   Analogies in literary and artistic contexts do not typically use analogical reasoning as a means to solving problem. Instead, analogies can be used as ends in themselves, contributing to the aesthetic and thematic goals of a work. For example, "Life is like a box of chocolates -- you never know what you're gonna get," contributes to the tone and character development of a narrative, but doesn't employ analogical reasoning to problem-solve. See #critique for analyses of literary and artistic analogies.
+   
+   Analogy, as a problem-solving framework, is the main idea of the HC! The fundamental difference is that such analogies generate new solutions, while the first two types of analogies do not. Only apply #analogies when you’re ideating solutions.
+
+5. What does it mean for the source and target problems to be “sufficiently different?”
+
+   Answer: It’s subjective to draw the line between these problems, so you should spend effort explaining the differences! The basic takeaway is that you shouldn’t be solving the same problems. For example, drawing solutions from the homelessness report in LA to solve the homelessness problem in SF is not an analogy. You are solving precisely the same problem and thus there is no need to ideate novel solutions. Modifying the solution based on the local condition of SF is an application of #gapanalysis, not  #analogies. 
+   
+   Usually, the problems (and their respective solutions) are from different domains/ fields of study. For example, the genetic algorithm is inspired by Darwin’s theory of natural selection. The former tackles optimization problems in the computational fields; the latter aims to explain an evolutionary phenomenon. The following infographic provides a good example to differentiate between same, similar, and completely different problems.
+
+6. When should we use analogies?
+
+   Answer: If the problem is too straightforward, we can use deductive reasoning - creating new solutions is unnecessary. For example, applying general business strategies to a particular organization. 
+   
+   In contrast, if the problem is too complex, it may be time-consuming to use reductionism and create a comprehensive solution. In this case, the trial-and-error method may be more suitable - you learn about the solution after applying it, then decide if modifications are necessary (successive approximation heuristic). For example, an experimental startup implements a proposed strategy with no preliminary data, then revises the strategy after some time.
+   
+   Analogies sit between these problems: when the problem is not familiar enough to use deduction and not too complex to require trial and error.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you performed all or most of the steps suggested by Gavetti and Rivkin (2005) (see graphic above), including an in-depth similarity mapping between the target and source problems?
+2. Have you identified the salient features of the candidate solution to be abstracted?
+3. Have you identified and justified ignoring the idiosyncratic features of the candidate solution that don’t pertain to the target problem?
+
+COMMON PITFALLS
+- The source and target problems are in the same overall domain (e.g., a grocery store solution in one town of France is applied to another grocery store in Germany). This is #gapanalysis, not #analogies.
+- The analogy lacks one or more key components (e.g., creating a novel solution without a candidate solution).
+- The application used an 'analogy' but does not have a solution (e.g., reasoning by analogy, using analogy as a literary device). #analogies is an HC is about the problem-solving framework.
+- The application has a superficial similarity mapping (e.g., not identifying the salient features of the candidate solution that may or may not be translated into the novel solution).
+
+APPLYING THIS HC AT MINERVA
+- In Civic Projects and Capstones, the problems you encounter are usually relatively new to the world. Hence, you may need to use analogies to derive novel solutions.
+- #analogies is used in Empirical Analyses when trying to identify novel solutions for a problem through reasoning by analogy. We discuss approaches used on the International Space Station for water recycling/waste reduction to generate ideas for reducing water waste in a city in California.
+- Analogies as a form of reasoning in ethics and political philosophy are used regularly. For example, debates over animal rights -- those typically begin by an author proposing an analogy between humans and non-human animals, in which they identify ethically relevant features of a human (ability to feel pain, for example) and then identify a similar feature in a non-human animal. They then use that similarity to infer that the pain of an animal is ethically relevant (it's a pressing ethical consideration). Thus, if we don't think we should, for example, test cosmetics on humans, then we shouldn't test cosmetics on nonhumans either. This would be an example where the analogical reasoning helps us identify the #ethicalconsiderations of an issue, based on an author's theory about the ethically relevant features of, say, a human.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Biomimicry is a new field of study in which we draw inspiration from nature to solve sustainability problems. For example, designing green buildings by studying heat circulation in termite mounds  (The Biomimicry Institute, 2021).
+- Swarm robotics draws inspiration from the collective behaviors observed in social insects like ants and bees, applying these natural analogies to develop decentralized, self-organizing robotic systems. By emulating how individual insects follow simple rules to achieve complex group tasks—such as foraging or nest building—engineers design robots that operate autonomously yet coordinate effectively without centralized control. For more details and recent applications, check out this article: From animal collective behaviors to swarm robotic cooperation  (Duan et al., 2023).
+
+KEY RESOURCES
+1. Dosmann, A. (2019). 'Creative heuristics for novel solutions.' Minerva University. https://docs.google.com/document/d/1mFfTyY-VZEtfrTWNJc0pZsMSws-wqf7atdaFgt7Dw9s/edit
+- This whitepaper introduces 13 creative heuristics. Note that Creative Heuristic 4 (Extrapolating from problems already solved) is the same as using analogies to solve problems.
+2. Gavetti, G., & Rivkin, J. W. (2005). How strategists really think. Harvard Business Review, 83 (4), 54-63. https://hbr.org/2005/04/how-strategists-really-think-tapping-the-power-of-analogy
+- This article is the main reading for this HC. It provides an overview of using the analogy framework, evaluating an analogy, and deciding when to use analogies.

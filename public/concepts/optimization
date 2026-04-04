@@ -1,0 +1,147 @@
+#OPTIMIZATION
+
+BLURB
+Evaluate and apply optimization techniques appropriately.
+
+PITCH
+Always striving for the best, but first defining what “best” means.
+
+PARAGRAPH DESCRIPTION
+The solutions to many problems rely on the concept of optimization. Formally, optimization is the process of determining the relevant local or global extrema within a set of solutions that satisfy the problem constraints. To clearly define an optimization problem, one must identify the quantity to be minimized or maximized and the variables that can be modified or changed in search of the optimal value(s). Once the problem is defined, an appropriate optimization process or technique that describes how to achieve the optimal solution must be chosen. Many common optimization techniques can be implemented algorithmically. It is important to define a process that will yield a feasible solution that can be reasonably implemented.
+
+CATEGORIZATION
+Foundational Concept | Formal Analyses | Thinking Creatively | Solving Problems
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester Two
+- Unit: Algorithms and Simulation
+- Big Question: How can we use machines to solve problems and make decisions?
+
+GENERAL EXAMPLE
+As a college student on a limited budget, you want to create a list of core grocery items (milk, eggs, bread, etc.) that fulfills your daily recommended nutrition requirements. At first, it appears that you have multiple objectives to optimize, such as caloric count, protein quantity, cost, etc. Moreover, some of these objectives are in conflict with others (increasing caloric count may also increase your costs). After some deliberation, you identify cost as the objective function you wish to minimize, and frame all other values as constraints, in line with the USDA’s dietary recommendations for macro and micro nutrients for your demographic group (2800-3000 cal/day, 6-8 servings of grains, 3-5 servings of vegetables, 800mg calcium, etc.). With your constraints and objective function identified, you clearly articulate your decision variable: for each item at the store, what quantity of each should be on your list? Now that your optimization problem is well formulated, you identify a computational approach to solve the problem. Given the large search space, you settle on using a genetic algorithm, which is efficient but only produces a locally optimal (and not necessarily a globally optimal) solution. You accept this limitation, noting that you only want a grocery list that is “good enough” in terms of cost efficiency. You then follow the processes required to apply this specific algorithm (setting up a library of candidate solutions and defining a way for solutions to “recombine” and “mutate” to create new proposed solutions). You also modify the algorithm to be context-appropriate by ensuring that your custom mutation and recombination operators obey the constraints. The output produced by your algorithm is a list of items, and how many of each to purchase, to get the maximum value for your money while still being adequately nutritious.
+
+ Footnote: An optimization problem is identified and explained, including the quantity to be optimized (cost), the variables that can be altered (the quantity of each item to purchase), and the fixed constraints (e.g., calorie count). A genetic algorithm is applied to solve the problem, justifying this choice of technique. An acceptable solution is found even though it may not necessarily be the global optimum.
+
+IS THIS THE RIGHT HC?
+Is #optimization the right HC? If the answer to the following questions is yes, #optimization could be useful:
+
+1. Is there a notion of “optimal” or “best” in the context of your work?
+2. Are you trying to find an optimal solution to a problem?
+3. Is defining the task at hand as an optimization problem productive and relevant for your work?
+4. Are you implementing and evaluating a technique to solve an optimization problem?
+5. Are you comparing and contrasting different techniques to solve an optimization problem?
+
+However, depending on the focus of the work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE RELATED HCS
+
+HC  |  The following HC might apply if the work:
+#algorithms  |  Applies or analyzes a systematic step-by-step process to solve a problem, which can include optimization problems. There are several types of optimization techniques that can be implemented algorithmically.
+#variables  |  Identifies, describes, and classifies variables that are relevant to the problem or system under study; doing so is crucial for effectively defining optimization problems. One must be able to identify the quantity to be maximized or minimized, the factors that can change in pursuit of the optimum, and the factors that cannot change. Describing and classifying these quantities and factors relies on the principles of #variables.
+#utility  |  Applies utilities and utility functions to represent preferences and analyze decision-making scenarios. The principles of #optimization can be helpful in decision-making contexts since we can frame them as optimization problems: rational decision-makers will make the choice that maximizes their expected utility.
+#breakitdown  |  Focuses on how to solve a problem by deconstructing it into tractable well-defined sub-problems. Optimization techniques, such as divide and conquer, may involve breaking down problems and solving the sub-problems before assembling them to find the final optimal solution.
+#rightproblem  |  Focuses on characterizing key aspects of a problem, including its initial state, goal state, obstacles, and scale. Characterizing an optimization problem requires further specifications, including identifying the objective function, decision variables, and constraints.
+#constraints  |  Focuses on identifying constraints and obstacles of a problem to place boundaries on what is possible, and uses constraint satisfaction to solve a problem. Identifying constraints is an important part of defining and solving optimization problems.
+#heuristics  |  Evaluates or applies simple rules to make decisions or solve problems. This includes using heuristics to solve optimization problems. Some optimization techniques, especially greedy approaches, are comprised of heuristics.
+SELF STUDY
+Try answering the questions on your own before checking the example answers.
+
+1. WHAT COMPONENTS ARE REQUIRED TO DEFINE AN OPTIMIZATION PROBLEM? DESCRIBE EACH OF THE COMPONENTS.
+Answer:  
+There are four major components involved in defining an optimization problem.
+
+1. Objective value – The objective value is the value you are trying to optimize or minimize. Your objective value is the output of your objective function, and it is used to define what we consider to be optimal in the context of our specific problem.
+2. Objective function – The objective function formalizes the relationship between the decision variables (our inputs) and the resulting objective value (the output).
+3. Decision variables – The decision variables are inputs for the objective function whose values can be manipulated independently of one another to optimize the objective value. The set of all possible combinations of decision variable values is referred to as the search space.
+4. Constraints – Constraints are conditions that are imposed directly or indirectly on the decision variables to limit the search space. They can also be applied to the objective value, putting a floor and ceiling on our optimal solution.
+
+The overarching goal in any optimization pattern is to determine the combination of values for our decision variables that correspond to the maximum or minimum objective value while satisfying the constraints imposed on them.
+
+2. WHAT IS THE DIFFERENCE BETWEEN A LOCAL (RELATIVE) OPTIMUM AND A GLOBAL (ABSOLUTE) OPTIMUM?
+Answer:  
+A global optimum is the most optimal solution across the entire search space. No further manipulation of the decision variables will yield a more extreme objective value. A local optimum is a solution that is better than the neighboring candidate solutions in a limited region within the search space. While it’s possible for a local solution to also be a global optimum, this is not always the case. In an optimization problem where the search space is closed and explicitly bounded, there will always be a global maximum and minimum value. In an optimization problem with a discontinuous or open search space, a globally optimal solution may not even exist!
+
+3. IS IT ALWAYS NECESSARY TO FIND THE GLOBAL OPTIMUM? WHY OR WHY NOT?
+Answer:  
+In some real-life applications of optimization, it might be sufficient to obtain a locally optimal solution. Under these less stringent circumstances, it may not be necessary to expend additional time and resources to find the globally optimal solution. Moreover, not all optimization problems have a global solution. It is important to select an appropriate optimization algorithm based on your intended purpose (i.e., your need for a locally or globally optimal solution). For example, a hill-climbing algorithm is a gradient-based approach to solving optimization problems that progressively moves toward more extreme values until no neighboring points lead to a better solution. This type of optimization algorithm has an inherent tendency to get stuck at local extrema but is an effective approach for local searches. You may choose the hill-climbing algorithm instead of other computationally expensive counterparts in cases where you are not required to find the global optimum.
+
+4. FOR EACH OF THE FOLLOWING COMMON OPTIMIZATION TECHNIQUES, BRIEFLY EXPLAIN HOW IT WORKS AND GIVE AN EXAMPLE OF WHERE IT COULD BE USED IN REAL LIFE: BRUTE-FORCE, GREEDY ALGORITHM, HILL CLIMBER, DIVIDE AND CONQUER
+Answer:  
+
+1. Brute-force: Brute-force strategies involve identifying and testing each and every possible candidate solution to ensure that the entire solution domain has been searched. This method is relatively simple to implement and always returns the correct answer. However, it is highly inefficient and time-consuming to run these algorithms because a factorial number of permutations must be run for every additional item in the search.  
+   Ex) To determine the most delicious cookie recipe on the internet, you test every recipe with all different ratios of ingredients and taste each sample. Having tested every available recipe, you know that you have found the best internet cookie recipe of them all.
+
+2. Greedy algorithm: Greedy algorithms always choose the option with the greatest immediate return, making locally optimal choices at each iteration and never reversing its direction. This unidirectional process makes greedy algorithms fast to arrive at a solution. The primary limitation of this method is that it often fails to produce the global optima as it does not consider the entire set of available data.  
+   Ex) Today, you plan to tackle a whole list of errands that you have been putting off all week. You want to minimize the distance traveled from location to location, so you decide to use a greedy algorithm to help you determine the order in which you should visit each location. Starting from home, you travel to the nearest location from your current position and repeat this process until you have visited all of the necessary spots on your list.
+
+3. Hill climber: Hill climbing or gradient-based techniques involve choosing a random starting position and making incremental steps toward a better solution with each iteration. The algorithm terminates when none of the surrounding candidate solutions offer a more optimal result. While hill climbers have an inherent tendency to stall at local extrema, they can be effective when the solution domain has a single peak rather than multiple extrema.  
+   Ex) You discover a glass bottle on the beach containing a map of hidden treasure. You decide to set off in pursuit of this treasure, equipped with a shovel and a metal detector that beeps louder as it gets closer to the target. You want to minimize the distance you must dig to get to the treasure, so you use the metal detector to guide you. Sweeping the metal detector in front of you, you move in the direction where the loudest beeps are heard. You stop once you notice that moving the metal detector makes it beep quieter, knowing that you have found the optimal spot to start digging!
+
+4. Divide and conquer: As the name suggests, divide and conquer approaches involve breaking down the optimization problem into smaller subproblems which are solved individually before being recombined to obtain the optimal solution. When the subproblems are independent, they can be computed separately to save time. It is important to note that the recombination of solutions to the separate subproblems might not lead to the optimal solution for the intended problem.  
+   Ex) You are looking to book the cheapest and shortest possible flights from San Francisco to Seoul. Rather than weighing your options from all websites all at once, you review the offerings from one airline at a time and choose the best itinerary from each carrier. Then, you compare the top contenders from each carrier and book the best options among those.
+
+5. WHAT IS OVERFITTING AND WHY IS IT IMPORTANT IN OPTIMIZATION PROBLEMS?
+Answer:  
+In optimization problems, overfitting occurs when a model or algorithm is excessively tailored to the training data, including too many decision variables and capturing noise and random fluctuations rather than the underlying structure or patterns of interest. For example, regression analysis involves finding the best-fitting mathematical model that describes the relationship between independent and dependent variables (i.e., minimizing the error between the prediction and the actual values). An overfitted regression model is overly complex, resulting in poor generalizability to real data sampled from the population. Similarly, an overfitted machine learning algorithm that has been trained on highly limited and unrepresentative training data will have poor optimization performance when tested with an unfamiliar dataset.
+
+6. CONSIDER SOME OF THE DAY-TO-DAY CHALLENGES YOU FACE, SUCH AS PLANNING YOUR MEALS, PREPARING FOR CLASS, CLEANING YOUR ROOM, NAVIGATING BACK TO RES, AND LOADING THE DISHWASHER. PICK ONE THAT RESONATES WITH YOU AND REPRESENT IT FORMALLY AS AN OPTIMIZATION PROBLEM. THEN CONSIDER WHAT IT WOULD MEAN TO TAKE A “BRUTE-FORCE” APPROACH TO SOLVE THE PROBLEM. WHAT ABOUT A “GREEDY” APPROACH?
+Answer:  
+Here are some real-life examples of optimization strategies in action:
+
+- You want to fit as many dirty dishes into the dishwasher as possible. The brute-force approach would try all combinations of your dirty dishes and then pick the configuration with the highest number of dishes. A greedy approach would take the dirty dishes one at a time, always choosing the next smallest dish. You might find at the end that you have many large dishes with no empty spots large enough to accommodate their size.
+- Deciding on the best sandwich combination. As a brute-force approach, you can try all possible combinations of bread and available fillings and choose the most delicious of all the combinations. This is different from a "greedy" strategy that uses a heuristic to make the tastiest sandwich. For example, you might rank the ingredients in order of how much you like them independently and add them to the sandwich in this order until you run out of room for toppings. Your sandwich might have all of your favorite ingredients but lack an overall balance of flavors.
+- You may also refer to the General Example for the HC above.
+
+7. CONSIDER SOME OF THE PROBLEMS ENCOUNTERED IN THE COMPUTATION SCIENCES. FOR EXAMPLE, FINDING THE REGRESSION LINE FOR A BIVARIATE DATASET, FINDING THE BEST CLASSIFICATION MODEL, OR SORTING A LIST OF NUMBERS AS EFFICIENTLY AS POSSIBLE. PICK ONE THAT RESONATES WITH YOU AND REPRESENT IT FORMALLY AS AN OPTIMIZATION PROBLEM. THEN DESCRIBE ONE TECHNIQUE THAT CAN BE USED TO SOLVE IT.
+Answer:  
+Linear regression is a mathematical modeling technique that involves representing the relationship between the independent variable (x) and the dependent variable (y) as a straight line. For ordinary least squares (OLS) regression, the objective function, which we aim to minimize, is the sum of squared errors (SSE), which is a common metric for how much the chosen data deviates from the data.
+
+In this formula, the yᵢ represent the y-values of the actual data points and the ŷᵢ values represent the predicted y-values from the line of best fit: ŷᵢ = β₀ + β₁ xᵢ. The parameters β₀ and β₁, which represent the y-intercept and slope respectively, serve as our decision variables. We aim to find the set of values for β₀ and β₁ that minimizes the SSE and thus define the line of best fit. There are generally no constraints on what the values of β₀ and β₁ can be, but it’s possible that in some contexts, we may require the line to pass through the origin, implying that we must satisfy β₀ = 0. The equation for the line of best fit can be used as a predictive model for a variety of correlated variables.
+
+For more practice with this HC, refer to the exercises suggested in the Formal Analyses study guides. See the key resources for sources of practice questions.
+
+GUIDED REFLECTION
+1. Have you clearly defined the optimization problem with a sufficiently detailed explanation for each component of the problem (i.e., objective function, decision variables, constraints)?
+2. Have you ensured that your objective function is a specific quantity that can be measured, and sufficiently described how this quantity would be measured and represented?
+3. Have you considered practical/real-world decision variables and/or constraints that are pertinent to your optimization problem?
+4. Have you justified why defining the task at hand as an optimization problem was relevant to your purpose? What insights did it offer and how did you use it productively?
+5. Have you chosen an appropriate technique to solve the optimization problem and effectively justified the choice?
+6. Have you described an optimization technique in sufficient detail, possibly by outlining its main steps?
+7. Have you effectively explained whether or not an optimization technique is expected to find the global optimum?
+8. Have you effectively compared and contrasted different optimization techniques for the problem at hand?
+9. Have you implemented an optimization technique (e.g., in code) with sufficient explanation to justify the implementation?
+10. Have you interpreted the results of applying an optimization technique to solve a problem in a way that’s relevant to the purpose of the work?
+11. Have you considered whether it’s important to find the global optimum in the context of your work?
+
+COMMON PITFALLS
+- The application cites #optimization in a colloquial manner without attempting to formalize the situation by identifying what exactly is being optimized and how.
+- The application misses key parts that are needed to comprehensively define the optimization problem.
+- The objective function is not specified in sufficient detail, possibly as a result of trying to optimize multiple quantities, neglecting to identify its dimensions, or insufficiently explaining how it would be measured.
+- The definition of the optimization problem misses relevant decision variables or constraints.
+- The application does not sufficiently explain an optimization technique, perhaps missing its pros and cons, failing to outline its main steps, or neglecting to interpret its results.
+- The application does not mention whether an optimization technique finds the global optimum, or does not sufficiently justify how.
+- Justification for why the application of #optimization is relevant for the purpose of the work is missing.
+
+APPLYING THE HC AT MINERVA
+- This HC may arise in business applications when you’re considering how to streamline operational processes. For example, you may identify that the current operational costs are too costly, and decide to minimize the objective function of operational costs. Decision variables may involve factors like packaging methods (e.g. using automation or using human labor) or labor costs. There may be numerous constraints, one of which could be the need to fulfill current customer orders even after optimizing.
+- Optimization is likely to arise in mathematical contexts, especially calculus. Representing the objective function (the quantity to be maximized or minimized) of an optimization problem as a mathematical equation allows us to use analytical and algebraic tools, such as differentiation, to characterize the extrema of the function. Specifically, for continuous functions, one can determine all of its global and local extrema by finding the points at which its derivative is equal to zero. In this way, calculus tools offer an efficient way to solve optimization problems! However, not all mathematical functions are differentiable, and not all objective functions can even be easily represented by analytic expressions. In these cases, more sophisticated optimization techniques are required. Indeed, Minerva has an entire concentration course dedicated to advanced optimization methods!
+- Optimization is key to machine learning, so it’s likely to come up in computational science classes. For example, to classify data, a learning algorithm is used to adjust the classification model's parameters (weights and biases) to produce the most accurate classification. The “most accurate” or “best” classification model can be measured using a few different quantities, such as the proportion of correctly classified data points. Other common metrics are described in this blog post by Bajaj (2021). It’s important to identify and understand this objective value as well as the decision variables and constraints for the task at hand, in order to choose an appropriate classification model, implement an effective learning algorithm, and produce the most accurate classification.
+- The concept of optimization is relevant in the natural sciences. Nature tries to optimize its performance in numerous ways! For instance, in physics, one can characterize the behavior of physical systems based on their tendency to minimize their energy and maximize their entropy. In particular, the “Principle of Least Action” is one way to formulate the behavior of a mechanical system by stating that its motion will always minimize the “action,” which is typically a function of its kinetic and potential energies. So, of all possible trajectories, a particle will follow the trajectory that minimizes its energy. It’s interesting to adopt the perspective that nature is somehow optimizing its motion! Similarly, the Second Law of Thermodynamics is another way to describe the behavior of physical systems in terms of an optimization problem, stating that systems evolve to maximize the total entropy (a measure of disorder).
+
+APPLYING THE HC OUTSIDE OF MINERVA
+- We’re almost always trying to optimize something in our day-to-day life. Generally speaking, we want maximum quality yet minimal effort, cost, and time. Consider these specific daily life examples:
+  - Deciding on the best sandwich to eat. The definition of “best” (the “objective function”) might vary from person to person. Perhaps you want the most delicious sandwich as measured by your tastebuds or one that maximizes some nutrition metric. The aspects of the sandwich that you can adjust (the “decision variables”) are the types of bread, fillings, spreads, and other ingredients. You might be working under certain constraints, such as limited amounts of ingredients, a budget, or an upper bound on portion size. Once the problem of creating the “best” sandwich is defined, you can start thinking of ways to solve it. A brute-force approach would require trying all possible combinations of bread and fillings and choosing the most delicious. This is different from a "greedy" approach that uses a heuristic to make the best sandwich (e.g., always pick the grainiest bread, whatever cheese is going to expire first, and one savory condiment).
+    - Relatedly, one can also consider optimizing your entire nutrition intake. Check out the general example for this HC above.
+  - Picking up groceries. Have you ever thought about the order in which you navigate the grocery store? You probably want to be as efficient as possible, meaning that you complete your shopping in the least amount of time. With “time” as the “objective function” that you want to minimize, you can adjust the order in which you pick up items in the store. For example, you could get the bananas first, then the milk, then the bread, or the other way around. Regardless of the order, you must use your grocery list as a constraint in the sense that you need to purchase all items on your list. There could be other constraints too. For example, if you know the milk is too heavy to carry while walking around the store, you might need to pick up that item last.
+  - Organizing your schedule. Fitting a variety of tasks into your schedule is a challenge. When organizing schedules, you likely work under certain constraints (events or tasks that cannot be adjusted) but have a number of “decision variables,” such as when to study, how long to sleep in, when/where/how to exercise, whether or not to partake in city experiences, etc. Picking one “objective function” in this context is not straightforward. It’s likely not as simple as striving to maximize the number of different experiences you do or maximizing your free time. Nonetheless, by thinking through the factors that matter to you, the constraints you must adhere to, and the elements under your control to change, you can approach your scheduling more systematically. When trying to optimize it further, you could adopt a “hill climber” approach by making small changes and seeing if they lead to an improvement. If they do, adopt them and continue. If they don’t, revert the change and try something else.
+  - Purchasing flight tickets. Read the first few pages of the Optimization Cornerstone guide.
+- Businesses and companies are usually trying to solve optimization problems. Here are some specific examples:
+  - Traveling salesman problems, in which one aims to minimize the length of a route connecting multiple specified nodes, are common in many domains such as package delivery, GPS navigation, school bus routes, meal service delivery, drone flight mapping, and circuit board planning. In all of these domains, one can adjust the order in which the nodes are “visited” but the constraints can vary between different contexts.
+  - Just-in-time supply chains are commonly used to move materials right before they are needed in an effort to minimize the amount of inventory. Multiple other objectives are relevant in this context, such as costs, waste, product defects, processing time, waiting time, customer satisfaction, and employee satisfaction.
+
+KEY RESOURCES
+1. AlphaOpt. (2017). Introduction to Optimization. [Video] YouTube. Retrieved from https://www.youtube.com/playlist?list=PLLK3oSbvdxFdF67yVxF1FQO9SbBY3yTL
+   - Why/use: This playlist includes definitions of basic optimization terms, as well as explanations of more advanced concepts such as simulated annealing.
+
+2. Shafkat, I. & Terrana, A. (2022). Optimization Cornerstone Guide. Minerva University. https://docs.google.com/document/d/1A0k3bHmnp9rDRpPgTnEm0EFJg4gyBJbnnuv9iKvR0o/edit
+   - Why/use: This custom guide includes in-depth explanations regarding defining optimization problems, with both daily life practical applications and computer science applications.

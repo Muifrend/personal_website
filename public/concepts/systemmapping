@@ -1,0 +1,107 @@
+#SYSTEMMAPPING
+
+BLURB
+Guided by an explanatory challenge, develop simplified representations of complex systems by conceptualizing their components and relating them to one another.
+
+PITCH
+A system might seem vast, too complex, and too dynamic to analyze and fully understand. But as with any unexplored territory, the right map can show us the way to our final destination.
+
+PARAGRAPH DESCRIPTION
+According to Plato, there is no obvious way to “carve nature at its joints.” When mapping complex systems, we make choices about how to represent reality. Just like a mapmaker chooses to represent geographical reality by highlighting rivers, valleys, or national borders rather than religious borders, the way we dissect systems depends on, and should be guided by, our purpose. In empirical research, our purpose is addressing the “explanatory challenge.” Complex systems can be deconstructed in a variety of ways that define both the scope of the system and the relevant attributes of its components (in social systems, most commonly, people). Thus, the key part of deconstructing a system is conceptualizing its constituent parts in several ways in order to choose or synthesize the “mapping” of the system that is most appropriate for addressing the explanatory challenge. For example, in analyzing a football team one might think of players in terms of their position on the field, their running speed, or their personality types. Depending on the question at hand, one may or may not include the players’ personal trainers, the team’s management, or even the fans. One specific application of this concept is considering organizational structure: there are various ways in which the same group of people and functions may be related to one another, such as a strict hierarchy, a matrix, or a flat structure.
+
+CATEGORIZATION
+Habit of Mind | Complex Systems | Interacting Effectively | Interacting with complex systems
+
+CORNERSTONE INTRODUCTION
+- Class: Complex Systems | Semester One
+- Unit: Characteristics of Complex Systems
+- Big Question: How should the world be governed?
+
+GENERAL EXAMPLE
+You work at a hospital that’s trying to reduce spending. Your manager asks you to make a diagram showing the structure of the organization to identify inefficiencies. You are contemplating how to create this diagram. You first choose to represent the organization by separating it into different departments because the employees within each work together closely, and therefore are expected to share some norms and views about the organizations. While this decomposition reveals the dynamics of interactions between large groups such as the lack of communication between the medical staff in different departments or between the medical and cleaning staff, there are no obvious inefficiencies. You then decide to deconstruct the system by focusing on the roles of individuals and find that each department has its own educational campaigning function and that there is little communication between those working on educational campaigns in different departments. It turns out that there is a large amount of money being spent on educational campaigns overall. This was not obvious when the system was deconstructed by department because education campaigns are funded by each department separately, at relatively low cost. You advise making educational campaigns a central process, consolidating common costs and being able to prioritize what should be budgeted. 
+
+Footnote: The explanatory challenge was identified: reduce spending. To understand the problem and find possible solutions, the system was deconstructed in several ways and the chosen deconstruction is the one that addresses the explanatory challenge. In this case, deconstructing by function allowed us to identify something that was replicated in each department, and thus driving an overall inefficiency in the system.
+
+IS THIS THE RIGHT HC?
+Is #systemmapping the right HC? If the answer to the following questions is yes, #systemmapping could be useful:
+
+- Have you considered multiple grouping for the agents or components and explained which decomposition is best suited to answer your problem?
+- Do the distinct properties of the agents/components matter for your explanatory challenge?
+- Are you comparing different ways to decompose agents/components that operate on the same scale?
+- Are you deconstructing the system into functional units and exploring the idea of interactions among the different components to explain the overall behavior or outcomes? 
+
+Depending on the work product, there might be other HCs to consider. Not all deconstructions are system mapping.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#networks  |  Focuses on the connections between agents, rather than the differences among agents. Identifies, describes, or evaluates the connective structure of nodes in a system and uses this to address the explanatory challenge.
+#emergentproperties  |  Describes the collective influence of agents/components, for which a system mapping might be useful.
+#levelsofanalysis  |  Focuses on the unique benefits of shifting perspectives between levels of analysis, zooming in or out to provide new or unique insights whereas #systemmapping is more general about conceptualizing and deconstructing a system.
+#breakitdown  |  Deconstructs a problem into subproblems. Identifies tractable sub-problems that can be explored in isolation, then reassembled into a solution.
+SELF STUDY QUESTIONS
+1. What questions can you ask yourself when considering multiple system deconstructions?
+
+   Answer: What different types of deconstructions are common for the system I am analyzing? Could multiple different deconstructions be valuable for the explanatory challenge? What are the tradeoffs of the different deconstructions? What new insights do each provide?
+
+2. Familiarizing yourself with organizational design may inform you on the interactions and impact of individual agents. What are some of the common approaches of organizational design? List at least 3. Refer to the “Organizational Structure in Complex Systems” (see Key Resources section) guide for relevant information.
+
+   Answer: Hierarchical Organizations, Divisional/Business Unit Hierarchy, Geographic Hierarchy, Matrix Organizations, Flat/Organic Organizations, Circular Organizations
+
+3. What are the main requirements for a strong application of #systemmapping?
+
+   Answer: A strong application of this HC requires (1) a crisp definition of the system to be mapped; (2) a clear statement of the explanatory challenge; (3) an analysis of the various possible decompositions; and (4) a concise explanation of the deconstruction chosen.
+
+4. Imagine that you want to create a system map of a school to analyze why students in their sophomore year put more hours on average into their daily studies than do students in their senior year. Would the principal of the school be a relevant component to your system? Why or why not? List a few arguments and compare them to the answer key.
+
+   Answer: Yes, the principal is relevant.
+   
+   - The principal has more of authority in the eyes of sophomores than in the eyes of seniors (you would need to explain a causal mechanism in an actual application)
+   - The principal’s program tends to put more pressure on younger students because it assumes that they would maintain the same level as they move up grades without the required effort of teachers.
+   
+       No, the principal is not relevant.
+   
+   - The principal might not be relevant because they have been known to have a more laid-back approach and not put too much pressure on students.
+   - The principal might not be relevant because they have very little involvement with the direct experience of students, but deal mainly with administrative work.
+
+5. Identify what the student did incorrectly in his analysis of the following case-study. Case study: A business student wants to analyze an IT company’s marketing division to understand why a significant percentage of employees quit between their 12-th and 18-th month. They include the following agents in their map: the team manager, the marketing branch manager, the CEO, major clients of the company, and the law interns. The student draws the map with a one word explanation above each connection between the agents and writes the following sentence: “Based on the increased working pressure, which is not justified by a reasonable increase in pay, and the worsened work conditions marketing employees between their 12th and 18th month on the job are most susceptible to quitting.”
+
+   Answer: Based on the description above, the student did not do two main things: did not provide a significant justification for every component’s role in the system and did not consider alternative deconstructions. A proper system map requires an analysis of the pros and cons of the deconstruction method and a clear explanation of every agent’s relevance which contributes to the understanding of the explanatory challenge.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you clearly articulated an explanatory challenge?
+2. Have you deconstructed the system into plausible components? Did you include all agents or components that might be relevant to your explanatory challenge?
+3. Have you made a visual map of the system, does it help you understand it holistically?
+4. Have you ensured and explained how the deconstruction is useful to address the explanatory challenge?
+5. Have you explained how the deconstruction offers insights about the system’s behavior?
+6. Have you provided a clear and reasonable justification for all the agents you chose and the way you grouped them?
+7. Have you outlined the role and impact that each agent plays in the system?
+8. Have you considered alternative deconstructions, justified why your deconstruction is better than alternative approaches, and stated why other approaches are inappropriate?
+
+COMMON PITFALLS
+- The application does not include a crisp definition of the system to be mapped.
+- The application’s explanatory challenge is unclear and/or unstated.
+- The application does not consider all relevant agents.
+- The application does not explain the relevance of the system deconstruction.
+- The application does not provide sufficient detail for each agent/component or omits a part relevant to the subsequent analysis that is not intuitive.
+- The application does not justify the effectiveness of the decomposition by comparing it to alternative approaches.
+- The application uses system mapping for purposes more relevant to other HCs, like #breakitdown, #networks, and #emergentproperties (refer to section 'Is it this HC?').
+
+APPLYING THIS HC AT MINERVA
+- You can compare different types of system deconstructions that are common in the relevant discipline, or the different types of organizational structures that are applied to a system.
+- You can suggest a new type of deconstruction and compare it with existing ones. You can also combine from common deconstructions in an original way to map the system based on evaluated strengths and weaknesses.
+- It works especially well if the different components of the system are complex themselves, or have many possible characteristics to highlight (humans, or departments are a great example), but it can also work in natural sciences, for example grouping species in an ecosystem by their niche or ecosystem service.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Policy:How does mapping the economic structure of a city help us track the flow of money?
+- Biology: How do biotic and abiotic factors affect population growth within a community of animal and plant species?
+- Reading: How does mapping the vibrant world created in a book or movie help us understand the motives of its characters and analyze the hidden ideas in the artwork?
+
+KEY RESOURCES
+1. Sheskin, M. (2021) Characteristics of Complex Systems – a Brief Introduction. https://docs.google.com/document/d/1cxCp8FqZBbNAaMTUgAnv36gu0bDEHpRwMgkEI5VX8/edit
+- Brief Introduction: this reading is the overview of how six characteristics of complex systems interrelate. It goes more into depth in the different HCs and how they are different from each other. Find it with all the custom HC whitepapers on this myMinerva page.
+2. McAllister (2019). Organizational Structure in Complex Systems. https://docs.google.com/document/d/1zv1RS5KRTSYlMC2LnOpi1jnNlarCQYLqKaRt2gdKIZM/edit
+- This reading provides a brief introduction to the different aspects of complex systems. Find it with all the custom HC whitepapers on this myMinerva page.
+3. Mapping society for a more meaningful world. https://www.youtube.com/watch?v=hAFclNJ--Gs
+- This TED talk provides a great example of the usefulness of system mapping and some questions to ponder on.
+4. Living Guide to Social Innovation Maps. System Mapping. https://mars-solutions-lab.gitbook.io/living-guide-to-social-innovation-labs/seeing/understanding-the-problem-systems-and-complexity/systems-mapping
+- A webpage with a brief description of the concept and some good visual examples.

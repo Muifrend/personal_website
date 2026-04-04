@@ -1,0 +1,139 @@
+#VARIABLES
+
+BLURB
+Identify and classify the relevant variables of a system, problem, or model.
+
+PITCH
+Variables change. Before addressing how and why, we need to know what those variables are.
+
+PARAGRAPH DESCRIPTION
+An important initial step in analyzing a problem, model, or system, is to evaluate the relevant variables: the features that can change. To do so, one must identify and classify the relevant variables, examine the relationships between them, and consider how they can be measured and manipulated. In the context of a study or experiment, this typically involves identifying which features play the role of independent variables, the hypothesized predictors, and which play the role of the dependent variable, the hypothesized response that results from changes in the independent variable(s). One may also need to identify confounding variables that could impact the relationship under study, and carefully consider how to mitigate their effects. Further, classifying the type of variables (for example, qualitative or quantitative) is essential as it will affect the type of statistical analyses that are appropriate. Representing a problem formally may also involve identifying the quantities that are constant (not varying), usually referred to as parameters. Parameters help to define the nature of the problem and can be treated as constraints on the solution.
+
+CATEGORIZATION
+Habit of Mind | Formal Analyses | Thinking Critically | Analyzing Problems
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analyses | Semester One
+- Unit: Problem Solving
+- Big Question: What does it mean to be random? How can data help us discover what is true? 
+
+GENERAL EXAMPLE
+You are working for the customer service department of a restaurant chain, and are interested in determining the degree to which server friendliness (the independent variable) can be used to predict tip percentage (the dependent variable). You hypothesize the following causal relationship between variables: you expect that friendly attendants will lead to satisfied customers, and that satisfied customers will provide a larger tip. This is supported by your previous research findings that people in a positive mood tend to be less stingy. You’re aware of several other extraneous variables that could affect tip percentages such as food quality, customer income, type of meal ordered, and time of day. This leads you to consider methods to diminish the effects of these variables on your results, attempting to control for them as much as possible. You also classify what type of variables these are, noting that server friendliness is usually ranked on an ordinal scale, which would change the type of statistical analyses performed on the collected data, leading you to suggest alternative ways to measure friendliness on the customer survey. Identifying and classifying these variables is your first step in formally representing the problem of interest which can now be further developed.  
+
+Footnote: As a first step for investigating the connection between service and tipping, the different variables are identified, classified, and the relationship between them is suggested. The variable types and roles inform the potential analysis that would be required and facilitates careful thought on the variables' measurement.
+
+IS THIS THE RIGHT HC?
+Is #variables the right HC? If the answer to the following questions is yes, #variables could be useful: 
+-  Does identifying, describing, and classifying the relevant variables provide crucial insights about the system or problem under consideration? 
+-  Does the work classify the variables accurately, distinguishing between different types and roles? 
+
+ However, depending on the focus of the work, there might be other applicable HCs to consider. Other HCs may use #variables as part of their focus. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#correlation  |  investigates how two variables are associated and quantifies their relationship.
+#modeling  |  describes how variables and parameters comprise a model as a simplified representation of a system.
+#dataviz  |  considers how the variables are represented (qualitatively vs. quantitatively) to inform the visualization’s design choices. For example, bar graphs would be more appropriate than histograms to visualize qualitative variables.
+#interviewsurvey  |  uses consideration of variable types when crafting or interpreting interview or survey questions.
+#hypothesisdevelopment  |  develops a hypothesis that outlines and explains the relationship between independent variables and the dependent variable.
+#algorithms, #regression, #significance, #complexcausality  |  uses these HCs in conjunction with #variables for a richer application.
+SELF STUDY QUESTIONS
+1. What is a variable?
+
+   Answer: The term “variable” can be used to refer to any element, feature, or factor that can vary (change) within a system.
+
+2. What are the quantitative and qualitative variables and what is the difference between them? Give an example of each.
+
+   Answer: Quantitative variables describe quantities. Quantitative variables can be either continuous or discrete. Qualitative variables handle categories (qualitative features). The categories they assume can be purely descriptive, be related in some quantitative form, or even be numbers that represent different categories. Qualitative variables can be nominal or ordinal. Examples of quantitative variables include age and height, while qualitative variables include gender or marital status.
+
+3. What is the difference between discrete and continuous variables? Give an example of each.
+
+   Answer: Continuous variables can assume any value in an interval. Discrete variables assume values to a specified degree of precision, dictated by a strict set of values the variable can take. Height is an example of a variable that’s theoretically continuous as it can take any positive value without limitations. However, it might be classified as discrete in a dataset that measured height to the nearest cm, in which case it’s possible for the value to be any positive integer (e.g., 154 cm, 155 cm, …) but not 154.5 cm.
+
+4. What are the different types of qualitative variables and what are the differences between them?
+
+   Answer: Qualitative variables can be nominal or ordinal. Nominal variables have labels as their values. They are particularly useful as a way to group data together according to some set of criteria, such as region/country, color, species, company, etc. Ordinal variables are qualitative variables that can be sorted, i.e. whose values have a clear ordering, for example, the size of clothes (S, M, L, etc) is a qualitative variable, yet we know that L size T-shirts are larger than M-size.
+
+5. Define the following terms: Independent variables, dependent variables, confounding variables, and proxy variables.
+
+   Answer: - Independent variables:  An independent variable is a variable hypothesized to predict a change in another variable. 
+   - Dependent variables:  A dependent variable has values that are hypothesized to change based on another variable’s values. It is the response or outcome suggested by a given prediction. The dependent variable can also be called the target variable (popular for predictive models), or criterion variable (common for certain statistical modeling contexts such as regression and classification). 
+   -  Confounding variables:  Confounding variables are variables that are not deliberately under study, but are associated with the independent and dependent variables. Confounds make it challenging to isolate the true relationship between the variables under study so it’s important to identify them and try to mitigate their effects. 
+   - Proxy variables  (proxies) are representatives or substitutes. They are used to represent unobservable or immeasurable values.
+
+6. What is the difference between confounding and extraneous variables?
+
+   Answer: These two terms are often used interchangeably, but in some fields, the term “extraneous” is intended to describe variables not directly under study that correlate only with the dependent/outcome variable (not both the dependent and the independent). A confounding variable is specifically an extraneous variable that correlates with both the independent and dependent variables. Confounding variables are thus considered a subset of extraneous variables, and are more dangerous as they make it trickier to isolate the relationship being studied.
+
+7. What is the difference between variables and parameters?
+
+   Answer: The term “variable” can be used to refer to any element, feature, or factor that can vary (change) within a system. In contrast, we often use the term “parameters” to refer to features that are constant (not varying) within a given state of the system under consideration. You can think of parameters as defining the model or system.
+
+8. What strategies can you use to reduce the effects of confounding variables?
+
+   Answer: You can (a) control more variables, (b) randomize your samples, (c) hold pre-tests and post-tests, and (d) match subjects from treatment and control groups. For more explanations about these strategies and other strategies, read “Section 4: Conducting an Experiment” in Explorable.
+
+9. What are the caveats to using ordinal qualitative variables in quantitative calculations?
+
+   Answer: The main issue with ordinal scales like the Likert scale is that the spacing between categories is irregular. We can't say that the difference between "no opinion" and "agree" is the same as the difference between "strongly disagree" and "disagree." In fact, this spacing is not even well defined. It is not clear how one would try to capture the difference between two categories in a meaningful way. The fact that the spacing between variables is not quantitatively meaningful implies that one should not base numerical calculations on this scale. However, it is quite common in many fields to treat Likert-scale data as numerical. It might be okay to do, but it is important to recognize that treating ordinal variables as quantitative imposes additional assumptions on the data. Authors and researchers (and students writing assignments) should explicitly address these assumptions. If any of the conclusions are based on results that rely on these assumptions, those conclusions will come with the caveat that the conclusions may not hold if the assumptions are not a good reflection of reality.
+
+10. How might the choice of data visualization depend on the type of variable?
+
+   Answer: Some examples: (1) continuous variables in mathematical functions can be plotted with smooth curves, (2) discrete variables in a dataset may contain overlapping points, so jitter should be added to distinguish the dots on a scatter plot, (3) ordinal variables should not be treated as quantitative, so histograms and scatter plots are not advisable.
+
+11. How might consideration of variable types impact the type of mathematical or statistical analysis to apply?
+
+   Answer: Some examples: (1) we might choose to treat variables continuously so that we can model them using continuous mathematical functions such as differential equations, (2) we might choose to treat variables as discrete so that they can be processed more efficiently numerically, (3) we may need to opt for different statistical tests or measures (e.g., median instead of mean, Spearman’s correlation instead of Pearson’s correlation) when working with ordinal data, (4) we probably wouldn’t report the “mode” as one of the descriptive statistics for continuous data, (5) in machine learning, we use regression algorithms for continuous target variables (aka labels) and we use classification algorithms for categorical target variables, (6) a t-test is more commonly used with quantitative variables, while a chi-squared is more commonly used with qualitative variables.
+
+12. How might consideration of variable types impact survey or interview design?
+
+   Answer: It’s important to think about whether we want to collect qualitative or quantitative data for our purposes. Questions then need to be posed appropriately for this purpose.
+
+13. Beyond identifying whether a variable can have a decimal or not, what are more nuanced distinctions you could make between continuous and discrete variables?
+
+   Answer: Some distinctions include: 
+   - Countability: discrete variables can take on a countable number of values, while continuous variables can take on infinite values within a range. 
+   - Precision: Discrete variables can only be measured to a finite level of precision that depends on the precision of our measuring tools while continuous variables can contain an arbitrary precision.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you accurately identified, classified, and described the variables and parameters of a system, model, or problem?
+2. Have you provided sufficient detail to understand what the variables mean, including how they are measured, their dimension, and how they are reported (including units)?
+3. Have you identified and justified the types of variables (e.g., qualitative vs quantitative, scalar vs vector) and explained the importance of these classifications in the given context?
+4. Have you identified the roles that the variables play (independent vs dependent) in the given context, being sure that they connect appropriately to the overarching hypothesis, research question, or explanatory challenge?
+5. Have you identified the connection between variables, such as how changes in the independent variable are associated with changes in the dependent variable?
+6. Have you explained why examining the variable types and roles is important for the context under study? In particular, have you considered how the types and roles of the variables influence the choice of appropriate measurement technique or analysis, such as the mathematical/statistical analysis, data visualization, experimental setup, or survey/interview design?
+7. Have you correctly distinguished variables from parameters in the context under study?
+8. Have you identified any confounding or extraneous variables that could impact your results? 
+- If so, have you classified and justified which variables are confounding and which ones are extraneous? 
+- Have you explained the impact these variables have on the analyses? 
+- Have you outlined whether it is possible to reduce the effects of any of these variables?
+9. When using proxy variables in your study to test seemingly unobservable theoretical predictions, have you thoroughly justified the association between the proxy variable and the immeasurable variable of your interest?
+
+COMMON PITFALLS
+- The application identifies 'factors' in a system but does not formalize the factors by specifying how these factors vary or change, how they can be measured, or how they are related to each other.
+- The application confuses ordinal variables (e.g., star ratings) with quantitative variables.
+- The application does not define the units of measurement clearly or does so inconsistently. For example, the application introduces a variable in kilograms and later references the variable in pounds.
+- The application does not accurately distinguish between variables and parameters.
+- The application does not provide sufficient consideration or justification for the type of variables.
+- The application does not sufficiently explain the context around the variable: how it was measured, how it should be interpreted, and what its units are.
+- The application assumes a cause-effect relationship between the dependent and independent variables, while in reality, the dependent variable may not be a direct effect of independent variables.
+- The application uses inappropriate statistical techniques for the given variables. For example, a student may use Pearson’s correlation for an ordinal variable, while Spearman’s correlation or rank-based correlation measures would be more suitable.
+
+APPLYING THIS HC AT MINERVA
+- This HC is applicable whenever students are creating or interpreting statistical, mathematical, or computational models. The variables and parameters are essential to understand because they basically define the model, and the types of variables can impact how the model should be analyzed or simulated. For example, when modeling the SIR model in Formal Analyses class, relevant variables and parameters must be defined, classified, and analyzed before diving into deriving the implications of the model.
+- In some NS and SS classes, applying #variables is useful to design or critique research studies, including experiments, interviews, and surveys.  - Setting up an experiment to test the desired relationship or hypothesis requires a clear idea of what variables are independent and dependent. Further, identifying the control and confounding variables helps to make sure you consider how to set up your experiment properly to isolate the relationship of interest.  -  When it comes to designing surveys and interviews, the type of questions posed should depend on what you want to learn from the survey and what analysis you will perform on the collected data. If one wants to perform calculations to analyze the data, it's important to have quantitative variables. Qualitative variables can still be informative but need to be analyzed and interpreted with care.
+- In the physical sciences, identifying variables as 'vector' quantities or 'scalar' quantities is an important part of understanding that quantity. For example, speed is a scalar quantity, while velocity is a vector quantity. Vector quantities are defined by both a magnitude (e.g., 5 m/s) and a direction (e.g., east). This distinction is important because vector quantities require different treatment than scalar quantities, usually involving geometry and trigonometry.
+- Dimensional analysis is important across NS, so it’s crucial to understand the dimensions of relevant quantities. Relatedly, it’s also important to consider the most appropriate units for each quantity under study.
+- In business courses that require spreadsheet analysis with several variables, it’s important to consider the variable types to select appropriate correlational analyses.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- This HC is applicable to different fields in NS and CS. For example, if you are a Machine Learning developer you will have to consider the relevant variables and their types when creating different models (e.g. regression analysis). Such models are now the backbone of various services, such as Netflix, Tiktok, and YouTube’s recommendation algorithms.
+- Studying any complex system, whether it be social, physical, or economic, requires understanding and representing many interacting agents. This includes a huge variety of systems from physics, to transportation, the weather, communication networks, and many more. The application of #variables is essential to ensure the characterization of all agents is appropriately modeled.
+
+KEY RESOURCES
+1. Flora, T., Koloskov, N., Terrana, A., & Hadavand, A. (2023, Sept 19). Variables. Minerva University. https://docs.google.com/document/d/1gb9luIly9JycgLutyZ7XMDqlCn6I4i-OOssk9V2J3Sk/edit 
+- The guide gives an in-depth overview about what variables are and the different types of variables. Most answers to the self study questions can be found there.
+2. Sauro, J. (2016). Can you take the mean of ordinal data?. MeasuringU. https://measuringu.com/mean-ordinal/ 
+- This resource is useful to understand the caveats of using ordinal qualitative variables in quantitative calculations.
+3. Shuttleworth, M., Wilson, L. T. (2008). Confounding variable / Third variable. https://explorable.com/confounding-variables 
+- This resource explains a confounding variable and describes strategies to control these variables in your experiments.

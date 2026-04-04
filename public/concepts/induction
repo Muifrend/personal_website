@@ -1,0 +1,153 @@
+#INDUCTION
+
+BLURB
+A method of reasoning where probable conclusions are drawn based on specific evidence and observations.
+
+PITCH
+Reasoning with #evidencebased, #sourcequality, and #probability.
+
+PARAGRAPH DESCRIPTION
+Induction involves reasoning from a set of instances, observations, or experiences that serve as premises to make a conclusion which is likely to be true. The conclusion of an inductive argument goes beyond the content of the premises and so its truth value cannot be guaranteed. Thus, applying inductive reasoning requires one to evaluate the argument’s strength, which depends on how likely the conclusion is given that the premises are true. Further, the argument is termed reliable if in addition to being strong, the premises are all true. Induction can also be thought of as an analytical lens that we can use to understand and evaluate a given argument. 
+
+CATEGORIZATION
+Foundational Concept | Thinking Critically to Evaluate Justifications
+
+CORNERSTONE INTRODUCTION
+- Class: Formal Analysis | Semester One
+- Unit: Logical Thinking
+- Big Question: How is free choice manipulated?
+
+GENERAL EXAMPLE
+My friend Kate claims that all fans of Kpop love bubble tea. When I inquired why she thought that she laid out the following reasons:
+
+- Her best friend Giorgi loves Kpop. 
+- Giorgi also loves bubble tea. 
+- Her classmate Juan also likes Kpop and bubble tea.
+- → So all people who like Kpop also like bubble tea. 
+
+This seemed like a huge generalization to me, so I tried to convince her that her conclusion might not hold. Recognizing this as an inductive generalization, I knew it would be most productive to assess its strength and reliability, so I tried to help Kate question the degree to which her conclusion is supported. First of all, the argument is not very strong since Kate only based her conclusion on two people she knows and then generalized to a large population of people. Kate can increase the strength of the argument by providing more premises to support the conclusion. She can do that by including a variety of evidence from quality sources, like surveys that have found that a majority of Kpop fans like boba or sources that provide plausible reasons/explanations for a relationship between adoration of Kpop and boba. Ensuring these premises directly support the conclusion would make her argument stronger, but it would only be considered reliable if the pieces of evidence are actually true (e.g., from trustworthy sources) rather than just fabricated claims.  She can also strengthen the argument by making the conclusion less hasty, e.g, by saying that Most Kpop fans like bubble tea rather than all.
+
+Footnote: his application classifies Kate’s reasoning as induction by generalization. The analysis of the argument assesses both the strength and reliability of the argument while clearly making a distinction between them. It goes further to suggest how to improve strength and reliability. The application can be improved by explaining why the argument is inductive with a short discussion of the Wilkin’s factors. 
+
+IS THIS THE RIGHT HC?
+Is #induction the right HC? If the answer to the following questions is yes, #induction could be useful: 
+- Did you use inductive reasoning to provide likely support for a conclusion? 
+- Are you evaluating the strength and reliability of an inductive argument? 
+- Is the argument under consideration a generalization? Is it based on evidence or observations? 
+-  Does analyzing an argument from an inductive lens provide useful insights that are relevant to the purpose of the work? 
+
+ However, depending on the focus of your work, there might be other applicable HCs to consider. Consult the following table listing possible related HCs.
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#deduction  |  involves an argument where the conclusion is necessarily true based on its premises. These arguments are often seen in axiomatic systems, like mathematics, or in systems that center formal definitions, like taxonomies. Refer to the “Distinguishing Deduction from Induction” section in the Inductive Reasoning guide (see Key Resources).
+#evidencebased  |  focuses on identifying the appropriate quantity, placement, and type of evidence that’s relevant for a particular purpose.
+#sourcequality  |  evaluates the relevance, currency, accuracy, authority, and purpose of sources to determine the reliability of the source for the purpose at hand.
+#fallacies  |  focuses on analyzing the flaw in logic in the argument’s structure, which could stem from weak or unreliable inductive reasoning.
+#significance, #confidenceintervals, and other statistics HCs  |  uses statistical analysis to make inferences, which may involve the principles of inductive reasoning to arrive at a well-supported conclusion.
+#plausibility, #hypothesisdevelopment, and other scientific method HCs  |  developing or analyzing hypotheses, which may involve using inductive reasoning evaluate the degree to which a model, hypothesis, or theory is supported (through evidence, data, or observations).
+SELF STUDY QUESTIONS
+1. Simply define inductive reasoning in one sentence.
+
+   Answer: An inductive argument makes a claim that, if we accept its premises as reasonable, the conclusion is likely to be true.
+
+2. Can you list and explain at least five different types of inductive arguments?
+
+   Answer: Generalization, prediction, analogy, statistical syllogism, authority, signs, and causal inference.
+   
+   - Generalization: observations of a sample of instances are used to draw a conclusion about a larger population. The strength depends on the size of the sample (the larger, the stronger) and how unbiased the sample is, so that patterns observed in the sample accurately reflect the patterns in the population.
+   - Prediction: Prediction uses premises that are past observations to draw a conclusion about the future. The strength of a predictive argument depends on the number of past observations and some measure of how likely the future is to resemble the past.
+   - Analogy: analogy uses the fact that two or more things share certain properties to argue that they will also share one or more other properties. The strength depends on how similar the known shared properties are, and how relevant they are to the shared properties predicted by the conclusion
+   - Statistical Syllogism: drawing a conclusion about a sample on the basis of the properties of a population.
+   - Authority: there are contexts in which an argument from authority can form a legitimate inductive argument. Specifically, the “authority” in question must have relevant expertise. However, care must be taken to not commit the fallacy, ‘argument from authority.’
+   - Causal Inference: Inferring an effect from an observed cause, or inferring a cause from an observed effect. An understanding of causal mechanisms might allow you to draw conclusions, even in novel settings.
+   
+   For more in-depth examples of these types of inductive reasoning and more, see the Inductive Reasoning guide in the Key Resources section.
+
+3. What terminology is used to evaluate an inductive argument? Define the terms. How are they different from the ones used for deductive arguments?
+
+   Answer: An inductive argument can be strong/weak and reliable/unreliable. A strong inductive argument’s conclusion follows from the premises with high probability. So the strength indicates the degree to which the conclusion is supported by the premises. A reliable inductive argument is strong and all the premises are true or acceptable. A reliable inductive argument is necessarily also a strong argument.
+   
+   In deduction, an argument can be valid/invalid or sound/unsound. An argument is valid if the argument’s conclusion follows from the premises while the soundness of an argument depends on whether the premises are all true. Similar to inductive’s reliability, for a deductive argument to be sound it must be valid.
+
+4. How can you strengthen an inductive argument?
+
+   Answer: We can increase the quantity of evidence supporting the conclusion (termed “enumerative” induction), and/or increase the variety of evidence (termed “eliminative” induction). Specifically, this can include:
+   
+   - Providing more evidence (more premises) to support the conclusion.
+   - Increasing the sample size.
+   - Improving the quality/representativeness of the evidence (premises).
+   - Ensuring clear links between the premises and the conclusion.
+   - Using more various types of evidence to help eliminate competing hypotheses.
+   - Making the conclusion less hasty/ambitious. Arguments with overly general conclusions are weak.
+
+5. What are five factors you can use to distinguish between inductive and deductive reasoning?
+
+   Answer: The Inductive Reasoning guide by Wilkins lists five factors to consider when classifying an argument as deductive or inductive. From most to least important: relationships of necessity, conclusion relative to the scope or domain of the premises, definition and rules versus observation and evidence, use of specific forms, and use of indicator words. More details can be found in the Inductive Reasoning guide (see key resources).
+
+6. Give an example of an inductive argument that’s strong but not reliable.
+
+   Answer: "90% of dermatologists recommend this skin cream for treating acne. Therefore, this skin cream is effective for treating acne."
+   
+   In this example, the argument assumes that the opinions of dermatologists, who are experts in skincare, are reliable and representative of the effectiveness of the skin cream. With this implied premise, this argument could be seen as strong since there are a substantial majority of experts recommending the product.
+   
+   However, regarding reliability, we should question whether the author truly knows the opinions of all dermatologists. It is likely that a small sample of dermatologists was surveyed, and their opinions may not reflect those of all dermatologists. The credibility of the dermatologists can perhaps be also questioned, whether they might have ulterior motives for recommending the skin cream. Could they have been involved in the making of the product?
+   
+   To improve the reliability of the argument, it would be necessary to provide more robust evidence, such as large-scale clinical trials or studies conducted by independent research organizations, to support the claim that the skin cream is effective for treating acne.
+
+7. Give an example of an argument that could be considered both inductive or deductive.
+
+   Answer: Statement: "Every time I eat spicy food, I start sweating. Therefore, the next time I eat spicy food, I'll start sweating."
+   
+   From an inductive lens, this can be seen as a prediction based on past observations of the person's behavior. They have noticed that whenever they eat spicy food, they experience sweating. Therefore, they predict that the same will happen in the future.
+   
+   From a deductive lens, one could interpret the first premise as a general rule that applies to all instances of eating spicy food. If it is a known fact that eating spicy food always leads to sweating, then the conclusion follows as a specific instance of the rule. In this interpretation, the person's sweating is a necessary consequence of eating spicy food.
+   
+   The distinction here lies in the interpretation of the first premise, whether it is seen as a past observation that leads to a prediction or a strict rule for all time (past and future) that dictates the outcome.
+
+8. How does statistical inference require inductive reasoning? How can we ensure inferences are strong and reliable?
+
+   Answer: In statistical inference, we collect data from a sample and then use that data to make inferences about the larger population. Since we’re generalizing from a sample to a population, we are in the realm of induction. Thus, the conclusions drawn from statistical inference are not guaranteed to be true. There is always the unavoidable possibility of a type I or a type II error, so we can never “prove” the null hypothesis or alternative hypothesis to be true. Nonetheless, we can use tools and well-established statistical procedures, such as confidence intervals or hypothesis testing, to form strong and reliable inferences. These tools allow us to quantify how strong the argument is. For example, when performing a hypothesis test and making a conclusion about rejecting or failing to reject the null hypothesis, the strength of that inductive conclusion is reflected in the p-value. When constructing a confidence interval for an unknown population parameter, the strength of the induction can be seen in the width of the confidence interval.
+   
+   Regarding reliability, we should understand that these analyses rest on certain conditions that the data must meet (e.g., conditions regarding randomness, sample size, and normality). The conditions for inference can be thought of as the premises for the induction. These need to be met in order for the results to hold. Thus reliability (strong with true premises) requires that the data meets the conditions for inference. If there are potential issues with the data or the sampling method, the induction might be strong, but unreliable. 
+   
+   For more on the connection between logic and statistics, see the corresponding section about this in the “What is Statistical Inference?” infographic listed in the Key Resources.
+
+9. Give an example of an inductive argument in your regular cognitive activities today.
+
+   Answer: Premise 1: Every time I've opened my email inbox in the past, I've received new messages. Premise 2: Today is a typical day. Conclusion: Therefore, it is likely that I will receive new messages when I open my email inbox today.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you ensured that your application is in the realm of inductive reasoning rather than deductive reasoning (e.g., using the factors from the Inductive Reasoning guide by Wilkins)?
+2. Have you specified and clearly identified the conclusion and premises of the argument?
+3. Have you identified the type of inductive argument and justified your classification?
+4. Have you thoroughly assessed the strength and reliability of the argument with support and justification, being sure to distinguish between these concepts?
+5. Have you proposed and justified specific methods to improve the strength and/or reliability of an argument?
+6. Have you considered what other conclusions could be drawn from the premises at hand?
+7. Have you relied on the principles of #evidencebased and #sourcequality to build a reliable induction when crafting your own argument? In particular, have you ensured that there is adequate support for the conclusion in terms of quantity and variety of evidence and that you build your premises based on trustworthy evidence, observations, and assumptions?
+8. Have you used appropriate statistical measures to quantify the strength of the argument?
+
+COMMON PITFALLS
+- The application does not sufficiently explain why an argument is inductive rather than deductive (using factors from the Inductive Reasoning guide by Wilkins).
+- The application does not clearly specify the argument (its premises and its conclusion).
+- The application does not effectively apply the concepts of strength and reliability and/or does not sufficiently distinguish between them.
+- The argument’s inductive conclusion is stated with poor connotation or overconfidence that implies that it follows with 100% certainty.
+- The application does not propose effective ways to make the argument stronger and/or more reliable.
+- The application does not effectively identify problematic assumptions or limitations in the argument.
+
+APPLYING THIS HC AT MINERVA
+- Inductive reasoning can be applied when drawing statistical inferences or using statistical analyses to make predictions (e.g., in statistics courses or any class assignment involving data analysis). For example, we may draw inferences from a randomly selected representative sample of adult males from a specific region, and calculate the sample mean height. Then, using statistical techniques, we can construct an inductive generalization to estimate the population mean height of all adult males in the whole country. We could also fit a trendline between height and weight in our sample data and use this equation to predict weight from height. These inferences and predictions aren’t guaranteed to be true, but can be strongly supported by sufficient data and appropriate statistical techniques. See the corresponding section about the connection between logic and statistics in the “What is Statistical Inference?” infographic listed in the Key Resources.
+- Inductive reasoning is essential for the scientific method, so it can be applied in a variety of science courses. Hypotheses, predictions, models, and theories must be supported by existing evidence and observations. Experiments, tests, and studies are completed to add further support for the hypothesis but can never guarantee its truth with 100% certainty. To see the connection with #induction, one can think of the development of a hypothesis as an inductive argument wherein the premises can include observations, data, assumptions, and other established theoretical frameworks. When viewed from this inductive lens, we see that a weak hypothesis can result from inadequate links between the data and the hypothesis. And an unreliable hypothesis may result from faulty assumptions or incorrect data (as these would imply untrue premises). On the other hand, testing a hypothesis to rule it out falls in the realm of deductive reasoning.
+- Any assignment with an argumentative essay requires the principles of induction. One can think of the thesis as the main conclusion of the inductive argument, and each of the ideas in the body paragraph as premises. The smaller arguments and ideas presented in the body paragraphs serve to support the thesis. If done effectively, with sufficient links between the claims presented and the main thesis, the overall inductive argument can be strong. Reliability would be determined by evaluating strength (the degree to which the overall thesis is supported) together with the quality of the supportive claims.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- Identifying fake news and false facts by evaluating the strength and reliability of the inductive argument presented on TV, press conferences, speeches, articles, etc.
+- Inductive reasoning can help you quickly react and make decisions when necessary based on the current information you have. These decisions result from conclusions that aren’t guaranteed to be true, but are supported to a degree by whatever observations and experience is available. We use inductive reasoning to go about making most decisions in our daily lives!
+- Professionals in marketing collect evidence about consumers to build ad campaigns or product offerings. For example, if market research indicates that a particular demographic group consistently prefers eco-friendly products, a marketing professional might use inductive reasoning to generalize that this group may respond positively to an ad campaign highlighting a product's sustainability features. A reliable inductive prediction would require a thorough market analysis with a sufficient amount of high-quality evidence.
+- Lawyers use inductive reasoning to connect the facts and evidence they have with conclusions. They must look for recurring themes or common elements in the evidence that could support a particular legal argument. For example, criminal convictions put the burden of "proof" on the prosecutor to provide enough evidence to demonstrate guilt "beyond a reasonable doubt." An abundance and variety of evidence (fingerprints, time stamps, blood samples, DNA, phone records, witness testimonies, etc.) is needed to build a reliable inductive case.
+
+KEY RESOURCES
+1. Wilkins, J. (2020, Aug). Inductive Reasoning. Minerva University. https://docs.google.com/document/d/1IWr7Lxul0Gn84KKEM8--fLfpCaHsVdKIeutsg0PjzU/edit?usp=sharing
+- The guide gives an in-depth overview about what induction is, the different types of induction, ways to distinguish induction from deduction, and other tricky things to look out for.
+2. Terrana, A. (2022, Oct 2022). What is Statistical Inference? Minerva University. https://docs.google.com/document/d/1-WZpMTLNOerZpfi4o9kNgmANrf7IpbsdxwfacUx84pE/edit#
+- This paper gives an overview of statistical inferences, defines important terminology, and specifically connects to #induction in the 'From Logic to Statistics' section.

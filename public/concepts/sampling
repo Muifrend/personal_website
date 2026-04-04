@@ -1,0 +1,127 @@
+#SAMPLING
+
+BLURB
+Design effective sampling methods and evaluate the interpretation of results accordingly.
+
+PITCH
+Unrepresentative sampling can lead to unrepresentative results. Sample wisely.
+
+PARAGRAPH DESCRIPTION
+Many studies require assessing characteristics of samples in order to estimate those characteristics of the corresponding populations (e.g., one might measure a group of seventh grade boys in order to estimate how tall such boys are in general). However, taking a sample inherently risks having an inaccurate representation of the distribution of characteristics within the greater target population. Appropriate methods must be used to sample the target population and evaluate the generalizability of that sample.
+
+CATEGORIZATION
+Foundational Concept | Empirical Analyses | Thinking Creatively | Applying Research Methods
+
+CORNERSTONE INTRODUCTION
+- Class: Empirical Analyses | Semester Two
+- Unit: Research Design
+- Big Question: How do humans impact evolution?
+
+GENERAL EXAMPLE
+You work at an NGO that promotes awareness of climate change in elementary schools. Last year a co-worker conducted a climate awareness survey in twenty randomly selected schools from each state each across the country. All students in the randomly sampled school are given the survey, making this cluster random sampling in addition to the stratification by state. Your coworker conducted the survey again this year with these same schools. Based on this new survey, your co-worker concludes that average awareness of climate issues has drastically improved on a national level. You inform your co-worker that this sample may no longer be representative of the larger population because these students were exposed to the survey questions from the previous year, which might have increased their awareness of climate change relative to the target population. You suggest keeping the stratification by states but randomly sampling new schools from each state and repeating the process. Furthermore, noting that some states are much more populous than others, and that educational systems are state-run for the most part, you decide to give your state averages weights according to their overall populations so that the overall sample is more representative of the nation. 
+
+Footnote: A weakness in the sampling method used by the coworker is identified, its implication on the validity of the results is explained and the suggested modification would yield a more representative results that are more generalizable to national awareness as the survey aims to measure.
+
+IS THIS THE RIGHT HC?
+Is #sampling the right HC? If the answer to the following questions is yes, #sampling could be useful:
+
+- Are you selecting sampling methods for a study design?
+- Are you creating a multistage sampling method?
+- Are you critiquing sampling methods from existing studies?
+
+Depending on the work product, there might be other HCs to consider:
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#interventionalstudy, #observationalstudy  |  Designs a study with an intervention/treatment. Observational studies do not have any interventions.
+#biasidentification  |  Identifies potential cognitive biases (e.g., confirmation bias) in the sampling method. Note that sampling bias itself is not a cognitive bias, hence not an application of #biasidentification.
+#comparisongroups  |  Creates multiple comparison groups which are then sampled for relevant data.
+#distributions  |  Analyzes or applies properties of distributions to solve a problem or make statistical inferences. This may include analyzing the implications of sampling from distributions, and examining the relationships among sample, sampling, and population distributions.
+SELF STUDY QUESTIONS
+1. What are the types of sampling methods?
+
+   Answer: - Simple random sampling
+   - Convenience sampling
+   - Systematic sampling
+   - Cluster sampling
+   -  Stratified sampling
+
+2. What are key criteria to consider when evaluating a sample?
+
+   Answer: - Unbiased: Each individual should share the same probability of being sampled.
+   - Representative: The sample distribution should closely resemble the population distribution. In other words, the trends from a sample distribution should be similar to the population distribution.
+   - Sample size: larger samples are likely to be more representative, but not necessarily! If your sample is biased, larger sample sizes will not make it more representative. 
+   
+   However, it is often not possible to achieve an “ideal sample” due to challenges (see the following question). Sampling error will always exist, and there is no perfect sampling method.
+
+3. What are the challenges when sampling?
+
+   Answer: - Logistical challenges: Sampling is challenging! One big challenge is when there is no “sampling frame” of all individuals in the population under consideration. In this case, simple random sampling and stratified sampling are impossible. This is often encountered with natural populations (e.g., wild birds). Even if you can do simple random sampling, it can be hard to access the individuals that you would like to sample. For example, you can randomly select people from a city census list to answer a survey, but sometimes it can be hard to contact them. Others in the population might not be on the census. Sampling requires a tremendous amount of creativity!
+   - Ethical considerations: For example, we cannot capture endangered animals in the wild.
+
+4. What is a multistage sampling?
+
+   Answer: A multistage sampling combines multiple sampling methods. Usually, the strengths of a sampling method can compensate the limitations of another method, making them complementary to each other.
+   
+   For example, suppose you want to conduct a paper-based survey study in a district. The first stage is to label all blocks with numbers, then use simple random sampling to select 20 blocks in the district. The second stage is to go to these blocks and distribute the paper surveys to the first 50 respondents you see (convenience sampling). The first sampling stage ensures randomization, which increases the representativeness of the sample; the second sampling stage ensures that the sampling method is still feasible.
+
+5. What is an experimental unit?
+
+   Answer: An experimental unit is the primary unit of interest in a research study. Usually, this is the level at which the treatment is applied. For example, consider the effect of water quality on fish health, and suppose you want to sample 10 fish out of a population of 100. You can:
+   
+   - Sample 10 fish from a tank containing 100 fish or;
+   - Divide the 100 fish into 10 tanks (10 fish each), then sample 1 fish from each tank 
+   
+   Here, the experimental unit is the tank; not the fish. The first scenario has only one experimental unit, while the second scenario has 10 experimental units. This means the sample size is 10 times larger in the second scenario, despite it being the same total number of fish sampled.
+
+6. What is pseudoreplication?
+
+   Answer: Pseudoreplication occurs when one samples repeatedly from the same experimental unit, causing individual observations to be heavily dependent on each other. Referring to the example from the previous question, suppose you want to sample 10 fish. You can:
+   
+   - Sample 10 fish from a tank containing 100 fish or;
+   - Divide the 100 fish into 10 tanks (10 fish each), then sample 1 fish from each tank.
+   
+   For the first method, there is only one experimental unit. Since the fish live in the same environment, they are exposed to the same conditions. This means that the fish are not independent of one another- one’s health affects another. Thus, measuring more fish from a single experimental unit might add statistical significance but it is meaningless- the sample size is 1. One way to avoid pseudoreplication is to average the data points within a given experimental unit.
+   
+   For the second method, the sample size is 10 (10 experimental units). It would be even better to sample a few more fish from each tank and then average the value per tank to avoid the effect of outliers.
+
+7. What is the difference between probability and non-probability sampling?
+
+   Answer: For probability sampling, each sample has a known probability of being selected. Such sampling methods are simple random sampling, systematic sampling, cluster sampling, and stratified sampling.
+   
+   For non-probability sampling, we do not know the probability of selecting each sample. Such sampling methods are called convenience sampling (and voluntary survey). These methods are generally easier to be implemented, but are particularly prone to sampling bias.
+
+8. What is a sampling frame?
+
+   Answer: A sampling frame contains a list of all individuals in a population. For example, if the population is M25s, then the sampling frame will be a list of names for each M25. Sampling frames are required for simple random sampling and stratified sampling. For example, suppose we want to sample from a population of wild animals. In that case, we usually cannot do simple random sampling because it may be challenging to locate all individuals, then use a random number generator to decide which individual to be sampled.
+
+9. What is sampling bias?
+
+   Answer: Sampling bias occurs when the sample distribution is not representative of the population distribution, either due to the sampling method, sample size, or possibly pseudoreplication. It is not a cognitive bias, but it can be caused by cognitive biases (e.g., confirmation bias). For example, unconciously selecting to measure the individuals that are more likely to support your hypothesis.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you selected the most suitable sampling method for the study context?
+2. Have you considered multistage sampling?
+3. Have you clearly defined the population, the experimental unit, and the sample?
+4. Have you identified the potential limitations of your sampling method?
+5. Have you discussed the representativeness of your sample?
+
+COMMON PITFALLS
+- The application has an obvious flaw in its sampling methods (e.g., using stratified sampling without a sampling frame; using an unethical sampling method; no justification or discussion of sample size).
+- The application does not justify the strengths and limitations of the sampling methods.
+- The application is clearly a pseudoreplication but does not attempt to mitigate it.
+
+APPLYING THIS HC AT MINERVA
+- Sampling is a very important component of research design. In Empirical Analyses, we discussed sampling from a wild animal population to track evolution. Systematic sampling is often useful to sample wild animals in their natural habitat. However, for extinct species, fossil samples in museums are used. In the case of a museum collection, a decision has to be made when deciding which and how many fossils to select for measurement. This is also an application of #sampling.
+- Psychological studies often include human-subject research, especially in behavioral sciences. However, voluntary study participation (a form of convenience sampling) may often result in self-report bias, leading to sampling bias. For example, a group of researchers conducted a review of the available database of comparative social and behavioral science studies from the American Psychological Association (APA). They found that 80% of study participants are WEIRD (Western, Educated, Industrialized, Rich, Democratic), despite only being 12% of the world population (Azar, 2010). This may imply that the samples of such studies are not representative of the human population.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- In machine learning, after data collection, the next step is usually splitting the dataset into training, validation, and testing sets. However, sometimes simple random sampling is not the best approach to dividing the datapoints. For example, suppose the datapoints represent news stories, which appear in clusters (multiple stories about the same topic will be released on the same day). Hence, if we do simple random sampling, it is highly likely that we obtain homogenous sampling groups, meaning the same story will appear in both the training and validation groups. This may result in pseudoreplication, as the training and validation accuracies are overestimated. An alternative to this problem is stratified sampling, in which we stratify the datapoints based on the time they are published, then only sample from each strata (Google Developers, n.d.)
+
+KEY RESOURCES
+1. Dr Nic's Maths and Stats. (2012, March 14). Sampling: Simple random, convenience, systematic, cluster, stratified  [Video]. YouTube. https://www.youtube.com/watch?v=be9e-Q-jC-0
+- This 5-minute video introduces the concept of “sampling:” taking a sample from a population, and the general sampling methods.
+2. Penn State Eberly College of Science. (n.d.). Simple random sampling and other sampling methods. In STAT 100: Statistical Concepts and Reasoning.  https://online.stat.psu.edu/stat100/lesson/2/2.4
+- This short article elaborates on the sampling methods, along with some examples.
+3. Reinhart, A. (2015). Pseudoreplication: choose your data wisely. In Statistics Done Wrong: The woefully complete guide. No Starch Press. https://www.statisticsdonewrong.com/pseudoreplication.html
+- This short article introduces the concept of pseudoreplication and the potential ways to mitigate sampling bias using statistical tools.

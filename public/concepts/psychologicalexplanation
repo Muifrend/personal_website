@@ -1,0 +1,115 @@
+#PSYCHOLOGICALEXPLANATION
+
+BLURB
+Analyze the interacting factors across levels of analysis that explain and shape the behavior of complex agents.
+
+PITCH
+Who needs common sense when you know psychological theories?
+
+PARAGRAPH DESCRIPTION
+Within social systems, each human is a complex agent with behavior stemming from interactions between factors on multiple levels of analysis. These levels range from overarching (such as environmental, cultural, and social) to individual (such as biology, personality, beliefs, cognitions, and experience). Thus, interacting with complex social systems requires understanding multiple aspects of human psychology at multiple levels of explanation, how they interact, and how they give rise to emergent properties. Psychological theories that explain human behavior can thus examine interactions between genes and the environment, rational thoughts, unconscious biases, emotions, biological drives, internalized social norms, and cultural beliefs (among other factors). Applications of this HC use psychological theories or principles to explain human behavior and generate insights about individuals, groups, and even complex societies.
+
+CATEGORIZATION
+Foundational Concept | Complex Systems | Thinking Critically | Analyzing Decision
+
+CORNERSTONE INTRODUCTION
+- Class: Complex Systems | Semester One
+- Unit: Complex Agents
+- Big Question: What does it mean to behave rationally?
+
+GENERAL EXAMPLE
+Your new nonprofit has a problem: the most knowledgeable member of your team is also the most annoying. Every time he enters the room, you want to leave it. You can quickly call to mind many times when he has caused you trouble, from the time he “accidentally” ate your yogurt from the fridge the same day that you hired him, to the time last week when he said he would meet with you half an hour before a presentation to prepare for it, but then he forgot. You bring up the problem with your co-founder and realize that applying Beck’s Cognitive Model could bring significant insight given it suggests your experience is being shaped by a loop between your feelings/emotions, thoughts/beliefs, and the behaviors of both you and the other person. You recognize that your behavior is being shaped by both conscious and unconscious processes. He is not, objectively, more annoying than anyone else! Instead, a bad first impression from him accidentally eating your yogurt on the first day led to an unconscious bias in how you interpreted many subsequent actions, and also makes it so that you more easily call to mind negative traits and behaviors rather than positive ones. Meanwhile, your obvious displeasure with him has led to him feeling less-than-positive about you. You decide to apologize to him for letting an unimportant and accidental case of yogurt theft derail your interactions with him. You end your apology by presenting him with a 6-pack of premium yogurt. This was the beginning of a beautiful friendship. 
+
+Footnote: The analysis of the situation takes into account many aspects of psychology at multiple levels of analysis, from a specific theoretical model for understanding interactions between factors shaping behavior, to the role of unconscious bias in interpreting information, to social influence of individuals on others.
+
+IS THIS THE RIGHT HC?
+Is #psychologicalexplanation the right HC? If the answer to the following questions is yes, #psychologicalexplanation could be useful:
+
+- Are you using theories and principles of psychology to understand individual and group behaviors?
+- Are you evaluating the explanation of behavior given theories or principles of psychology?
+
+Depending on the work product, there might be other HCs to consider…
+
+POSSIBLE ALTERNATIVE HCS
+HC  |  When to choose it instead
+#emotionaliq  |  Focuses on emotions to understand and manage behavior and is habitually applied. In contrast, #psychologicalexplanation covers broader factors (e.g. physiology) contributing to human behavior and requires one to understand psychological concepts in order to apply the HC.
+#biasidentification, #biasmitigation  |  Involve identifying, classifying, and mitigating biases. You can use theories and principles of psychology to understand the roots of many biases, and to better understand the most effective mitigation strategies.
+#shapingbehavior  |  Aims to modify human behavior. Influencing behavior is a step that follows after having a solid understanding of the causes rooted in psychology.
+#complexcausality  |  Utilizes the concepts of complex causality (e.g., feedback loops, causal chains) to explain behavior. Using this HC along with #psychologicalexplanation can enhance the clarity of the explanation of behavior.
+#differences  |  Uses knowledge of individual differences to inform interpersonal interactions. While #psychologicalexplanation often focuses on universal aspects of human psychology and behavior, #differences can help with responding to the diverse ways in which those universals manifest.
+SELF STUDY QUESTIONS
+1. What are some common psychological theories and models that are used to explain or predict human behavior?
+
+   Answer: Here are some foundational theories and models that students should be familiar with from class resources, but this is not meant to be a comprehensive list of all psychological models. You can apply #psychologicalexplanation and use a theory or model not listed here:
+   
+   - Social Cognitive Theory: describes human behavior as a product of interactions between environmental, cognitive, and behavioral factors, where it can both influence and be influenced by cognitive and environmental factors.
+   - Beck’s Cognitive Model: describes individual behavior as shaped by factors such as thoughts, feelings, body physiology (physical sensations like hunger, tiredness, or racing heart), and actions which are all interconnected by reinforcing feedback loops.
+   - Self-Determination Theory: describes three factors that contribute to intrinsic motivation:
+   - Autonomy - the ability to make one’s own decisions and take ownership over one’s own actions
+   - Competence - the feeling of performing tasks with expertise
+   - Relatedness -  the need to feel a connection and a sense of belonging with others.
+   
+   - Dual Process Theory: describes how humans process information and make decisions using two cognitive systems:
+   - System 1 - fast, automatic, and unconscious
+   - System 2 - slow, conscious, and rational.
+   
+   - Prospect Theory: describes how humans don’t always make rational decisions. The key here is that their preferences for risk are inconsistent around a reference point:
+   - When faced with a risky choice that could lead to gains relative to a reference point, people are risk-averse.
+   - When faced with a risky choice that could lead to losses relative to a reference point, people are risk-seeking.
+   
+   - Maslow’s Hierarchy of Needs: describes how more fundamental needs must be met before less fundamental ones (starting from the bottom of the pyramid):
+   - physiological (food, shelter)
+   - safety (financial, safety from violence)
+   - social needs of belonging (family, friendships, love)
+   - self-esteem (competence, recognition)
+   - self-actualization (creativity, fulfillment, personal development)
+   - self-transcendence
+   
+   - Traditional vs Contemporary theories of emotion:
+   - “emotions, such as happiness, sadness, or anger, are recognized and expressed in the same way by everyone” VS “emotional categories are socially constructed and reflect a “commonsense view” rather than true biological processes, which is why our experience of the different instances of the same emotion will differ based on the context”
+   - “emotions exist in distinct parts of the brain (e.g. fear is found in the amygdala)” VS “emotions are events that happen within our nervous system as interconnected elements (not specific to a certain emotion) of our brain networks interact”.
+
+2. What is the difference between complex systems with simple models (e.g., Conway’s Game of Life) and humans as complex systems?
+
+   Answer: Agents in complex systems with simple models have a limited number of properties and rules. For example, in the Game of Life, individuals are either alive or dead and have specific locations. All the agents are governed by the same small number of rules. In contrast, humans have a significantly greater number of properties and rules which vary among individuals. When analyzing humans as complex systems, one needs to carefully select relevant properties and rules, and consider the generalizability of the traits. Psychology can be perceived as a study of the common rules and properties of humans (e.g., a rule derived from Maslow’s Hierarchy of Needs: if an agent comes from impoverished background their behavior is driven by the need to meet physiological needs). However, individual #differences should also be acknowledged and taken into account when necessary.
+
+3. What are four variables of the Cognitive Model and how do these variables interact with each other?
+
+   Answer: The cognitive model is a framework that explains the connections among thoughts, emotions, behaviors, and physiology. The interaction among these variables is complex, often involving feedback loops. For example, if you believe that you are underqualified for an internship (thoughts), you may feel fear and discomfort when writing a cover letter (emotions/feelings). Those negative emotions can alter your behavior by discouraging you from writing a paper, meaning you will either not submit the application or submit the lower quality one (due to less time spent on the letter) leading to lower chances of getting accepted. The rejection will reinforce your belief that you are underqualified and prevent you from submitting applications for similar positions.
+
+4. What are some methods to detect lies and how effective are they? How is #psychologicalexplanation relevant to lie detection?
+
+   Answer: People use cues, microexpressions, and increasing cognitive load techniques to detect lies. Some cues involve averting gaze directions, high pitch, vagueness etc. Although it is true that signs of discomfort may be an indicator of lying, people overestimate the effectiveness of cues as a lie detection mechanism. Another approach relies on the theory of microexpressions. This theory suggests that lying produces emotions that are “leaked-out.” For example, “duping delight” is an expression of pleasure caused by successfully lying. Microexpressions need to be frequent and uncontrollable for this theory to work, however, its effectiveness is unsupported by scientific literature. The third method of detecting deception is to increase cognitive load to elicit cues. This method involves strategic presentation of evidence and asking unexpected questions. Learn more about the techniques and application examples in “Deception in Complex Social Systems” reading linked in the Key Resources. #psychologicalexplanation can help us understand the motivation of agents and evaluate the consistency between what has been told and characteristics of the agent. Predicting when someone may be motivated to lie and identifying inconsistencies can aid lie detection.
+
+GUIDED REFLECTION QUESTIONS
+1. Have you drawn connections between multiple levels of analysis (individual, group, societal)?
+2. Have you considered alternative psychological explanations or theories to explain the same behavior?
+3. Have you justified the relevance of the selected theories/principles?
+4. Have you discussed the limitations or constraints of selected psychological theories or principles (e.g., how do individual and cultural differences limit the generalizability of a theory)?
+5. Have you provided evidence to support the connection between the theory and observed behavior?
+
+COMMON PITFALLS
+- The use of theories, principles, and terminology of psychology is inaccurate or non-existent.
+- Psychological theories are not explicitly connected to a specific behavior.
+- Does not justify the use of specific theories.
+- Provides a superficial overview of concepts instead of focusing on the underlying mechanisms.
+- Does not consider factors from multiple levels of analysis and how they interact.
+- Omits external research that could add depth and credibility to the analysis.
+
+APPLYING THIS HC AT MINERVA
+- This HC builds foundations for the science of psychology which is especially useful for students concentrating in Designing Societies and Cognition, Brain and Behavior. For example, Cognition, Brain and Behavior concentration involves learning theories of psychology to become a better leader, and positively impact your and others behavior. In Designing Societies track, you will need to understand the science of motivation and influence to improve societies.
+- You can use this HC in business assignments to justify specific product design choices and marketing strategies based on the predictions of consumer behavior rooted in psychology.
+
+APPLYING THIS HC OUTSIDE MINERVA
+- #psychologicalexplanation along with #biasmitigation/#biasidentification is relevant in research design for one to be able to eliminate errors caused by human biases. For example, placebo effect can be understood using cognitive-behavioral theories according to which cognitive processes such as attention, and perception affects our behaviors.
+- Understanding psychological theories can help us modify our behavior to achieve certain goals. For example, if you have a tendency to procrastinate on submitting job applications, you may explain this behavior using Self-Determination Theory which suggests that humans are motivated by feeling competent, therefore, you procrastinate submitting job applications to protect yourself from feeling incompetent at a new job. Understanding the roots of such behaviors can help you be more compassionate towards yourself and design better strategies to overcome them.
+
+KEY RESOURCES
+1. McAllister, K., Niv, S., Ivanov, D. & Fourie, K. (2022). Psychological explanation: Analyzing and predicting the behavior of complex agents. Minerva Guide 11. https://docs.google.com/document/d/1w2i7meVsZU4MX5Pfc2gzywFM3Ak0XQ6cqzHoWJfAc8/edit
+- This Minerva Guide introduces a range of considerations that are useful to make when analyzing psychological factors surrounding agent behavior. The paper is not exhaustive, meaning that it does not cover the full range of possible influences on human behavior, but it is meant as a framework with which to organize your approach to the psychological analysis of agents.
+2. McAllister, K. & Niv, S. (2022, August 2022) Introducing individual #differences.  https://docs.google.com/document/d/1lJ-hLaZyCfWY4RsvZZWiBsa5T2WXyl-aZPsZn7iG1Rk/edit
+- This guide explains facets of personality and identity (by introducing the ADDRESSING model) as part of differences. It also discusses how collective intelligence arises (#emergentproperties) in groups and the conditions for it.
+3. McAllister, K. (2020). Deception in Complex Social Systems. Minerva Guide 8. https://docs.google.com/document/d/1js0AWiJUW8P9y2j7WWzpJ6cvYwY3YDGTw6Sa5QOgMY/edit
+- This guide offers an introduction to lie-detection and suggests how complex systems HCs may also offer analytical tools to detect deception.
+4. Looser, C. E. (2019). Forum Magic. Minerva University. https://docs.google.com/document/d/182DpMpDXjmp9ohd8fZ9GeB3DG2Hmanj5xQeIF5GEMs/edit
+- This guide uses cognitive psychology to explain how attention and perception shape your behavior and interactions on Forum.
