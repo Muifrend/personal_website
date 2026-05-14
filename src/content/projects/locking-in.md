@@ -6,7 +6,7 @@ tags:
   - TypeScript
   - Bun
   - Cloudflare
-cover: "../assets/projects/locking-in-screenshot.jpg"
+cover: "../../assets/projects/locking-in-screenshot.jpg"
 repo: "https://github.com/scidroid/lockingin"
 link_url: "https://devpost.com/software/locking-in"
 link_text: "Devpost"

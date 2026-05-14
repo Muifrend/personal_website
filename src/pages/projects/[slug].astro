@@ -2,49 +2,12 @@
 import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
-
-const LINK_CLASS =
-  "text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1";
-
-const normalizeExternalUrl = (value?: string) => {
-  const trimmed = value?.trim();
-
-  if (!trimmed) {
-    return null;
-  }
-
-  try {
-    const parsed = new URL(trimmed);
-
-    if (!parsed.protocol.match(/^https?:$/)) {
-      return null;
-    }
-
-    return parsed.toString();
-  } catch {
-    return null;
-  }
-};
-
-const normalizeInternalPath = (value?: string) => {
-  const trimmed = value?.trim();
-
-  if (!trimmed) {
-    return null;
-  }
-
-  if (
-    trimmed.startsWith("//") ||
-    /^[a-zA-Z][a-zA-Z\d+.-]*:/.test(trimmed)
-  ) {
-    return null;
-  }
-
-  return trimmed.startsWith("/") ? trimmed : `/${trimmed}`;
-};
-
-const buildLinkLabel = (value?: string, fallback = "Link") =>
-  value?.trim() || fallback;
+import {
+  buildProjectLinkLabel,
+  formatProjectDate,
+  getProjectLinks,
+  PROJECT_LINK_CLASS,
+} from "../../features/projects/projectFormatters";
 
 // 1. Generate a path for every project
 export async function getStaticPaths() {
@@ -58,27 +21,20 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-const { title, repo, link_url, link_file, link_text, date, cover } = entry.data;
+const { title, link_text, date, cover } = entry.data;
 
-const repoHref = normalizeExternalUrl(repo);
-const externalLinkHref = normalizeExternalUrl(link_url);
-const internalLinkHref = externalLinkHref ? null : normalizeInternalPath(link_file);
-const hasProjectLink = Boolean(externalLinkHref || internalLinkHref);
-const hasAnyLink = Boolean(repoHref || hasProjectLink);
-const projectLinkLabel = buildLinkLabel(
+const {
+  repoHref,
+  externalLinkHref,
+  internalLinkHref,
+  hasProjectLink,
+  hasAnyLink,
+} = getProjectLinks(entry.data);
+const projectLinkLabel = buildProjectLinkLabel(
   link_text,
   internalLinkHref ? "View File" : "Visit Site",
 );
-
-const parsedDate = date ? new Date(date) : null;
-const formattedDate =
-  parsedDate && !Number.isNaN(parsedDate.valueOf())
-    ? new Intl.DateTimeFormat("en-US", {
-        month: "short",
-        day: "2-digit",
-        year: "numeric",
-      }).format(parsedDate)
-    : "Date unavailable";
+const formattedDate = formatProjectDate(date);
 ---
 
 <Layout title={title}>
@@ -95,7 +51,7 @@ const formattedDate =
                 href={repoHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                class={LINK_CLASS}
+                class={PROJECT_LINK_CLASS}
               >
                 Github Repo
               </a>
@@ -108,14 +64,14 @@ const formattedDate =
                 href={externalLinkHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                class={LINK_CLASS}
+                class={PROJECT_LINK_CLASS}
               >
                 {projectLinkLabel}
               </a>
             )}
 
             {internalLinkHref && (
-              <a href={internalLinkHref} class={LINK_CLASS}>
+              <a href={internalLinkHref} class={PROJECT_LINK_CLASS}>
                 {projectLinkLabel}
               </a>
             )}

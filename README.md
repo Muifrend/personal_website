@@ -25,6 +25,7 @@ npm run preview
 
 - `dev` — Runs the Astro dev server with HMR.
 - `build` — Produces a production build in `dist/`.
+- `check` — Runs Astro's type and content diagnostics.
 - `preview` — Serves the production build locally.
 
 ## Tech stack
@@ -33,17 +34,21 @@ npm run preview
 - TypeScript — typed components and scripts
 - Tailwind CSS — utility-first styling (global utilities live in `src/styles/global.css`)
 - React — hydrated components (client directives like `client:load`)
-- Embla Carousel — used for the horizontal gallery (`src/components/HorizontalGallery.tsx`)
-- Astro Content Collections (`src/content`) — typed Markdown content and collections
+- Embla Carousel — used for the gallery feature (`src/features/gallery`)
+- Astro Content Collections (`src/content/projects`) — typed Markdown project content
 
 ## Project layout (important files)
 
 - `astro.config.mjs` — Astro configuration and integrations
 - `src/layouts/Layout.astro` — site layout (navigation, main, footer)
-- `src/components/*` — UI components (Welcome, Contact, Footer, NavigationMenu, HorizontalGallery)
+- `src/components/site/*` — shared site chrome such as navigation and footer
+- `src/features/*` — feature-level UI and behavior for home, gallery, globe, and projects
+- `src/data/galleryPhotos.ts` — shared gallery/globe photo metadata
+- `src/lib/*` — small framework-agnostic utilities
 - `src/pages/*` — site pages (index, projects, feeling-lucky, etc.)
 - `src/styles/global.css` — Tailwind entry + centralized utility classes (e.g. `.site-container`, `.form-control`) 
-- `src/content/*` — Markdown content (collections configured in `src/content/config.ts`)
+- `src/content/projects/*` — Markdown project entries
+- `public/concepts/*` — static public text files served directly, not Astro-rendered content
 
 ## Notes & tips
 

@@ -1,20 +1,13 @@
-import React, { useState, useMemo } from "react";
-
-// Define the shape of the data we need
-interface ProjectData {
-  slug: string;
-  title: string;
-  date: string; // ISO string
-  tags: string[];
-}
+import { useMemo, useState } from "react";
+import type { ProjectListItem } from "./types";
 
 interface Props {
-  projects: ProjectData[];
+  projects: ProjectListItem[];
   allTags: string[];
 }
 
 const matchesSelectedTags = (
-  project: ProjectData,
+  project: ProjectListItem,
   selectedTagSet: Set<string>
 ) => {
   if (selectedTagSet.size === 0) return true;
@@ -28,68 +21,70 @@ interface TagFilterItemProps {
   onToggle: (tag: string) => void;
 }
 
-const TagFilterItem: React.FC<TagFilterItemProps> = ({
+function TagFilterItem({
   tag,
   isSelected,
   count,
   onToggle,
-}) => (
-  <label className="flex items-center gap-3 cursor-pointer group hover:opacity-70">
-    <div
-      className={`w-4 h-4 border transition-colors duration-200 flex items-center justify-center
-      ${isSelected ? "bg-black border-black text-white" : "border-gray-300 bg-white"}`}
+}: TagFilterItemProps) {
+  return (
+    <label className="flex items-center gap-3 cursor-pointer group hover:opacity-70">
+      <div
+        className={`w-4 h-4 border transition-colors duration-200 flex items-center justify-center
+        ${isSelected ? "bg-black border-black text-white" : "border-gray-300 bg-white"}`}
+      >
+        {isSelected && (
+          <svg
+            className="w-3 h-3"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        )}
+      </div>
+      <input
+        type="checkbox"
+        className="hidden"
+        checked={isSelected}
+        onChange={() => onToggle(tag)}
+      />
+      <span className="text-sm text-gray-600 group-hover:text-black transition-colors">
+        {tag}
+        <span className="text-gray-400 ml-1">({count})</span>
+      </span>
+    </label>
+  );
+}
+
+function ProjectRow({ project }: { project: ProjectListItem }) {
+  return (
+    <a
+      href={`/projects/${project.slug}`}
+      className="group flex items-center justify-between py-4 border-b border-gray-300 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
     >
-      {/* Checkmark Icon */}
-      {isSelected && (
-        <svg
-          className="w-3 h-3"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={3}
-            d="M5 13l4 4L19 7"
-          />
-        </svg>
-      )}
-    </div>
-    <input
-      type="checkbox"
-      className="hidden" // Hide default checkbox
-      checked={isSelected}
-      onChange={() => onToggle(tag)}
-    />
-    <span className="text-sm text-gray-600 group-hover:text-black transition-colors">
-      {tag}
-      <span className="text-gray-400 ml-1">({count})</span>
-    </span>
-  </label>
-);
+      <div className="w-32 md:w-48 flex-shrink-0 flex items-center gap-3 text-sm text-gray-800 px-3">
+        <span className="text-[10px] opacity-70">▪</span>
+        {project.date.slice(0, 10).replace(/-/g, ".")}
+      </div>
 
-const ProjectRow: React.FC<{ project: ProjectData }> = ({ project }) => (
-  <a
-    href={`/projects/${project.slug}`}
-    className="group flex items-center justify-between py-4 border-b border-gray-300 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
-  >
-    <div className="w-32 md:w-48 flex-shrink-0 flex items-center gap-3 text-sm text-gray-800 px-3">
-      <span className="text-[10px] opacity-70">▪</span>
-      {project.date.slice(0, 10).replace(/-/g, ".")}
-    </div>
+      <div className="flex-grow font-medium text-gray-900 group-hover:text-black">
+        {project.title}
+      </div>
+    </a>
+  );
+}
 
-    <div className="flex-grow font-medium text-gray-900 group-hover:text-black">
-      {project.title}
-    </div>
-  </a>
-);
-
-const ProjectBrowser: React.FC<Props> = ({ projects, allTags }) => {
+export default function ProjectBrowser({ projects, allTags }: Props) {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const selectedTagSet = useMemo(() => new Set(selectedTags), [selectedTags]);
 
-  // Toggle checkbox logic
   const toggleTag = (tag: string) => {
     setSelectedTags((prev) =>
       prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
@@ -106,7 +101,6 @@ const ProjectBrowser: React.FC<Props> = ({ projects, allTags }) => {
     return counts;
   }, [projects]);
 
-  // Filter logic (memoized for performance)
   const filteredProjects = useMemo(() => {
     return projects.filter((project) =>
       matchesSelectedTags(project, selectedTagSet)
@@ -157,6 +151,4 @@ const ProjectBrowser: React.FC<Props> = ({ projects, allTags }) => {
       </div>
     </div>
   );
-};
-
-export default ProjectBrowser;
+}

@@ -1,65 +1,14 @@
 ---
-import Welcome from "../components/Welcome.astro";
+import Hero from "../features/home/Hero.astro";
 import Layout from "../layouts/Layout.astro";
-import Contact from "../components/Contact.astro";
-import Gallery from "../components/Gallery";
-
-const altMap: Record<string, string> = {
-  // exact filename  :  description
-  "Mumbai_India.jpg": "On the streets of Mumbai, India",
-  "New_York_City_US.jpg": "NYSE, USA",
-  "San_Francisco_US.jpg": "Oracle Park San Francisco, USA",
-  "Taipei_Taiwan.jpg": "Cityscape of Taipei, Taiwan",
-  "Great_Wall_Of_China.jpg": "The Great Wall of China",
-  "Tel_Aviv_Israel.jpg": "On the streets of Tel Aviv, Israel",
-  "Cruise_Mazury_Poland.jpg": "Cruising the Mazury Lakes in Poland",
-  "Youtube_HQ_US.jpg": "YouTube Headquarters Visit, USA",
-};
-
-const getBasenameWithoutExtension = (pathOrUrl: string) => {
-  const filename = pathOrUrl.split("/").pop() ?? pathOrUrl;
-  const lastDotIndex = filename.lastIndexOf(".");
-  return lastDotIndex >= 0 ? filename.slice(0, lastDotIndex) : filename;
-};
-
-const normalizedAltMap = Object.fromEntries(
-  Object.entries(altMap).map(([key, value]) => [getBasenameWithoutExtension(key), value]),
-);
-
-const toGalleryImage = (
-  originalPath: string,
-  image: { default: ImageMetadata },
-) => {
-  const src = image.default.src;
-  const basename = getBasenameWithoutExtension(originalPath);
-  const alt = normalizedAltMap[basename];
-
-  if (!alt && import.meta.env.DEV) {
-    console.warn(`[gallery] Missing alt mapping for "${basename}" (${src})`);
-  }
-
-  return {
-    src,
-    alt: alt ?? "Gallery Image",
-  };
-};
-
-const matches = import.meta.glob<{ default: ImageMetadata }>(
-  "../assets/gallery/*.{jpeg,jpg,png,gif}",
-  { eager: true },
-);
-
-const galleryImages = Object.entries(matches).map(([path, image]) =>
-  toGalleryImage(path, image),
-);
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Contact from "../features/home/Contact.astro";
+import Gallery from "../features/gallery/Gallery";
+import { galleryPhotos } from "../data/galleryPhotos";
 ---
 
 <Layout title="Home">
   <div class="py-12">
-    <Welcome />
+    <Hero />
     <section class="site-container">
       <h2 class="text-2xl md:text-3xl leading-snug pt-8 mb-4">
         <span class="font-light">Inspired by </span><span class="font-bold"
@@ -69,7 +18,7 @@ const galleryImages = Object.entries(matches).map(([path, image]) =>
           >problems</span
         ><span class="font-light"> worth solving</span>
       </h2>
-      <Gallery client:load photos={galleryImages} />
+      <Gallery client:load photos={galleryPhotos} />
     </section>
     <Contact />
   </div>

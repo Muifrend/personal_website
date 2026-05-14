@@ -1,22 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import type { KeyboardEvent, PointerEvent } from "react";
 import * as d3 from "d3";
+import type { GeoSphere } from "d3-geo";
 import { feature } from "topojson-client";
 import countries110m from "world-atlas/countries-110m.json";
-import type { FeatureCollection, GeoJsonProperties, Geometry, Sphere } from "geojson";
+import type { FeatureCollection, GeoJsonProperties, Geometry } from "geojson";
 import type { GeometryCollection, Topology } from "topojson-specification";
-
-export type Place = {
-  id: string;
-  lat: number;
-  lon: number;
-  caption: string;
-  img: string;
-  imgWidth: number;
-  imgHeight: number;
-};
+import type { GlobePlace } from "../../data/galleryPhotos";
+import { getPhotoSize } from "./globeMath";
 
 type Props = {
-  places: Place[];
+  places: GlobePlace[];
   selected: string | null;
   onSelect: (id: string | null) => void;
 };
@@ -29,13 +23,13 @@ type DragState = {
   rot: Rotation;
 };
 
-type Marker = Place & {
+type Marker = GlobePlace & {
   x: number | null;
   y: number | null;
   visible: boolean;
 };
 
-type VisibleMarker = Place & {
+type VisibleMarker = GlobePlace & {
   x: number;
   y: number;
   visible: true;
@@ -46,26 +40,13 @@ type CountriesTopology = Topology<{ countries: GeometryCollection }>;
 const CX = 250;
 const CY = 250;
 const RADIUS = 200;
-const SPHERE: Sphere = { type: "Sphere" };
-const PHOTO_TARGET_AREA = 54000;
-const PHOTO_MAX_EDGE = 270;
+const SPHERE: GeoSphere = { type: "Sphere" };
+const countriesTopology = countries110m as unknown as CountriesTopology;
 
 const countries = feature(
-  countries110m as CountriesTopology,
-  (countries110m as CountriesTopology).objects.countries,
+  countriesTopology,
+  countriesTopology.objects.countries,
 ) as unknown as FeatureCollection<Geometry, GeoJsonProperties>;
-
-function getPhotoSize({ imgWidth, imgHeight }: Place) {
-  const aspectRatio = imgWidth / imgHeight;
-  const rawWidth = Math.sqrt(PHOTO_TARGET_AREA * aspectRatio);
-  const rawHeight = Math.sqrt(PHOTO_TARGET_AREA / aspectRatio);
-  const scale = Math.min(1, PHOTO_MAX_EDGE / Math.max(rawWidth, rawHeight));
-
-  return {
-    width: Math.round(rawWidth * scale),
-    height: Math.round(rawHeight * scale),
-  };
-}
 
 export default function Globe({ places, selected, onSelect }: Props) {
   const [rot, setRot] = useState<Rotation>([40, -15, 0]);
@@ -90,7 +71,7 @@ export default function Globe({ places, selected, onSelect }: Props) {
     return () => cancelAnimationFrame(raf);
   }, [auto]);
 
-  const onPointerDown = (event: React.PointerEvent<SVGSVGElement>) => {
+  const onPointerDown = (event: PointerEvent<SVGSVGElement>) => {
     setAuto(false);
     setDragging(true);
     dragRef.current = {
@@ -106,7 +87,7 @@ export default function Globe({ places, selected, onSelect }: Props) {
     }
   };
 
-  const onPointerMove = (event: React.PointerEvent<SVGSVGElement>) => {
+  const onPointerMove = (event: PointerEvent<SVGSVGElement>) => {
     if (!dragRef.current) return;
 
     const dx = event.clientX - dragRef.current.x;
@@ -231,12 +212,12 @@ export default function Globe({ places, selected, onSelect }: Props) {
           const isSelected = selected === marker.id;
           const markerRadius = isSelected ? 7 : 4;
 
-          const activate = (event: React.PointerEvent<SVGCircleElement>) => {
+          const activate = (event: PointerEvent<SVGCircleElement>) => {
             event.stopPropagation();
             event.preventDefault();
             onSelect(marker.id);
           };
-          const activateFromKeyboard = (event: React.KeyboardEvent<SVGCircleElement>) => {
+          const activateFromKeyboard = (event: KeyboardEvent<SVGCircleElement>) => {
             if (event.key !== "Enter" && event.key !== " ") return;
 
             event.stopPropagation();

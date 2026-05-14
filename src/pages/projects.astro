@@ -1,21 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ProjectBrowser from "../components/ProjectBrowser";
+import ProjectBrowser from "../features/projects/ProjectBrowser";
+import {
+  getProjectTags,
+  sortProjectsByDate,
+  toProjectListItem,
+} from "../features/projects/projectFormatters";
 import { getCollection } from "astro:content";
 
-const allProjects = (await getCollection("projectsCollection")).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+const allProjects = sortProjectsByDate(
+  await getCollection("projectsCollection"),
 );
-const allTags = [
-  ...new Set(allProjects.flatMap((project) => project.data.tags || [])),
-].sort();
-
-const formattedProjects = allProjects.map((p) => ({
-  slug: p.id,
-  title: p.data.title,
-  date: p.data.date.toISOString(),
-  tags: p.data.tags || [], // Ensure tags is an array
-}));
+const allTags = getProjectTags(allProjects);
+const formattedProjects = allProjects.map(toProjectListItem);
 ---
 
 <Layout title="Projects">

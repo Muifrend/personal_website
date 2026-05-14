@@ -6,7 +6,7 @@ tags:
   - React
   - Chrome Extension
   - JavaScript
-cover: "../assets/projects/unplug.png"
+cover: "../../assets/projects/unplug.png"
 ---
 
 

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import SwipeHint from "./SwipeHint";
 import type { Photo } from "./types";
@@ -21,7 +21,7 @@ interface Props {
   showSwipeHint: boolean;
 }
 
-const MobileGallery: React.FC<Props> = ({ photos, showSwipeHint }) => {
+export default function MobileGallery({ photos, showSwipeHint }: Props) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     axis: "y",
     align: "start",
@@ -83,6 +83,4 @@ const MobileGallery: React.FC<Props> = ({ photos, showSwipeHint }) => {
       <SwipeHint visible={showHint} />
     </div>
   );
-};
-
-export default MobileGallery;
+}

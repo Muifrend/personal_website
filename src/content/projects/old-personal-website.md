@@ -5,7 +5,7 @@ description: "Personal website built of off Stackoverflow forums"
 tags:
 - JavaScript
 - Stackoverflow
-cover: "../assets/projects/old-portfolio-website.png"
+cover: "../../assets/projects/old-portfolio-website.png"
 repo: "https://github.com/Muifrend/Portfolio-website"
 link_url: "https://muifrend.github.io/Portfolio-website/"
 link_text: "Live Website"

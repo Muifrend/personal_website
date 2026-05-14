@@ -1,9 +1,15 @@
 import { useState } from "react";
 import Globe from "./Globe";
-import { PLACES } from "./globePlaces";
+import { globePlaces } from "../../data/galleryPhotos";
 
 export default function GlobeSection() {
   const [selected, setSelected] = useState<string | null>(null);
 
-  return <Globe places={PLACES} selected={selected} onSelect={setSelected} />;
+  return (
+    <Globe
+      places={globePlaces}
+      selected={selected}
+      onSelect={setSelected}
+    />
+  );
 }

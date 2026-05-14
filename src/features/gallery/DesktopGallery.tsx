@@ -1,4 +1,3 @@
-import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import type { Photo } from "./types";
 
@@ -6,7 +5,7 @@ interface Props {
   photos: Photo[];
 }
 
-const DesktopGallery: React.FC<Props> = ({ photos }) => {
+export default function DesktopGallery({ photos }: Props) {
   const [emblaRef] = useEmblaCarousel({
     dragFree: true,
     containScroll: "trimSnaps",
@@ -39,6 +38,4 @@ const DesktopGallery: React.FC<Props> = ({ photos }) => {
       </div>
     </div>
   );
-};
-
-export default DesktopGallery;
+}
