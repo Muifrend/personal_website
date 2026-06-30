@@ -1,11 +1,11 @@
-import cruiseMazuryPoland from "../assets/gallery/Cruise_Mazury_Poland.jpg";
-import greatWallOfChina from "../assets/gallery/Great_Wall_Of_China.jpg";
-import mumbaiIndia from "../assets/gallery/Mumbai_India.jpg";
-import newYorkCityUs from "../assets/gallery/New_York_City_US.jpg";
-import sanFranciscoUs from "../assets/gallery/San_Francisco_US.jpg";
-import taipeiTaiwan from "../assets/gallery/Taipei_Taiwan.jpg";
-import telAvivIsrael from "../assets/gallery/Tel_Aviv_Israel.jpg";
-import youtubeHqUs from "../assets/gallery/Youtube_HQ_US.jpg";
+import cruiseMazuryPoland from "../assets/gallery/Cruise_Mazury_Poland.webp";
+import greatWallOfChina from "../assets/gallery/Great_Wall_Of_China.webp";
+import mumbaiIndia from "../assets/gallery/Mumbai_India.webp";
+import newYorkCityUs from "../assets/gallery/New_York_City_US.webp";
+import sanFranciscoUs from "../assets/gallery/San_Francisco_US.webp";
+import taipeiTaiwan from "../assets/gallery/Taipei_Taiwan.webp";
+import telAvivIsrael from "../assets/gallery/Tel_Aviv_Israel.webp";
+import youtubeHqUs from "../assets/gallery/Youtube_HQ_US.webp";
 
 type ImportedImage = {
   src: string;
