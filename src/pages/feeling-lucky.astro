@@ -1,11 +1,8 @@
 ---
+import Adventure from "../features/feeling-lucky/Adventure";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Feeling Lucky">
-  <div class="min-h-[calc(100vh-200px)] flex items-center justify-center">
-    <h1 class="text-6xl sm:text-7xl pt-10 text-center font-bold leading-tight">
-      Coming Soon!
-    </h1>
-  </div>
+<Layout title="Feeling Lucky?">
+  <Adventure client:load />
 </Layout>

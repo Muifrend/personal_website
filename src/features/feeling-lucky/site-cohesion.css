@@ -1,0 +1,652 @@
+/*
+ * Cohesion layer for the Feeling Lucky experience.
+ *
+ * Keep the expedition's indigo/amber atmosphere, but make the interface feel
+ * like the same product as the rest of Andrew's site: clean system typography,
+ * compact monospace labels, low-radius controls, quiet borders, and a shared
+ * spacing rhythm. Import this after adventure.css.
+ */
+
+.adventure-shell {
+  --site-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --site-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  --ink: #f3f4f6;
+  --muted: #c4cbd3;
+  --amber: #e9a64f;
+  --amber-bright: #ffd28c;
+  --night: #09111f;
+  --panel: rgba(9, 17, 31, 0.9);
+  --panel-soft: rgba(9, 17, 31, 0.72);
+  --line: rgba(229, 231, 235, 0.24);
+  --line-strong: rgba(229, 231, 235, 0.4);
+  --control-radius: 6px;
+  --panel-radius: 8px;
+  font-family: var(--site-sans);
+  font-size: 16px;
+  min-height: calc(100svh - 5rem);
+  color: #111827;
+  background: #ffffff;
+  overflow: clip;
+}
+
+body:has(.adventure-shell) {
+  overflow-x: hidden;
+  color: #111827;
+  background: #ffffff;
+}
+
+.adventure-shell.is-cinematic {
+  color: #f3f4f6;
+  background: #09111f;
+}
+
+.adventure-shell .adventure-world {
+  position: absolute;
+  inset: 0;
+}
+
+.adventure-shell .adventure-world__image {
+  animation: none;
+  transform: none;
+}
+
+/* The main site uses bold sans headings and monospace utility text. */
+.adventure-shell h1,
+.adventure-shell h2,
+.adventure-shell h3,
+.adventure-shell strong {
+  font-family: var(--site-sans);
+}
+
+.adventure-shell .intro-card h1,
+.adventure-shell .portrait-panel h1,
+.adventure-shell .reveal-copy h1,
+.adventure-shell .resolution-copy h1,
+.adventure-shell .contact-card h1,
+.adventure-shell .postcard h1,
+.adventure-shell .chapter-card h2,
+.adventure-shell .terminal-panel h2,
+.adventure-shell .response-card h2,
+.adventure-shell .generating-card h1 {
+  font-family: var(--site-sans);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.adventure-shell .intro-card h1 {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+}
+
+.adventure-shell .portrait-panel h1,
+.adventure-shell .reveal-copy h1,
+.adventure-shell .resolution-copy h1,
+.adventure-shell .contact-card h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.adventure-shell .chapter-card h2,
+.adventure-shell .terminal-panel h2,
+.adventure-shell .response-card h2,
+.adventure-shell .generating-card h1 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.adventure-shell .adventure-header,
+.adventure-shell .adventure-back,
+.adventure-shell .adventure-footer,
+.adventure-shell .adventure-eyebrow,
+.adventure-shell .intro-card__meta,
+.adventure-shell .privacy-list,
+.adventure-shell .portrait-placeholder,
+.adventure-shell .form-message,
+.adventure-shell .story-progress,
+.adventure-shell .terminal-panel,
+.adventure-shell .terminal-panel__body > p:not(.adventure-eyebrow):not(.code-feedback),
+.adventure-shell .choice-card__number,
+.adventure-shell .choice-card small,
+.adventure-shell .resolution-copy ul,
+.adventure-shell .postcard__photo > span,
+.adventure-shell .postcard__copy small,
+.adventure-shell .contact-links a {
+  font-family: var(--site-mono);
+}
+
+/* Readable body copy over photography. */
+.adventure-shell .intro-card__lead,
+.adventure-shell .portrait-copy > p:not(.adventure-eyebrow),
+.adventure-shell .generating-card > p:not(.adventure-eyebrow),
+.adventure-shell .reveal-copy p:not(.adventure-eyebrow),
+.adventure-shell .chapter-card > p:not(.adventure-eyebrow),
+.adventure-shell .resolution-copy > p:not(.adventure-eyebrow),
+.adventure-shell .contact-card > p:not(.adventure-eyebrow) {
+  max-width: 62ch;
+  color: #d8dde3;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.65;
+}
+
+.adventure-shell .adventure-eyebrow {
+  margin-bottom: 12px;
+  color: var(--amber-bright) !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em;
+  line-height: 1.5 !important;
+}
+
+.adventure-shell .intro-card__meta,
+.adventure-shell .privacy-list,
+.adventure-shell .choice-card small,
+.adventure-shell .resolution-copy ul {
+  color: #b8c1cb;
+  font-size: 0.75rem;
+  line-height: 1.55;
+}
+
+/* Use the same horizontal rhythm as the site's max-w-6xl container. */
+.adventure-shell .adventure-header,
+.adventure-shell .adventure-footer {
+  padding-right: clamp(1.5rem, 4vw, 3rem);
+  padding-left: clamp(1.5rem, 4vw, 3rem);
+}
+
+.adventure-shell .adventure-stage {
+  width: min(100%, 72rem);
+  margin-inline: auto;
+  min-height: calc(100svh - 5rem);
+  padding: 7rem clamp(1rem, 3vw, 2rem) 4rem;
+}
+
+.adventure-shell .intro-card {
+  width: min(100%, 42rem);
+  padding-left: 0;
+}
+
+.adventure-shell .journal-panel,
+.adventure-shell .reveal-card,
+.adventure-shell .resolution-card,
+.adventure-shell .terminal-panel {
+  border: 1px solid var(--line);
+  border-radius: var(--panel-radius);
+  background: var(--panel);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(14px);
+}
+
+.adventure-shell .decision-spread {
+  display: grid;
+  width: min(100%, 72rem);
+  grid-template-columns: minmax(0, 1.05fr) minmax(390px, 0.95fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.adventure-shell .decision-spread .journal-panel,
+.adventure-shell .decision-spread .terminal-panel {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.adventure-shell .scenario-image {
+  position: relative;
+  min-height: 34rem;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--panel-radius);
+  background: #09111f;
+}
+
+.adventure-shell .scenario-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.adventure-shell .scenario-image::after {
+  content: "";
+  position: absolute;
+  inset: 55% 0 0;
+  background: linear-gradient(transparent, rgba(5, 12, 24, 0.72));
+}
+
+.adventure-shell .scenario-image figcaption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1;
+  color: #f3f4f6;
+  font-family: var(--site-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.adventure-shell .response-card {
+  display: flex;
+  max-width: none;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  text-align: left;
+}
+
+.adventure-shell .response-card__copy {
+  margin: 0 0 1.5rem;
+  color: #d8dde3;
+  font-family: var(--site-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.adventure-shell .response-card .adventure-button {
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+.adventure-shell.is-cinematic .adventure-world__image {
+  opacity: 0.48;
+  filter: brightness(0.58) saturate(0.85);
+}
+
+.adventure-shell.is-site .journal-panel,
+.adventure-shell.is-site .contact-card {
+  color: #111827;
+  border-color: #e5e7eb;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+  backdrop-filter: none;
+}
+
+.adventure-shell.is-site .intro-card__lead,
+.adventure-shell.is-site .portrait-copy > p:not(.adventure-eyebrow),
+.adventure-shell.is-site .contact-card > p:not(.adventure-eyebrow) {
+  color: #4b5563;
+}
+
+.adventure-shell.is-site .adventure-eyebrow {
+  color: #6b7280 !important;
+}
+
+.adventure-shell.is-site .adventure-button--primary {
+  color: #ffffff;
+  background: #111827;
+  border-color: #111827;
+}
+
+.adventure-shell.is-site .adventure-button--primary:hover {
+  color: #ffffff;
+  background: #000000;
+}
+
+.adventure-shell.is-site .adventure-button--ghost {
+  color: #374151;
+  border-color: #d1d5db;
+  background: #ffffff;
+}
+
+.adventure-shell.is-site .adventure-button--ghost:hover {
+  color: #111827;
+  border-color: #9ca3af;
+  background: #f9fafb;
+}
+
+.adventure-shell.is-site .consent-note {
+  color: #111827;
+  border-color: #d1d5db;
+  border-left-color: #111827;
+  background: #f9fafb;
+}
+
+.adventure-shell.is-site .consent-note p,
+.adventure-shell.is-site .consent-note strong {
+  color: #374151;
+}
+
+.adventure-shell.is-site .portrait-frame {
+  border-color: #d1d5db;
+  background: #f9fafb;
+}
+
+.adventure-shell.is-site .portrait-placeholder {
+  color: #6b7280;
+}
+
+.adventure-shell.is-site .text-button {
+  color: #374151;
+  border-color: #9ca3af;
+}
+
+.adventure-shell .portrait-panel,
+.adventure-shell .chapter-card,
+.adventure-shell .response-card,
+.adventure-shell .terminal-panel__body,
+.adventure-shell .reveal-copy,
+.adventure-shell .resolution-copy,
+.adventure-shell .contact-card {
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* Low-radius controls echo navigation, forms, and the project browser. */
+.adventure-shell .adventure-button,
+.adventure-shell .choice-card,
+.adventure-shell .adventure-icon-button,
+.adventure-shell .adventure-exit,
+.adventure-shell .contact-links a,
+.adventure-shell .portrait-frame,
+.adventure-shell .code-block,
+.adventure-shell .consent-note,
+.adventure-shell .message-seal {
+  border-radius: var(--control-radius);
+}
+
+.adventure-shell .adventure-button {
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  font-family: var(--site-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+.adventure-shell .adventure-button--primary {
+  color: #111827;
+  background: var(--amber-bright);
+  border-color: var(--amber-bright);
+}
+
+.adventure-shell .adventure-button--primary:hover {
+  background: #ffe0ad;
+}
+
+.adventure-shell .adventure-button--ghost {
+  color: #f3f4f6;
+  border-color: var(--line-strong);
+  background: var(--panel-soft);
+}
+
+.adventure-shell .adventure-button--ghost:hover {
+  border-color: var(--amber);
+  background: rgba(233, 166, 79, 0.1);
+}
+
+.adventure-shell .adventure-icon-button {
+  width: 44px;
+  height: 44px;
+  border-color: var(--line);
+  background: var(--panel-soft);
+}
+
+.adventure-shell .adventure-exit,
+.adventure-shell .adventure-brand,
+.adventure-shell .adventure-back,
+.adventure-shell .text-button,
+.adventure-shell .contact-links a {
+  min-height: 44px;
+}
+
+.adventure-shell .adventure-exit {
+  padding: 0.625rem 0.875rem;
+  border-color: var(--line);
+  background: var(--panel-soft);
+  font-family: var(--site-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.adventure-shell .adventure-brand__mark {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--control-radius);
+  font-family: var(--site-sans);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.adventure-shell .adventure-header {
+  min-height: 56px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.12);
+  background: rgba(9, 17, 31, 0.72);
+  backdrop-filter: blur(12px);
+  font-family: var(--site-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.adventure-shell .adventure-back {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.adventure-shell .story-progress {
+  position: absolute;
+  top: 1.25rem;
+}
+
+.adventure-shell.is-site .adventure-back {
+  color: #4b5563;
+}
+
+.adventure-shell .text-button {
+  padding: 0.65rem 0.125rem;
+  font-family: var(--site-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.adventure-shell .choice-grid {
+  gap: 0.5rem;
+}
+
+.adventure-shell .choice-card {
+  min-height: 64px;
+  padding: 0.875rem 1rem;
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.adventure-shell .choice-card:hover,
+.adventure-shell .choice-card.is-selected {
+  border-color: rgba(255, 210, 140, 0.72);
+  background: rgba(233, 166, 79, 0.09);
+}
+
+.adventure-shell .choice-card strong {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.adventure-shell .consent-note {
+  border: 1px solid rgba(255, 210, 140, 0.3);
+  border-left-width: 2px;
+  background: rgba(233, 166, 79, 0.08);
+}
+
+.adventure-shell .consent-note p {
+  color: #d5dbe2;
+  font-family: var(--site-sans);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.adventure-shell .portrait-frame {
+  border: 1px solid var(--line);
+}
+
+.adventure-shell .code-block {
+  min-height: 52px;
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.adventure-shell .code-block code {
+  color: #f2c27f;
+  font-size: 0.8125rem;
+}
+
+.adventure-shell .code-block small {
+  color: #aeb8c2;
+  font-size: 0.75rem;
+}
+
+.adventure-shell .contact-links a {
+  padding: 0.75rem 1rem;
+  border-color: var(--line-strong);
+  background: var(--panel-soft);
+  font-family: var(--site-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Quiet the decorative layer enough that text and decisions lead. */
+.adventure-shell .adventure-world__grade {
+  background:
+    linear-gradient(90deg, rgba(5, 12, 24, 0.84), rgba(5, 12, 24, 0.28) 64%, rgba(5, 12, 24, 0.5)),
+    linear-gradient(0deg, rgba(5, 12, 24, 0.74), transparent 52%);
+}
+
+.adventure-shell .mist {
+  display: none;
+}
+
+.adventure-shell .embers {
+  display: none;
+}
+
+.adventure-shell .signal-route {
+  display: none;
+}
+
+.adventure-shell .message-seal {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  background: var(--panel-soft);
+  box-shadow: none;
+}
+
+.adventure-shell .story-progress {
+  color: #c4cbd3;
+  font-size: 0.6875rem;
+}
+
+.adventure-shell .adventure-footer {
+  color: rgba(229, 231, 235, 0.74);
+  font-size: 0.6875rem;
+}
+
+.adventure-shell :is(button, a, label.file-button):focus-visible {
+  outline: 2px solid var(--amber-bright);
+  outline-offset: 3px;
+}
+
+@media (max-width: 800px) {
+  .adventure-shell .adventure-header {
+    padding-inline: 1rem;
+  }
+
+  .adventure-shell .adventure-stage {
+    padding: 6.5rem 1rem 4.5rem;
+  }
+
+  .adventure-shell .adventure-back {
+    top: 0.75rem;
+    left: 1rem;
+  }
+
+  .adventure-shell .portrait-panel,
+  .adventure-shell .reveal-card,
+  .adventure-shell .resolution-card {
+    gap: 1.5rem;
+  }
+
+  .adventure-shell .decision-spread {
+    grid-template-columns: 1fr;
+  }
+
+  .adventure-shell .scenario-image {
+    min-height: 17rem;
+    aspect-ratio: 16 / 10;
+  }
+
+  .adventure-shell .portrait-panel,
+  .adventure-shell .chapter-card,
+  .adventure-shell .response-card,
+  .adventure-shell .terminal-panel__body,
+  .adventure-shell .reveal-copy,
+  .adventure-shell .resolution-copy,
+  .adventure-shell .contact-card {
+    padding: 1.5rem;
+  }
+
+  .adventure-shell .intro-card__actions,
+  .adventure-shell .portrait-actions,
+  .adventure-shell .terminal-actions,
+  .adventure-shell .postcard-actions {
+    gap: 0.625rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .adventure-shell .adventure-header__actions {
+    gap: 0.5rem;
+  }
+
+  .adventure-shell .adventure-exit {
+    padding-inline: 0.75rem;
+  }
+
+  .adventure-shell .intro-card h1 {
+    font-size: clamp(2.75rem, 14vw, 4rem);
+  }
+
+  .adventure-shell .choice-card {
+    grid-template-columns: 1.5rem 1fr;
+  }
+
+  .adventure-shell .adventure-button {
+    width: 100%;
+  }
+
+  .adventure-shell .text-button {
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .adventure-shell .adventure-button:hover {
+    transform: none;
+  }
+}
+
+/* Motion is reserved for progress feedback, not decoration. */
+.adventure-shell .scene-enter,
+.adventure-shell .portal-ring span,
+.adventure-shell .response-card__signal i,
+.adventure-shell .resolution-beacons i {
+  animation: none;
+}
+
+.adventure-shell .adventure-button:hover {
+  transform: none;
+}
