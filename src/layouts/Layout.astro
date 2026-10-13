@@ -5,9 +5,10 @@ import Footer from "../components/site/Footer.astro";
 
 interface Props {
   title: string;
+  contentWidth?: "wide" | "reading";
 }
 
-const { title } = Astro.props;
+const { title, contentWidth = "wide" } = Astro.props;
 ---
 
 <!doctype html>
@@ -25,10 +26,15 @@ const { title } = Astro.props;
       <NavigationMenu />
     </header>
 
-    <main class="flex-1 site-container site-main">
-      <slot />
-    </main>
-
-    <Footer />
+    <!-- This container owns the page width and gutters for content and copyright. -->
+    <div class:list={[
+      "site-container flex flex-1 flex-col",
+      { "site-reading-container": contentWidth === "reading" },
+    ]}>
+      <main class="min-w-0 flex-1">
+        <slot />
+      </main>
+      <Footer />
+    </div>
   </body>
 </html>

@@ -34,7 +34,7 @@ export default function MobileGallery({ photos, showSwipeHint }: Props) {
       if (pointerX === undefined) return true;
 
       const { left, width } = root.getBoundingClientRect();
-      const inset = width * 0.15;
+      const inset = width * 0.05;
       return pointerX >= left + inset && pointerX <= left + width - inset;
     },
   });

@@ -37,8 +37,8 @@ const projectLinkLabel = buildProjectLinkLabel(
 const formattedDate = formatProjectDate(date);
 ---
 
-<Layout title={title}>
-  <main class="max-w-3xl py-12 mx-auto pt-20 px-6 w-full">
+<Layout title={title} contentWidth="reading">
+  <div class="py-12 pt-20">
     <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 leading-tight">
       {title}
     </h1>
@@ -95,5 +95,5 @@ const formattedDate = formatProjectDate(date);
     <article class="prose prose-gray prose-lg max-w-none">
       <Content />
     </article>
-  </main>
+  </div>
 </Layout>

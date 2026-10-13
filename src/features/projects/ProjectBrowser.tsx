@@ -28,9 +28,16 @@ function TagFilterItem({
   onToggle,
 }: TagFilterItemProps) {
   return (
-    <label className="flex items-center gap-3 cursor-pointer group hover:opacity-70">
+    <label className="-mx-2 flex cursor-pointer items-center gap-3 rounded-sm px-2 py-1 transition-colors duration-200 group hover:bg-gray-50">
+      <input
+        type="checkbox"
+        className="peer sr-only"
+        checked={isSelected}
+        onChange={() => onToggle(tag)}
+      />
       <div
-        className={`w-4 h-4 border transition-colors duration-200 flex items-center justify-center
+        aria-hidden="true"
+        className={`w-4 h-4 shrink-0 border transition-colors duration-200 flex items-center justify-center peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-black
         ${isSelected ? "bg-black border-black text-white" : "border-gray-300 bg-white"}`}
       >
         {isSelected && (
@@ -49,32 +56,28 @@ function TagFilterItem({
           </svg>
         )}
       </div>
-      <input
-        type="checkbox"
-        className="hidden"
-        checked={isSelected}
-        onChange={() => onToggle(tag)}
-      />
-      <span className="text-sm text-gray-600 group-hover:text-black transition-colors">
-        {tag}
-        <span className="text-gray-400 ml-1">({count})</span>
+      <span className="text-sm text-gray-900 group-hover:text-black transition-colors">
+        {tag} <span className="text-gray-400">({count})</span>
       </span>
     </label>
   );
 }
 
 function ProjectRow({ project }: { project: ProjectListItem }) {
+  const date = project.date.slice(0, 10).replace(/-/g, ".");
+
   return (
     <a
       href={`/projects/${project.slug}`}
       className="group flex items-center justify-between py-4 border-b border-gray-300 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
     >
-      <div className="w-32 md:w-48 flex-shrink-0 flex items-center gap-3 font-mono text-sm text-gray-800 px-3">
-        <span className="text-[10px] opacity-70">▪</span>
-        {project.date.slice(0, 10).replace(/-/g, ".")}
+      <div className="w-32 md:w-48 flex-shrink-0 flex items-center font-mono text-sm text-gray-800 px-3">
+        <span>
+          {date.slice(0, 7)}<span className="hidden sm:inline">{date.slice(7)}</span>
+        </span>
       </div>
 
-      <div className="flex-grow font-medium text-gray-900 group-hover:text-black">
+      <div className="flex-grow px-3 font-medium text-gray-900 group-hover:text-black">
         {project.title}
       </div>
     </a>
@@ -108,14 +111,14 @@ export default function ProjectBrowser({ projects, allTags }: Props) {
   }, [projects, selectedTagSet]);
 
   return (
-    <div className="flex flex-col md:flex-row gap-8">
+    <div className="flex flex-col lg:flex-row gap-8">
       {/* LEFT SIDEBAR: FILTERS */}
-      <div className="hidden lg:block w-full lg:w-64 flex-shrink-0 max-w-4xl mx-auto px-2">
+      <div className="hidden lg:block w-64 flex-shrink-0">
         <div className="border-b border-black pb-2 mb-4 font-mono text-xs text-gray-500 uppercase tracking-wider">
           / Technologies
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col">
           {allTags.map((tag) => (
             <TagFilterItem
               key={tag}
@@ -129,7 +132,7 @@ export default function ProjectBrowser({ projects, allTags }: Props) {
       </div>
 
       {/* RIGHT SIDE: PROJECT LIST */}
-      <div className="flex-grow max-w-4xl mx-auto w-full px-4">
+      <div className="min-w-0 flex-1">
         {/* Header */}
         <div className="flex items-end border-b-2 border-black pb-2 mb-0 font-mono text-xs text-gray-500 uppercase tracking-wider">
           <div className="w-32 md:w-48 flex-shrink-0">/ Date</div>
