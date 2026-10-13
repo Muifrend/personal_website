@@ -69,7 +69,7 @@ function ProjectRow({ project }: { project: ProjectListItem }) {
       href={`/projects/${project.slug}`}
       className="group flex items-center justify-between py-4 border-b border-gray-300 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
     >
-      <div className="w-32 md:w-48 flex-shrink-0 flex items-center gap-3 text-sm text-gray-800 px-3">
+      <div className="w-32 md:w-48 flex-shrink-0 flex items-center gap-3 font-mono text-sm text-gray-800 px-3">
         <span className="text-[10px] opacity-70">▪</span>
         {project.date.slice(0, 10).replace(/-/g, ".")}
       </div>
@@ -108,10 +108,10 @@ export default function ProjectBrowser({ projects, allTags }: Props) {
   }, [projects, selectedTagSet]);
 
   return (
-    <div className="flex flex-col md:flex-row gap-8 font-mono">
+    <div className="flex flex-col md:flex-row gap-8">
       {/* LEFT SIDEBAR: FILTERS */}
-      <div className="w-full md:w-64 flex-shrink-0 max-w-4xl mx-auto w-full px-2 font-mono">
-        <div className="border-b border-black pb-2 mb-4 text-xs text-gray-500 uppercase tracking-wider">
+      <div className="hidden lg:block w-full lg:w-64 flex-shrink-0 max-w-4xl mx-auto px-2">
+        <div className="border-b border-black pb-2 mb-4 font-mono text-xs text-gray-500 uppercase tracking-wider">
           / Technologies
         </div>
 
@@ -129,9 +129,9 @@ export default function ProjectBrowser({ projects, allTags }: Props) {
       </div>
 
       {/* RIGHT SIDE: PROJECT LIST */}
-      <div className="flex-grow max-w-4xl mx-auto w-full px-4 font-mono ">
+      <div className="flex-grow max-w-4xl mx-auto w-full px-4">
         {/* Header */}
-        <div className="flex items-end border-b-2 border-black pb-2 mb-0 text-xs text-gray-500 uppercase tracking-wider">
+        <div className="flex items-end border-b-2 border-black pb-2 mb-0 font-mono text-xs text-gray-500 uppercase tracking-wider">
           <div className="w-32 md:w-48 flex-shrink-0">/ Date</div>
           <div className="flex-grow">/ Name</div>
         </div>

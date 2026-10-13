@@ -25,6 +25,18 @@ export default function MobileGallery({ photos, showSwipeHint }: Props) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     axis: "y",
     align: "start",
+    loop: true,
+    watchDrag: (_emblaApi, event) => {
+      const root = event.currentTarget;
+      if (!(root instanceof HTMLElement)) return true;
+
+      const pointerX = "touches" in event ? event.touches[0]?.clientX : event.clientX;
+      if (pointerX === undefined) return true;
+
+      const { left, width } = root.getBoundingClientRect();
+      const inset = width * 0.15;
+      return pointerX >= left + inset && pointerX <= left + width - inset;
+    },
   });
   const [showHint, setShowHint] = useState(false);
 
@@ -52,14 +64,14 @@ export default function MobileGallery({ photos, showSwipeHint }: Props) {
 
   return (
     <div
-      className="-mx-6 w-[calc(100%+3rem)] h-[80svh] overflow-hidden rounded-xl relative"
+      className="mt-12 w-full h-[60svh] overflow-hidden rounded-xl relative"
       ref={emblaRef}
     >
       <div className="flex flex-col h-full touch-pan-y">
         {photos.map((photo) => (
           <figure
             key={photo.src}
-            className="h-[80svh] w-full shrink-0 relative select-none overflow-hidden"
+            className="h-[60svh] w-full shrink-0 relative select-none overflow-hidden"
           >
             <img
               src={photo.src}

@@ -5,34 +5,40 @@ const currentPath = normalizePath(pathname);
 
 const links = [
   // MOBILE LINKS
-  { 
-    href: "/", 
-    label: "ANDREW_FIREK", 
+  {
+    href: "/feeling-lucky",
+    label: "Lucky",
     mobileOnly: true,
-    class: "sm:hidden font-mono text-black text-sm font-bold tracking-tighter" 
+    class: "sm:hidden group nav-link justify-center"
   },
-  { 
-    href: "/projects", 
-    label: "Projects", 
+  {
+    href: "/",
+    label: "Home",
     mobileOnly: true,
-    class: "sm:hidden font-mono text-sm" 
+    class: "sm:hidden group nav-link justify-center"
   },
-  
+  {
+    href: "/projects",
+    label: "Projects",
+    mobileOnly: true,
+    class: "sm:hidden group nav-link justify-center"
+  },
+
   // DESKTOP LINKS
-  { href: "/", label: "Home", key: "H", desktopOnly: true },
-  { href: "/projects", label: "Projects", key: "P", desktopOnly: true },
-  { href: "/feeling-lucky", label: "I'm Feeling Lucky", key: "F", desktopOnly: true },
+  { href: "/", label: "Home", desktopOnly: true },
+  { href: "/projects", label: "Projects", desktopOnly: true },
+  { href: "/feeling-lucky", label: "I'm Feeling Lucky", desktopOnly: true },
 ];
 ---
 
-<nav class="site-nav bg-white/80">
+<nav class="site-nav bg-white/80" aria-label="Main navigation">
   <div class="site-container h-14 flex items-center">
-    <ul class="flex items-center justify-between sm:justify-center w-full sm:w-auto sm:mx-auto gap-1 list-none px-4 sm:px-0">
+    <ul class="flex items-center justify-center w-auto mx-auto gap-4 sm:gap-1 list-none p-0">
       {
         links.map((link) => (
           <li class:list={[
             { "hidden sm:block": link.desktopOnly },
-            { "block sm:hidden": link.mobileOnly }
+            { "flex sm:hidden": link.mobileOnly }
           ]}>
             <a
               href={link.href}
@@ -41,8 +47,6 @@ const links = [
                 { active: currentPath === normalizePath(link.href) },
               ]}
             >
-              {/* Symbols hidden on mobile via 'hidden sm:inline-block' */}
-              {link.key && <span class="nav-key hidden sm:inline-block">{link.key}</span>}
               <span>{link.label}</span>
             </a>
           </li>
@@ -51,21 +55,3 @@ const links = [
     </ul>
   </div>
 </nav>
-
-<script>
-  const routes: Record<string, string> = {
-    h: "/",
-    p: "/projects",
-    f: "/feeling-lucky",
-  };
-
-  window.addEventListener("keydown", (e) => {
-    if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
-
-    const target = routes[e.key.toLowerCase()];
-    if (target) {
-      e.preventDefault();
-      window.location.href = target;
-    }
-  });
-</script>

@@ -14,7 +14,7 @@ const { title } = Astro.props;
 <html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -25,7 +25,7 @@ const { title } = Astro.props;
       <NavigationMenu />
     </header>
 
-    <main class="flex-1 site-container">
+    <main class="flex-1 site-container site-main">
       <slot />
     </main>
 

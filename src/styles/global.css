@@ -16,12 +16,33 @@
   @apply max-w-6xl mx-auto px-6 w-full;
 }
 
+.site-main {
+  padding-bottom: calc(3.5rem + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 640px) {
+  .site-main {
+    padding-bottom: 0;
+  }
+}
+
 .site-footer {
   @apply mt-12 border-t border-white/5 pt-6 text-sm text-gray-400 px-8 py-4 flex-shrink-0;
 }
 
 .site-nav {
   @apply fixed top-0 left-0 w-full z-50 border-b border-gray-200 bg-white/80 backdrop-blur-md;
+}
+
+@media (max-width: 639px) {
+  .site-nav {
+    top: auto;
+    bottom: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    border-top: 1px solid rgb(229 231 235);
+    border-bottom: 0;
+    background-color: rgb(255 255 255 / 0.98);
+  }
 }
 
 .form-control {
