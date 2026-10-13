@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { KeyboardEvent, PointerEvent } from "react";
 import * as d3 from "d3";
 import type { GeoSphere } from "d3-geo";
@@ -53,6 +53,9 @@ export default function Globe({ places, selected, onSelect }: Props) {
   const [auto, setAuto] = useState(true);
   const [dragging, setDragging] = useState(false);
   const dragRef = useRef<DragState | null>(null);
+  const surfaceRef = useRef<HTMLDivElement>(null);
+  const rotationRef = useRef(rot);
+  rotationRef.current = rot;
 
   useEffect(() => {
     if (!auto) return;
@@ -71,37 +74,105 @@ export default function Globe({ places, selected, onSelect }: Props) {
     return () => cancelAnimationFrame(raf);
   }, [auto]);
 
-  const onPointerDown = (event: PointerEvent<SVGSVGElement>) => {
+  const startDrag = useCallback((x: number, y: number) => {
     setAuto(false);
     setDragging(true);
     dragRef.current = {
-      x: event.clientX,
-      y: event.clientY,
-      rot: [...rot] as Rotation,
+      x,
+      y,
+      rot: [...rotationRef.current] as Rotation,
     };
+  }, []);
 
-    try {
-      event.currentTarget.setPointerCapture(event.pointerId);
-    } catch {
-      // Pointer capture can fail on some synthetic/event-replay paths.
-    }
-  };
-
-  const onPointerMove = (event: PointerEvent<SVGSVGElement>) => {
+  const moveDrag = useCallback((x: number, y: number) => {
     if (!dragRef.current) return;
 
-    const dx = event.clientX - dragRef.current.x;
-    const dy = event.clientY - dragRef.current.y;
+    const dx = x - dragRef.current.x;
+    const dy = y - dragRef.current.y;
     const [lambda, pitch] = dragRef.current.rot;
     const nextLambda = lambda + dx * 0.45;
     const nextPitch = Math.max(-85, Math.min(85, pitch - dy * 0.45));
 
     setRot([nextLambda, nextPitch, 0]);
-  };
+  }, []);
 
-  const onPointerUp = () => {
+  const endDrag = useCallback(() => {
     dragRef.current = null;
     setDragging(false);
+  }, []);
+
+  useEffect(() => {
+    const surface = surfaceRef.current;
+    if (!surface) return;
+
+    let touchId: number | null = null;
+    let tappedMarker: string | null = null;
+    let moved = false;
+
+    const cancelTouch = () => {
+      touchId = null;
+      tappedMarker = null;
+      endDrag();
+    };
+    const onTouchStart = (event: TouchEvent) => {
+      if (event.touches.length !== 1) {
+        cancelTouch();
+        return;
+      }
+      if (!(event.target instanceof Element) || !event.target.closest("svg")) return;
+
+      const touch = event.touches[0];
+      touchId = touch.identifier;
+      tappedMarker = event.target.closest("[data-place-id]")?.getAttribute("data-place-id") ?? null;
+      moved = false;
+      if (event.cancelable) event.preventDefault();
+      startDrag(touch.clientX, touch.clientY);
+    };
+    const onTouchMove = (event: TouchEvent) => {
+      if (touchId === null) return;
+      const touch = Array.from(event.touches).find((touch) => touch.identifier === touchId);
+      if (!touch || !dragRef.current) return;
+      if (event.cancelable) event.preventDefault();
+      moved ||= Math.hypot(touch.clientX - dragRef.current.x, touch.clientY - dragRef.current.y) > 6;
+      moveDrag(touch.clientX, touch.clientY);
+    };
+    const onTouchEnd = (event: TouchEvent) => {
+      if (touchId === null || !Array.from(event.changedTouches).some((touch) => touch.identifier === touchId)) return;
+      if (!moved && tappedMarker) onSelect(tappedMarker);
+      cancelTouch();
+    };
+
+    // Native non-passive listeners let Safari deliver the drag without scrolling the page.
+    surface.addEventListener("touchstart", onTouchStart, { passive: false });
+    surface.addEventListener("touchmove", onTouchMove, { passive: false });
+    surface.addEventListener("touchend", onTouchEnd);
+    surface.addEventListener("touchcancel", cancelTouch);
+    return () => {
+      surface.removeEventListener("touchstart", onTouchStart);
+      surface.removeEventListener("touchmove", onTouchMove);
+      surface.removeEventListener("touchend", onTouchEnd);
+      surface.removeEventListener("touchcancel", cancelTouch);
+    };
+  }, [startDrag, moveDrag, endDrag, onSelect]);
+
+  const onPointerDown = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.pointerType === "touch" || !event.isPrimary || event.button !== 0) return;
+    if (!(event.target instanceof Element) || !event.target.closest("svg")) return;
+    startDrag(event.clientX, event.clientY);
+    try {
+      event.currentTarget.setPointerCapture(event.pointerId);
+    } catch {
+      // A pointer may have ended before capture was requested.
+      endDrag();
+    }
+  };
+
+  const onPointerMove = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.pointerType !== "touch" && event.isPrimary) moveDrag(event.clientX, event.clientY);
+  };
+
+  const onPointerUp = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.pointerType !== "touch" && event.isPrimary) endDrag();
   };
 
   const projection = useMemo(
@@ -152,16 +223,20 @@ export default function Globe({ places, selected, onSelect }: Props) {
     : null;
 
   return (
-    <div className="relative mx-auto aspect-square w-full max-w-full touch-none select-none overflow-visible">
+    <div
+      ref={surfaceRef}
+      className="relative mx-auto aspect-square w-full max-w-full touch-none select-none overflow-visible"
+      onPointerDown={onPointerDown}
+      onPointerMove={onPointerMove}
+      onPointerUp={onPointerUp}
+      onPointerCancel={onPointerUp}
+      onLostPointerCapture={onPointerUp}
+    >
       <svg
-        className={`block h-full w-full ${dragging ? "cursor-grabbing" : "cursor-grab"}`}
+        className={`block h-full w-full touch-none ${dragging ? "cursor-grabbing" : "cursor-grab"}`}
         viewBox="0 0 500 500"
         role="img"
         aria-label="Interactive globe with travel photo markers"
-        onPointerDown={onPointerDown}
-        onPointerMove={onPointerMove}
-        onPointerUp={onPointerUp}
-        onPointerCancel={onPointerUp}
       >
         {sphereOutline ? (
           <path d={sphereOutline} fill="oklch(0.985 0.002 247.839)" />
@@ -213,6 +288,7 @@ export default function Globe({ places, selected, onSelect }: Props) {
           const markerRadius = isSelected ? 7 : 4;
 
           const activate = (event: PointerEvent<SVGCircleElement>) => {
+            if (event.pointerType === "touch") return;
             event.stopPropagation();
             event.preventDefault();
             onSelect(marker.id);
@@ -269,6 +345,7 @@ export default function Globe({ places, selected, onSelect }: Props) {
                 role="button"
                 tabIndex={0}
                 aria-label={`Show ${marker.caption}`}
+                data-place-id={marker.id}
                 onPointerDown={activate}
                 onKeyDown={activateFromKeyboard}
               />
