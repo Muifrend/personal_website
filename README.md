@@ -32,7 +32,9 @@ npm run preview
 
 `src/layouts/Layout.astro` owns the shared container for page content and copyright. Pages use its default wide layout; project details use `contentWidth="reading"` for a centered reading column. Keep horizontal page gutters in this shared layout rather than adding nested containers.
 
-`src/config/features.ts` controls optional navigation items. `feelingLucky` defaults to `false`, hiding Lucky on both desktop and mobile while keeping the stub page available by URL. Desktop navigation supports H for Home and P for Projects; enabling Lucky also enables L. Shortcuts are disabled on mobile and while typing or using modifier keys.
+`src/config/features.ts` controls optional navigation items. `feelingLucky` defaults to `false`, hiding Lucky on both desktop and mobile while keeping the stub page available by URL. Desktop navigation supports H for Home, P for Projects, and B for Blog; enabling Lucky also enables L. Shortcuts are disabled on mobile and while typing or using modifier keys.
+
+Projects and Blog share `src/components/content/FilterableList.tsx` for their date/name list and tag filtering. Blog entries live in `src/content/blog` as JSON with `title`, `date` (YYYY-MM or YYYY-MM-DD), `topics`, and an HTTPS `url`. Selecting an article opens its external URL directly. Topics filters follow the same desktop-only visibility as Technologies on Projects.
 
 ## Tech stack
 

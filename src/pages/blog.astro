@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import FilterableList from "../components/content/FilterableList";
+
+const articles = (await getCollection("blogCollection"))
+  .sort((a, b) => b.data.date.localeCompare(a.data.date));
+const allTopics = [...new Set(articles.flatMap((article) => article.data.topics))].sort();
+const items = articles.map((article) => ({
+  id: article.id,
+  title: article.data.title,
+  date: article.data.date,
+  tags: article.data.topics,
+  href: article.data.url,
+}));
+---
+
+<Layout title="Blog">
+  <div class="py-16">
+    <h1 class="pt-12 pb-8 text-5xl font-bold md:text-6xl">
+      Blog
+    </h1>
+    <FilterableList
+      client:load
+      items={items}
+      allTags={allTopics}
+      filterLabel="Topics"
+      emptyMessage="No articles match these filters."
+    />
+  </div>
+</Layout>

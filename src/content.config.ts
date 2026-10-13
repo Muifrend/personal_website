@@ -18,4 +18,20 @@ const projectsCollection = defineCollection({
     }),
 });
 
-export const collections = { projectsCollection };
+const blogCollection = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/blog" }),
+  schema: z.object({
+    title: z.string(),
+    // Keep publication dates as text so month-only dates don't gain an invented day.
+    date: z.union([
+      z.iso.date(),
+      z.string().regex(/^\d{4}-(0[1-9]|1[0-2])$/),
+    ]),
+    topics: z.array(z.string()),
+    url: z.url().refine((value) => new URL(value).protocol === "https:", {
+      message: "Blog links must use HTTPS.",
+    }),
+  }),
+});
+
+export const collections = { projectsCollection, blogCollection };
