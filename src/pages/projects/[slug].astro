@@ -35,6 +35,11 @@ const projectLinkLabel = buildProjectLinkLabel(
   internalLinkHref ? "View File" : "Visit Site",
 );
 const formattedDate = formatProjectDate(date);
+const coverHref = externalLinkHref || internalLinkHref;
+const CoverWrapper = coverHref ? "a" : "div";
+const pdfHref = internalLinkHref && /\.pdf(?:[?#]|$)/i.test(internalLinkHref)
+  ? internalLinkHref
+  : null;
 ---
 
 <Layout title={title} contentWidth="reading">
@@ -84,11 +89,29 @@ const formattedDate = formatProjectDate(date);
     <hr class="border-gray-200 mb-8" />
     {
       cover && (
-        <Image
-          src={cover}
-          alt={title}
-          class="w-full h-auto rounded-xl shadow-lg mb-8 border border-gray-500"
-          loading="eager"
+        <CoverWrapper
+          href={coverHref || undefined}
+          target={externalLinkHref ? "_blank" : undefined}
+          rel={externalLinkHref ? "noopener noreferrer" : undefined}
+          aria-label={coverHref ? `${projectLinkLabel}: ${title}` : undefined}
+          class="block mb-8 rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
+        >
+          <Image
+            src={cover}
+            alt={title}
+            class="w-full h-auto rounded-xl shadow-lg border border-gray-500"
+            loading="eager"
+          />
+        </CoverWrapper>
+      )
+    }
+    {
+      pdfHref && (
+        <iframe
+          src={pdfHref}
+          title={`${title} PDF`}
+          class="block mb-8 h-[70svh] min-h-96 w-full rounded-xl border border-gray-200 bg-gray-50"
+          loading="lazy"
         />
       )
     }
