@@ -1,4 +1,6 @@
 ---
+import { featureFlags } from "../../config/features";
+
 const pathname = Astro.url.pathname;
 const normalizePath = (path: string) => path.replace(/\/$/, "") || "/";
 const currentPath = normalizePath(pathname);
@@ -8,6 +10,7 @@ const links = [
   {
     href: "/feeling-lucky",
     label: "Lucky",
+    enabled: featureFlags.feelingLucky,
     mobileOnly: true,
     class: "sm:hidden group nav-link justify-center"
   },
@@ -25,14 +28,20 @@ const links = [
   },
 
   // DESKTOP LINKS
-  { href: "/", label: "Home", desktopOnly: true },
-  { href: "/projects", label: "Projects", desktopOnly: true },
-  { href: "/feeling-lucky", label: "I'm Feeling Lucky", desktopOnly: true },
-];
+  { href: "/", label: "Home", key: "H", desktopOnly: true },
+  { href: "/projects", label: "Projects", key: "P", desktopOnly: true },
+  {
+    href: "/feeling-lucky",
+    label: "I'm Feeling Lucky",
+    key: "L",
+    desktopOnly: true,
+    enabled: featureFlags.feelingLucky,
+  },
+].filter((link) => link.enabled !== false);
 ---
 
 <nav class="site-nav bg-white/80" aria-label="Main navigation">
-  <div class="site-container h-14 flex items-center">
+  <div class="site-container site-nav-content flex items-center">
     <ul class="flex items-center justify-center w-auto mx-auto gap-4 sm:gap-1 list-none p-0">
       {
         links.map((link) => (
@@ -42,11 +51,15 @@ const links = [
           ]}>
             <a
               href={link.href}
+              data-shortcut={link.key?.toLowerCase()}
+              aria-keyshortcuts={link.key?.toLowerCase()}
+              aria-current={currentPath === normalizePath(link.href) ? "page" : undefined}
               class:list={[
                 link.mobileOnly ? link.class : "group nav-link",
                 { active: currentPath === normalizePath(link.href) },
               ]}
             >
+              {link.key && <kbd class="nav-key" aria-hidden="true">{link.key}</kbd>}
               <span>{link.label}</span>
             </a>
           </li>
@@ -55,3 +68,27 @@ const links = [
     </ul>
   </div>
 </nav>
+
+<script>
+  window.addEventListener("keydown", (event) => {
+    if (
+      !window.matchMedia("(min-width: 640px)").matches ||
+      event.defaultPrevented || event.repeat || event.isComposing ||
+      event.ctrlKey || event.metaKey || event.altKey || event.shiftKey
+    ) return;
+
+    if (event.target instanceof Element && event.target.closest(
+      'input, textarea, select, [contenteditable], [role="textbox"]',
+    )) return;
+
+    // Read rendered links so disabled features never retain a shortcut.
+    const link = Array.from(document.querySelectorAll<HTMLAnchorElement>(
+      ".site-nav a[data-shortcut]",
+    )).find((candidate) => candidate.dataset.shortcut === event.key.toLowerCase());
+
+    if (link) {
+      event.preventDefault();
+      window.location.assign(link.href);
+    }
+  });
+</script>

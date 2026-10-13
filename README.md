@@ -11,7 +11,7 @@ Install dependencies and run the dev server:
 ```bash
 npm install
 npm run dev
-# open http://localhost:3000
+# open http://localhost:4321
 ```
 
 Build for production and preview the build:
@@ -27,6 +27,12 @@ npm run preview
 - `build` — Produces a production build in `dist/`.
 - `check` — Runs Astro's type and content diagnostics.
 - `preview` — Serves the production build locally.
+
+## Layout and navigation
+
+`src/layouts/Layout.astro` owns the shared container for page content and copyright. Pages use its default wide layout; project details use `contentWidth="reading"` for a centered reading column. Keep horizontal page gutters in this shared layout rather than adding nested containers.
+
+`src/config/features.ts` controls optional navigation items. `feelingLucky` defaults to `false`, hiding Lucky on both desktop and mobile while keeping the stub page available by URL. Desktop navigation supports H for Home and P for Projects; enabling Lucky also enables L. Shortcuts are disabled on mobile and while typing or using modifier keys.
 
 ## Tech stack
 
