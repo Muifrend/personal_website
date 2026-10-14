@@ -80,7 +80,7 @@ function ContentRow({ item }: { item: FilterableListItem }) {
       href={item.href}
       className="group flex items-center justify-between py-4 border-b border-gray-300 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
     >
-      <div className="w-32 md:w-48 flex-shrink-0 flex items-center font-mono text-sm text-gray-800 px-3">
+      <div className="w-24 sm:w-32 md:w-48 flex-shrink-0 flex items-center font-mono text-sm text-gray-800 px-3">
         <span>
           {date.slice(0, 7)}<span className="hidden sm:inline">{date.slice(7)}</span>
         </span>
@@ -144,7 +144,7 @@ export default function FilterableList({ items, allTags, filterLabel, emptyMessa
       <div className="min-w-0 flex-1">
         {/* Header */}
         <div className="flex items-end border-b-2 border-black pb-2 mb-0 font-mono text-xs text-gray-500 uppercase tracking-wider">
-          <div className="w-32 md:w-48 flex-shrink-0">/ Date</div>
+          <div className="w-24 sm:w-32 md:w-48 flex-shrink-0">/ Date</div>
           <div className="flex-grow">/ Name</div>
         </div>
 
