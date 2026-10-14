@@ -36,13 +36,18 @@ export function getProjectLinks(data: ProjectData): ProjectLinks {
     ? null
     : normalizeInternalPath(data.link_file);
   const hasProjectLink = Boolean(externalLinkHref || internalLinkHref);
+  const additionalLinks = (data.links || []).flatMap(({ label, url }) => {
+    const href = normalizeExternalUrl(url);
+    return href ? [{ label, href }] : [];
+  });
 
   return {
     repoHref,
     externalLinkHref,
     internalLinkHref,
+    additionalLinks,
     hasProjectLink,
-    hasAnyLink: Boolean(repoHref || hasProjectLink),
+    hasAnyLink: Boolean(repoHref || hasProjectLink || additionalLinks.length),
   };
 }
 

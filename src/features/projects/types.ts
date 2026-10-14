@@ -9,6 +9,7 @@ export interface ProjectLinks {
   repoHref: string | null;
   externalLinkHref: string | null;
   internalLinkHref: string | null;
+  additionalLinks: Array<{ label: string; href: string }>;
   hasProjectLink: boolean;
   hasAnyLink: boolean;
 }
