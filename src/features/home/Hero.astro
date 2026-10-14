@@ -1,5 +1,12 @@
 ---
 import GlobeSection from "../globe/GlobeSection";
+import type { GlobePlace } from "../../data/galleryPhotos";
+
+interface Props {
+  places: GlobePlace[];
+}
+
+const { places } = Astro.props;
 ---
 <div class="h-full font-sans relative z-10 pt-4 md:pt-24">
   <section class="grid items-center gap-8 md:grid-cols-2 md:gap-12">
@@ -23,7 +30,7 @@ import GlobeSection from "../globe/GlobeSection";
     </div>
 
     <div class="order-1 justify-self-center md:order-2 md:justify-self-end aspect-square w-full max-w-96 sm:max-w-[27rem] md:max-w-[30rem] lg:max-w-[33rem]">
-      <GlobeSection client:load />
+      <GlobeSection client:load places={places} />
     </div>
   </section>
 </div>

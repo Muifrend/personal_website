@@ -8,14 +8,14 @@ const currentPath = normalizePath(pathname);
 const links = [
   // MOBILE LINKS
   {
-    href: "/feeling-lucky",
+    href: "/feeling-lucky/",
     label: "Lucky",
     enabled: featureFlags.feelingLucky,
     mobileOnly: true,
     class: "sm:hidden group nav-link justify-center"
   },
   {
-    href: "/blog",
+    href: "/blog/",
     label: "Blog",
     mobileOnly: true,
     class: "sm:hidden group nav-link justify-center"
@@ -27,7 +27,7 @@ const links = [
     class: "sm:hidden group nav-link justify-center"
   },
   {
-    href: "/projects",
+    href: "/projects/",
     label: "Projects",
     mobileOnly: true,
     class: "sm:hidden group nav-link justify-center"
@@ -35,10 +35,10 @@ const links = [
 
   // DESKTOP LINKS
   { href: "/", label: "Home", key: "H", desktopOnly: true },
-  { href: "/projects", label: "Projects", key: "P", desktopOnly: true },
-  { href: "/blog", label: "Blog", key: "B", desktopOnly: true },
+  { href: "/projects/", label: "Projects", key: "P", desktopOnly: true },
+  { href: "/blog/", label: "Blog", key: "B", desktopOnly: true },
   {
-    href: "/feeling-lucky",
+    href: "/feeling-lucky/",
     label: "I'm Feeling Lucky",
     key: "L",
     desktopOnly: true,

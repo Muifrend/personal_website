@@ -24,8 +24,14 @@ export default function DesktopGallery({ photos }: Props) {
           >
             <img
               src={photo.src}
+              srcSet={photo.srcSet}
+              sizes={`(min-width: 640px) ${Math.round(320 * photo.width / photo.height)}px, ${Math.round(480 * photo.width / photo.height)}px`}
               alt={photo.alt}
-              className="h-full max-w-full object-cover pointer-events-none block transition-transform duration-500 group-hover:scale-105"
+              width={photo.width}
+              height={photo.height}
+              loading="lazy"
+              decoding="async"
+              className="h-full w-auto max-w-full object-cover pointer-events-none block transition-transform duration-500 group-hover:scale-105"
             />
 
             <figcaption className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4 transition-opacity duration-300 opacity-0 justify-start group-hover:opacity-100">

@@ -10,7 +10,7 @@ export default function ProjectBrowser({ projects, allTags }: Props) {
   const items = projects.map((project) => ({
     ...project,
     id: project.slug,
-    href: `/projects/${project.slug}`,
+    href: `/projects/${project.slug}/`,
   }));
 
   return (

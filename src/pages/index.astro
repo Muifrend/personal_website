@@ -3,14 +3,16 @@ import Hero from "../features/home/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import Contact from "../features/home/Contact.astro";
 import Gallery from "../features/gallery/Gallery";
-import { galleryPhotos } from "../data/galleryPhotos";
+import { getGalleryImages } from "../lib/galleryImages";
+
+const { photos, places } = await getGalleryImages();
 ---
 
-<Layout title="Home">
+<Layout title="Home" description="Personal website of Andrzej Firek (Andrew), featuring software projects, AI agents, automation, writing, and ways to connect.">
   <div class="pt-4 sm:pt-12">
-    <Hero />
+    <Hero places={places} />
     <section>
-      <Gallery client:load photos={galleryPhotos} />
+      <Gallery client:load photos={photos} />
     </section>
     <Contact />
   </div>

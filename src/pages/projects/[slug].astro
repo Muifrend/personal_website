@@ -21,7 +21,9 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-const { title, link_text, date, cover } = entry.data;
+const { title, description, link_text, date, cover } = entry.data;
+const pageDescription = description?.trim() ||
+  `${title}, a project by Andrzej Firek${entry.data.tags?.length ? ` built with ${entry.data.tags.join(", ")}` : ""}.`;
 
 const {
   repoHref,
@@ -42,7 +44,7 @@ const pdfHref = internalLinkHref && /\.pdf(?:[?#]|$)/i.test(internalLinkHref)
   : null;
 ---
 
-<Layout title={title} contentWidth="reading">
+<Layout title={title} description={pageDescription} image={cover} imageAlt={cover ? title : undefined} contentWidth="reading">
   <div class="py-12 pt-20">
     <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 leading-tight">
       {title}

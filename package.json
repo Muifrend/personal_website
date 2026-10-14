@@ -6,11 +6,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "check": "astro check",
+    "check:seo": "npm run build && node scripts/check-seo.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.2",
+    "@astrojs/sitemap": "^3.7.4",
     "@tailwindcss/vite": "^4.1.16",
     "@types/node": "^25.6.2",
     "@types/react": "^19.2.2",

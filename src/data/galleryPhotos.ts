@@ -1,3 +1,4 @@
+import type { ImageMetadata } from "astro";
 import cruiseMazuryPoland from "../assets/gallery/Cruise_Mazury_Poland.webp";
 import greatWallOfChina from "../assets/gallery/Great_Wall_Of_China.webp";
 import mumbaiIndia from "../assets/gallery/Mumbai_India.webp";
@@ -7,13 +8,8 @@ import taipeiTaiwan from "../assets/gallery/Taipei_Taiwan.webp";
 import telAvivIsrael from "../assets/gallery/Tel_Aviv_Israel.webp";
 import youtubeHqUs from "../assets/gallery/Youtube_HQ_US.webp";
 
-type ImportedImage = {
-  src: string;
-  width: number;
-  height: number;
-};
-
 export type GalleryPhoto = {
+  source: ImageMetadata;
   src: string;
   alt: string;
   width: number;
@@ -36,11 +32,12 @@ export type GlobePlace = {
 };
 
 function createGalleryPhoto(
-  image: ImportedImage,
+  image: ImageMetadata,
   alt: string,
   globe?: GalleryPhoto["globe"],
 ): GalleryPhoto {
   return {
+    source: image,
     src: image.src,
     alt,
     width: image.width,
@@ -91,19 +88,3 @@ export const galleryPhotos: GalleryPhoto[] = [
     lon: -122.4282,
   }),
 ];
-
-export const globePlaces: GlobePlace[] = galleryPhotos.flatMap((photo) =>
-  photo.globe
-    ? [
-        {
-          id: photo.globe.id,
-          lat: photo.globe.lat,
-          lon: photo.globe.lon,
-          caption: photo.alt,
-          img: photo.src,
-          imgWidth: photo.width,
-          imgHeight: photo.height,
-        },
-      ]
-    : [],
-);

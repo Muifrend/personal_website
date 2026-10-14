@@ -2,13 +2,44 @@
 import "../styles/global.css";
 import NavigationMenu from "../components/site/NavigationMenu.astro";
 import Footer from "../components/site/Footer.astro";
+import { getImage } from "astro:assets";
+import type { ImageMetadata } from "astro";
 
 interface Props {
   title: string;
+  description: string;
+  image?: ImageMetadata | string;
+  imageAlt?: string;
+  noindex?: boolean;
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
   contentWidth?: "wide" | "reading";
 }
 
-const { title, contentWidth = "wide" } = Astro.props;
+const {
+  title,
+  description,
+  image = "/social-card.png",
+  imageAlt = "Andrzej Firek",
+  noindex = false,
+  structuredData,
+  contentWidth = "wide",
+} = Astro.props;
+const pageTitle = title === "Home"
+  ? "Andrzej Firek | Projects & Writing"
+  : `${title} | Andrzej Firek`;
+const canonical = new URL(Astro.url.pathname.replace(/\/?$/, "/"), Astro.site);
+const socialImage = typeof image === "string" ? null : await getImage({
+  src: image,
+  width: Math.min(1200, image.width),
+  format: "png",
+});
+const imageUrl = new URL(socialImage?.src ?? image as string, Astro.site);
+const imageWidth = socialImage?.attributes.width ?? (image === "/social-card.png" ? 1200 : undefined);
+const imageHeight = socialImage?.attributes.height ?? (image === "/social-card.png" ? 630 : undefined);
+// Escape HTML delimiters so content cannot close the JSON-LD script element.
+const serializedData = structuredData
+  ? JSON.stringify(structuredData).replace(/</g, "\\u003c")
+  : undefined;
 ---
 
 <!doctype html>
@@ -20,7 +51,26 @@ const { title, contentWidth = "wide" } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=lucide-earth" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=lucide-earth" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Andrzej Firek" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content={imageUrl.href} />
+    <meta property="og:image:alt" content={imageAlt} />
+    {imageWidth && <meta property="og:image:width" content={imageWidth} />}
+    {imageHeight && <meta property="og:image:height" content={imageHeight} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl.href} />
+    <meta name="twitter:image:alt" content={imageAlt} />
+    {serializedData && <script is:inline type="application/ld+json" set:html={serializedData} />}
   </head>
 
   <body class="min-h-screen flex flex-col bg-white font-sans antialiased">

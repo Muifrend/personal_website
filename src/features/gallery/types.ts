@@ -1,3 +1,6 @@
 import type { GalleryPhoto } from "../../data/galleryPhotos";
 
-export type Photo = Pick<GalleryPhoto, "src" | "alt">;
+export type Photo = Pick<GalleryPhoto, "src" | "alt" | "width" | "height"> & {
+  srcSet: string;
+  placeholderSrc: string;
+};

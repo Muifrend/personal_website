@@ -74,14 +74,24 @@ export default function MobileGallery({ photos, showSwipeHint }: Props) {
             className="h-[60svh] w-full shrink-0 relative select-none overflow-hidden"
           >
             <img
-              src={photo.src}
+              src={photo.placeholderSrc}
               alt=""
+              width={photo.width}
+              height={photo.height}
+              loading="lazy"
+              decoding="async"
               aria-hidden="true"
               className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-80 pointer-events-none"
             />
             <img
               src={photo.src}
+              srcSet={photo.srcSet}
+              sizes="(min-width: 768px) 50vw, calc(100vw - 3rem)"
               alt={photo.alt}
+              width={photo.width}
+              height={photo.height}
+              loading="lazy"
+              decoding="async"
               className="relative w-full h-full object-contain pointer-events-none block"
             />
             <figcaption className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end justify-center p-4">
