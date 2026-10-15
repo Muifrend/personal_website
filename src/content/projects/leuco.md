@@ -1,6 +1,6 @@
 ---
 title: "Leuco: Privacy-first Pool Safety"
-date: 2026-02-28
+date: 2026-06-06
 description: "A home-pool drowning-risk proof of concept that grew from a hackathon idea into a local camera and Jetson demo."
 tags:
   - Python
