@@ -4,8 +4,10 @@ import greatWallOfChina from "../assets/gallery/Great_Wall_Of_China.webp";
 import mumbaiIndia from "../assets/gallery/Mumbai_India.webp";
 import newYorkCityUs from "../assets/gallery/New_York_City_US.webp";
 import sanFranciscoUs from "../assets/gallery/San_Francisco_US.webp";
+import sustainabilitySummitMonaco from "../assets/gallery/Sustainability_Summit_Monaco.jpg";
 import taipeiTaiwan from "../assets/gallery/Taipei_Taiwan.webp";
 import telAvivIsrael from "../assets/gallery/Tel_Aviv_Israel.webp";
+import tokyoTmgJapan from "../assets/gallery/Tokyo_TMG_Japan.jpg";
 import youtubeHqUs from "../assets/gallery/Youtube_HQ_US.webp";
 
 export type GalleryPhoto = {
@@ -86,5 +88,15 @@ export const galleryPhotos: GalleryPhoto[] = [
     id: "youtube",
     lat: 37.6291,
     lon: -122.4282,
+  }),
+  createGalleryPhoto(tokyoTmgJapan, "TMG Meeting in Tokyo, Japan", {
+    id: "tokyo",
+    lat: 35.6762,
+    lon: 139.6503,
+  }),
+  createGalleryPhoto(sustainabilitySummitMonaco, "Sustainability Leadership Summit, Monaco", {
+    id: "monaco",
+    lat: 43.7384,
+    lon: 7.4246,
   }),
 ];
